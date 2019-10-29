@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="Competition" nsURI="FYLL INN" nsPrefix="FYLL INN">
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="Competition" nsURI="platform:/plugin/TDT4250.project.mpdel/model/Competition.ecore"
+    nsPrefix="Competition">
   <eClassifiers xsi:type="ecore:EClass" name="Competition">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>

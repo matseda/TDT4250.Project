@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/TDT4250.project.model/src" modelPluginID="TDT4250.project.model"
+    modelName="Competition" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true" oSGiCompatible="true">
+  <foreignModel>competition.ecore</foreignModel>
+  <genPackages prefix="Competition" disposableProviderFactory="true" ecorePackage="competition.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="competition.ecore#//Role">
+      <genEnumLiterals ecoreEnumLiteral="competition.ecore#//Role/PLAYER"/>
+      <genEnumLiterals ecoreEnumLiteral="competition.ecore#//Role/COACH"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="competition.ecore#//Status">
+      <genEnumLiterals ecoreEnumLiteral="competition.ecore#//Status/FINISHED"/>
+      <genEnumLiterals ecoreEnumLiteral="competition.ecore#//Status/AWARDED"/>
+      <genEnumLiterals ecoreEnumLiteral="competition.ecore#//Status/IN_PLAY"/>
+      <genEnumLiterals ecoreEnumLiteral="competition.ecore#//Status/PAUSED"/>
+      <genEnumLiterals ecoreEnumLiteral="competition.ecore#//Status/CANCELED"/>
+      <genEnumLiterals ecoreEnumLiteral="competition.ecore#//Status/SCHEDULED"/>
+      <genEnumLiterals ecoreEnumLiteral="competition.ecore#//Status/POSTPONED"/>
+      <genEnumLiterals ecoreEnumLiteral="competition.ecore#//Status/SUSPENDED"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="competition.ecore#//Winner">
+      <genEnumLiterals ecoreEnumLiteral="competition.ecore#//Winner/HOME_TEAM"/>
+      <genEnumLiterals ecoreEnumLiteral="competition.ecore#//Winner/AWAY_TEAM"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="competition.ecore#//Card">
+      <genEnumLiterals ecoreEnumLiteral="competition.ecore#//Card/YELLOW_CARD"/>
+      <genEnumLiterals ecoreEnumLiteral="competition.ecore#//Card/RED_CARD"/>
+    </genEnums>
+    <genClasses ecoreClass="competition.ecore#//Competition">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Competition/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Competition/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Competition/code"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Competition/plan"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference competition.ecore#//Competition/currentSeason"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Competition/lastUpdated"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference competition.ecore#//Competition/teams"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Competition/area"/>
+    </genClasses>
+    <genClasses ecoreClass="competition.ecore#//Season">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Season/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Season/startDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Season/endDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Season/currentMatchday"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference competition.ecore#//Season/matches"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference competition.ecore#//Season/competition"/>
+    </genClasses>
+    <genClasses ecoreClass="competition.ecore#//Team">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Team/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Team/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Team/shortName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Team/tla"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Team/founded"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Team/clubColors"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference competition.ecore#//Team/squad"/>
+    </genClasses>
+    <genClasses ecoreClass="competition.ecore#//Person">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Person/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Person/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Person/position"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Person/dateOfBirth"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Person/nationality"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Person/role"/>
+    </genClasses>
+    <genClasses ecoreClass="competition.ecore#//Match">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Match/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Match/utcDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Match/status"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Match/minute"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Match/attendance"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Match/venue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Match/lastUpdated"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference competition.ecore#//Match/homeTeam"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference competition.ecore#//Match/awayTeam"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference competition.ecore#//Match/score"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference competition.ecore#//Match/goals"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference competition.ecore#//Match/bookings"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference competition.ecore#//Match/substitutions"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference competition.ecore#//Match/season"/>
+    </genClasses>
+    <genClasses ecoreClass="competition.ecore#//MatchTeam">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference competition.ecore#//MatchTeam/team"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference competition.ecore#//MatchTeam/coach"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference competition.ecore#//MatchTeam/captain"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference competition.ecore#//MatchTeam/lineup"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference competition.ecore#//MatchTeam/bench"/>
+    </genClasses>
+    <genClasses ecoreClass="competition.ecore#//Score">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Score/winner"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Score/homeTeam"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Score/awayTeam"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference competition.ecore#//Score/match"/>
+    </genClasses>
+    <genClasses ecoreClass="competition.ecore#//Goal">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Goal/minute"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Goal/extraTime"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Goal/team"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Goal/scorer"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Goal/assist"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference competition.ecore#//Goal/match"/>
+    </genClasses>
+    <genClasses ecoreClass="competition.ecore#//Booking">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Booking/minute"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Booking/team"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Booking/player"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Booking/card"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference competition.ecore#//Booking/match"/>
+    </genClasses>
+    <genClasses ecoreClass="competition.ecore#//Substitution">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Substitution/minute"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Substitution/team"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Substitution/playerOut"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Substitution/playerIn"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference competition.ecore#//Substitution/match"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
