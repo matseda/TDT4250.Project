@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Competition:Competition
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:Competition="platform:/plugin/TDT4250.project.mpdel/model/Competition.ecore"
+    xsi:schemaLocation="platform:/plugin/TDT4250.project.mpdel/model/Competition.ecore competition.ecore"
+    id="1" name="Premier League"
+    code="PL"
+    plan="Tier 1"
+    area="England">
+  <currentSeason
+      id="2019"
+      currentMatchday="10">
+    <matches
+        id="1"
+        attendance="35000"
+        venue="Elland Road">
+      <homeTeam
+          team="//@teams.0"
+          coach="//@teams.0/@squad.3"
+          captain="//@teams.0/@squad.1"
+          lineup="//@teams.0/@squad.0 //@teams.0/@squad.1"
+          bench="//@teams.0/@squad.2"/>
+      <awayTeam
+          team="//@teams.1"
+          coach="//@teams.1/@squad.3"
+          captain="//@teams.1/@squad.1"
+          lineup="//@teams.1/@squad.0 //@teams.1/@squad.1"
+          bench="//@teams.1/@squad.2"/>
+      <score
+          homeTeam="2"/>
+      <goals
+          assist=""/>
+    </matches>
+  </currentSeason>
+  <teams id="1"
+      name="Leeds United"
+      shortName="LUFC"
+      tla="LEE"
+      founded="1919"
+      clubColors="White Blue Yellow">
+    <squad id="1"
+        name="Pablo Hernandez"
+        position="Midfielder"
+        nationality="Spanish"/>
+    <squad id="2"
+        name="Kalvin Phillips"
+        position="Midfielder"
+        nationality="English"/>
+    <squad id="5"
+        name="Luke Ayling"
+        position="Defender"
+        nationality="English"/>
+    <squad id="7"
+        name="Marcelo Bielsa"
+        nationality="Argentinian"
+        role="COACH"/>
+  </teams>
+  <teams id="2"
+      name="Manchester United"
+      shortName="MANU"
+      tla="MAN"
+      founded="1940"
+      clubColors="Red">
+    <squad id="3"
+        name="Marcus Rashford"
+        position="Forward"
+        nationality="English"/>
+    <squad name="David De Gea"
+        position="Goalkeeper"
+        nationality="Spanish"/>
+    <squad id="6"
+        name="Paul Pogba"
+        position="Midfielder"
+        nationality="French"/>
+    <squad id="9"
+        name="Ole Gunnar "
+        nationality="Norwegian"
+        role="COACH"/>
+  </teams>
+</Competition:Competition>
