@@ -1,6 +1,6 @@
 /**
  */
-package Competition;
+package competition;
 
 import org.eclipse.emf.ecore.EObject;
 
@@ -13,37 +13,37 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link Competition.Score#getWinner <em>Winner</em>}</li>
- *   <li>{@link Competition.Score#getHomeTeam <em>Home Team</em>}</li>
- *   <li>{@link Competition.Score#getAwayTeam <em>Away Team</em>}</li>
- *   <li>{@link Competition.Score#getMatch <em>Match</em>}</li>
+ *   <li>{@link competition.Score#getWinner <em>Winner</em>}</li>
+ *   <li>{@link competition.Score#getHomeTeam <em>Home Team</em>}</li>
+ *   <li>{@link competition.Score#getAwayTeam <em>Away Team</em>}</li>
+ *   <li>{@link competition.Score#getMatch <em>Match</em>}</li>
  * </ul>
  *
- * @see Competition.CompetitionPackage#getScore()
+ * @see competition.CompetitionPackage#getScore()
  * @model
  * @generated
  */
 public interface Score extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Winner</b></em>' attribute.
-	 * The literals are from the enumeration {@link Competition.Winner}.
+	 * The literals are from the enumeration {@link competition.Winner}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Winner</em>' attribute.
-	 * @see Competition.Winner
+	 * @see competition.Winner
 	 * @see #setWinner(Winner)
-	 * @see Competition.CompetitionPackage#getScore_Winner()
+	 * @see competition.CompetitionPackage#getScore_Winner()
 	 * @model required="true"
 	 * @generated
 	 */
 	Winner getWinner();
 
 	/**
-	 * Sets the value of the '{@link Competition.Score#getWinner <em>Winner</em>}' attribute.
+	 * Sets the value of the '{@link competition.Score#getWinner <em>Winner</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Winner</em>' attribute.
-	 * @see Competition.Winner
+	 * @see competition.Winner
 	 * @see #getWinner()
 	 * @generated
 	 */
@@ -55,14 +55,14 @@ public interface Score extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Home Team</em>' attribute.
 	 * @see #setHomeTeam(int)
-	 * @see Competition.CompetitionPackage#getScore_HomeTeam()
+	 * @see competition.CompetitionPackage#getScore_HomeTeam()
 	 * @model
 	 * @generated
 	 */
 	int getHomeTeam();
 
 	/**
-	 * Sets the value of the '{@link Competition.Score#getHomeTeam <em>Home Team</em>}' attribute.
+	 * Sets the value of the '{@link competition.Score#getHomeTeam <em>Home Team</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Home Team</em>' attribute.
@@ -77,14 +77,14 @@ public interface Score extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Away Team</em>' attribute.
 	 * @see #setAwayTeam(int)
-	 * @see Competition.CompetitionPackage#getScore_AwayTeam()
+	 * @see competition.CompetitionPackage#getScore_AwayTeam()
 	 * @model
 	 * @generated
 	 */
 	int getAwayTeam();
 
 	/**
-	 * Sets the value of the '{@link Competition.Score#getAwayTeam <em>Away Team</em>}' attribute.
+	 * Sets the value of the '{@link competition.Score#getAwayTeam <em>Away Team</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Away Team</em>' attribute.
@@ -95,20 +95,20 @@ public interface Score extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Match</b></em>' container reference.
-	 * It is bidirectional and its opposite is '{@link Competition.Match#getScore <em>Score</em>}'.
+	 * It is bidirectional and its opposite is '{@link competition.Match#getScore <em>Score</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Match</em>' container reference.
 	 * @see #setMatch(Match)
-	 * @see Competition.CompetitionPackage#getScore_Match()
-	 * @see Competition.Match#getScore
+	 * @see competition.CompetitionPackage#getScore_Match()
+	 * @see competition.Match#getScore
 	 * @model opposite="score" transient="false"
 	 * @generated
 	 */
 	Match getMatch();
 
 	/**
-	 * Sets the value of the '{@link Competition.Score#getMatch <em>Match</em>}' container reference.
+	 * Sets the value of the '{@link competition.Score#getMatch <em>Match</em>}' container reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Match</em>' container reference.

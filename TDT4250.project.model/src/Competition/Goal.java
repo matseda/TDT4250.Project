@@ -1,6 +1,6 @@
 /**
  */
-package Competition;
+package competition;
 
 import org.eclipse.emf.ecore.EObject;
 
@@ -13,15 +13,15 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link Competition.Goal#getMinute <em>Minute</em>}</li>
- *   <li>{@link Competition.Goal#getExtraTime <em>Extra Time</em>}</li>
- *   <li>{@link Competition.Goal#getTeam <em>Team</em>}</li>
- *   <li>{@link Competition.Goal#getScorer <em>Scorer</em>}</li>
- *   <li>{@link Competition.Goal#getAssist <em>Assist</em>}</li>
- *   <li>{@link Competition.Goal#getMatch <em>Match</em>}</li>
+ *   <li>{@link competition.Goal#getMinute <em>Minute</em>}</li>
+ *   <li>{@link competition.Goal#getExtraTime <em>Extra Time</em>}</li>
+ *   <li>{@link competition.Goal#getMatch <em>Match</em>}</li>
+ *   <li>{@link competition.Goal#getTeam <em>Team</em>}</li>
+ *   <li>{@link competition.Goal#getScorer <em>Scorer</em>}</li>
+ *   <li>{@link competition.Goal#getAssist <em>Assist</em>}</li>
  * </ul>
  *
- * @see Competition.CompetitionPackage#getGoal()
+ * @see competition.CompetitionPackage#getGoal()
  * @model
  * @generated
  */
@@ -32,14 +32,14 @@ public interface Goal extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Minute</em>' attribute.
 	 * @see #setMinute(int)
-	 * @see Competition.CompetitionPackage#getGoal_Minute()
+	 * @see competition.CompetitionPackage#getGoal_Minute()
 	 * @model required="true"
 	 * @generated
 	 */
 	int getMinute();
 
 	/**
-	 * Sets the value of the '{@link Competition.Goal#getMinute <em>Minute</em>}' attribute.
+	 * Sets the value of the '{@link competition.Goal#getMinute <em>Minute</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Minute</em>' attribute.
@@ -54,14 +54,14 @@ public interface Goal extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Extra Time</em>' attribute.
 	 * @see #setExtraTime(int)
-	 * @see Competition.CompetitionPackage#getGoal_ExtraTime()
+	 * @see competition.CompetitionPackage#getGoal_ExtraTime()
 	 * @model
 	 * @generated
 	 */
 	int getExtraTime();
 
 	/**
-	 * Sets the value of the '{@link Competition.Goal#getExtraTime <em>Extra Time</em>}' attribute.
+	 * Sets the value of the '{@link competition.Goal#getExtraTime <em>Extra Time</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Extra Time</em>' attribute.
@@ -71,87 +71,21 @@ public interface Goal extends EObject {
 	void setExtraTime(int value);
 
 	/**
-	 * Returns the value of the '<em><b>Team</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Team</em>' attribute.
-	 * @see #setTeam(String)
-	 * @see Competition.CompetitionPackage#getGoal_Team()
-	 * @model required="true"
-	 * @generated
-	 */
-	String getTeam();
-
-	/**
-	 * Sets the value of the '{@link Competition.Goal#getTeam <em>Team</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Team</em>' attribute.
-	 * @see #getTeam()
-	 * @generated
-	 */
-	void setTeam(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Scorer</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Scorer</em>' attribute.
-	 * @see #setScorer(String)
-	 * @see Competition.CompetitionPackage#getGoal_Scorer()
-	 * @model required="true"
-	 * @generated
-	 */
-	String getScorer();
-
-	/**
-	 * Sets the value of the '{@link Competition.Goal#getScorer <em>Scorer</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Scorer</em>' attribute.
-	 * @see #getScorer()
-	 * @generated
-	 */
-	void setScorer(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Assist</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Assist</em>' attribute.
-	 * @see #setAssist(String)
-	 * @see Competition.CompetitionPackage#getGoal_Assist()
-	 * @model
-	 * @generated
-	 */
-	String getAssist();
-
-	/**
-	 * Sets the value of the '{@link Competition.Goal#getAssist <em>Assist</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Assist</em>' attribute.
-	 * @see #getAssist()
-	 * @generated
-	 */
-	void setAssist(String value);
-
-	/**
 	 * Returns the value of the '<em><b>Match</b></em>' container reference.
-	 * It is bidirectional and its opposite is '{@link Competition.Match#getGoals <em>Goals</em>}'.
+	 * It is bidirectional and its opposite is '{@link competition.Match#getGoals <em>Goals</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Match</em>' container reference.
 	 * @see #setMatch(Match)
-	 * @see Competition.CompetitionPackage#getGoal_Match()
-	 * @see Competition.Match#getGoals
+	 * @see competition.CompetitionPackage#getGoal_Match()
+	 * @see competition.Match#getGoals
 	 * @model opposite="goals" transient="false"
 	 * @generated
 	 */
 	Match getMatch();
 
 	/**
-	 * Sets the value of the '{@link Competition.Goal#getMatch <em>Match</em>}' container reference.
+	 * Sets the value of the '{@link competition.Goal#getMatch <em>Match</em>}' container reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Match</em>' container reference.
@@ -159,5 +93,71 @@ public interface Goal extends EObject {
 	 * @generated
 	 */
 	void setMatch(Match value);
+
+	/**
+	 * Returns the value of the '<em><b>Team</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Team</em>' reference.
+	 * @see #setTeam(Team)
+	 * @see competition.CompetitionPackage#getGoal_Team()
+	 * @model required="true"
+	 * @generated
+	 */
+	Team getTeam();
+
+	/**
+	 * Sets the value of the '{@link competition.Goal#getTeam <em>Team</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Team</em>' reference.
+	 * @see #getTeam()
+	 * @generated
+	 */
+	void setTeam(Team value);
+
+	/**
+	 * Returns the value of the '<em><b>Scorer</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Scorer</em>' reference.
+	 * @see #setScorer(Person)
+	 * @see competition.CompetitionPackage#getGoal_Scorer()
+	 * @model required="true"
+	 * @generated
+	 */
+	Person getScorer();
+
+	/**
+	 * Sets the value of the '{@link competition.Goal#getScorer <em>Scorer</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Scorer</em>' reference.
+	 * @see #getScorer()
+	 * @generated
+	 */
+	void setScorer(Person value);
+
+	/**
+	 * Returns the value of the '<em><b>Assist</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Assist</em>' reference.
+	 * @see #setAssist(Person)
+	 * @see competition.CompetitionPackage#getGoal_Assist()
+	 * @model
+	 * @generated
+	 */
+	Person getAssist();
+
+	/**
+	 * Sets the value of the '{@link competition.Goal#getAssist <em>Assist</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Assist</em>' reference.
+	 * @see #getAssist()
+	 * @generated
+	 */
+	void setAssist(Person value);
 
 } // Goal

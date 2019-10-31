@@ -5,7 +5,8 @@
     importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
     operationReflection="true" importOrganizing="true" oSGiCompatible="true">
   <foreignModel>competition.ecore</foreignModel>
-  <genPackages prefix="Competition" disposableProviderFactory="true" ecorePackage="competition.ecore#/">
+  <genPackages prefix="Competition" resource="Basic" disposableProviderFactory="true"
+      ecorePackage="competition.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="competition.ecore#//Role">
       <genEnumLiterals ecoreEnumLiteral="competition.ecore#//Role/PLAYER"/>
       <genEnumLiterals ecoreEnumLiteral="competition.ecore#//Role/COACH"/>
@@ -95,24 +96,24 @@
     <genClasses ecoreClass="competition.ecore#//Goal">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Goal/minute"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Goal/extraTime"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Goal/team"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Goal/scorer"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Goal/assist"/>
       <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference competition.ecore#//Goal/match"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference competition.ecore#//Goal/team"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference competition.ecore#//Goal/scorer"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference competition.ecore#//Goal/assist"/>
     </genClasses>
     <genClasses ecoreClass="competition.ecore#//Booking">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Booking/minute"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Booking/team"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Booking/player"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Booking/card"/>
       <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference competition.ecore#//Booking/match"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference competition.ecore#//Booking/team"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference competition.ecore#//Booking/player"/>
     </genClasses>
     <genClasses ecoreClass="competition.ecore#//Substitution">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Substitution/minute"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Substitution/team"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Substitution/playerOut"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Substitution/playerIn"/>
       <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference competition.ecore#//Substitution/match"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference competition.ecore#//Substitution/playerOut"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference competition.ecore#//Substitution/playerIn"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference competition.ecore#//Substitution/team"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

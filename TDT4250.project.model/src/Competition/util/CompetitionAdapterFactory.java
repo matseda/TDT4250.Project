@@ -1,8 +1,8 @@
 /**
  */
-package Competition.util;
+package competition.util;
 
-import Competition.*;
+import competition.*;
 
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
@@ -16,7 +16,7 @@ import org.eclipse.emf.ecore.EObject;
  * The <b>Adapter Factory</b> for the model.
  * It provides an adapter <code>createXXX</code> method for each class of the model.
  * <!-- end-user-doc -->
- * @see Competition.CompetitionPackage
+ * @see competition.CompetitionPackage
  * @generated
  */
 public class CompetitionAdapterFactory extends AdapterFactoryImpl {
@@ -128,13 +128,13 @@ public class CompetitionAdapterFactory extends AdapterFactoryImpl {
 
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Competition.Competition <em>Competition</em>}'.
+	 * Creates a new adapter for an object of class '{@link competition.Competition <em>Competition</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Competition.Competition
+	 * @see competition.Competition
 	 * @generated
 	 */
 	public Adapter createCompetitionAdapter() {
@@ -142,13 +142,13 @@ public class CompetitionAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Competition.Season <em>Season</em>}'.
+	 * Creates a new adapter for an object of class '{@link competition.Season <em>Season</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Competition.Season
+	 * @see competition.Season
 	 * @generated
 	 */
 	public Adapter createSeasonAdapter() {
@@ -156,13 +156,13 @@ public class CompetitionAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Competition.Team <em>Team</em>}'.
+	 * Creates a new adapter for an object of class '{@link competition.Team <em>Team</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Competition.Team
+	 * @see competition.Team
 	 * @generated
 	 */
 	public Adapter createTeamAdapter() {
@@ -170,13 +170,13 @@ public class CompetitionAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Competition.Person <em>Person</em>}'.
+	 * Creates a new adapter for an object of class '{@link competition.Person <em>Person</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Competition.Person
+	 * @see competition.Person
 	 * @generated
 	 */
 	public Adapter createPersonAdapter() {
@@ -184,13 +184,13 @@ public class CompetitionAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Competition.Match <em>Match</em>}'.
+	 * Creates a new adapter for an object of class '{@link competition.Match <em>Match</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Competition.Match
+	 * @see competition.Match
 	 * @generated
 	 */
 	public Adapter createMatchAdapter() {
@@ -198,13 +198,13 @@ public class CompetitionAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Competition.MatchTeam <em>Match Team</em>}'.
+	 * Creates a new adapter for an object of class '{@link competition.MatchTeam <em>Match Team</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Competition.MatchTeam
+	 * @see competition.MatchTeam
 	 * @generated
 	 */
 	public Adapter createMatchTeamAdapter() {
@@ -212,13 +212,13 @@ public class CompetitionAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Competition.Score <em>Score</em>}'.
+	 * Creates a new adapter for an object of class '{@link competition.Score <em>Score</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Competition.Score
+	 * @see competition.Score
 	 * @generated
 	 */
 	public Adapter createScoreAdapter() {
@@ -226,13 +226,13 @@ public class CompetitionAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Competition.Goal <em>Goal</em>}'.
+	 * Creates a new adapter for an object of class '{@link competition.Goal <em>Goal</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Competition.Goal
+	 * @see competition.Goal
 	 * @generated
 	 */
 	public Adapter createGoalAdapter() {
@@ -240,13 +240,13 @@ public class CompetitionAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Competition.Booking <em>Booking</em>}'.
+	 * Creates a new adapter for an object of class '{@link competition.Booking <em>Booking</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Competition.Booking
+	 * @see competition.Booking
 	 * @generated
 	 */
 	public Adapter createBookingAdapter() {
@@ -254,13 +254,13 @@ public class CompetitionAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Competition.Substitution <em>Substitution</em>}'.
+	 * Creates a new adapter for an object of class '{@link competition.Substitution <em>Substitution</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Competition.Substitution
+	 * @see competition.Substitution
 	 * @generated
 	 */
 	public Adapter createSubstitutionAdapter() {

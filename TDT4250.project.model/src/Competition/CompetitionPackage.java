@@ -1,15 +1,12 @@
 /**
  */
-package Competition;
-
-import Competition.impl.CompetitionPackageImpl;
+package competition;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
-
 
 /**
  * <!-- begin-user-doc -->
@@ -23,7 +20,7 @@ import org.eclipse.emf.ecore.EReference;
  *   <li>and each data type</li>
  * </ul>
  * <!-- end-user-doc -->
- * @see Competition.CompetitionFactory
+ * @see competition.CompetitionFactory
  * @model kind="package"
  * @generated
  */
@@ -34,7 +31,7 @@ public interface CompetitionPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNAME = "Competition";
+	String eNAME = "competition";
 
 	/**
 	 * The package namespace URI.
@@ -50,7 +47,7 @@ public interface CompetitionPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_PREFIX = "Competition";
+	String eNS_PREFIX = "competition";
 
 	/**
 	 * The singleton instance of the package.
@@ -58,14 +55,14 @@ public interface CompetitionPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	CompetitionPackage eINSTANCE = CompetitionPackageImpl.init();
+	CompetitionPackage eINSTANCE = competition.impl.CompetitionPackageImpl.init();
 
 	/**
-	 * The meta object id for the '{@link Competition.impl.CompetitionImpl <em>Competition</em>}' class.
+	 * The meta object id for the '{@link competition.impl.CompetitionImpl <em>Competition</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see Competition.impl.CompetitionImpl
-	 * @see Competition.impl.CompetitionPackageImpl#getCompetition()
+	 * @see competition.impl.CompetitionImpl
+	 * @see competition.impl.CompetitionPackageImpl#getCompetition()
 	 * @generated
 	 */
 	int COMPETITION = 0;
@@ -161,11 +158,11 @@ public interface CompetitionPackage extends EPackage {
 	int COMPETITION_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link Competition.impl.SeasonImpl <em>Season</em>}' class.
+	 * The meta object id for the '{@link competition.impl.SeasonImpl <em>Season</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see Competition.impl.SeasonImpl
-	 * @see Competition.impl.CompetitionPackageImpl#getSeason()
+	 * @see competition.impl.SeasonImpl
+	 * @see competition.impl.CompetitionPackageImpl#getSeason()
 	 * @generated
 	 */
 	int SEASON = 1;
@@ -243,11 +240,11 @@ public interface CompetitionPackage extends EPackage {
 	int SEASON_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link Competition.impl.TeamImpl <em>Team</em>}' class.
+	 * The meta object id for the '{@link competition.impl.TeamImpl <em>Team</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see Competition.impl.TeamImpl
-	 * @see Competition.impl.CompetitionPackageImpl#getTeam()
+	 * @see competition.impl.TeamImpl
+	 * @see competition.impl.CompetitionPackageImpl#getTeam()
 	 * @generated
 	 */
 	int TEAM = 2;
@@ -334,11 +331,11 @@ public interface CompetitionPackage extends EPackage {
 	int TEAM_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link Competition.impl.PersonImpl <em>Person</em>}' class.
+	 * The meta object id for the '{@link competition.impl.PersonImpl <em>Person</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see Competition.impl.PersonImpl
-	 * @see Competition.impl.CompetitionPackageImpl#getPerson()
+	 * @see competition.impl.PersonImpl
+	 * @see competition.impl.CompetitionPackageImpl#getPerson()
 	 * @generated
 	 */
 	int PERSON = 3;
@@ -416,11 +413,11 @@ public interface CompetitionPackage extends EPackage {
 	int PERSON_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link Competition.impl.MatchImpl <em>Match</em>}' class.
+	 * The meta object id for the '{@link competition.impl.MatchImpl <em>Match</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see Competition.impl.MatchImpl
-	 * @see Competition.impl.CompetitionPackageImpl#getMatch()
+	 * @see competition.impl.MatchImpl
+	 * @see competition.impl.CompetitionPackageImpl#getMatch()
 	 * @generated
 	 */
 	int MATCH = 4;
@@ -570,11 +567,11 @@ public interface CompetitionPackage extends EPackage {
 	int MATCH_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link Competition.impl.MatchTeamImpl <em>Match Team</em>}' class.
+	 * The meta object id for the '{@link competition.impl.MatchTeamImpl <em>Match Team</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see Competition.impl.MatchTeamImpl
-	 * @see Competition.impl.CompetitionPackageImpl#getMatchTeam()
+	 * @see competition.impl.MatchTeamImpl
+	 * @see competition.impl.CompetitionPackageImpl#getMatchTeam()
 	 * @generated
 	 */
 	int MATCH_TEAM = 5;
@@ -643,11 +640,11 @@ public interface CompetitionPackage extends EPackage {
 	int MATCH_TEAM_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link Competition.impl.ScoreImpl <em>Score</em>}' class.
+	 * The meta object id for the '{@link competition.impl.ScoreImpl <em>Score</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see Competition.impl.ScoreImpl
-	 * @see Competition.impl.CompetitionPackageImpl#getScore()
+	 * @see competition.impl.ScoreImpl
+	 * @see competition.impl.CompetitionPackageImpl#getScore()
 	 * @generated
 	 */
 	int SCORE = 6;
@@ -707,11 +704,11 @@ public interface CompetitionPackage extends EPackage {
 	int SCORE_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link Competition.impl.GoalImpl <em>Goal</em>}' class.
+	 * The meta object id for the '{@link competition.impl.GoalImpl <em>Goal</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see Competition.impl.GoalImpl
-	 * @see Competition.impl.CompetitionPackageImpl#getGoal()
+	 * @see competition.impl.GoalImpl
+	 * @see competition.impl.CompetitionPackageImpl#getGoal()
 	 * @generated
 	 */
 	int GOAL = 7;
@@ -735,40 +732,40 @@ public interface CompetitionPackage extends EPackage {
 	int GOAL__EXTRA_TIME = 1;
 
 	/**
-	 * The feature id for the '<em><b>Team</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int GOAL__TEAM = 2;
-
-	/**
-	 * The feature id for the '<em><b>Scorer</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int GOAL__SCORER = 3;
-
-	/**
-	 * The feature id for the '<em><b>Assist</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int GOAL__ASSIST = 4;
-
-	/**
 	 * The feature id for the '<em><b>Match</b></em>' container reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int GOAL__MATCH = 5;
+	int GOAL__MATCH = 2;
+
+	/**
+	 * The feature id for the '<em><b>Team</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GOAL__TEAM = 3;
+
+	/**
+	 * The feature id for the '<em><b>Scorer</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GOAL__SCORER = 4;
+
+	/**
+	 * The feature id for the '<em><b>Assist</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GOAL__ASSIST = 5;
 
 	/**
 	 * The number of structural features of the '<em>Goal</em>' class.
@@ -789,11 +786,11 @@ public interface CompetitionPackage extends EPackage {
 	int GOAL_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link Competition.impl.BookingImpl <em>Booking</em>}' class.
+	 * The meta object id for the '{@link competition.impl.BookingImpl <em>Booking</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see Competition.impl.BookingImpl
-	 * @see Competition.impl.CompetitionPackageImpl#getBooking()
+	 * @see competition.impl.BookingImpl
+	 * @see competition.impl.CompetitionPackageImpl#getBooking()
 	 * @generated
 	 */
 	int BOOKING = 8;
@@ -808,31 +805,13 @@ public interface CompetitionPackage extends EPackage {
 	int BOOKING__MINUTE = 0;
 
 	/**
-	 * The feature id for the '<em><b>Team</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BOOKING__TEAM = 1;
-
-	/**
-	 * The feature id for the '<em><b>Player</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BOOKING__PLAYER = 2;
-
-	/**
 	 * The feature id for the '<em><b>Card</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int BOOKING__CARD = 3;
+	int BOOKING__CARD = 1;
 
 	/**
 	 * The feature id for the '<em><b>Match</b></em>' container reference.
@@ -841,7 +820,25 @@ public interface CompetitionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BOOKING__MATCH = 4;
+	int BOOKING__MATCH = 2;
+
+	/**
+	 * The feature id for the '<em><b>Team</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BOOKING__TEAM = 3;
+
+	/**
+	 * The feature id for the '<em><b>Player</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BOOKING__PLAYER = 4;
 
 	/**
 	 * The number of structural features of the '<em>Booking</em>' class.
@@ -862,11 +859,11 @@ public interface CompetitionPackage extends EPackage {
 	int BOOKING_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link Competition.impl.SubstitutionImpl <em>Substitution</em>}' class.
+	 * The meta object id for the '{@link competition.impl.SubstitutionImpl <em>Substitution</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see Competition.impl.SubstitutionImpl
-	 * @see Competition.impl.CompetitionPackageImpl#getSubstitution()
+	 * @see competition.impl.SubstitutionImpl
+	 * @see competition.impl.CompetitionPackageImpl#getSubstitution()
 	 * @generated
 	 */
 	int SUBSTITUTION = 9;
@@ -881,16 +878,16 @@ public interface CompetitionPackage extends EPackage {
 	int SUBSTITUTION__MINUTE = 0;
 
 	/**
-	 * The feature id for the '<em><b>Team</b></em>' attribute.
+	 * The feature id for the '<em><b>Match</b></em>' container reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSTITUTION__TEAM = 1;
+	int SUBSTITUTION__MATCH = 1;
 
 	/**
-	 * The feature id for the '<em><b>Player Out</b></em>' attribute.
+	 * The feature id for the '<em><b>Player Out</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -899,7 +896,7 @@ public interface CompetitionPackage extends EPackage {
 	int SUBSTITUTION__PLAYER_OUT = 2;
 
 	/**
-	 * The feature id for the '<em><b>Player In</b></em>' attribute.
+	 * The feature id for the '<em><b>Player In</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -908,13 +905,13 @@ public interface CompetitionPackage extends EPackage {
 	int SUBSTITUTION__PLAYER_IN = 3;
 
 	/**
-	 * The feature id for the '<em><b>Match</b></em>' container reference.
+	 * The feature id for the '<em><b>Team</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSTITUTION__MATCH = 4;
+	int SUBSTITUTION__TEAM = 4;
 
 	/**
 	 * The number of structural features of the '<em>Substitution</em>' class.
@@ -935,908 +932,908 @@ public interface CompetitionPackage extends EPackage {
 	int SUBSTITUTION_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link Competition.Role <em>Role</em>}' enum.
+	 * The meta object id for the '{@link competition.Role <em>Role</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see Competition.Role
-	 * @see Competition.impl.CompetitionPackageImpl#getRole()
+	 * @see competition.Role
+	 * @see competition.impl.CompetitionPackageImpl#getRole()
 	 * @generated
 	 */
 	int ROLE = 10;
 
 	/**
-	 * The meta object id for the '{@link Competition.Status <em>Status</em>}' enum.
+	 * The meta object id for the '{@link competition.Status <em>Status</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see Competition.Status
-	 * @see Competition.impl.CompetitionPackageImpl#getStatus()
+	 * @see competition.Status
+	 * @see competition.impl.CompetitionPackageImpl#getStatus()
 	 * @generated
 	 */
 	int STATUS = 11;
 
 	/**
-	 * The meta object id for the '{@link Competition.Winner <em>Winner</em>}' enum.
+	 * The meta object id for the '{@link competition.Winner <em>Winner</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see Competition.Winner
-	 * @see Competition.impl.CompetitionPackageImpl#getWinner()
+	 * @see competition.Winner
+	 * @see competition.impl.CompetitionPackageImpl#getWinner()
 	 * @generated
 	 */
 	int WINNER = 12;
 
 	/**
-	 * The meta object id for the '{@link Competition.Card <em>Card</em>}' enum.
+	 * The meta object id for the '{@link competition.Card <em>Card</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see Competition.Card
-	 * @see Competition.impl.CompetitionPackageImpl#getCard()
+	 * @see competition.Card
+	 * @see competition.impl.CompetitionPackageImpl#getCard()
 	 * @generated
 	 */
 	int CARD = 13;
 
 
 	/**
-	 * Returns the meta object for class '{@link Competition.Competition <em>Competition</em>}'.
+	 * Returns the meta object for class '{@link competition.Competition <em>Competition</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Competition</em>'.
-	 * @see Competition.Competition
+	 * @see competition.Competition
 	 * @generated
 	 */
 	EClass getCompetition();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Competition.Competition#getId <em>Id</em>}'.
+	 * Returns the meta object for the attribute '{@link competition.Competition#getId <em>Id</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Id</em>'.
-	 * @see Competition.Competition#getId()
+	 * @see competition.Competition#getId()
 	 * @see #getCompetition()
 	 * @generated
 	 */
 	EAttribute getCompetition_Id();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Competition.Competition#getName <em>Name</em>}'.
+	 * Returns the meta object for the attribute '{@link competition.Competition#getName <em>Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see Competition.Competition#getName()
+	 * @see competition.Competition#getName()
 	 * @see #getCompetition()
 	 * @generated
 	 */
 	EAttribute getCompetition_Name();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Competition.Competition#getCode <em>Code</em>}'.
+	 * Returns the meta object for the attribute '{@link competition.Competition#getCode <em>Code</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Code</em>'.
-	 * @see Competition.Competition#getCode()
+	 * @see competition.Competition#getCode()
 	 * @see #getCompetition()
 	 * @generated
 	 */
 	EAttribute getCompetition_Code();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Competition.Competition#getPlan <em>Plan</em>}'.
+	 * Returns the meta object for the attribute '{@link competition.Competition#getPlan <em>Plan</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Plan</em>'.
-	 * @see Competition.Competition#getPlan()
+	 * @see competition.Competition#getPlan()
 	 * @see #getCompetition()
 	 * @generated
 	 */
 	EAttribute getCompetition_Plan();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link Competition.Competition#getCurrentSeason <em>Current Season</em>}'.
+	 * Returns the meta object for the containment reference '{@link competition.Competition#getCurrentSeason <em>Current Season</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference '<em>Current Season</em>'.
-	 * @see Competition.Competition#getCurrentSeason()
+	 * @see competition.Competition#getCurrentSeason()
 	 * @see #getCompetition()
 	 * @generated
 	 */
 	EReference getCompetition_CurrentSeason();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Competition.Competition#getLastUpdated <em>Last Updated</em>}'.
+	 * Returns the meta object for the attribute '{@link competition.Competition#getLastUpdated <em>Last Updated</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Last Updated</em>'.
-	 * @see Competition.Competition#getLastUpdated()
+	 * @see competition.Competition#getLastUpdated()
 	 * @see #getCompetition()
 	 * @generated
 	 */
 	EAttribute getCompetition_LastUpdated();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link Competition.Competition#getTeams <em>Teams</em>}'.
+	 * Returns the meta object for the containment reference list '{@link competition.Competition#getTeams <em>Teams</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference list '<em>Teams</em>'.
-	 * @see Competition.Competition#getTeams()
+	 * @see competition.Competition#getTeams()
 	 * @see #getCompetition()
 	 * @generated
 	 */
 	EReference getCompetition_Teams();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Competition.Competition#getArea <em>Area</em>}'.
+	 * Returns the meta object for the attribute '{@link competition.Competition#getArea <em>Area</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Area</em>'.
-	 * @see Competition.Competition#getArea()
+	 * @see competition.Competition#getArea()
 	 * @see #getCompetition()
 	 * @generated
 	 */
 	EAttribute getCompetition_Area();
 
 	/**
-	 * Returns the meta object for class '{@link Competition.Season <em>Season</em>}'.
+	 * Returns the meta object for class '{@link competition.Season <em>Season</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Season</em>'.
-	 * @see Competition.Season
+	 * @see competition.Season
 	 * @generated
 	 */
 	EClass getSeason();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Competition.Season#getId <em>Id</em>}'.
+	 * Returns the meta object for the attribute '{@link competition.Season#getId <em>Id</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Id</em>'.
-	 * @see Competition.Season#getId()
+	 * @see competition.Season#getId()
 	 * @see #getSeason()
 	 * @generated
 	 */
 	EAttribute getSeason_Id();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Competition.Season#getStartDate <em>Start Date</em>}'.
+	 * Returns the meta object for the attribute '{@link competition.Season#getStartDate <em>Start Date</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Start Date</em>'.
-	 * @see Competition.Season#getStartDate()
+	 * @see competition.Season#getStartDate()
 	 * @see #getSeason()
 	 * @generated
 	 */
 	EAttribute getSeason_StartDate();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Competition.Season#getEndDate <em>End Date</em>}'.
+	 * Returns the meta object for the attribute '{@link competition.Season#getEndDate <em>End Date</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>End Date</em>'.
-	 * @see Competition.Season#getEndDate()
+	 * @see competition.Season#getEndDate()
 	 * @see #getSeason()
 	 * @generated
 	 */
 	EAttribute getSeason_EndDate();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Competition.Season#getCurrentMatchday <em>Current Matchday</em>}'.
+	 * Returns the meta object for the attribute '{@link competition.Season#getCurrentMatchday <em>Current Matchday</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Current Matchday</em>'.
-	 * @see Competition.Season#getCurrentMatchday()
+	 * @see competition.Season#getCurrentMatchday()
 	 * @see #getSeason()
 	 * @generated
 	 */
 	EAttribute getSeason_CurrentMatchday();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link Competition.Season#getMatches <em>Matches</em>}'.
+	 * Returns the meta object for the containment reference list '{@link competition.Season#getMatches <em>Matches</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference list '<em>Matches</em>'.
-	 * @see Competition.Season#getMatches()
+	 * @see competition.Season#getMatches()
 	 * @see #getSeason()
 	 * @generated
 	 */
 	EReference getSeason_Matches();
 
 	/**
-	 * Returns the meta object for the container reference '{@link Competition.Season#getCompetition <em>Competition</em>}'.
+	 * Returns the meta object for the container reference '{@link competition.Season#getCompetition <em>Competition</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the container reference '<em>Competition</em>'.
-	 * @see Competition.Season#getCompetition()
+	 * @see competition.Season#getCompetition()
 	 * @see #getSeason()
 	 * @generated
 	 */
 	EReference getSeason_Competition();
 
 	/**
-	 * Returns the meta object for class '{@link Competition.Team <em>Team</em>}'.
+	 * Returns the meta object for class '{@link competition.Team <em>Team</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Team</em>'.
-	 * @see Competition.Team
+	 * @see competition.Team
 	 * @generated
 	 */
 	EClass getTeam();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Competition.Team#getId <em>Id</em>}'.
+	 * Returns the meta object for the attribute '{@link competition.Team#getId <em>Id</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Id</em>'.
-	 * @see Competition.Team#getId()
+	 * @see competition.Team#getId()
 	 * @see #getTeam()
 	 * @generated
 	 */
 	EAttribute getTeam_Id();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Competition.Team#getName <em>Name</em>}'.
+	 * Returns the meta object for the attribute '{@link competition.Team#getName <em>Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see Competition.Team#getName()
+	 * @see competition.Team#getName()
 	 * @see #getTeam()
 	 * @generated
 	 */
 	EAttribute getTeam_Name();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Competition.Team#getShortName <em>Short Name</em>}'.
+	 * Returns the meta object for the attribute '{@link competition.Team#getShortName <em>Short Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Short Name</em>'.
-	 * @see Competition.Team#getShortName()
+	 * @see competition.Team#getShortName()
 	 * @see #getTeam()
 	 * @generated
 	 */
 	EAttribute getTeam_ShortName();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Competition.Team#getTla <em>Tla</em>}'.
+	 * Returns the meta object for the attribute '{@link competition.Team#getTla <em>Tla</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Tla</em>'.
-	 * @see Competition.Team#getTla()
+	 * @see competition.Team#getTla()
 	 * @see #getTeam()
 	 * @generated
 	 */
 	EAttribute getTeam_Tla();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Competition.Team#getFounded <em>Founded</em>}'.
+	 * Returns the meta object for the attribute '{@link competition.Team#getFounded <em>Founded</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Founded</em>'.
-	 * @see Competition.Team#getFounded()
+	 * @see competition.Team#getFounded()
 	 * @see #getTeam()
 	 * @generated
 	 */
 	EAttribute getTeam_Founded();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Competition.Team#getClubColors <em>Club Colors</em>}'.
+	 * Returns the meta object for the attribute '{@link competition.Team#getClubColors <em>Club Colors</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Club Colors</em>'.
-	 * @see Competition.Team#getClubColors()
+	 * @see competition.Team#getClubColors()
 	 * @see #getTeam()
 	 * @generated
 	 */
 	EAttribute getTeam_ClubColors();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link Competition.Team#getSquad <em>Squad</em>}'.
+	 * Returns the meta object for the containment reference list '{@link competition.Team#getSquad <em>Squad</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference list '<em>Squad</em>'.
-	 * @see Competition.Team#getSquad()
+	 * @see competition.Team#getSquad()
 	 * @see #getTeam()
 	 * @generated
 	 */
 	EReference getTeam_Squad();
 
 	/**
-	 * Returns the meta object for class '{@link Competition.Person <em>Person</em>}'.
+	 * Returns the meta object for class '{@link competition.Person <em>Person</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Person</em>'.
-	 * @see Competition.Person
+	 * @see competition.Person
 	 * @generated
 	 */
 	EClass getPerson();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Competition.Person#getId <em>Id</em>}'.
+	 * Returns the meta object for the attribute '{@link competition.Person#getId <em>Id</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Id</em>'.
-	 * @see Competition.Person#getId()
+	 * @see competition.Person#getId()
 	 * @see #getPerson()
 	 * @generated
 	 */
 	EAttribute getPerson_Id();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Competition.Person#getName <em>Name</em>}'.
+	 * Returns the meta object for the attribute '{@link competition.Person#getName <em>Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see Competition.Person#getName()
+	 * @see competition.Person#getName()
 	 * @see #getPerson()
 	 * @generated
 	 */
 	EAttribute getPerson_Name();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Competition.Person#getPosition <em>Position</em>}'.
+	 * Returns the meta object for the attribute '{@link competition.Person#getPosition <em>Position</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Position</em>'.
-	 * @see Competition.Person#getPosition()
+	 * @see competition.Person#getPosition()
 	 * @see #getPerson()
 	 * @generated
 	 */
 	EAttribute getPerson_Position();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Competition.Person#getDateOfBirth <em>Date Of Birth</em>}'.
+	 * Returns the meta object for the attribute '{@link competition.Person#getDateOfBirth <em>Date Of Birth</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Date Of Birth</em>'.
-	 * @see Competition.Person#getDateOfBirth()
+	 * @see competition.Person#getDateOfBirth()
 	 * @see #getPerson()
 	 * @generated
 	 */
 	EAttribute getPerson_DateOfBirth();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Competition.Person#getNationality <em>Nationality</em>}'.
+	 * Returns the meta object for the attribute '{@link competition.Person#getNationality <em>Nationality</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Nationality</em>'.
-	 * @see Competition.Person#getNationality()
+	 * @see competition.Person#getNationality()
 	 * @see #getPerson()
 	 * @generated
 	 */
 	EAttribute getPerson_Nationality();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Competition.Person#getRole <em>Role</em>}'.
+	 * Returns the meta object for the attribute '{@link competition.Person#getRole <em>Role</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Role</em>'.
-	 * @see Competition.Person#getRole()
+	 * @see competition.Person#getRole()
 	 * @see #getPerson()
 	 * @generated
 	 */
 	EAttribute getPerson_Role();
 
 	/**
-	 * Returns the meta object for class '{@link Competition.Match <em>Match</em>}'.
+	 * Returns the meta object for class '{@link competition.Match <em>Match</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Match</em>'.
-	 * @see Competition.Match
+	 * @see competition.Match
 	 * @generated
 	 */
 	EClass getMatch();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Competition.Match#getId <em>Id</em>}'.
+	 * Returns the meta object for the attribute '{@link competition.Match#getId <em>Id</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Id</em>'.
-	 * @see Competition.Match#getId()
+	 * @see competition.Match#getId()
 	 * @see #getMatch()
 	 * @generated
 	 */
 	EAttribute getMatch_Id();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Competition.Match#getUtcDate <em>Utc Date</em>}'.
+	 * Returns the meta object for the attribute '{@link competition.Match#getUtcDate <em>Utc Date</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Utc Date</em>'.
-	 * @see Competition.Match#getUtcDate()
+	 * @see competition.Match#getUtcDate()
 	 * @see #getMatch()
 	 * @generated
 	 */
 	EAttribute getMatch_UtcDate();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Competition.Match#getStatus <em>Status</em>}'.
+	 * Returns the meta object for the attribute '{@link competition.Match#getStatus <em>Status</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Status</em>'.
-	 * @see Competition.Match#getStatus()
+	 * @see competition.Match#getStatus()
 	 * @see #getMatch()
 	 * @generated
 	 */
 	EAttribute getMatch_Status();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Competition.Match#getMinute <em>Minute</em>}'.
+	 * Returns the meta object for the attribute '{@link competition.Match#getMinute <em>Minute</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Minute</em>'.
-	 * @see Competition.Match#getMinute()
+	 * @see competition.Match#getMinute()
 	 * @see #getMatch()
 	 * @generated
 	 */
 	EAttribute getMatch_Minute();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Competition.Match#getAttendance <em>Attendance</em>}'.
+	 * Returns the meta object for the attribute '{@link competition.Match#getAttendance <em>Attendance</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Attendance</em>'.
-	 * @see Competition.Match#getAttendance()
+	 * @see competition.Match#getAttendance()
 	 * @see #getMatch()
 	 * @generated
 	 */
 	EAttribute getMatch_Attendance();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Competition.Match#getVenue <em>Venue</em>}'.
+	 * Returns the meta object for the attribute '{@link competition.Match#getVenue <em>Venue</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Venue</em>'.
-	 * @see Competition.Match#getVenue()
+	 * @see competition.Match#getVenue()
 	 * @see #getMatch()
 	 * @generated
 	 */
 	EAttribute getMatch_Venue();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Competition.Match#getLastUpdated <em>Last Updated</em>}'.
+	 * Returns the meta object for the attribute '{@link competition.Match#getLastUpdated <em>Last Updated</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Last Updated</em>'.
-	 * @see Competition.Match#getLastUpdated()
+	 * @see competition.Match#getLastUpdated()
 	 * @see #getMatch()
 	 * @generated
 	 */
 	EAttribute getMatch_LastUpdated();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link Competition.Match#getHomeTeam <em>Home Team</em>}'.
+	 * Returns the meta object for the containment reference '{@link competition.Match#getHomeTeam <em>Home Team</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference '<em>Home Team</em>'.
-	 * @see Competition.Match#getHomeTeam()
+	 * @see competition.Match#getHomeTeam()
 	 * @see #getMatch()
 	 * @generated
 	 */
 	EReference getMatch_HomeTeam();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link Competition.Match#getAwayTeam <em>Away Team</em>}'.
+	 * Returns the meta object for the containment reference '{@link competition.Match#getAwayTeam <em>Away Team</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference '<em>Away Team</em>'.
-	 * @see Competition.Match#getAwayTeam()
+	 * @see competition.Match#getAwayTeam()
 	 * @see #getMatch()
 	 * @generated
 	 */
 	EReference getMatch_AwayTeam();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link Competition.Match#getScore <em>Score</em>}'.
+	 * Returns the meta object for the containment reference '{@link competition.Match#getScore <em>Score</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference '<em>Score</em>'.
-	 * @see Competition.Match#getScore()
+	 * @see competition.Match#getScore()
 	 * @see #getMatch()
 	 * @generated
 	 */
 	EReference getMatch_Score();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link Competition.Match#getGoals <em>Goals</em>}'.
+	 * Returns the meta object for the containment reference list '{@link competition.Match#getGoals <em>Goals</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference list '<em>Goals</em>'.
-	 * @see Competition.Match#getGoals()
+	 * @see competition.Match#getGoals()
 	 * @see #getMatch()
 	 * @generated
 	 */
 	EReference getMatch_Goals();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link Competition.Match#getBookings <em>Bookings</em>}'.
+	 * Returns the meta object for the containment reference list '{@link competition.Match#getBookings <em>Bookings</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference list '<em>Bookings</em>'.
-	 * @see Competition.Match#getBookings()
+	 * @see competition.Match#getBookings()
 	 * @see #getMatch()
 	 * @generated
 	 */
 	EReference getMatch_Bookings();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link Competition.Match#getSubstitutions <em>Substitutions</em>}'.
+	 * Returns the meta object for the containment reference list '{@link competition.Match#getSubstitutions <em>Substitutions</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference list '<em>Substitutions</em>'.
-	 * @see Competition.Match#getSubstitutions()
+	 * @see competition.Match#getSubstitutions()
 	 * @see #getMatch()
 	 * @generated
 	 */
 	EReference getMatch_Substitutions();
 
 	/**
-	 * Returns the meta object for the container reference '{@link Competition.Match#getSeason <em>Season</em>}'.
+	 * Returns the meta object for the container reference '{@link competition.Match#getSeason <em>Season</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the container reference '<em>Season</em>'.
-	 * @see Competition.Match#getSeason()
+	 * @see competition.Match#getSeason()
 	 * @see #getMatch()
 	 * @generated
 	 */
 	EReference getMatch_Season();
 
 	/**
-	 * Returns the meta object for class '{@link Competition.MatchTeam <em>Match Team</em>}'.
+	 * Returns the meta object for class '{@link competition.MatchTeam <em>Match Team</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Match Team</em>'.
-	 * @see Competition.MatchTeam
+	 * @see competition.MatchTeam
 	 * @generated
 	 */
 	EClass getMatchTeam();
 
 	/**
-	 * Returns the meta object for the reference '{@link Competition.MatchTeam#getTeam <em>Team</em>}'.
+	 * Returns the meta object for the reference '{@link competition.MatchTeam#getTeam <em>Team</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Team</em>'.
-	 * @see Competition.MatchTeam#getTeam()
+	 * @see competition.MatchTeam#getTeam()
 	 * @see #getMatchTeam()
 	 * @generated
 	 */
 	EReference getMatchTeam_Team();
 
 	/**
-	 * Returns the meta object for the reference '{@link Competition.MatchTeam#getCoach <em>Coach</em>}'.
+	 * Returns the meta object for the reference '{@link competition.MatchTeam#getCoach <em>Coach</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Coach</em>'.
-	 * @see Competition.MatchTeam#getCoach()
+	 * @see competition.MatchTeam#getCoach()
 	 * @see #getMatchTeam()
 	 * @generated
 	 */
 	EReference getMatchTeam_Coach();
 
 	/**
-	 * Returns the meta object for the reference '{@link Competition.MatchTeam#getCaptain <em>Captain</em>}'.
+	 * Returns the meta object for the reference '{@link competition.MatchTeam#getCaptain <em>Captain</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Captain</em>'.
-	 * @see Competition.MatchTeam#getCaptain()
+	 * @see competition.MatchTeam#getCaptain()
 	 * @see #getMatchTeam()
 	 * @generated
 	 */
 	EReference getMatchTeam_Captain();
 
 	/**
-	 * Returns the meta object for the reference list '{@link Competition.MatchTeam#getLineup <em>Lineup</em>}'.
+	 * Returns the meta object for the reference list '{@link competition.MatchTeam#getLineup <em>Lineup</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference list '<em>Lineup</em>'.
-	 * @see Competition.MatchTeam#getLineup()
+	 * @see competition.MatchTeam#getLineup()
 	 * @see #getMatchTeam()
 	 * @generated
 	 */
 	EReference getMatchTeam_Lineup();
 
 	/**
-	 * Returns the meta object for the reference list '{@link Competition.MatchTeam#getBench <em>Bench</em>}'.
+	 * Returns the meta object for the reference list '{@link competition.MatchTeam#getBench <em>Bench</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference list '<em>Bench</em>'.
-	 * @see Competition.MatchTeam#getBench()
+	 * @see competition.MatchTeam#getBench()
 	 * @see #getMatchTeam()
 	 * @generated
 	 */
 	EReference getMatchTeam_Bench();
 
 	/**
-	 * Returns the meta object for class '{@link Competition.Score <em>Score</em>}'.
+	 * Returns the meta object for class '{@link competition.Score <em>Score</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Score</em>'.
-	 * @see Competition.Score
+	 * @see competition.Score
 	 * @generated
 	 */
 	EClass getScore();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Competition.Score#getWinner <em>Winner</em>}'.
+	 * Returns the meta object for the attribute '{@link competition.Score#getWinner <em>Winner</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Winner</em>'.
-	 * @see Competition.Score#getWinner()
+	 * @see competition.Score#getWinner()
 	 * @see #getScore()
 	 * @generated
 	 */
 	EAttribute getScore_Winner();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Competition.Score#getHomeTeam <em>Home Team</em>}'.
+	 * Returns the meta object for the attribute '{@link competition.Score#getHomeTeam <em>Home Team</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Home Team</em>'.
-	 * @see Competition.Score#getHomeTeam()
+	 * @see competition.Score#getHomeTeam()
 	 * @see #getScore()
 	 * @generated
 	 */
 	EAttribute getScore_HomeTeam();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Competition.Score#getAwayTeam <em>Away Team</em>}'.
+	 * Returns the meta object for the attribute '{@link competition.Score#getAwayTeam <em>Away Team</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Away Team</em>'.
-	 * @see Competition.Score#getAwayTeam()
+	 * @see competition.Score#getAwayTeam()
 	 * @see #getScore()
 	 * @generated
 	 */
 	EAttribute getScore_AwayTeam();
 
 	/**
-	 * Returns the meta object for the container reference '{@link Competition.Score#getMatch <em>Match</em>}'.
+	 * Returns the meta object for the container reference '{@link competition.Score#getMatch <em>Match</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the container reference '<em>Match</em>'.
-	 * @see Competition.Score#getMatch()
+	 * @see competition.Score#getMatch()
 	 * @see #getScore()
 	 * @generated
 	 */
 	EReference getScore_Match();
 
 	/**
-	 * Returns the meta object for class '{@link Competition.Goal <em>Goal</em>}'.
+	 * Returns the meta object for class '{@link competition.Goal <em>Goal</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Goal</em>'.
-	 * @see Competition.Goal
+	 * @see competition.Goal
 	 * @generated
 	 */
 	EClass getGoal();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Competition.Goal#getMinute <em>Minute</em>}'.
+	 * Returns the meta object for the attribute '{@link competition.Goal#getMinute <em>Minute</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Minute</em>'.
-	 * @see Competition.Goal#getMinute()
+	 * @see competition.Goal#getMinute()
 	 * @see #getGoal()
 	 * @generated
 	 */
 	EAttribute getGoal_Minute();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Competition.Goal#getExtraTime <em>Extra Time</em>}'.
+	 * Returns the meta object for the attribute '{@link competition.Goal#getExtraTime <em>Extra Time</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Extra Time</em>'.
-	 * @see Competition.Goal#getExtraTime()
+	 * @see competition.Goal#getExtraTime()
 	 * @see #getGoal()
 	 * @generated
 	 */
 	EAttribute getGoal_ExtraTime();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Competition.Goal#getTeam <em>Team</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Team</em>'.
-	 * @see Competition.Goal#getTeam()
-	 * @see #getGoal()
-	 * @generated
-	 */
-	EAttribute getGoal_Team();
-
-	/**
-	 * Returns the meta object for the attribute '{@link Competition.Goal#getScorer <em>Scorer</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Scorer</em>'.
-	 * @see Competition.Goal#getScorer()
-	 * @see #getGoal()
-	 * @generated
-	 */
-	EAttribute getGoal_Scorer();
-
-	/**
-	 * Returns the meta object for the attribute '{@link Competition.Goal#getAssist <em>Assist</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Assist</em>'.
-	 * @see Competition.Goal#getAssist()
-	 * @see #getGoal()
-	 * @generated
-	 */
-	EAttribute getGoal_Assist();
-
-	/**
-	 * Returns the meta object for the container reference '{@link Competition.Goal#getMatch <em>Match</em>}'.
+	 * Returns the meta object for the container reference '{@link competition.Goal#getMatch <em>Match</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the container reference '<em>Match</em>'.
-	 * @see Competition.Goal#getMatch()
+	 * @see competition.Goal#getMatch()
 	 * @see #getGoal()
 	 * @generated
 	 */
 	EReference getGoal_Match();
 
 	/**
-	 * Returns the meta object for class '{@link Competition.Booking <em>Booking</em>}'.
+	 * Returns the meta object for the reference '{@link competition.Goal#getTeam <em>Team</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Team</em>'.
+	 * @see competition.Goal#getTeam()
+	 * @see #getGoal()
+	 * @generated
+	 */
+	EReference getGoal_Team();
+
+	/**
+	 * Returns the meta object for the reference '{@link competition.Goal#getScorer <em>Scorer</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Scorer</em>'.
+	 * @see competition.Goal#getScorer()
+	 * @see #getGoal()
+	 * @generated
+	 */
+	EReference getGoal_Scorer();
+
+	/**
+	 * Returns the meta object for the reference '{@link competition.Goal#getAssist <em>Assist</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Assist</em>'.
+	 * @see competition.Goal#getAssist()
+	 * @see #getGoal()
+	 * @generated
+	 */
+	EReference getGoal_Assist();
+
+	/**
+	 * Returns the meta object for class '{@link competition.Booking <em>Booking</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Booking</em>'.
-	 * @see Competition.Booking
+	 * @see competition.Booking
 	 * @generated
 	 */
 	EClass getBooking();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Competition.Booking#getMinute <em>Minute</em>}'.
+	 * Returns the meta object for the attribute '{@link competition.Booking#getMinute <em>Minute</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Minute</em>'.
-	 * @see Competition.Booking#getMinute()
+	 * @see competition.Booking#getMinute()
 	 * @see #getBooking()
 	 * @generated
 	 */
 	EAttribute getBooking_Minute();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Competition.Booking#getTeam <em>Team</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Team</em>'.
-	 * @see Competition.Booking#getTeam()
-	 * @see #getBooking()
-	 * @generated
-	 */
-	EAttribute getBooking_Team();
-
-	/**
-	 * Returns the meta object for the attribute '{@link Competition.Booking#getPlayer <em>Player</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Player</em>'.
-	 * @see Competition.Booking#getPlayer()
-	 * @see #getBooking()
-	 * @generated
-	 */
-	EAttribute getBooking_Player();
-
-	/**
-	 * Returns the meta object for the attribute '{@link Competition.Booking#getCard <em>Card</em>}'.
+	 * Returns the meta object for the attribute '{@link competition.Booking#getCard <em>Card</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Card</em>'.
-	 * @see Competition.Booking#getCard()
+	 * @see competition.Booking#getCard()
 	 * @see #getBooking()
 	 * @generated
 	 */
 	EAttribute getBooking_Card();
 
 	/**
-	 * Returns the meta object for the container reference '{@link Competition.Booking#getMatch <em>Match</em>}'.
+	 * Returns the meta object for the container reference '{@link competition.Booking#getMatch <em>Match</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the container reference '<em>Match</em>'.
-	 * @see Competition.Booking#getMatch()
+	 * @see competition.Booking#getMatch()
 	 * @see #getBooking()
 	 * @generated
 	 */
 	EReference getBooking_Match();
 
 	/**
-	 * Returns the meta object for class '{@link Competition.Substitution <em>Substitution</em>}'.
+	 * Returns the meta object for the reference '{@link competition.Booking#getTeam <em>Team</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Team</em>'.
+	 * @see competition.Booking#getTeam()
+	 * @see #getBooking()
+	 * @generated
+	 */
+	EReference getBooking_Team();
+
+	/**
+	 * Returns the meta object for the reference '{@link competition.Booking#getPlayer <em>Player</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Player</em>'.
+	 * @see competition.Booking#getPlayer()
+	 * @see #getBooking()
+	 * @generated
+	 */
+	EReference getBooking_Player();
+
+	/**
+	 * Returns the meta object for class '{@link competition.Substitution <em>Substitution</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Substitution</em>'.
-	 * @see Competition.Substitution
+	 * @see competition.Substitution
 	 * @generated
 	 */
 	EClass getSubstitution();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Competition.Substitution#getMinute <em>Minute</em>}'.
+	 * Returns the meta object for the attribute '{@link competition.Substitution#getMinute <em>Minute</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Minute</em>'.
-	 * @see Competition.Substitution#getMinute()
+	 * @see competition.Substitution#getMinute()
 	 * @see #getSubstitution()
 	 * @generated
 	 */
 	EAttribute getSubstitution_Minute();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Competition.Substitution#getTeam <em>Team</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Team</em>'.
-	 * @see Competition.Substitution#getTeam()
-	 * @see #getSubstitution()
-	 * @generated
-	 */
-	EAttribute getSubstitution_Team();
-
-	/**
-	 * Returns the meta object for the attribute '{@link Competition.Substitution#getPlayerOut <em>Player Out</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Player Out</em>'.
-	 * @see Competition.Substitution#getPlayerOut()
-	 * @see #getSubstitution()
-	 * @generated
-	 */
-	EAttribute getSubstitution_PlayerOut();
-
-	/**
-	 * Returns the meta object for the attribute '{@link Competition.Substitution#getPlayerIn <em>Player In</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Player In</em>'.
-	 * @see Competition.Substitution#getPlayerIn()
-	 * @see #getSubstitution()
-	 * @generated
-	 */
-	EAttribute getSubstitution_PlayerIn();
-
-	/**
-	 * Returns the meta object for the container reference '{@link Competition.Substitution#getMatch <em>Match</em>}'.
+	 * Returns the meta object for the container reference '{@link competition.Substitution#getMatch <em>Match</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the container reference '<em>Match</em>'.
-	 * @see Competition.Substitution#getMatch()
+	 * @see competition.Substitution#getMatch()
 	 * @see #getSubstitution()
 	 * @generated
 	 */
 	EReference getSubstitution_Match();
 
 	/**
-	 * Returns the meta object for enum '{@link Competition.Role <em>Role</em>}'.
+	 * Returns the meta object for the reference '{@link competition.Substitution#getPlayerOut <em>Player Out</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Player Out</em>'.
+	 * @see competition.Substitution#getPlayerOut()
+	 * @see #getSubstitution()
+	 * @generated
+	 */
+	EReference getSubstitution_PlayerOut();
+
+	/**
+	 * Returns the meta object for the reference '{@link competition.Substitution#getPlayerIn <em>Player In</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Player In</em>'.
+	 * @see competition.Substitution#getPlayerIn()
+	 * @see #getSubstitution()
+	 * @generated
+	 */
+	EReference getSubstitution_PlayerIn();
+
+	/**
+	 * Returns the meta object for the reference '{@link competition.Substitution#getTeam <em>Team</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Team</em>'.
+	 * @see competition.Substitution#getTeam()
+	 * @see #getSubstitution()
+	 * @generated
+	 */
+	EReference getSubstitution_Team();
+
+	/**
+	 * Returns the meta object for enum '{@link competition.Role <em>Role</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for enum '<em>Role</em>'.
-	 * @see Competition.Role
+	 * @see competition.Role
 	 * @generated
 	 */
 	EEnum getRole();
 
 	/**
-	 * Returns the meta object for enum '{@link Competition.Status <em>Status</em>}'.
+	 * Returns the meta object for enum '{@link competition.Status <em>Status</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for enum '<em>Status</em>'.
-	 * @see Competition.Status
+	 * @see competition.Status
 	 * @generated
 	 */
 	EEnum getStatus();
 
 	/**
-	 * Returns the meta object for enum '{@link Competition.Winner <em>Winner</em>}'.
+	 * Returns the meta object for enum '{@link competition.Winner <em>Winner</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for enum '<em>Winner</em>'.
-	 * @see Competition.Winner
+	 * @see competition.Winner
 	 * @generated
 	 */
 	EEnum getWinner();
 
 	/**
-	 * Returns the meta object for enum '{@link Competition.Card <em>Card</em>}'.
+	 * Returns the meta object for enum '{@link competition.Card <em>Card</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for enum '<em>Card</em>'.
-	 * @see Competition.Card
+	 * @see competition.Card
 	 * @generated
 	 */
 	EEnum getCard();
@@ -1865,11 +1862,11 @@ public interface CompetitionPackage extends EPackage {
 	 */
 	interface Literals {
 		/**
-		 * The meta object literal for the '{@link Competition.impl.CompetitionImpl <em>Competition</em>}' class.
+		 * The meta object literal for the '{@link competition.impl.CompetitionImpl <em>Competition</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see Competition.impl.CompetitionImpl
-		 * @see Competition.impl.CompetitionPackageImpl#getCompetition()
+		 * @see competition.impl.CompetitionImpl
+		 * @see competition.impl.CompetitionPackageImpl#getCompetition()
 		 * @generated
 		 */
 		EClass COMPETITION = eINSTANCE.getCompetition();
@@ -1939,11 +1936,11 @@ public interface CompetitionPackage extends EPackage {
 		EAttribute COMPETITION__AREA = eINSTANCE.getCompetition_Area();
 
 		/**
-		 * The meta object literal for the '{@link Competition.impl.SeasonImpl <em>Season</em>}' class.
+		 * The meta object literal for the '{@link competition.impl.SeasonImpl <em>Season</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see Competition.impl.SeasonImpl
-		 * @see Competition.impl.CompetitionPackageImpl#getSeason()
+		 * @see competition.impl.SeasonImpl
+		 * @see competition.impl.CompetitionPackageImpl#getSeason()
 		 * @generated
 		 */
 		EClass SEASON = eINSTANCE.getSeason();
@@ -1997,11 +1994,11 @@ public interface CompetitionPackage extends EPackage {
 		EReference SEASON__COMPETITION = eINSTANCE.getSeason_Competition();
 
 		/**
-		 * The meta object literal for the '{@link Competition.impl.TeamImpl <em>Team</em>}' class.
+		 * The meta object literal for the '{@link competition.impl.TeamImpl <em>Team</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see Competition.impl.TeamImpl
-		 * @see Competition.impl.CompetitionPackageImpl#getTeam()
+		 * @see competition.impl.TeamImpl
+		 * @see competition.impl.CompetitionPackageImpl#getTeam()
 		 * @generated
 		 */
 		EClass TEAM = eINSTANCE.getTeam();
@@ -2063,11 +2060,11 @@ public interface CompetitionPackage extends EPackage {
 		EReference TEAM__SQUAD = eINSTANCE.getTeam_Squad();
 
 		/**
-		 * The meta object literal for the '{@link Competition.impl.PersonImpl <em>Person</em>}' class.
+		 * The meta object literal for the '{@link competition.impl.PersonImpl <em>Person</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see Competition.impl.PersonImpl
-		 * @see Competition.impl.CompetitionPackageImpl#getPerson()
+		 * @see competition.impl.PersonImpl
+		 * @see competition.impl.CompetitionPackageImpl#getPerson()
 		 * @generated
 		 */
 		EClass PERSON = eINSTANCE.getPerson();
@@ -2121,11 +2118,11 @@ public interface CompetitionPackage extends EPackage {
 		EAttribute PERSON__ROLE = eINSTANCE.getPerson_Role();
 
 		/**
-		 * The meta object literal for the '{@link Competition.impl.MatchImpl <em>Match</em>}' class.
+		 * The meta object literal for the '{@link competition.impl.MatchImpl <em>Match</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see Competition.impl.MatchImpl
-		 * @see Competition.impl.CompetitionPackageImpl#getMatch()
+		 * @see competition.impl.MatchImpl
+		 * @see competition.impl.CompetitionPackageImpl#getMatch()
 		 * @generated
 		 */
 		EClass MATCH = eINSTANCE.getMatch();
@@ -2243,11 +2240,11 @@ public interface CompetitionPackage extends EPackage {
 		EReference MATCH__SEASON = eINSTANCE.getMatch_Season();
 
 		/**
-		 * The meta object literal for the '{@link Competition.impl.MatchTeamImpl <em>Match Team</em>}' class.
+		 * The meta object literal for the '{@link competition.impl.MatchTeamImpl <em>Match Team</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see Competition.impl.MatchTeamImpl
-		 * @see Competition.impl.CompetitionPackageImpl#getMatchTeam()
+		 * @see competition.impl.MatchTeamImpl
+		 * @see competition.impl.CompetitionPackageImpl#getMatchTeam()
 		 * @generated
 		 */
 		EClass MATCH_TEAM = eINSTANCE.getMatchTeam();
@@ -2293,11 +2290,11 @@ public interface CompetitionPackage extends EPackage {
 		EReference MATCH_TEAM__BENCH = eINSTANCE.getMatchTeam_Bench();
 
 		/**
-		 * The meta object literal for the '{@link Competition.impl.ScoreImpl <em>Score</em>}' class.
+		 * The meta object literal for the '{@link competition.impl.ScoreImpl <em>Score</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see Competition.impl.ScoreImpl
-		 * @see Competition.impl.CompetitionPackageImpl#getScore()
+		 * @see competition.impl.ScoreImpl
+		 * @see competition.impl.CompetitionPackageImpl#getScore()
 		 * @generated
 		 */
 		EClass SCORE = eINSTANCE.getScore();
@@ -2335,11 +2332,11 @@ public interface CompetitionPackage extends EPackage {
 		EReference SCORE__MATCH = eINSTANCE.getScore_Match();
 
 		/**
-		 * The meta object literal for the '{@link Competition.impl.GoalImpl <em>Goal</em>}' class.
+		 * The meta object literal for the '{@link competition.impl.GoalImpl <em>Goal</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see Competition.impl.GoalImpl
-		 * @see Competition.impl.CompetitionPackageImpl#getGoal()
+		 * @see competition.impl.GoalImpl
+		 * @see competition.impl.CompetitionPackageImpl#getGoal()
 		 * @generated
 		 */
 		EClass GOAL = eINSTANCE.getGoal();
@@ -2361,30 +2358,6 @@ public interface CompetitionPackage extends EPackage {
 		EAttribute GOAL__EXTRA_TIME = eINSTANCE.getGoal_ExtraTime();
 
 		/**
-		 * The meta object literal for the '<em><b>Team</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute GOAL__TEAM = eINSTANCE.getGoal_Team();
-
-		/**
-		 * The meta object literal for the '<em><b>Scorer</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute GOAL__SCORER = eINSTANCE.getGoal_Scorer();
-
-		/**
-		 * The meta object literal for the '<em><b>Assist</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute GOAL__ASSIST = eINSTANCE.getGoal_Assist();
-
-		/**
 		 * The meta object literal for the '<em><b>Match</b></em>' container reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2393,11 +2366,35 @@ public interface CompetitionPackage extends EPackage {
 		EReference GOAL__MATCH = eINSTANCE.getGoal_Match();
 
 		/**
-		 * The meta object literal for the '{@link Competition.impl.BookingImpl <em>Booking</em>}' class.
+		 * The meta object literal for the '<em><b>Team</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see Competition.impl.BookingImpl
-		 * @see Competition.impl.CompetitionPackageImpl#getBooking()
+		 * @generated
+		 */
+		EReference GOAL__TEAM = eINSTANCE.getGoal_Team();
+
+		/**
+		 * The meta object literal for the '<em><b>Scorer</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GOAL__SCORER = eINSTANCE.getGoal_Scorer();
+
+		/**
+		 * The meta object literal for the '<em><b>Assist</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GOAL__ASSIST = eINSTANCE.getGoal_Assist();
+
+		/**
+		 * The meta object literal for the '{@link competition.impl.BookingImpl <em>Booking</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see competition.impl.BookingImpl
+		 * @see competition.impl.CompetitionPackageImpl#getBooking()
 		 * @generated
 		 */
 		EClass BOOKING = eINSTANCE.getBooking();
@@ -2409,22 +2406,6 @@ public interface CompetitionPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute BOOKING__MINUTE = eINSTANCE.getBooking_Minute();
-
-		/**
-		 * The meta object literal for the '<em><b>Team</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute BOOKING__TEAM = eINSTANCE.getBooking_Team();
-
-		/**
-		 * The meta object literal for the '<em><b>Player</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute BOOKING__PLAYER = eINSTANCE.getBooking_Player();
 
 		/**
 		 * The meta object literal for the '<em><b>Card</b></em>' attribute feature.
@@ -2443,11 +2424,27 @@ public interface CompetitionPackage extends EPackage {
 		EReference BOOKING__MATCH = eINSTANCE.getBooking_Match();
 
 		/**
-		 * The meta object literal for the '{@link Competition.impl.SubstitutionImpl <em>Substitution</em>}' class.
+		 * The meta object literal for the '<em><b>Team</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see Competition.impl.SubstitutionImpl
-		 * @see Competition.impl.CompetitionPackageImpl#getSubstitution()
+		 * @generated
+		 */
+		EReference BOOKING__TEAM = eINSTANCE.getBooking_Team();
+
+		/**
+		 * The meta object literal for the '<em><b>Player</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference BOOKING__PLAYER = eINSTANCE.getBooking_Player();
+
+		/**
+		 * The meta object literal for the '{@link competition.impl.SubstitutionImpl <em>Substitution</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see competition.impl.SubstitutionImpl
+		 * @see competition.impl.CompetitionPackageImpl#getSubstitution()
 		 * @generated
 		 */
 		EClass SUBSTITUTION = eINSTANCE.getSubstitution();
@@ -2461,30 +2458,6 @@ public interface CompetitionPackage extends EPackage {
 		EAttribute SUBSTITUTION__MINUTE = eINSTANCE.getSubstitution_Minute();
 
 		/**
-		 * The meta object literal for the '<em><b>Team</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute SUBSTITUTION__TEAM = eINSTANCE.getSubstitution_Team();
-
-		/**
-		 * The meta object literal for the '<em><b>Player Out</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute SUBSTITUTION__PLAYER_OUT = eINSTANCE.getSubstitution_PlayerOut();
-
-		/**
-		 * The meta object literal for the '<em><b>Player In</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute SUBSTITUTION__PLAYER_IN = eINSTANCE.getSubstitution_PlayerIn();
-
-		/**
 		 * The meta object literal for the '<em><b>Match</b></em>' container reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2493,41 +2466,65 @@ public interface CompetitionPackage extends EPackage {
 		EReference SUBSTITUTION__MATCH = eINSTANCE.getSubstitution_Match();
 
 		/**
-		 * The meta object literal for the '{@link Competition.Role <em>Role</em>}' enum.
+		 * The meta object literal for the '<em><b>Player Out</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see Competition.Role
-		 * @see Competition.impl.CompetitionPackageImpl#getRole()
+		 * @generated
+		 */
+		EReference SUBSTITUTION__PLAYER_OUT = eINSTANCE.getSubstitution_PlayerOut();
+
+		/**
+		 * The meta object literal for the '<em><b>Player In</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SUBSTITUTION__PLAYER_IN = eINSTANCE.getSubstitution_PlayerIn();
+
+		/**
+		 * The meta object literal for the '<em><b>Team</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SUBSTITUTION__TEAM = eINSTANCE.getSubstitution_Team();
+
+		/**
+		 * The meta object literal for the '{@link competition.Role <em>Role</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see competition.Role
+		 * @see competition.impl.CompetitionPackageImpl#getRole()
 		 * @generated
 		 */
 		EEnum ROLE = eINSTANCE.getRole();
 
 		/**
-		 * The meta object literal for the '{@link Competition.Status <em>Status</em>}' enum.
+		 * The meta object literal for the '{@link competition.Status <em>Status</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see Competition.Status
-		 * @see Competition.impl.CompetitionPackageImpl#getStatus()
+		 * @see competition.Status
+		 * @see competition.impl.CompetitionPackageImpl#getStatus()
 		 * @generated
 		 */
 		EEnum STATUS = eINSTANCE.getStatus();
 
 		/**
-		 * The meta object literal for the '{@link Competition.Winner <em>Winner</em>}' enum.
+		 * The meta object literal for the '{@link competition.Winner <em>Winner</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see Competition.Winner
-		 * @see Competition.impl.CompetitionPackageImpl#getWinner()
+		 * @see competition.Winner
+		 * @see competition.impl.CompetitionPackageImpl#getWinner()
 		 * @generated
 		 */
 		EEnum WINNER = eINSTANCE.getWinner();
 
 		/**
-		 * The meta object literal for the '{@link Competition.Card <em>Card</em>}' enum.
+		 * The meta object literal for the '{@link competition.Card <em>Card</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see Competition.Card
-		 * @see Competition.impl.CompetitionPackageImpl#getCard()
+		 * @see competition.Card
+		 * @see competition.impl.CompetitionPackageImpl#getCard()
 		 * @generated
 		 */
 		EEnum CARD = eINSTANCE.getCard();

@@ -1,8 +1,8 @@
 /**
  */
-package Competition.impl;
+package competition.impl;
 
-import Competition.*;
+import competition.*;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;

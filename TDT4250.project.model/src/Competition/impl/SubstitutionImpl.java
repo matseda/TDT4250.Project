@@ -1,10 +1,12 @@
 /**
  */
-package Competition.impl;
+package competition.impl;
 
-import Competition.CompetitionPackage;
-import Competition.Match;
-import Competition.Substitution;
+import competition.CompetitionPackage;
+import competition.Match;
+import competition.Person;
+import competition.Substitution;
+import competition.Team;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -25,11 +27,11 @@ import org.eclipse.emf.ecore.util.EcoreUtil;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link Competition.impl.SubstitutionImpl#getMinute <em>Minute</em>}</li>
- *   <li>{@link Competition.impl.SubstitutionImpl#getTeam <em>Team</em>}</li>
- *   <li>{@link Competition.impl.SubstitutionImpl#getPlayerOut <em>Player Out</em>}</li>
- *   <li>{@link Competition.impl.SubstitutionImpl#getPlayerIn <em>Player In</em>}</li>
- *   <li>{@link Competition.impl.SubstitutionImpl#getMatch <em>Match</em>}</li>
+ *   <li>{@link competition.impl.SubstitutionImpl#getMinute <em>Minute</em>}</li>
+ *   <li>{@link competition.impl.SubstitutionImpl#getMatch <em>Match</em>}</li>
+ *   <li>{@link competition.impl.SubstitutionImpl#getPlayerOut <em>Player Out</em>}</li>
+ *   <li>{@link competition.impl.SubstitutionImpl#getPlayerIn <em>Player In</em>}</li>
+ *   <li>{@link competition.impl.SubstitutionImpl#getTeam <em>Team</em>}</li>
  * </ul>
  *
  * @generated
@@ -56,64 +58,34 @@ public class SubstitutionImpl extends MinimalEObjectImpl.Container implements Su
 	protected int minute = MINUTE_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getTeam() <em>Team</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getTeam()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String TEAM_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getTeam() <em>Team</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getTeam()
-	 * @generated
-	 * @ordered
-	 */
-	protected String team = TEAM_EDEFAULT;
-
-	/**
-	 * The default value of the '{@link #getPlayerOut() <em>Player Out</em>}' attribute.
+	 * The cached value of the '{@link #getPlayerOut() <em>Player Out</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getPlayerOut()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String PLAYER_OUT_EDEFAULT = null;
+	protected Person playerOut;
 
 	/**
-	 * The cached value of the '{@link #getPlayerOut() <em>Player Out</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getPlayerOut()
-	 * @generated
-	 * @ordered
-	 */
-	protected String playerOut = PLAYER_OUT_EDEFAULT;
-
-	/**
-	 * The default value of the '{@link #getPlayerIn() <em>Player In</em>}' attribute.
+	 * The cached value of the '{@link #getPlayerIn() <em>Player In</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getPlayerIn()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String PLAYER_IN_EDEFAULT = null;
+	protected Person playerIn;
 
 	/**
-	 * The cached value of the '{@link #getPlayerIn() <em>Player In</em>}' attribute.
+	 * The cached value of the '{@link #getTeam() <em>Team</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPlayerIn()
+	 * @see #getTeam()
 	 * @generated
 	 * @ordered
 	 */
-	protected String playerIn = PLAYER_IN_EDEFAULT;
+	protected Team team;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -163,75 +135,6 @@ public class SubstitutionImpl extends MinimalEObjectImpl.Container implements Su
 	 * @generated
 	 */
 	@Override
-	public String getTeam() {
-		return team;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setTeam(String newTeam) {
-		String oldTeam = team;
-		team = newTeam;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CompetitionPackage.SUBSTITUTION__TEAM, oldTeam, team));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String getPlayerOut() {
-		return playerOut;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPlayerOut(String newPlayerOut) {
-		String oldPlayerOut = playerOut;
-		playerOut = newPlayerOut;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CompetitionPackage.SUBSTITUTION__PLAYER_OUT, oldPlayerOut, playerOut));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String getPlayerIn() {
-		return playerIn;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPlayerIn(String newPlayerIn) {
-		String oldPlayerIn = playerIn;
-		playerIn = newPlayerIn;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CompetitionPackage.SUBSTITUTION__PLAYER_IN, oldPlayerIn, playerIn));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Match getMatch() {
 		if (eContainerFeatureID() != CompetitionPackage.SUBSTITUTION__MATCH) return null;
 		return (Match)eInternalContainer();
@@ -267,6 +170,126 @@ public class SubstitutionImpl extends MinimalEObjectImpl.Container implements Su
 		}
 		else if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, CompetitionPackage.SUBSTITUTION__MATCH, newMatch, newMatch));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Person getPlayerOut() {
+		if (playerOut != null && playerOut.eIsProxy()) {
+			InternalEObject oldPlayerOut = (InternalEObject)playerOut;
+			playerOut = (Person)eResolveProxy(oldPlayerOut);
+			if (playerOut != oldPlayerOut) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, CompetitionPackage.SUBSTITUTION__PLAYER_OUT, oldPlayerOut, playerOut));
+			}
+		}
+		return playerOut;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Person basicGetPlayerOut() {
+		return playerOut;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPlayerOut(Person newPlayerOut) {
+		Person oldPlayerOut = playerOut;
+		playerOut = newPlayerOut;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CompetitionPackage.SUBSTITUTION__PLAYER_OUT, oldPlayerOut, playerOut));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Person getPlayerIn() {
+		if (playerIn != null && playerIn.eIsProxy()) {
+			InternalEObject oldPlayerIn = (InternalEObject)playerIn;
+			playerIn = (Person)eResolveProxy(oldPlayerIn);
+			if (playerIn != oldPlayerIn) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, CompetitionPackage.SUBSTITUTION__PLAYER_IN, oldPlayerIn, playerIn));
+			}
+		}
+		return playerIn;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Person basicGetPlayerIn() {
+		return playerIn;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPlayerIn(Person newPlayerIn) {
+		Person oldPlayerIn = playerIn;
+		playerIn = newPlayerIn;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CompetitionPackage.SUBSTITUTION__PLAYER_IN, oldPlayerIn, playerIn));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Team getTeam() {
+		if (team != null && team.eIsProxy()) {
+			InternalEObject oldTeam = (InternalEObject)team;
+			team = (Team)eResolveProxy(oldTeam);
+			if (team != oldTeam) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, CompetitionPackage.SUBSTITUTION__TEAM, oldTeam, team));
+			}
+		}
+		return team;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Team basicGetTeam() {
+		return team;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setTeam(Team newTeam) {
+		Team oldTeam = team;
+		team = newTeam;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CompetitionPackage.SUBSTITUTION__TEAM, oldTeam, team));
 	}
 
 	/**
@@ -323,14 +346,17 @@ public class SubstitutionImpl extends MinimalEObjectImpl.Container implements Su
 		switch (featureID) {
 			case CompetitionPackage.SUBSTITUTION__MINUTE:
 				return getMinute();
-			case CompetitionPackage.SUBSTITUTION__TEAM:
-				return getTeam();
-			case CompetitionPackage.SUBSTITUTION__PLAYER_OUT:
-				return getPlayerOut();
-			case CompetitionPackage.SUBSTITUTION__PLAYER_IN:
-				return getPlayerIn();
 			case CompetitionPackage.SUBSTITUTION__MATCH:
 				return getMatch();
+			case CompetitionPackage.SUBSTITUTION__PLAYER_OUT:
+				if (resolve) return getPlayerOut();
+				return basicGetPlayerOut();
+			case CompetitionPackage.SUBSTITUTION__PLAYER_IN:
+				if (resolve) return getPlayerIn();
+				return basicGetPlayerIn();
+			case CompetitionPackage.SUBSTITUTION__TEAM:
+				if (resolve) return getTeam();
+				return basicGetTeam();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -346,17 +372,17 @@ public class SubstitutionImpl extends MinimalEObjectImpl.Container implements Su
 			case CompetitionPackage.SUBSTITUTION__MINUTE:
 				setMinute((Integer)newValue);
 				return;
-			case CompetitionPackage.SUBSTITUTION__TEAM:
-				setTeam((String)newValue);
-				return;
-			case CompetitionPackage.SUBSTITUTION__PLAYER_OUT:
-				setPlayerOut((String)newValue);
-				return;
-			case CompetitionPackage.SUBSTITUTION__PLAYER_IN:
-				setPlayerIn((String)newValue);
-				return;
 			case CompetitionPackage.SUBSTITUTION__MATCH:
 				setMatch((Match)newValue);
+				return;
+			case CompetitionPackage.SUBSTITUTION__PLAYER_OUT:
+				setPlayerOut((Person)newValue);
+				return;
+			case CompetitionPackage.SUBSTITUTION__PLAYER_IN:
+				setPlayerIn((Person)newValue);
+				return;
+			case CompetitionPackage.SUBSTITUTION__TEAM:
+				setTeam((Team)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -373,17 +399,17 @@ public class SubstitutionImpl extends MinimalEObjectImpl.Container implements Su
 			case CompetitionPackage.SUBSTITUTION__MINUTE:
 				setMinute(MINUTE_EDEFAULT);
 				return;
-			case CompetitionPackage.SUBSTITUTION__TEAM:
-				setTeam(TEAM_EDEFAULT);
-				return;
-			case CompetitionPackage.SUBSTITUTION__PLAYER_OUT:
-				setPlayerOut(PLAYER_OUT_EDEFAULT);
-				return;
-			case CompetitionPackage.SUBSTITUTION__PLAYER_IN:
-				setPlayerIn(PLAYER_IN_EDEFAULT);
-				return;
 			case CompetitionPackage.SUBSTITUTION__MATCH:
 				setMatch((Match)null);
+				return;
+			case CompetitionPackage.SUBSTITUTION__PLAYER_OUT:
+				setPlayerOut((Person)null);
+				return;
+			case CompetitionPackage.SUBSTITUTION__PLAYER_IN:
+				setPlayerIn((Person)null);
+				return;
+			case CompetitionPackage.SUBSTITUTION__TEAM:
+				setTeam((Team)null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -399,14 +425,14 @@ public class SubstitutionImpl extends MinimalEObjectImpl.Container implements Su
 		switch (featureID) {
 			case CompetitionPackage.SUBSTITUTION__MINUTE:
 				return minute != MINUTE_EDEFAULT;
-			case CompetitionPackage.SUBSTITUTION__TEAM:
-				return TEAM_EDEFAULT == null ? team != null : !TEAM_EDEFAULT.equals(team);
-			case CompetitionPackage.SUBSTITUTION__PLAYER_OUT:
-				return PLAYER_OUT_EDEFAULT == null ? playerOut != null : !PLAYER_OUT_EDEFAULT.equals(playerOut);
-			case CompetitionPackage.SUBSTITUTION__PLAYER_IN:
-				return PLAYER_IN_EDEFAULT == null ? playerIn != null : !PLAYER_IN_EDEFAULT.equals(playerIn);
 			case CompetitionPackage.SUBSTITUTION__MATCH:
 				return getMatch() != null;
+			case CompetitionPackage.SUBSTITUTION__PLAYER_OUT:
+				return playerOut != null;
+			case CompetitionPackage.SUBSTITUTION__PLAYER_IN:
+				return playerIn != null;
+			case CompetitionPackage.SUBSTITUTION__TEAM:
+				return team != null;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -423,12 +449,6 @@ public class SubstitutionImpl extends MinimalEObjectImpl.Container implements Su
 		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (minute: ");
 		result.append(minute);
-		result.append(", team: ");
-		result.append(team);
-		result.append(", playerOut: ");
-		result.append(playerOut);
-		result.append(", playerIn: ");
-		result.append(playerIn);
 		result.append(')');
 		return result.toString();
 	}

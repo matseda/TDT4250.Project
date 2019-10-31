@@ -1,8 +1,8 @@
 /**
  */
-package Competition.util;
+package competition.util;
 
-import Competition.*;
+import competition.*;
 
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
@@ -19,7 +19,7 @@ import org.eclipse.emf.ecore.util.Switch;
  * until a non-null result is returned,
  * which is the result of the switch.
  * <!-- end-user-doc -->
- * @see Competition.CompetitionPackage
+ * @see competition.CompetitionPackage
  * @generated
  */
 public class CompetitionSwitch<T> extends Switch<T> {

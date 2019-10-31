@@ -1,10 +1,10 @@
 /**
  */
-package Competition.impl;
+package competition.impl;
 
-import Competition.CompetitionPackage;
-import Competition.Person;
-import Competition.Team;
+import competition.CompetitionPackage;
+import competition.Person;
+import competition.Team;
 
 import java.util.Collection;
 
@@ -30,13 +30,13 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link Competition.impl.TeamImpl#getId <em>Id</em>}</li>
- *   <li>{@link Competition.impl.TeamImpl#getName <em>Name</em>}</li>
- *   <li>{@link Competition.impl.TeamImpl#getShortName <em>Short Name</em>}</li>
- *   <li>{@link Competition.impl.TeamImpl#getTla <em>Tla</em>}</li>
- *   <li>{@link Competition.impl.TeamImpl#getFounded <em>Founded</em>}</li>
- *   <li>{@link Competition.impl.TeamImpl#getClubColors <em>Club Colors</em>}</li>
- *   <li>{@link Competition.impl.TeamImpl#getSquad <em>Squad</em>}</li>
+ *   <li>{@link competition.impl.TeamImpl#getId <em>Id</em>}</li>
+ *   <li>{@link competition.impl.TeamImpl#getName <em>Name</em>}</li>
+ *   <li>{@link competition.impl.TeamImpl#getShortName <em>Short Name</em>}</li>
+ *   <li>{@link competition.impl.TeamImpl#getTla <em>Tla</em>}</li>
+ *   <li>{@link competition.impl.TeamImpl#getFounded <em>Founded</em>}</li>
+ *   <li>{@link competition.impl.TeamImpl#getClubColors <em>Club Colors</em>}</li>
+ *   <li>{@link competition.impl.TeamImpl#getSquad <em>Squad</em>}</li>
  * </ul>
  *
  * @generated
