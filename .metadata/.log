@@ -9181,3 +9181,1548 @@ org.eclipse.core.runtime.CoreException: No property tester contributes a propert
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
+!SESSION 2019-10-31 08:26:07.209 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=12.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.dsl.product -keyring /Users/matstyldum/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.dsl.product -keyring /Users/matstyldum/.eclipse_keyring
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-10-31 08:26:15.490
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-10-31 08:26:16.793
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.e4.tools.emf.ui/org.eclipse.e4.tools.emf.ui.internal.handlers.MarkDuplicateElementIdsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-10-31 08:26:16.794
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.e4.tools.emf.ui/org.eclipse.e4.tools.emf.ui.internal.handlers.MarkDuplicateLabelsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-10-31 08:26:16.795
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.e4.tools.emf.ui/org.eclipse.e4.tools.emf.ui.internal.handlers.MarkDuplicateAttributesHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-10-31 08:26:16.795
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.e4.tools.emf.ui/org.eclipse.e4.tools.emf.ui.internal.handlers.RepairDuplicateItemsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-10-31 08:26:16.796
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.e4.tools.emf.ui/org.eclipse.e4.tools.emf.ui.internal.handlers.UnmarkItemsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-10-31 08:26:16.796
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.e4.tools.emf.ui/org.eclipse.e4.tools.emf.ui.internal.handlers.AutosizeColumnsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-10-31 08:26:16.796
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.e4.tools.emf.ui/org.eclipse.e4.tools.emf.ui.internal.handlers.ResetToDefaultHandler
+
+!ENTRY org.eclipse.core.net 1 0 2019-10-31 08:26:17.503
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.equinox.registry 4 0 2019-10-31 08:26:30.409
+!MESSAGE The requested multi-language operation is not enabled. See runtime option "-registryMultiLanguage".  
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.core.internal.registry.ExtensionRegistry.logMultiLangError(ExtensionRegistry.java:1419)
+	at org.eclipse.core.internal.registry.ConfigurationElement.getAttribute(ConfigurationElement.java:271)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.getAttribute(ConfigurationElementHandle.java:43)
+	at net.sourceforge.plantuml.eclipse.Activator.processDiagramTextProviders(Activator.java:181)
+	at net.sourceforge.plantuml.eclipse.Activator.getDiagramTextProviders(Activator.java:121)
+	at net.sourceforge.plantuml.eclipse.views.AbstractDiagramSourceView.registerListeners(AbstractDiagramSourceView.java:216)
+	at net.sourceforge.plantuml.eclipse.views.AbstractDiagramSourceView.createPartControl(AbstractDiagramSourceView.java:90)
+	at net.sourceforge.plantuml.eclipse.views.PlantUmlView.createPartControl(PlantUmlView.java:85)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:154)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.createPartControl(CompatibilityView.java:155)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:361)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:998)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:963)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:408)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:331)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:202)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1002)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:547)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:531)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:73)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1002)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1293)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:105)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:680)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:73)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:140)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:73)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:140)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:73)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:140)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:73)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:51)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:82)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:105)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:64)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:680)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:73)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:140)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:73)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:665)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1086)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:633)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-10-31 08:26:32.053
+!MESSAGE Removing part descriptor with the 'org.eclipse.emf.cdo.explorer.ui.CDORepositoriesView' id and the 'CDO Repositories' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-10-31 08:26:32.295
+!MESSAGE Removing part descriptor with the 'org.eclipse.emf.cdo.ui.CDOSessionsView' id and the 'CDO Sessions' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-10-31 08:26:32.312
+!MESSAGE Removing part descriptor with the 'org.eclipse.emf.cdo.ui.CDOWatchListView' id and the 'CDO Watch List' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-10-31 08:26:32.313
+!MESSAGE Removing part descriptor with the 'org.eclipse.emf.cdo.ui.CDORemoteSessionsView' id and the 'CDO Collaboration' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-10-31 08:26:32.314
+!MESSAGE Removing part descriptor with the 'org.eclipse.emf.cdo.ui.CDOTimeMachineView' id and the 'CDO Time Machine' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-10-31 08:26:32.314
+!MESSAGE Removing part descriptor with the 'org.eclipse.emf.cdo.ui.admin.CDOAdminView' id and the 'CDO Administration' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-10-31 08:26:32.315
+!MESSAGE Removing part descriptor with the 'org.eclipse.emf.compare.ide.ui.logicalmodel.view' id and the 'Logical Model View' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-10-31 08:26:32.380
+!MESSAGE Removing part descriptor with the 'org.eclipse.emf.ecp.ui.ModelExplorerView' id and the 'Model Explorer' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-10-31 08:26:32.381
+!MESSAGE Removing part descriptor with the 'org.eclipse.emf.ecp.ui.ModelRepositoriesView' id and the 'Model Repositories' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-10-31 08:26:32.381
+!MESSAGE Removing part descriptor with the 'org.eclipse.emf.ecp.ui.ECPProvidersView' id and the 'ECP Providers' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-10-31 08:26:32.382
+!MESSAGE Removing part descriptor with the 'org.eclipse.emf.ecp.view.model.preview.e3.views.PreviewView' id and the 'EMF Forms Preview' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-10-31 08:26:32.383
+!MESSAGE Removing part descriptor with the 'org.eclipse.emf.emfstore.client.ui.views.historybrowserview.HistoryBrowserView' id and the 'History Browser' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-10-31 08:26:32.408
+!MESSAGE Removing part descriptor with the 'org.eclipse.mylyn.commons.repositories.ui.navigator.Repositories' id and the 'Team Repositories' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-10-31 08:26:32.408
+!MESSAGE Removing part descriptor with the 'org.eclipse.mylyn.tasks.ui.views.tasks' id and the 'Task List' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-10-31 08:26:32.409
+!MESSAGE Removing part descriptor with the 'org.eclipse.mylyn.tasks.ui.views.repositories' id and the 'Task Repositories' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-10-31 08:26:32.410
+!MESSAGE Removing part descriptor with the 'org.eclipse.net4j.debug.RemoteTraceView' id and the 'Remote Traces' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-10-31 08:26:32.410
+!MESSAGE Removing part descriptor with the 'org.eclipse.net4j.AcceptorsView' id and the 'Acceptors' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-10-31 08:26:32.411
+!MESSAGE Removing part descriptor with the 'org.eclipse.net4j.ConnectorsView' id and the 'Connectors' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-10-31 08:26:32.412
+!MESSAGE Removing part descriptor with the 'org.eclipse.net4j.util.Net4jContainerView' id and the 'Container' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-10-31 08:26:32.413
+!MESSAGE Removing part descriptor with the 'org.eclipse.net4j.util.Net4jIntrospectorView' id and the 'Introspector' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-10-31 08:26:32.430
+!MESSAGE Removing part descriptor with the 'org.eclipse.tips.ide.tipPart' id and the 'Tip of the Day' description. Points to the invalid 'bundleclass://org.eclipse.tips.ide/org.eclipse.tips.ide.internal.TipPart' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-10-31 08:26:32.438
+!MESSAGE Removing part descriptor with the 'org.eclipse.ocl.examples.emf.validation.validity.ui.validity' id and the 'ValidityView' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-10-31 08:26:32.441
+!MESSAGE Removing part descriptor with the 'org.codehaus.groovy.eclipse.astviews.ASTView' id and the 'Groovy AST Viewer' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.core.resources 4 77 2019-10-31 09:35:12.840
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2019-10-31 09:35:12.840
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2019-10-31 09:35:12.840
+!MESSAGE /Users/matstyldum/Code/eclipse/TDT4250.Project overlaps the workspace location: /Users/matstyldum/Code/eclipse/TDT4250.Project
+
+!ENTRY org.eclipse.emf.codegen.ecore 2 0 2019-10-31 11:30:49.094
+!MESSAGE A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/TDT4250.project.model/src/Competition)[275]: java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter$EclipseHelper.ensureContainerExists(AbstractGeneratorAdapter.java:2560)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.ensureContainerExists(AbstractGeneratorAdapter.java:2235)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:1891)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenPackageGeneratorAdapter.generatePackageInterface(GenPackageGeneratorAdapter.java:601)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenPackageGeneratorAdapter.generateModel(GenPackageGeneratorAdapter.java:209)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 1 org.eclipse.core.resources 4 275 2019-10-31 11:30:49.097
+!MESSAGE A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 0
+java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter$EclipseHelper.ensureContainerExists(AbstractGeneratorAdapter.java:2560)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.ensureContainerExists(AbstractGeneratorAdapter.java:2235)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:1891)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenPackageGeneratorAdapter.generatePackageInterface(GenPackageGeneratorAdapter.java:601)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenPackageGeneratorAdapter.generateModel(GenPackageGeneratorAdapter.java:209)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.emf.codegen.ecore 2 0 2019-10-31 11:30:49.495
+!MESSAGE org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 0
+org.eclipse.emf.common.util.WrappedException: org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:2108)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenPackageGeneratorAdapter.generatePackageInterface(GenPackageGeneratorAdapter.java:601)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenPackageGeneratorAdapter.generateModel(GenPackageGeneratorAdapter.java:209)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.createContainer(PlatformResourceURIHandlerImpl.java:80)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.flush(PlatformResourceURIHandlerImpl.java:107)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.close(PlatformResourceURIHandlerImpl.java:89)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$WorkbenchHelper$1.close(PlatformResourceURIHandlerImpl.java:175)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:2103)
+	... 11 more
+Caused by: org.eclipse.core.internal.resources.ResourceException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.createContainer(PlatformResourceURIHandlerImpl.java:76)
+	... 15 more
+Caused by: java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	... 21 more
+
+!ENTRY org.eclipse.emf.codegen.ecore 2 0 2019-10-31 11:30:49.587
+!MESSAGE A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/TDT4250.project.model/src/Competition)[275]: java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter$EclipseHelper.ensureContainerExists(AbstractGeneratorAdapter.java:2560)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.ensureContainerExists(AbstractGeneratorAdapter.java:2235)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:1891)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateInterface(GenClassGeneratorAdapter.java:117)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateModel(GenClassGeneratorAdapter.java:100)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 1 org.eclipse.core.resources 4 275 2019-10-31 11:30:49.587
+!MESSAGE A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 0
+java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter$EclipseHelper.ensureContainerExists(AbstractGeneratorAdapter.java:2560)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.ensureContainerExists(AbstractGeneratorAdapter.java:2235)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:1891)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateInterface(GenClassGeneratorAdapter.java:117)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateModel(GenClassGeneratorAdapter.java:100)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.emf.codegen.ecore 2 0 2019-10-31 11:30:49.626
+!MESSAGE org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 0
+org.eclipse.emf.common.util.WrappedException: org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:2108)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateInterface(GenClassGeneratorAdapter.java:117)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateModel(GenClassGeneratorAdapter.java:100)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.createContainer(PlatformResourceURIHandlerImpl.java:80)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.flush(PlatformResourceURIHandlerImpl.java:107)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.close(PlatformResourceURIHandlerImpl.java:89)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$WorkbenchHelper$1.close(PlatformResourceURIHandlerImpl.java:175)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:2103)
+	... 11 more
+Caused by: org.eclipse.core.internal.resources.ResourceException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.createContainer(PlatformResourceURIHandlerImpl.java:76)
+	... 15 more
+Caused by: java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	... 21 more
+
+!ENTRY org.eclipse.emf.codegen.ecore 2 0 2019-10-31 11:30:49.628
+!MESSAGE A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/TDT4250.project.model/src/Competition)[275]: java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter$EclipseHelper.ensureContainerExists(AbstractGeneratorAdapter.java:2560)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.ensureContainerExists(AbstractGeneratorAdapter.java:2235)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:1891)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateInterface(GenClassGeneratorAdapter.java:117)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateModel(GenClassGeneratorAdapter.java:100)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 1 org.eclipse.core.resources 4 275 2019-10-31 11:30:49.628
+!MESSAGE A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 0
+java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter$EclipseHelper.ensureContainerExists(AbstractGeneratorAdapter.java:2560)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.ensureContainerExists(AbstractGeneratorAdapter.java:2235)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:1891)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateInterface(GenClassGeneratorAdapter.java:117)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateModel(GenClassGeneratorAdapter.java:100)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.emf.codegen.ecore 2 0 2019-10-31 11:30:49.652
+!MESSAGE org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 0
+org.eclipse.emf.common.util.WrappedException: org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:2108)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateInterface(GenClassGeneratorAdapter.java:117)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateModel(GenClassGeneratorAdapter.java:100)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.createContainer(PlatformResourceURIHandlerImpl.java:80)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.flush(PlatformResourceURIHandlerImpl.java:107)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.close(PlatformResourceURIHandlerImpl.java:89)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$WorkbenchHelper$1.close(PlatformResourceURIHandlerImpl.java:175)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:2103)
+	... 11 more
+Caused by: org.eclipse.core.internal.resources.ResourceException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.createContainer(PlatformResourceURIHandlerImpl.java:76)
+	... 15 more
+Caused by: java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	... 21 more
+
+!ENTRY org.eclipse.emf.codegen.ecore 2 0 2019-10-31 11:30:49.653
+!MESSAGE A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/TDT4250.project.model/src/Competition)[275]: java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter$EclipseHelper.ensureContainerExists(AbstractGeneratorAdapter.java:2560)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.ensureContainerExists(AbstractGeneratorAdapter.java:2235)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:1891)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateInterface(GenClassGeneratorAdapter.java:117)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateModel(GenClassGeneratorAdapter.java:100)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 1 org.eclipse.core.resources 4 275 2019-10-31 11:30:49.653
+!MESSAGE A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 0
+java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter$EclipseHelper.ensureContainerExists(AbstractGeneratorAdapter.java:2560)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.ensureContainerExists(AbstractGeneratorAdapter.java:2235)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:1891)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateInterface(GenClassGeneratorAdapter.java:117)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateModel(GenClassGeneratorAdapter.java:100)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.emf.codegen.ecore 2 0 2019-10-31 11:30:49.685
+!MESSAGE org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 0
+org.eclipse.emf.common.util.WrappedException: org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:2108)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateInterface(GenClassGeneratorAdapter.java:117)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateModel(GenClassGeneratorAdapter.java:100)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.createContainer(PlatformResourceURIHandlerImpl.java:80)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.flush(PlatformResourceURIHandlerImpl.java:107)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.close(PlatformResourceURIHandlerImpl.java:89)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$WorkbenchHelper$1.close(PlatformResourceURIHandlerImpl.java:175)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:2103)
+	... 11 more
+Caused by: org.eclipse.core.internal.resources.ResourceException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.createContainer(PlatformResourceURIHandlerImpl.java:76)
+	... 15 more
+Caused by: java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	... 21 more
+
+!ENTRY org.eclipse.emf.codegen.ecore 2 0 2019-10-31 11:30:49.686
+!MESSAGE A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/TDT4250.project.model/src/Competition)[275]: java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter$EclipseHelper.ensureContainerExists(AbstractGeneratorAdapter.java:2560)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.ensureContainerExists(AbstractGeneratorAdapter.java:2235)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:1891)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateInterface(GenClassGeneratorAdapter.java:117)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateModel(GenClassGeneratorAdapter.java:100)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 1 org.eclipse.core.resources 4 275 2019-10-31 11:30:49.687
+!MESSAGE A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 0
+java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter$EclipseHelper.ensureContainerExists(AbstractGeneratorAdapter.java:2560)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.ensureContainerExists(AbstractGeneratorAdapter.java:2235)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:1891)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateInterface(GenClassGeneratorAdapter.java:117)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateModel(GenClassGeneratorAdapter.java:100)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.emf.codegen.ecore 2 0 2019-10-31 11:30:49.709
+!MESSAGE org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 0
+org.eclipse.emf.common.util.WrappedException: org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:2108)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateInterface(GenClassGeneratorAdapter.java:117)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateModel(GenClassGeneratorAdapter.java:100)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.createContainer(PlatformResourceURIHandlerImpl.java:80)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.flush(PlatformResourceURIHandlerImpl.java:107)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.close(PlatformResourceURIHandlerImpl.java:89)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$WorkbenchHelper$1.close(PlatformResourceURIHandlerImpl.java:175)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:2103)
+	... 11 more
+Caused by: org.eclipse.core.internal.resources.ResourceException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.createContainer(PlatformResourceURIHandlerImpl.java:76)
+	... 15 more
+Caused by: java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	... 21 more
+
+!ENTRY org.eclipse.emf.codegen.ecore 2 0 2019-10-31 11:30:49.713
+!MESSAGE A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/TDT4250.project.model/src/Competition)[275]: java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter$EclipseHelper.ensureContainerExists(AbstractGeneratorAdapter.java:2560)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.ensureContainerExists(AbstractGeneratorAdapter.java:2235)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:1891)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateInterface(GenClassGeneratorAdapter.java:117)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateModel(GenClassGeneratorAdapter.java:100)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 1 org.eclipse.core.resources 4 275 2019-10-31 11:30:49.713
+!MESSAGE A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 0
+java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter$EclipseHelper.ensureContainerExists(AbstractGeneratorAdapter.java:2560)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.ensureContainerExists(AbstractGeneratorAdapter.java:2235)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:1891)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateInterface(GenClassGeneratorAdapter.java:117)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateModel(GenClassGeneratorAdapter.java:100)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.emf.codegen.ecore 2 0 2019-10-31 11:30:49.741
+!MESSAGE org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 0
+org.eclipse.emf.common.util.WrappedException: org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:2108)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateInterface(GenClassGeneratorAdapter.java:117)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateModel(GenClassGeneratorAdapter.java:100)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.createContainer(PlatformResourceURIHandlerImpl.java:80)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.flush(PlatformResourceURIHandlerImpl.java:107)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.close(PlatformResourceURIHandlerImpl.java:89)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$WorkbenchHelper$1.close(PlatformResourceURIHandlerImpl.java:175)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:2103)
+	... 11 more
+Caused by: org.eclipse.core.internal.resources.ResourceException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.createContainer(PlatformResourceURIHandlerImpl.java:76)
+	... 15 more
+Caused by: java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	... 21 more
+
+!ENTRY org.eclipse.emf.codegen.ecore 2 0 2019-10-31 11:30:49.754
+!MESSAGE A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/TDT4250.project.model/src/Competition)[275]: java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter$EclipseHelper.ensureContainerExists(AbstractGeneratorAdapter.java:2560)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.ensureContainerExists(AbstractGeneratorAdapter.java:2235)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:1891)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateInterface(GenClassGeneratorAdapter.java:117)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateModel(GenClassGeneratorAdapter.java:100)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 1 org.eclipse.core.resources 4 275 2019-10-31 11:30:49.754
+!MESSAGE A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 0
+java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter$EclipseHelper.ensureContainerExists(AbstractGeneratorAdapter.java:2560)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.ensureContainerExists(AbstractGeneratorAdapter.java:2235)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:1891)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateInterface(GenClassGeneratorAdapter.java:117)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateModel(GenClassGeneratorAdapter.java:100)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.emf.codegen.ecore 2 0 2019-10-31 11:30:49.772
+!MESSAGE org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 0
+org.eclipse.emf.common.util.WrappedException: org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:2108)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateInterface(GenClassGeneratorAdapter.java:117)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateModel(GenClassGeneratorAdapter.java:100)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.createContainer(PlatformResourceURIHandlerImpl.java:80)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.flush(PlatformResourceURIHandlerImpl.java:107)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.close(PlatformResourceURIHandlerImpl.java:89)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$WorkbenchHelper$1.close(PlatformResourceURIHandlerImpl.java:175)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:2103)
+	... 11 more
+Caused by: org.eclipse.core.internal.resources.ResourceException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.createContainer(PlatformResourceURIHandlerImpl.java:76)
+	... 15 more
+Caused by: java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	... 21 more
+
+!ENTRY org.eclipse.emf.codegen.ecore 2 0 2019-10-31 11:30:49.778
+!MESSAGE A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/TDT4250.project.model/src/Competition)[275]: java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter$EclipseHelper.ensureContainerExists(AbstractGeneratorAdapter.java:2560)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.ensureContainerExists(AbstractGeneratorAdapter.java:2235)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:1891)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateInterface(GenClassGeneratorAdapter.java:117)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateModel(GenClassGeneratorAdapter.java:100)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 1 org.eclipse.core.resources 4 275 2019-10-31 11:30:49.778
+!MESSAGE A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 0
+java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter$EclipseHelper.ensureContainerExists(AbstractGeneratorAdapter.java:2560)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.ensureContainerExists(AbstractGeneratorAdapter.java:2235)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:1891)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateInterface(GenClassGeneratorAdapter.java:117)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateModel(GenClassGeneratorAdapter.java:100)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.emf.codegen.ecore 2 0 2019-10-31 11:30:49.790
+!MESSAGE org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 0
+org.eclipse.emf.common.util.WrappedException: org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:2108)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateInterface(GenClassGeneratorAdapter.java:117)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateModel(GenClassGeneratorAdapter.java:100)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.createContainer(PlatformResourceURIHandlerImpl.java:80)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.flush(PlatformResourceURIHandlerImpl.java:107)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.close(PlatformResourceURIHandlerImpl.java:89)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$WorkbenchHelper$1.close(PlatformResourceURIHandlerImpl.java:175)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:2103)
+	... 11 more
+Caused by: org.eclipse.core.internal.resources.ResourceException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.createContainer(PlatformResourceURIHandlerImpl.java:76)
+	... 15 more
+Caused by: java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	... 21 more
+
+!ENTRY org.eclipse.emf.codegen.ecore 2 0 2019-10-31 11:30:49.797
+!MESSAGE A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/TDT4250.project.model/src/Competition)[275]: java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter$EclipseHelper.ensureContainerExists(AbstractGeneratorAdapter.java:2560)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.ensureContainerExists(AbstractGeneratorAdapter.java:2235)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:1891)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateInterface(GenClassGeneratorAdapter.java:117)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateModel(GenClassGeneratorAdapter.java:100)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 1 org.eclipse.core.resources 4 275 2019-10-31 11:30:49.798
+!MESSAGE A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 0
+java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter$EclipseHelper.ensureContainerExists(AbstractGeneratorAdapter.java:2560)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.ensureContainerExists(AbstractGeneratorAdapter.java:2235)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:1891)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateInterface(GenClassGeneratorAdapter.java:117)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateModel(GenClassGeneratorAdapter.java:100)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.emf.codegen.ecore 2 0 2019-10-31 11:30:49.812
+!MESSAGE org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 0
+org.eclipse.emf.common.util.WrappedException: org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:2108)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateInterface(GenClassGeneratorAdapter.java:117)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateModel(GenClassGeneratorAdapter.java:100)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.createContainer(PlatformResourceURIHandlerImpl.java:80)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.flush(PlatformResourceURIHandlerImpl.java:107)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.close(PlatformResourceURIHandlerImpl.java:89)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$WorkbenchHelper$1.close(PlatformResourceURIHandlerImpl.java:175)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:2103)
+	... 11 more
+Caused by: org.eclipse.core.internal.resources.ResourceException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.createContainer(PlatformResourceURIHandlerImpl.java:76)
+	... 15 more
+Caused by: java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	... 21 more
+
+!ENTRY org.eclipse.emf.codegen.ecore 2 0 2019-10-31 11:30:49.814
+!MESSAGE A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/TDT4250.project.model/src/Competition)[275]: java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter$EclipseHelper.ensureContainerExists(AbstractGeneratorAdapter.java:2560)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.ensureContainerExists(AbstractGeneratorAdapter.java:2235)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:1891)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateInterface(GenClassGeneratorAdapter.java:117)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateModel(GenClassGeneratorAdapter.java:100)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 1 org.eclipse.core.resources 4 275 2019-10-31 11:30:49.814
+!MESSAGE A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 0
+java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter$EclipseHelper.ensureContainerExists(AbstractGeneratorAdapter.java:2560)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.ensureContainerExists(AbstractGeneratorAdapter.java:2235)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:1891)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateInterface(GenClassGeneratorAdapter.java:117)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateModel(GenClassGeneratorAdapter.java:100)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.emf.codegen.ecore 2 0 2019-10-31 11:30:49.826
+!MESSAGE org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 0
+org.eclipse.emf.common.util.WrappedException: org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:2108)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateInterface(GenClassGeneratorAdapter.java:117)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateModel(GenClassGeneratorAdapter.java:100)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.createContainer(PlatformResourceURIHandlerImpl.java:80)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.flush(PlatformResourceURIHandlerImpl.java:107)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.close(PlatformResourceURIHandlerImpl.java:89)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$WorkbenchHelper$1.close(PlatformResourceURIHandlerImpl.java:175)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:2103)
+	... 11 more
+Caused by: org.eclipse.core.internal.resources.ResourceException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.createContainer(PlatformResourceURIHandlerImpl.java:76)
+	... 15 more
+Caused by: java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	... 21 more
+
+!ENTRY org.eclipse.emf.codegen.ecore 2 0 2019-10-31 11:30:49.836
+!MESSAGE A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/TDT4250.project.model/src/Competition)[275]: java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter$EclipseHelper.ensureContainerExists(AbstractGeneratorAdapter.java:2560)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.ensureContainerExists(AbstractGeneratorAdapter.java:2235)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:1891)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateInterface(GenClassGeneratorAdapter.java:117)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateModel(GenClassGeneratorAdapter.java:100)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 1 org.eclipse.core.resources 4 275 2019-10-31 11:30:49.836
+!MESSAGE A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 0
+java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter$EclipseHelper.ensureContainerExists(AbstractGeneratorAdapter.java:2560)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.ensureContainerExists(AbstractGeneratorAdapter.java:2235)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:1891)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateInterface(GenClassGeneratorAdapter.java:117)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateModel(GenClassGeneratorAdapter.java:100)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.emf.codegen.ecore 2 0 2019-10-31 11:30:49.846
+!MESSAGE org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 0
+org.eclipse.emf.common.util.WrappedException: org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:2108)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateInterface(GenClassGeneratorAdapter.java:117)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenClassGeneratorAdapter.generateModel(GenClassGeneratorAdapter.java:100)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.createContainer(PlatformResourceURIHandlerImpl.java:80)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.flush(PlatformResourceURIHandlerImpl.java:107)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.close(PlatformResourceURIHandlerImpl.java:89)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$WorkbenchHelper$1.close(PlatformResourceURIHandlerImpl.java:175)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:2103)
+	... 11 more
+Caused by: org.eclipse.core.internal.resources.ResourceException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.createContainer(PlatformResourceURIHandlerImpl.java:76)
+	... 15 more
+Caused by: java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	... 21 more
+
+!ENTRY org.eclipse.emf.codegen.ecore 2 0 2019-10-31 11:30:49.859
+!MESSAGE A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/TDT4250.project.model/src/Competition)[275]: java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter$EclipseHelper.ensureContainerExists(AbstractGeneratorAdapter.java:2560)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.ensureContainerExists(AbstractGeneratorAdapter.java:2235)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:1891)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenEnumGeneratorAdapter.generateEnumClass(GenEnumGeneratorAdapter.java:89)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenEnumGeneratorAdapter.generateModel(GenEnumGeneratorAdapter.java:81)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 1 org.eclipse.core.resources 4 275 2019-10-31 11:30:49.859
+!MESSAGE A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 0
+java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter$EclipseHelper.ensureContainerExists(AbstractGeneratorAdapter.java:2560)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.ensureContainerExists(AbstractGeneratorAdapter.java:2235)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:1891)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenEnumGeneratorAdapter.generateEnumClass(GenEnumGeneratorAdapter.java:89)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenEnumGeneratorAdapter.generateModel(GenEnumGeneratorAdapter.java:81)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.emf.codegen.ecore 2 0 2019-10-31 11:30:49.892
+!MESSAGE org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 0
+org.eclipse.emf.common.util.WrappedException: org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:2108)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenEnumGeneratorAdapter.generateEnumClass(GenEnumGeneratorAdapter.java:89)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenEnumGeneratorAdapter.generateModel(GenEnumGeneratorAdapter.java:81)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.createContainer(PlatformResourceURIHandlerImpl.java:80)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.flush(PlatformResourceURIHandlerImpl.java:107)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.close(PlatformResourceURIHandlerImpl.java:89)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$WorkbenchHelper$1.close(PlatformResourceURIHandlerImpl.java:175)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:2103)
+	... 11 more
+Caused by: org.eclipse.core.internal.resources.ResourceException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.createContainer(PlatformResourceURIHandlerImpl.java:76)
+	... 15 more
+Caused by: java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	... 21 more
+
+!ENTRY org.eclipse.emf.codegen.ecore 2 0 2019-10-31 11:30:49.898
+!MESSAGE A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/TDT4250.project.model/src/Competition)[275]: java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter$EclipseHelper.ensureContainerExists(AbstractGeneratorAdapter.java:2560)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.ensureContainerExists(AbstractGeneratorAdapter.java:2235)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:1891)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenEnumGeneratorAdapter.generateEnumClass(GenEnumGeneratorAdapter.java:89)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenEnumGeneratorAdapter.generateModel(GenEnumGeneratorAdapter.java:81)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 1 org.eclipse.core.resources 4 275 2019-10-31 11:30:49.899
+!MESSAGE A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 0
+java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter$EclipseHelper.ensureContainerExists(AbstractGeneratorAdapter.java:2560)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.ensureContainerExists(AbstractGeneratorAdapter.java:2235)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:1891)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenEnumGeneratorAdapter.generateEnumClass(GenEnumGeneratorAdapter.java:89)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenEnumGeneratorAdapter.generateModel(GenEnumGeneratorAdapter.java:81)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.emf.codegen.ecore 2 0 2019-10-31 11:30:49.921
+!MESSAGE org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 0
+org.eclipse.emf.common.util.WrappedException: org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:2108)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenEnumGeneratorAdapter.generateEnumClass(GenEnumGeneratorAdapter.java:89)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenEnumGeneratorAdapter.generateModel(GenEnumGeneratorAdapter.java:81)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.createContainer(PlatformResourceURIHandlerImpl.java:80)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.flush(PlatformResourceURIHandlerImpl.java:107)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.close(PlatformResourceURIHandlerImpl.java:89)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$WorkbenchHelper$1.close(PlatformResourceURIHandlerImpl.java:175)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:2103)
+	... 11 more
+Caused by: org.eclipse.core.internal.resources.ResourceException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.createContainer(PlatformResourceURIHandlerImpl.java:76)
+	... 15 more
+Caused by: java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	... 21 more
+
+!ENTRY org.eclipse.emf.codegen.ecore 2 0 2019-10-31 11:30:49.922
+!MESSAGE A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/TDT4250.project.model/src/Competition)[275]: java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter$EclipseHelper.ensureContainerExists(AbstractGeneratorAdapter.java:2560)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.ensureContainerExists(AbstractGeneratorAdapter.java:2235)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:1891)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenEnumGeneratorAdapter.generateEnumClass(GenEnumGeneratorAdapter.java:89)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenEnumGeneratorAdapter.generateModel(GenEnumGeneratorAdapter.java:81)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 1 org.eclipse.core.resources 4 275 2019-10-31 11:30:49.923
+!MESSAGE A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 0
+java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter$EclipseHelper.ensureContainerExists(AbstractGeneratorAdapter.java:2560)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.ensureContainerExists(AbstractGeneratorAdapter.java:2235)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:1891)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenEnumGeneratorAdapter.generateEnumClass(GenEnumGeneratorAdapter.java:89)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenEnumGeneratorAdapter.generateModel(GenEnumGeneratorAdapter.java:81)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.emf.codegen.ecore 2 0 2019-10-31 11:30:49.934
+!MESSAGE org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 0
+org.eclipse.emf.common.util.WrappedException: org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:2108)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenEnumGeneratorAdapter.generateEnumClass(GenEnumGeneratorAdapter.java:89)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenEnumGeneratorAdapter.generateModel(GenEnumGeneratorAdapter.java:81)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.createContainer(PlatformResourceURIHandlerImpl.java:80)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.flush(PlatformResourceURIHandlerImpl.java:107)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.close(PlatformResourceURIHandlerImpl.java:89)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$WorkbenchHelper$1.close(PlatformResourceURIHandlerImpl.java:175)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:2103)
+	... 11 more
+Caused by: org.eclipse.core.internal.resources.ResourceException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.createContainer(PlatformResourceURIHandlerImpl.java:76)
+	... 15 more
+Caused by: java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	... 21 more
+
+!ENTRY org.eclipse.emf.codegen.ecore 2 0 2019-10-31 11:30:49.937
+!MESSAGE A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/TDT4250.project.model/src/Competition)[275]: java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter$EclipseHelper.ensureContainerExists(AbstractGeneratorAdapter.java:2560)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.ensureContainerExists(AbstractGeneratorAdapter.java:2235)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:1891)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenEnumGeneratorAdapter.generateEnumClass(GenEnumGeneratorAdapter.java:89)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenEnumGeneratorAdapter.generateModel(GenEnumGeneratorAdapter.java:81)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 1 org.eclipse.core.resources 4 275 2019-10-31 11:30:49.937
+!MESSAGE A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 0
+java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter$EclipseHelper.ensureContainerExists(AbstractGeneratorAdapter.java:2560)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.ensureContainerExists(AbstractGeneratorAdapter.java:2235)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:1891)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenEnumGeneratorAdapter.generateEnumClass(GenEnumGeneratorAdapter.java:89)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenEnumGeneratorAdapter.generateModel(GenEnumGeneratorAdapter.java:81)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.emf.codegen.ecore 2 0 2019-10-31 11:30:49.947
+!MESSAGE org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+!STACK 0
+org.eclipse.emf.common.util.WrappedException: org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:2108)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenEnumGeneratorAdapter.generateEnumClass(GenEnumGeneratorAdapter.java:89)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenEnumGeneratorAdapter.generateModel(GenEnumGeneratorAdapter.java:81)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.java:319)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.generate(Generator.java:733)
+	at org.eclipse.emf.codegen.ecore.genmodel.presentation.GeneratorUIUtil$GeneratorOperation.execute(GeneratorUIUtil.java:178)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.emf.ecore.resource.Resource$IOWrappedException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.createContainer(PlatformResourceURIHandlerImpl.java:80)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.flush(PlatformResourceURIHandlerImpl.java:107)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.close(PlatformResourceURIHandlerImpl.java:89)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$WorkbenchHelper$1.close(PlatformResourceURIHandlerImpl.java:175)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:2103)
+	... 11 more
+Caused by: org.eclipse.core.internal.resources.ResourceException: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:96)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:124)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.createContainer(PlatformResourceURIHandlerImpl.java:76)
+	... 15 more
+Caused by: java.lang.Exception: A resource exists with a different case: '/TDT4250.project.model/src/Competition'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	... 21 more
