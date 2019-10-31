@@ -16,7 +16,10 @@ import competition.CompetitionFactory;
 import competition.CompetitionPackage;
 
 public class CreateXMIFile {
-
+	
+	// Reference: https://www.vogella.com/tutorials/EclipseEMFPersistence/article.html#example
+	
+	
 	public static void main(String[] args) {
 		// Initialize the model
 		CompetitionPackage.eINSTANCE.eClass();
