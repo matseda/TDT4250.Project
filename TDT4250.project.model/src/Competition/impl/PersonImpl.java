@@ -1,10 +1,10 @@
 /**
  */
-package Competition.impl;
+package competition.impl;
 
-import Competition.CompetitionPackage;
-import Competition.Person;
-import Competition.Role;
+import competition.CompetitionPackage;
+import competition.Person;
+import competition.Role;
 
 import java.util.Date;
 
@@ -23,12 +23,12 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link Competition.impl.PersonImpl#getId <em>Id</em>}</li>
- *   <li>{@link Competition.impl.PersonImpl#getName <em>Name</em>}</li>
- *   <li>{@link Competition.impl.PersonImpl#getPosition <em>Position</em>}</li>
- *   <li>{@link Competition.impl.PersonImpl#getDateOfBirth <em>Date Of Birth</em>}</li>
- *   <li>{@link Competition.impl.PersonImpl#getNationality <em>Nationality</em>}</li>
- *   <li>{@link Competition.impl.PersonImpl#getRole <em>Role</em>}</li>
+ *   <li>{@link competition.impl.PersonImpl#getId <em>Id</em>}</li>
+ *   <li>{@link competition.impl.PersonImpl#getName <em>Name</em>}</li>
+ *   <li>{@link competition.impl.PersonImpl#getPosition <em>Position</em>}</li>
+ *   <li>{@link competition.impl.PersonImpl#getDateOfBirth <em>Date Of Birth</em>}</li>
+ *   <li>{@link competition.impl.PersonImpl#getNationality <em>Nationality</em>}</li>
+ *   <li>{@link competition.impl.PersonImpl#getRole <em>Role</em>}</li>
  * </ul>
  *
  * @generated

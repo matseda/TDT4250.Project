@@ -1,11 +1,11 @@
 /**
  */
-package Competition.impl;
+package competition.impl;
 
-import Competition.CompetitionPackage;
-import Competition.Match;
-import Competition.Score;
-import Competition.Winner;
+import competition.CompetitionPackage;
+import competition.Match;
+import competition.Score;
+import competition.Winner;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -26,10 +26,10 @@ import org.eclipse.emf.ecore.util.EcoreUtil;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link Competition.impl.ScoreImpl#getWinner <em>Winner</em>}</li>
- *   <li>{@link Competition.impl.ScoreImpl#getHomeTeam <em>Home Team</em>}</li>
- *   <li>{@link Competition.impl.ScoreImpl#getAwayTeam <em>Away Team</em>}</li>
- *   <li>{@link Competition.impl.ScoreImpl#getMatch <em>Match</em>}</li>
+ *   <li>{@link competition.impl.ScoreImpl#getWinner <em>Winner</em>}</li>
+ *   <li>{@link competition.impl.ScoreImpl#getHomeTeam <em>Home Team</em>}</li>
+ *   <li>{@link competition.impl.ScoreImpl#getAwayTeam <em>Away Team</em>}</li>
+ *   <li>{@link competition.impl.ScoreImpl#getMatch <em>Match</em>}</li>
  * </ul>
  *
  * @generated

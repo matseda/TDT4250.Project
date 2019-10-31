@@ -1,11 +1,11 @@
 /**
  */
-package Competition.impl;
+package competition.impl;
 
-import Competition.CompetitionPackage;
-import Competition.MatchTeam;
-import Competition.Person;
-import Competition.Team;
+import competition.CompetitionPackage;
+import competition.MatchTeam;
+import competition.Person;
+import competition.Team;
 
 import java.util.Collection;
 
@@ -29,11 +29,11 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link Competition.impl.MatchTeamImpl#getTeam <em>Team</em>}</li>
- *   <li>{@link Competition.impl.MatchTeamImpl#getCoach <em>Coach</em>}</li>
- *   <li>{@link Competition.impl.MatchTeamImpl#getCaptain <em>Captain</em>}</li>
- *   <li>{@link Competition.impl.MatchTeamImpl#getLineup <em>Lineup</em>}</li>
- *   <li>{@link Competition.impl.MatchTeamImpl#getBench <em>Bench</em>}</li>
+ *   <li>{@link competition.impl.MatchTeamImpl#getTeam <em>Team</em>}</li>
+ *   <li>{@link competition.impl.MatchTeamImpl#getCoach <em>Coach</em>}</li>
+ *   <li>{@link competition.impl.MatchTeamImpl#getCaptain <em>Captain</em>}</li>
+ *   <li>{@link competition.impl.MatchTeamImpl#getLineup <em>Lineup</em>}</li>
+ *   <li>{@link competition.impl.MatchTeamImpl#getBench <em>Bench</em>}</li>
  * </ul>
  *
  * @generated

@@ -1,6 +1,6 @@
 /**
  */
-package Competition;
+package competition;
 
 import org.eclipse.emf.common.util.EList;
 
@@ -15,16 +15,16 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link Competition.Team#getId <em>Id</em>}</li>
- *   <li>{@link Competition.Team#getName <em>Name</em>}</li>
- *   <li>{@link Competition.Team#getShortName <em>Short Name</em>}</li>
- *   <li>{@link Competition.Team#getTla <em>Tla</em>}</li>
- *   <li>{@link Competition.Team#getFounded <em>Founded</em>}</li>
- *   <li>{@link Competition.Team#getClubColors <em>Club Colors</em>}</li>
- *   <li>{@link Competition.Team#getSquad <em>Squad</em>}</li>
+ *   <li>{@link competition.Team#getId <em>Id</em>}</li>
+ *   <li>{@link competition.Team#getName <em>Name</em>}</li>
+ *   <li>{@link competition.Team#getShortName <em>Short Name</em>}</li>
+ *   <li>{@link competition.Team#getTla <em>Tla</em>}</li>
+ *   <li>{@link competition.Team#getFounded <em>Founded</em>}</li>
+ *   <li>{@link competition.Team#getClubColors <em>Club Colors</em>}</li>
+ *   <li>{@link competition.Team#getSquad <em>Squad</em>}</li>
  * </ul>
  *
- * @see Competition.CompetitionPackage#getTeam()
+ * @see competition.CompetitionPackage#getTeam()
  * @model
  * @generated
  */
@@ -35,14 +35,14 @@ public interface Team extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Id</em>' attribute.
 	 * @see #setId(int)
-	 * @see Competition.CompetitionPackage#getTeam_Id()
+	 * @see competition.CompetitionPackage#getTeam_Id()
 	 * @model required="true"
 	 * @generated
 	 */
 	int getId();
 
 	/**
-	 * Sets the value of the '{@link Competition.Team#getId <em>Id</em>}' attribute.
+	 * Sets the value of the '{@link competition.Team#getId <em>Id</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Id</em>' attribute.
@@ -57,14 +57,14 @@ public interface Team extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
-	 * @see Competition.CompetitionPackage#getTeam_Name()
+	 * @see competition.CompetitionPackage#getTeam_Name()
 	 * @model required="true"
 	 * @generated
 	 */
 	String getName();
 
 	/**
-	 * Sets the value of the '{@link Competition.Team#getName <em>Name</em>}' attribute.
+	 * Sets the value of the '{@link competition.Team#getName <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Name</em>' attribute.
@@ -79,14 +79,14 @@ public interface Team extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Short Name</em>' attribute.
 	 * @see #setShortName(String)
-	 * @see Competition.CompetitionPackage#getTeam_ShortName()
+	 * @see competition.CompetitionPackage#getTeam_ShortName()
 	 * @model
 	 * @generated
 	 */
 	String getShortName();
 
 	/**
-	 * Sets the value of the '{@link Competition.Team#getShortName <em>Short Name</em>}' attribute.
+	 * Sets the value of the '{@link competition.Team#getShortName <em>Short Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Short Name</em>' attribute.
@@ -101,14 +101,14 @@ public interface Team extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Tla</em>' attribute.
 	 * @see #setTla(String)
-	 * @see Competition.CompetitionPackage#getTeam_Tla()
+	 * @see competition.CompetitionPackage#getTeam_Tla()
 	 * @model
 	 * @generated
 	 */
 	String getTla();
 
 	/**
-	 * Sets the value of the '{@link Competition.Team#getTla <em>Tla</em>}' attribute.
+	 * Sets the value of the '{@link competition.Team#getTla <em>Tla</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Tla</em>' attribute.
@@ -123,14 +123,14 @@ public interface Team extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Founded</em>' attribute.
 	 * @see #setFounded(int)
-	 * @see Competition.CompetitionPackage#getTeam_Founded()
+	 * @see competition.CompetitionPackage#getTeam_Founded()
 	 * @model required="true"
 	 * @generated
 	 */
 	int getFounded();
 
 	/**
-	 * Sets the value of the '{@link Competition.Team#getFounded <em>Founded</em>}' attribute.
+	 * Sets the value of the '{@link competition.Team#getFounded <em>Founded</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Founded</em>' attribute.
@@ -145,14 +145,14 @@ public interface Team extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Club Colors</em>' attribute.
 	 * @see #setClubColors(String)
-	 * @see Competition.CompetitionPackage#getTeam_ClubColors()
+	 * @see competition.CompetitionPackage#getTeam_ClubColors()
 	 * @model
 	 * @generated
 	 */
 	String getClubColors();
 
 	/**
-	 * Sets the value of the '{@link Competition.Team#getClubColors <em>Club Colors</em>}' attribute.
+	 * Sets the value of the '{@link competition.Team#getClubColors <em>Club Colors</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Club Colors</em>' attribute.
@@ -163,11 +163,11 @@ public interface Team extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Squad</b></em>' containment reference list.
-	 * The list contents are of type {@link Competition.Person}.
+	 * The list contents are of type {@link competition.Person}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Squad</em>' containment reference list.
-	 * @see Competition.CompetitionPackage#getTeam_Squad()
+	 * @see competition.CompetitionPackage#getTeam_Squad()
 	 * @model containment="true"
 	 * @generated
 	 */

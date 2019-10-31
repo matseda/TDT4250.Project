@@ -1,9 +1,6 @@
 /**
  */
-package Competition;
-
-import Competition.impl.CompetitionFactoryImpl;
-
+package competition;
 
 import org.eclipse.emf.ecore.EFactory;
 
@@ -12,7 +9,7 @@ import org.eclipse.emf.ecore.EFactory;
  * The <b>Factory</b> for the model.
  * It provides a create method for each non-abstract class of the model.
  * <!-- end-user-doc -->
- * @see Competition.CompetitionPackage
+ * @see competition.CompetitionPackage
  * @generated
  */
 public interface CompetitionFactory extends EFactory {
@@ -22,7 +19,7 @@ public interface CompetitionFactory extends EFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	CompetitionFactory eINSTANCE = CompetitionFactoryImpl.init();
+	CompetitionFactory eINSTANCE = competition.impl.CompetitionFactoryImpl.init();
 
 	/**
 	 * Returns a new object of class '<em>Competition</em>'.

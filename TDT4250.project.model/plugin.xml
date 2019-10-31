@@ -10,8 +10,14 @@
       <!-- @generated competition -->
       <package
             uri="platform:/plugin/TDT4250.project.mpdel/model/Competition.ecore"
-            class="Competition.CompetitionPackage"
+            class="competition.CompetitionPackage"
             genModel="model/competition.genmodel"/>
    </extension>
 
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated competition -->
+      <parser
+            type="competition"
+            class="competition.util.CompetitionResourceFactoryImpl"/>
+   </extension>
 </plugin>

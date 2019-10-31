@@ -1,16 +1,16 @@
 /**
  */
-package Competition.impl;
+package competition.impl;
 
-import Competition.Booking;
-import Competition.CompetitionPackage;
-import Competition.Goal;
-import Competition.Match;
-import Competition.MatchTeam;
-import Competition.Score;
-import Competition.Season;
-import Competition.Status;
-import Competition.Substitution;
+import competition.Booking;
+import competition.CompetitionPackage;
+import competition.Goal;
+import competition.Match;
+import competition.MatchTeam;
+import competition.Score;
+import competition.Season;
+import competition.Status;
+import competition.Substitution;
 
 import java.util.Collection;
 import java.util.Date;
@@ -38,20 +38,20 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link Competition.impl.MatchImpl#getId <em>Id</em>}</li>
- *   <li>{@link Competition.impl.MatchImpl#getUtcDate <em>Utc Date</em>}</li>
- *   <li>{@link Competition.impl.MatchImpl#getStatus <em>Status</em>}</li>
- *   <li>{@link Competition.impl.MatchImpl#getMinute <em>Minute</em>}</li>
- *   <li>{@link Competition.impl.MatchImpl#getAttendance <em>Attendance</em>}</li>
- *   <li>{@link Competition.impl.MatchImpl#getVenue <em>Venue</em>}</li>
- *   <li>{@link Competition.impl.MatchImpl#getLastUpdated <em>Last Updated</em>}</li>
- *   <li>{@link Competition.impl.MatchImpl#getHomeTeam <em>Home Team</em>}</li>
- *   <li>{@link Competition.impl.MatchImpl#getAwayTeam <em>Away Team</em>}</li>
- *   <li>{@link Competition.impl.MatchImpl#getScore <em>Score</em>}</li>
- *   <li>{@link Competition.impl.MatchImpl#getGoals <em>Goals</em>}</li>
- *   <li>{@link Competition.impl.MatchImpl#getBookings <em>Bookings</em>}</li>
- *   <li>{@link Competition.impl.MatchImpl#getSubstitutions <em>Substitutions</em>}</li>
- *   <li>{@link Competition.impl.MatchImpl#getSeason <em>Season</em>}</li>
+ *   <li>{@link competition.impl.MatchImpl#getId <em>Id</em>}</li>
+ *   <li>{@link competition.impl.MatchImpl#getUtcDate <em>Utc Date</em>}</li>
+ *   <li>{@link competition.impl.MatchImpl#getStatus <em>Status</em>}</li>
+ *   <li>{@link competition.impl.MatchImpl#getMinute <em>Minute</em>}</li>
+ *   <li>{@link competition.impl.MatchImpl#getAttendance <em>Attendance</em>}</li>
+ *   <li>{@link competition.impl.MatchImpl#getVenue <em>Venue</em>}</li>
+ *   <li>{@link competition.impl.MatchImpl#getLastUpdated <em>Last Updated</em>}</li>
+ *   <li>{@link competition.impl.MatchImpl#getHomeTeam <em>Home Team</em>}</li>
+ *   <li>{@link competition.impl.MatchImpl#getAwayTeam <em>Away Team</em>}</li>
+ *   <li>{@link competition.impl.MatchImpl#getScore <em>Score</em>}</li>
+ *   <li>{@link competition.impl.MatchImpl#getGoals <em>Goals</em>}</li>
+ *   <li>{@link competition.impl.MatchImpl#getBookings <em>Bookings</em>}</li>
+ *   <li>{@link competition.impl.MatchImpl#getSubstitutions <em>Substitutions</em>}</li>
+ *   <li>{@link competition.impl.MatchImpl#getSeason <em>Season</em>}</li>
  * </ul>
  *
  * @generated

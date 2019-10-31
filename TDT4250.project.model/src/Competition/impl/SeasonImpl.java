@@ -1,11 +1,11 @@
 /**
  */
-package Competition.impl;
+package competition.impl;
 
-import Competition.Competition;
-import Competition.CompetitionPackage;
-import Competition.Match;
-import Competition.Season;
+import competition.Competition;
+import competition.CompetitionPackage;
+import competition.Match;
+import competition.Season;
 
 import java.util.Collection;
 import java.util.Date;
@@ -33,12 +33,12 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link Competition.impl.SeasonImpl#getId <em>Id</em>}</li>
- *   <li>{@link Competition.impl.SeasonImpl#getStartDate <em>Start Date</em>}</li>
- *   <li>{@link Competition.impl.SeasonImpl#getEndDate <em>End Date</em>}</li>
- *   <li>{@link Competition.impl.SeasonImpl#getCurrentMatchday <em>Current Matchday</em>}</li>
- *   <li>{@link Competition.impl.SeasonImpl#getMatches <em>Matches</em>}</li>
- *   <li>{@link Competition.impl.SeasonImpl#getCompetition <em>Competition</em>}</li>
+ *   <li>{@link competition.impl.SeasonImpl#getId <em>Id</em>}</li>
+ *   <li>{@link competition.impl.SeasonImpl#getStartDate <em>Start Date</em>}</li>
+ *   <li>{@link competition.impl.SeasonImpl#getEndDate <em>End Date</em>}</li>
+ *   <li>{@link competition.impl.SeasonImpl#getCurrentMatchday <em>Current Matchday</em>}</li>
+ *   <li>{@link competition.impl.SeasonImpl#getMatches <em>Matches</em>}</li>
+ *   <li>{@link competition.impl.SeasonImpl#getCompetition <em>Competition</em>}</li>
  * </ul>
  *
  * @generated

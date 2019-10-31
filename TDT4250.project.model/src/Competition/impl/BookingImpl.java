@@ -1,11 +1,13 @@
 /**
  */
-package Competition.impl;
+package competition.impl;
 
-import Competition.Booking;
-import Competition.Card;
-import Competition.CompetitionPackage;
-import Competition.Match;
+import competition.Booking;
+import competition.Card;
+import competition.CompetitionPackage;
+import competition.Match;
+import competition.Person;
+import competition.Team;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -26,11 +28,11 @@ import org.eclipse.emf.ecore.util.EcoreUtil;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link Competition.impl.BookingImpl#getMinute <em>Minute</em>}</li>
- *   <li>{@link Competition.impl.BookingImpl#getTeam <em>Team</em>}</li>
- *   <li>{@link Competition.impl.BookingImpl#getPlayer <em>Player</em>}</li>
- *   <li>{@link Competition.impl.BookingImpl#getCard <em>Card</em>}</li>
- *   <li>{@link Competition.impl.BookingImpl#getMatch <em>Match</em>}</li>
+ *   <li>{@link competition.impl.BookingImpl#getMinute <em>Minute</em>}</li>
+ *   <li>{@link competition.impl.BookingImpl#getCard <em>Card</em>}</li>
+ *   <li>{@link competition.impl.BookingImpl#getMatch <em>Match</em>}</li>
+ *   <li>{@link competition.impl.BookingImpl#getTeam <em>Team</em>}</li>
+ *   <li>{@link competition.impl.BookingImpl#getPlayer <em>Player</em>}</li>
  * </ul>
  *
  * @generated
@@ -57,46 +59,6 @@ public class BookingImpl extends MinimalEObjectImpl.Container implements Booking
 	protected int minute = MINUTE_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getTeam() <em>Team</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getTeam()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String TEAM_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getTeam() <em>Team</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getTeam()
-	 * @generated
-	 * @ordered
-	 */
-	protected String team = TEAM_EDEFAULT;
-
-	/**
-	 * The default value of the '{@link #getPlayer() <em>Player</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getPlayer()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String PLAYER_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getPlayer() <em>Player</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getPlayer()
-	 * @generated
-	 * @ordered
-	 */
-	protected String player = PLAYER_EDEFAULT;
-
-	/**
 	 * The default value of the '{@link #getCard() <em>Card</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -115,6 +77,26 @@ public class BookingImpl extends MinimalEObjectImpl.Container implements Booking
 	 * @ordered
 	 */
 	protected Card card = CARD_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getTeam() <em>Team</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTeam()
+	 * @generated
+	 * @ordered
+	 */
+	protected Team team;
+
+	/**
+	 * The cached value of the '{@link #getPlayer() <em>Player</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPlayer()
+	 * @generated
+	 * @ordered
+	 */
+	protected Person player;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -156,52 +138,6 @@ public class BookingImpl extends MinimalEObjectImpl.Container implements Booking
 		minute = newMinute;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, CompetitionPackage.BOOKING__MINUTE, oldMinute, minute));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String getTeam() {
-		return team;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setTeam(String newTeam) {
-		String oldTeam = team;
-		team = newTeam;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CompetitionPackage.BOOKING__TEAM, oldTeam, team));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String getPlayer() {
-		return player;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPlayer(String newPlayer) {
-		String oldPlayer = player;
-		player = newPlayer;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CompetitionPackage.BOOKING__PLAYER, oldPlayer, player));
 	}
 
 	/**
@@ -276,6 +212,86 @@ public class BookingImpl extends MinimalEObjectImpl.Container implements Booking
 	 * @generated
 	 */
 	@Override
+	public Team getTeam() {
+		if (team != null && team.eIsProxy()) {
+			InternalEObject oldTeam = (InternalEObject)team;
+			team = (Team)eResolveProxy(oldTeam);
+			if (team != oldTeam) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, CompetitionPackage.BOOKING__TEAM, oldTeam, team));
+			}
+		}
+		return team;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Team basicGetTeam() {
+		return team;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setTeam(Team newTeam) {
+		Team oldTeam = team;
+		team = newTeam;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CompetitionPackage.BOOKING__TEAM, oldTeam, team));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Person getPlayer() {
+		if (player != null && player.eIsProxy()) {
+			InternalEObject oldPlayer = (InternalEObject)player;
+			player = (Person)eResolveProxy(oldPlayer);
+			if (player != oldPlayer) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, CompetitionPackage.BOOKING__PLAYER, oldPlayer, player));
+			}
+		}
+		return player;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Person basicGetPlayer() {
+		return player;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPlayer(Person newPlayer) {
+		Person oldPlayer = player;
+		player = newPlayer;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CompetitionPackage.BOOKING__PLAYER, oldPlayer, player));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case CompetitionPackage.BOOKING__MATCH:
@@ -324,14 +340,16 @@ public class BookingImpl extends MinimalEObjectImpl.Container implements Booking
 		switch (featureID) {
 			case CompetitionPackage.BOOKING__MINUTE:
 				return getMinute();
-			case CompetitionPackage.BOOKING__TEAM:
-				return getTeam();
-			case CompetitionPackage.BOOKING__PLAYER:
-				return getPlayer();
 			case CompetitionPackage.BOOKING__CARD:
 				return getCard();
 			case CompetitionPackage.BOOKING__MATCH:
 				return getMatch();
+			case CompetitionPackage.BOOKING__TEAM:
+				if (resolve) return getTeam();
+				return basicGetTeam();
+			case CompetitionPackage.BOOKING__PLAYER:
+				if (resolve) return getPlayer();
+				return basicGetPlayer();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -347,17 +365,17 @@ public class BookingImpl extends MinimalEObjectImpl.Container implements Booking
 			case CompetitionPackage.BOOKING__MINUTE:
 				setMinute((Integer)newValue);
 				return;
-			case CompetitionPackage.BOOKING__TEAM:
-				setTeam((String)newValue);
-				return;
-			case CompetitionPackage.BOOKING__PLAYER:
-				setPlayer((String)newValue);
-				return;
 			case CompetitionPackage.BOOKING__CARD:
 				setCard((Card)newValue);
 				return;
 			case CompetitionPackage.BOOKING__MATCH:
 				setMatch((Match)newValue);
+				return;
+			case CompetitionPackage.BOOKING__TEAM:
+				setTeam((Team)newValue);
+				return;
+			case CompetitionPackage.BOOKING__PLAYER:
+				setPlayer((Person)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -374,17 +392,17 @@ public class BookingImpl extends MinimalEObjectImpl.Container implements Booking
 			case CompetitionPackage.BOOKING__MINUTE:
 				setMinute(MINUTE_EDEFAULT);
 				return;
-			case CompetitionPackage.BOOKING__TEAM:
-				setTeam(TEAM_EDEFAULT);
-				return;
-			case CompetitionPackage.BOOKING__PLAYER:
-				setPlayer(PLAYER_EDEFAULT);
-				return;
 			case CompetitionPackage.BOOKING__CARD:
 				setCard(CARD_EDEFAULT);
 				return;
 			case CompetitionPackage.BOOKING__MATCH:
 				setMatch((Match)null);
+				return;
+			case CompetitionPackage.BOOKING__TEAM:
+				setTeam((Team)null);
+				return;
+			case CompetitionPackage.BOOKING__PLAYER:
+				setPlayer((Person)null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -400,14 +418,14 @@ public class BookingImpl extends MinimalEObjectImpl.Container implements Booking
 		switch (featureID) {
 			case CompetitionPackage.BOOKING__MINUTE:
 				return minute != MINUTE_EDEFAULT;
-			case CompetitionPackage.BOOKING__TEAM:
-				return TEAM_EDEFAULT == null ? team != null : !TEAM_EDEFAULT.equals(team);
-			case CompetitionPackage.BOOKING__PLAYER:
-				return PLAYER_EDEFAULT == null ? player != null : !PLAYER_EDEFAULT.equals(player);
 			case CompetitionPackage.BOOKING__CARD:
 				return card != CARD_EDEFAULT;
 			case CompetitionPackage.BOOKING__MATCH:
 				return getMatch() != null;
+			case CompetitionPackage.BOOKING__TEAM:
+				return team != null;
+			case CompetitionPackage.BOOKING__PLAYER:
+				return player != null;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -424,10 +442,6 @@ public class BookingImpl extends MinimalEObjectImpl.Container implements Booking
 		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (minute: ");
 		result.append(minute);
-		result.append(", team: ");
-		result.append(team);
-		result.append(", player: ");
-		result.append(player);
 		result.append(", card: ");
 		result.append(card);
 		result.append(')');
