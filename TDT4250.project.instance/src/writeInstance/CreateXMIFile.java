@@ -39,8 +39,7 @@ public class CreateXMIFile {
 
         // As of here we preparing to save the model content
 
-        // Register the XMI resource factory for the .website extension
-
+        // Register the XMI resource factory for the .xmi extension
         Resource.Factory.Registry reg = Resource.Factory.Registry.INSTANCE;
         Map<String, Object> m = reg.getExtensionToFactoryMap();
         m.put("xmi", new XMIResourceFactoryImpl());
