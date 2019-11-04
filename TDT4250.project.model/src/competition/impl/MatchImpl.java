@@ -112,7 +112,7 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Date MATCH_DAY_EDEFAULT = null;
+	protected static final int MATCH_DAY_EDEFAULT = 0;
 
 	/**
 	 * The cached value of the '{@link #getMatchDay() <em>Match Day</em>}' attribute.
@@ -122,7 +122,7 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 	 * @generated
 	 * @ordered
 	 */
-	protected Date matchDay = MATCH_DAY_EDEFAULT;
+	protected int matchDay = MATCH_DAY_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getLastUpdated() <em>Last Updated</em>}' attribute.
@@ -268,7 +268,7 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 	 * @generated
 	 */
 	@Override
-	public Date getMatchDay() {
+	public int getMatchDay() {
 		return matchDay;
 	}
 
@@ -278,8 +278,8 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 	 * @generated
 	 */
 	@Override
-	public void setMatchDay(Date newMatchDay) {
-		Date oldMatchDay = matchDay;
+	public void setMatchDay(int newMatchDay) {
+		int oldMatchDay = matchDay;
 		matchDay = newMatchDay;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, CompetitionPackage.MATCH__MATCH_DAY, oldMatchDay, matchDay));
@@ -576,7 +576,7 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 				setStatus((Status)newValue);
 				return;
 			case CompetitionPackage.MATCH__MATCH_DAY:
-				setMatchDay((Date)newValue);
+				setMatchDay((Integer)newValue);
 				return;
 			case CompetitionPackage.MATCH__LAST_UPDATED:
 				setLastUpdated((Date)newValue);
@@ -651,7 +651,7 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 			case CompetitionPackage.MATCH__STATUS:
 				return status != STATUS_EDEFAULT;
 			case CompetitionPackage.MATCH__MATCH_DAY:
-				return MATCH_DAY_EDEFAULT == null ? matchDay != null : !MATCH_DAY_EDEFAULT.equals(matchDay);
+				return matchDay != MATCH_DAY_EDEFAULT;
 			case CompetitionPackage.MATCH__LAST_UPDATED:
 				return LAST_UPDATED_EDEFAULT == null ? lastUpdated != null : !LAST_UPDATED_EDEFAULT.equals(lastUpdated);
 			case CompetitionPackage.MATCH__SCORE:

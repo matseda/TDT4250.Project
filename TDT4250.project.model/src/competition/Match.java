@@ -105,12 +105,12 @@ public interface Match extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Match Day</em>' attribute.
-	 * @see #setMatchDay(Date)
+	 * @see #setMatchDay(int)
 	 * @see competition.CompetitionPackage#getMatch_MatchDay()
 	 * @model
 	 * @generated
 	 */
-	Date getMatchDay();
+	int getMatchDay();
 
 	/**
 	 * Sets the value of the '{@link competition.Match#getMatchDay <em>Match Day</em>}' attribute.
@@ -120,7 +120,7 @@ public interface Match extends EObject {
 	 * @see #getMatchDay()
 	 * @generated
 	 */
-	void setMatchDay(Date value);
+	void setMatchDay(int value);
 
 	/**
 	 * Returns the value of the '<em><b>Last Updated</b></em>' attribute.

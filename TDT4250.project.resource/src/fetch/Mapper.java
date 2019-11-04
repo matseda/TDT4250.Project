@@ -2,6 +2,9 @@ package fetch;
 
 import java.io.IOException;
 import java.net.URL;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Collections;
 import java.util.Date;
 import java.util.Map;
@@ -14,6 +17,7 @@ import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+
 import competition.Competition;
 import competition.CompetitionFactory;
 import competition.CompetitionPackage;
@@ -33,6 +37,18 @@ import jsonModel.TeamM;;
 
 public class Mapper {
 	private ObjectMapper objectMapper = new ObjectMapper();
+	
+	private Date parseDate(String date) {
+		DateFormat format = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'");
+		Date parsedDate = null;
+		try {
+			parsedDate = format.parse(date);
+		} catch (ParseException e) {
+			System.out.println("Failed parsing date");
+			e.printStackTrace();
+		}
+		return parsedDate;
+	}
 
 	private Competition createCompetition(CompetitionM competitionM, CompetitionFactory factory) {
 		Competition competition = factory.createCompetition();
@@ -41,7 +57,7 @@ public class Mapper {
 		competition.setCode(competitionM.code);
 		competition.setArea(competitionM.area.name);
 		competition.setPlan(competitionM.plan);
-		competition.setLastUpdated(new Date()); // TODO: Fix date parsing
+		competition.setLastUpdated(parseDate(competitionM.lastUpdated));
 		return competition;
 	}
 
@@ -90,12 +106,11 @@ public class Mapper {
 		for(int i = 0; i < matchM.matches.size(); i++) {
 			Match match = factory.createMatch();
 			match.setId(matchM.matches.get(i).id);
-		
 			match.setStatus(Status.valueOf(matchM.matches.get(i).status));
-			match.setMatchDay(new Date()); // TODO: Fix date parsing
-			match.setLastUpdated(new Date()); // TODO: Fix date parsing
+			match.setMatchDay(matchM.matches.get(i).matchday);
+			match.setLastUpdated(parseDate(matchM.matches.get(i).lastUpdated));
 			match.setSeason(season);
-			match.setUtcDate(new Date()); // TODO: Fix date parsing
+			match.setUtcDate(parseDate(matchM.matches.get(i).utcDate));
 			
 			Score score = factory.createScore();
 			score.setMatch(match);
@@ -187,16 +202,16 @@ public class Mapper {
 		String strBuilder = "";
 		strBuilder += competition.name + ":\n";
 	    
-	    // Add teams
+	    // Add teams to print string
 	    for(int i = 0; i < team.teams.size(); i++) strBuilder += team.teams.get(i).name + "\n";
 	    
 	    
-	    // Add matches
+	    // Add matches to print string
 	    strBuilder += "\nMatches:\n";
 	    for(int i = 0; i < match.matches.size(); i++) 
 	    	strBuilder += match.matches.get(i).homeTeam.name + " ----VS---- " + match.matches.get(i).awayTeam.name + "\n";
 	    
-	    // Add standing
+	    // Add standing to print string
 	    strBuilder += "\nStanding:\n";
 	    for(int i = 0; i < standing.standings.get(0).table.size(); i++) 
 	    	strBuilder += standing.standings.get(0).table.get(i).position + ": " + standing.standings.get(0).table.get(i).team.name + "\n";
