@@ -127,14 +127,14 @@ public class Mapper {
 		return season;
 	}
 	
-	public void buildModel() {
+	public void buildModel(String competitionUrl, String teamsUrl, String matchesUrl, String standingUrl) {
 		try {
 			
 			// Initialize object models
-		    CompetitionM competitionM = objectMapper.readValue(new URL("file:data/competition-pl.json"), CompetitionM.class);
-		    TeamM teamM = objectMapper.readValue(new URL("file:data/teams-pl.json"), TeamM.class);
-		    MatchM matchM = objectMapper.readValue(new URL("file:data/matches-pl.json"), MatchM.class);
-		    StandingM standingM = objectMapper.readValue(new URL("file:data/standing.json"), StandingM.class);
+		    CompetitionM competitionM = objectMapper.readValue(new URL(competitionUrl), CompetitionM.class);
+		    TeamM teamM = objectMapper.readValue(new URL(teamsUrl), TeamM.class);
+		    MatchM matchM = objectMapper.readValue(new URL(matchesUrl), MatchM.class);
+		    StandingM standingM = objectMapper.readValue(new URL(standingUrl), StandingM.class);
 		    
 		    // Print teams
 		    System.out.print(printTeams(competitionM, teamM, matchM, standingM));
