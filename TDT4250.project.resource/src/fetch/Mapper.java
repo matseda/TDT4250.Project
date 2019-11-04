@@ -177,7 +177,7 @@ public class Mapper {
 	        ResourceSet resSet = new ResourceSetImpl();
 
 	        // create a resource
-	        Resource resource = resSet.createResource(URI.createURI("sample/sample.xmi"));
+	        Resource resource = resSet.createResource(URI.createURI("TDT4250.project.samples/test.xmi"));
 	        
 	        // Get the first model element and cast it to the right type, in my
 	        // example everything is hierarchical included in this first node
