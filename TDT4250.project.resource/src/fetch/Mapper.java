@@ -185,19 +185,21 @@ public class Mapper {
 	
 	public String printTeams(CompetitionM competition, TeamM team, MatchM match, StandingM standing) {
 		String strBuilder = "";
-		strBuilder += competition.name + "\n" + team.teams.get(1).name + "\n";
+		strBuilder += competition.name + ":\n";
 	    
 	    // Add teams
 	    for(int i = 0; i < team.teams.size(); i++) strBuilder += team.teams.get(i).name + "\n";
 	    
 	    
 	    // Add matches
+	    strBuilder += "\nMatches:\n";
 	    for(int i = 0; i < match.matches.size(); i++) 
-	    	strBuilder += match.matches.get(i).homeTeam.name + " ----VS---- " + match.matches.get(i).awayTeam.name;
+	    	strBuilder += match.matches.get(i).homeTeam.name + " ----VS---- " + match.matches.get(i).awayTeam.name + "\n";
 	    
-	    // Add standings
+	    // Add standing
+	    strBuilder += "\nStanding:\n";
 	    for(int i = 0; i < standing.standings.get(0).table.size(); i++) 
-	    	strBuilder += standing.standings.get(0).table.get(i).position + ": " + standing.standings.get(0).table.get(i).team.name;
+	    	strBuilder += standing.standings.get(0).table.get(i).position + ": " + standing.standings.get(0).table.get(i).team.name + "\n";
 	    
 		return strBuilder;
 	}
