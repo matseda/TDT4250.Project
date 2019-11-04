@@ -31,7 +31,7 @@ import jsonModel.StandingM;
 import jsonModel.TeamM;;
 
 
-public class FetchData {
+public class Mapper {
 	public static ObjectMapper objectMapper = new ObjectMapper();
 	
 	public static void main(String[] args) {		
