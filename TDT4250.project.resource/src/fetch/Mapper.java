@@ -34,47 +34,51 @@ import jsonModel.TeamM;;
 public class Mapper {
 	public static ObjectMapper objectMapper = new ObjectMapper();
 	
+	public static String printTeams(CompetitionM competition, TeamM team, MatchM match, StandingM standing) {
+		String strBuilder = "";
+		strBuilder += competition.name + "\n" + team.teams.get(1).name + "\n";
+	    
+	    // Add teams
+	    for(int i = 0; i < team.teams.size(); i++) strBuilder += team.teams.get(i).name + "\n";
+	    
+	    
+	    // Add matches
+	    for(int i = 0; i < match.matches.size(); i++) 
+	    	strBuilder += match.matches.get(i).homeTeam.name + " ----VS---- " + match.matches.get(i).awayTeam.name;
+	    
+	    // Add standings
+	    for(int i = 0; i < standing.standings.get(0).table.size(); i++) 
+	    	strBuilder += standing.standings.get(0).table.get(i).position + ": " + standing.standings.get(0).table.get(i).team.name;
+		return strBuilder;
+	}
+	
 	public static void main(String[] args) {		
 			try {
-			    CompetitionM com = objectMapper.readValue(new URL("file:data/competition-pl.json"), CompetitionM.class);
-			    System.out.println(com.name);
-			    System.out.println("------");
-			
+				
+				// Initialize object models
+			    CompetitionM competitionM = objectMapper.readValue(new URL("file:data/competition-pl.json"), CompetitionM.class);
 			    TeamM teamM = objectMapper.readValue(new URL("file:data/teams-pl.json"), TeamM.class);
-			    System.out.println(teamM.teams.get(1).name);
-			    
-			    for(int i = 0; i < teamM.teams.size(); i++) {
-			    	System.out.println(teamM.teams.get(i).name);
-			    }
-			    
-			    System.out.println("------");
-			    
 			    MatchM matchM = objectMapper.readValue(new URL("file:data/matches-pl.json"), MatchM.class);
-			    for(int i = 0; i < matchM.matches.size(); i++) {
-			    	System.out.println(matchM.matches.get(i).homeTeam.name + " ----VS---- " + matchM.matches.get(i).awayTeam.name);
-			    }
-			    System.out.println("------");
-			    
 			    StandingM standingM = objectMapper.readValue(new URL("file:data/standing.json"), StandingM.class);
-			    for(int i = 0; i < standingM.standings.get(0).table.size(); i++) {
-			    	System.out.println(standingM.standings.get(0).table.get(i).position + ": " + standingM.standings.get(0).table.get(i).team.name);
-			    }
+			    
+			    System.out.print(printTeams(competitionM, teamM, matchM, standingM));
 			    
 			    // Initialize the model
 				CompetitionPackage.eINSTANCE.eClass();
+				
 		        // Retrieve the default factory singleton
 				CompetitionFactory factory = CompetitionFactory.eINSTANCE;
 
-		        // create the content of the model via this program
+		        // Create the content of the model via this program
 				Competition competition = factory.createCompetition();
-				competition.setId(com.id);
-				competition.setName(com.name);
-				competition.setCode(com.code);
-				competition.setArea(com.area.name);
-				competition.setPlan(com.plan);
-				competition.setLastUpdated(new Date());
+				competition.setId(competitionM.id);
+				competition.setName(competitionM.name);
+				competition.setCode(competitionM.code);
+				competition.setArea(competitionM.area.name);
+				competition.setPlan(competitionM.plan);
+				competition.setLastUpdated(new Date()); // TODO: Fix date parsing
 				
-				// TEAM
+				// Add teams
 				for(int i = 0; i < teamM.teams.size(); i++) {
 					Team team = factory.createTeam();
 					team.setId(teamM.teams.get(i).id);
@@ -87,22 +91,22 @@ public class Mapper {
 			    }
 				
 				Season season = factory.createSeason();
-				season.setId(com.currentSeason.id);
+				season.setId(competitionM.currentSeason.id);
 				season.setStartDate(new Date());
 				season.setEndDate(new Date());
-				season.setCurrentMatchday(com.currentSeason.currentMatchday);
+				season.setCurrentMatchday(competitionM.currentSeason.currentMatchday);
 				season.setCompetition(competition);
 				
-				// MATCH
+				// Add matches
 				for(int i = 0; i < matchM.matches.size(); i++) {
 					Match match = factory.createMatch();
 					match.setId(matchM.matches.get(i).id);
 				
 					match.setStatus(Status.valueOf(matchM.matches.get(i).status));
-					match.setMatchDay(new Date());
-					match.setLastUpdated(new Date());
+					match.setMatchDay(new Date()); // TODO: Fix date parsing
+					match.setLastUpdated(new Date()); // TODO: Fix date parsing
 					match.setSeason(season);
-					match.setUtcDate(new Date());
+					match.setUtcDate(new Date()); // TODO: Fix date parsing
 					
 					Score score = factory.createScore();
 					score.setMatch(match);
@@ -122,7 +126,8 @@ public class Mapper {
 					
 					season.getMatches().add(match);
 				}
-				// STANDING
+				
+				// Add standings
 				Standing standing = factory.createStanding();
 				for(int i = 0; i < standingM.standings.get(0).table.size(); i++) {
 					Positon pos = factory.createPositon();
@@ -136,21 +141,16 @@ public class Mapper {
 					pos.setGoalsAgaints(standingM.standings.get(0).table.get(i).goalsAgainst);
 					pos.setGoalDifference(standingM.standings.get(0).table.get(i).goalDifference);
 					
-					for(int j = 0; j < competition.getTeams().size(); j++) {
-						if(competition.getTeams().get(j).getId() == standingM.standings.get(0).table.get(i).team.id) {
+					for(int j = 0; j < competition.getTeams().size(); j++) 
+						if(competition.getTeams().get(j).getId() == standingM.standings.get(0).table.get(i).team.id) 
 							pos.setTeam(competition.getTeams().get(j));
-						}
-						
-					}
-				
+
 					standing.getPositions().add(pos);
 				}
 				season.setStanding(standing);
-				
 				competition.setCurrentSeason(season);
 				
 				// As of here we preparing to save the model content
-
 		        // Register the XMI resource factory for the .xmi extension
 		        Resource.Factory.Registry reg = Resource.Factory.Registry.INSTANCE;
 		        Map<String, Object> m = reg.getExtensionToFactoryMap();
@@ -170,11 +170,12 @@ public class Mapper {
 		        try {
 		            resource.save(Collections.EMPTY_MAP);
 		        } catch (IOException e) {
-		            // TODO Auto-generated catch block
+		            System.out.println("Error trying to save the content");
 		            e.printStackTrace();
 		        }
 		        
 			} catch (IOException e) {
+				System.out.println("Error trying map JSON to model");
 			    e.printStackTrace();
 			}
 			
