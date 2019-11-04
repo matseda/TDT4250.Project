@@ -36,7 +36,7 @@ public enum Status implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	AWARDED(0, "AWARDED", "AWARDED"),
+	AWARDED(1, "AWARDED", "AWARDED"),
 
 	/**
 	 * The '<em><b>IN PLAY</b></em>' literal object.
@@ -46,7 +46,7 @@ public enum Status implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	IN_PLAY(0, "IN_PLAY", "IN_PLAY"),
+	IN_PLAY(2, "IN_PLAY", "IN_PLAY"),
 
 	/**
 	 * The '<em><b>PAUSED</b></em>' literal object.
@@ -56,7 +56,7 @@ public enum Status implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	PAUSED(0, "PAUSED", "PAUSED"),
+	PAUSED(3, "PAUSED", "PAUSED"),
 
 	/**
 	 * The '<em><b>CANCELED</b></em>' literal object.
@@ -66,7 +66,7 @@ public enum Status implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	CANCELED(0, "CANCELED", "CANCELED"),
+	CANCELED(4, "CANCELED", "CANCELED"),
 
 	/**
 	 * The '<em><b>SCHEDULED</b></em>' literal object.
@@ -76,7 +76,7 @@ public enum Status implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	SCHEDULED(0, "SCHEDULED", "SCHEDULED"),
+	SCHEDULED(5, "SCHEDULED", "SCHEDULED"),
 
 	/**
 	 * The '<em><b>POSTPONED</b></em>' literal object.
@@ -86,7 +86,7 @@ public enum Status implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	POSTPONED(0, "POSTPONED", "POSTPONED"),
+	POSTPONED(6, "POSTPONED", "POSTPONED"),
 
 	/**
 	 * The '<em><b>SUSPENDED</b></em>' literal object.
@@ -96,7 +96,7 @@ public enum Status implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	SUSPENDED(0, "SUSPENDED", "SUSPENDED");
+	SUSPENDED(7, "SUSPENDED", "SUSPENDED");
 
 	/**
 	 * The '<em><b>FINISHED</b></em>' literal value.
@@ -118,7 +118,7 @@ public enum Status implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int AWARDED_VALUE = 0;
+	public static final int AWARDED_VALUE = 1;
 
 	/**
 	 * The '<em><b>IN PLAY</b></em>' literal value.
@@ -129,7 +129,7 @@ public enum Status implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int IN_PLAY_VALUE = 0;
+	public static final int IN_PLAY_VALUE = 2;
 
 	/**
 	 * The '<em><b>PAUSED</b></em>' literal value.
@@ -140,7 +140,7 @@ public enum Status implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int PAUSED_VALUE = 0;
+	public static final int PAUSED_VALUE = 3;
 
 	/**
 	 * The '<em><b>CANCELED</b></em>' literal value.
@@ -151,7 +151,7 @@ public enum Status implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int CANCELED_VALUE = 0;
+	public static final int CANCELED_VALUE = 4;
 
 	/**
 	 * The '<em><b>SCHEDULED</b></em>' literal value.
@@ -162,7 +162,7 @@ public enum Status implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int SCHEDULED_VALUE = 0;
+	public static final int SCHEDULED_VALUE = 5;
 
 	/**
 	 * The '<em><b>POSTPONED</b></em>' literal value.
@@ -173,7 +173,7 @@ public enum Status implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int POSTPONED_VALUE = 0;
+	public static final int POSTPONED_VALUE = 6;
 
 	/**
 	 * The '<em><b>SUSPENDED</b></em>' literal value.
@@ -184,7 +184,7 @@ public enum Status implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int SUSPENDED_VALUE = 0;
+	public static final int SUSPENDED_VALUE = 7;
 
 	/**
 	 * An array of all the '<em><b>Status</b></em>' enumerators.
@@ -259,6 +259,13 @@ public enum Status implements Enumerator {
 	public static Status get(int value) {
 		switch (value) {
 			case FINISHED_VALUE: return FINISHED;
+			case AWARDED_VALUE: return AWARDED;
+			case IN_PLAY_VALUE: return IN_PLAY;
+			case PAUSED_VALUE: return PAUSED;
+			case CANCELED_VALUE: return CANCELED;
+			case SCHEDULED_VALUE: return SCHEDULED;
+			case POSTPONED_VALUE: return POSTPONED;
+			case SUSPENDED_VALUE: return SUSPENDED;
 		}
 		return null;
 	}

@@ -84,21 +84,9 @@ public class CompetitionSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case CompetitionPackage.PERSON: {
-				Person person = (Person)theEObject;
-				T result = casePerson(person);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case CompetitionPackage.MATCH: {
 				Match match = (Match)theEObject;
 				T result = caseMatch(match);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case CompetitionPackage.MATCH_TEAM: {
-				MatchTeam matchTeam = (MatchTeam)theEObject;
-				T result = caseMatchTeam(matchTeam);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -108,21 +96,15 @@ public class CompetitionSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case CompetitionPackage.GOAL: {
-				Goal goal = (Goal)theEObject;
-				T result = caseGoal(goal);
+			case CompetitionPackage.STANDING: {
+				Standing standing = (Standing)theEObject;
+				T result = caseStanding(standing);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case CompetitionPackage.BOOKING: {
-				Booking booking = (Booking)theEObject;
-				T result = caseBooking(booking);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case CompetitionPackage.SUBSTITUTION: {
-				Substitution substitution = (Substitution)theEObject;
-				T result = caseSubstitution(substitution);
+			case CompetitionPackage.POSITON: {
+				Positon positon = (Positon)theEObject;
+				T result = casePositon(positon);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -176,21 +158,6 @@ public class CompetitionSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Person</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Person</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T casePerson(Person object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Match</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -202,21 +169,6 @@ public class CompetitionSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseMatch(Match object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Match Team</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Match Team</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseMatchTeam(MatchTeam object) {
 		return null;
 	}
 
@@ -236,47 +188,32 @@ public class CompetitionSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Goal</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Standing</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Goal</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Standing</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseGoal(Goal object) {
+	public T caseStanding(Standing object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Booking</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Positon</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Booking</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Positon</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseBooking(Booking object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Substitution</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Substitution</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseSubstitution(Substitution object) {
+	public T casePositon(Positon object) {
 		return null;
 	}
 

@@ -36,7 +36,17 @@ public enum Winner implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	AWAY_TEAM(0, "AWAY_TEAM", "AWAY_TEAM");
+	AWAY_TEAM(1, "AWAY_TEAM", "AWAY_TEAM"),
+
+	/**
+	 * The '<em><b>DRAW</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #DRAW_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	DRAW(3, "DRAW", "DRAW");
 
 	/**
 	 * The '<em><b>HOME TEAM</b></em>' literal value.
@@ -58,7 +68,18 @@ public enum Winner implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int AWAY_TEAM_VALUE = 0;
+	public static final int AWAY_TEAM_VALUE = 1;
+
+	/**
+	 * The '<em><b>DRAW</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #DRAW
+	 * @model
+	 * @generated
+	 * @ordered
+	 */
+	public static final int DRAW_VALUE = 3;
 
 	/**
 	 * An array of all the '<em><b>Winner</b></em>' enumerators.
@@ -70,6 +91,7 @@ public enum Winner implements Enumerator {
 		new Winner[] {
 			HOME_TEAM,
 			AWAY_TEAM,
+			DRAW,
 		};
 
 	/**
@@ -127,6 +149,8 @@ public enum Winner implements Enumerator {
 	public static Winner get(int value) {
 		switch (value) {
 			case HOME_TEAM_VALUE: return HOME_TEAM;
+			case AWAY_TEAM_VALUE: return AWAY_TEAM;
+			case DRAW_VALUE: return DRAW;
 		}
 		return null;
 	}

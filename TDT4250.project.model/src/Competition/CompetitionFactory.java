@@ -49,15 +49,6 @@ public interface CompetitionFactory extends EFactory {
 	Team createTeam();
 
 	/**
-	 * Returns a new object of class '<em>Person</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Person</em>'.
-	 * @generated
-	 */
-	Person createPerson();
-
-	/**
 	 * Returns a new object of class '<em>Match</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -65,15 +56,6 @@ public interface CompetitionFactory extends EFactory {
 	 * @generated
 	 */
 	Match createMatch();
-
-	/**
-	 * Returns a new object of class '<em>Match Team</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Match Team</em>'.
-	 * @generated
-	 */
-	MatchTeam createMatchTeam();
 
 	/**
 	 * Returns a new object of class '<em>Score</em>'.
@@ -85,31 +67,22 @@ public interface CompetitionFactory extends EFactory {
 	Score createScore();
 
 	/**
-	 * Returns a new object of class '<em>Goal</em>'.
+	 * Returns a new object of class '<em>Standing</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Goal</em>'.
+	 * @return a new object of class '<em>Standing</em>'.
 	 * @generated
 	 */
-	Goal createGoal();
+	Standing createStanding();
 
 	/**
-	 * Returns a new object of class '<em>Booking</em>'.
+	 * Returns a new object of class '<em>Positon</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Booking</em>'.
+	 * @return a new object of class '<em>Positon</em>'.
 	 * @generated
 	 */
-	Booking createBooking();
-
-	/**
-	 * Returns a new object of class '<em>Substitution</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Substitution</em>'.
-	 * @generated
-	 */
-	Substitution createSubstitution();
+	Positon createPositon();
 
 	/**
 	 * Returns the package supported by this factory.

@@ -3,24 +3,14 @@
 package competition.impl;
 
 import competition.CompetitionPackage;
-import competition.Person;
 import competition.Team;
 
-import java.util.Collection;
-
 import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.common.notify.NotificationChain;
-
-import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-
-import org.eclipse.emf.ecore.util.EObjectContainmentEList;
-import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -36,7 +26,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link competition.impl.TeamImpl#getTla <em>Tla</em>}</li>
  *   <li>{@link competition.impl.TeamImpl#getFounded <em>Founded</em>}</li>
  *   <li>{@link competition.impl.TeamImpl#getClubColors <em>Club Colors</em>}</li>
- *   <li>{@link competition.impl.TeamImpl#getSquad <em>Squad</em>}</li>
  * </ul>
  *
  * @generated
@@ -161,16 +150,6 @@ public class TeamImpl extends MinimalEObjectImpl.Container implements Team {
 	 * @ordered
 	 */
 	protected String clubColors = CLUB_COLORS_EDEFAULT;
-
-	/**
-	 * The cached value of the '{@link #getSquad() <em>Squad</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getSquad()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<Person> squad;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -335,33 +314,6 @@ public class TeamImpl extends MinimalEObjectImpl.Container implements Team {
 	 * @generated
 	 */
 	@Override
-	public EList<Person> getSquad() {
-		if (squad == null) {
-			squad = new EObjectContainmentEList<Person>(Person.class, this, CompetitionPackage.TEAM__SQUAD);
-		}
-		return squad;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case CompetitionPackage.TEAM__SQUAD:
-				return ((InternalEList<?>)getSquad()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case CompetitionPackage.TEAM__ID:
@@ -376,8 +328,6 @@ public class TeamImpl extends MinimalEObjectImpl.Container implements Team {
 				return getFounded();
 			case CompetitionPackage.TEAM__CLUB_COLORS:
 				return getClubColors();
-			case CompetitionPackage.TEAM__SQUAD:
-				return getSquad();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -387,7 +337,6 @@ public class TeamImpl extends MinimalEObjectImpl.Container implements Team {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
@@ -408,10 +357,6 @@ public class TeamImpl extends MinimalEObjectImpl.Container implements Team {
 				return;
 			case CompetitionPackage.TEAM__CLUB_COLORS:
 				setClubColors((String)newValue);
-				return;
-			case CompetitionPackage.TEAM__SQUAD:
-				getSquad().clear();
-				getSquad().addAll((Collection<? extends Person>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -443,9 +388,6 @@ public class TeamImpl extends MinimalEObjectImpl.Container implements Team {
 			case CompetitionPackage.TEAM__CLUB_COLORS:
 				setClubColors(CLUB_COLORS_EDEFAULT);
 				return;
-			case CompetitionPackage.TEAM__SQUAD:
-				getSquad().clear();
-				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -470,8 +412,6 @@ public class TeamImpl extends MinimalEObjectImpl.Container implements Team {
 				return founded != FOUNDED_EDEFAULT;
 			case CompetitionPackage.TEAM__CLUB_COLORS:
 				return CLUB_COLORS_EDEFAULT == null ? clubColors != null : !CLUB_COLORS_EDEFAULT.equals(clubColors);
-			case CompetitionPackage.TEAM__SQUAD:
-				return squad != null && !squad.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

@@ -60,13 +60,10 @@ public class CompetitionFactoryImpl extends EFactoryImpl implements CompetitionF
 			case CompetitionPackage.COMPETITION: return createCompetition();
 			case CompetitionPackage.SEASON: return createSeason();
 			case CompetitionPackage.TEAM: return createTeam();
-			case CompetitionPackage.PERSON: return createPerson();
 			case CompetitionPackage.MATCH: return createMatch();
-			case CompetitionPackage.MATCH_TEAM: return createMatchTeam();
 			case CompetitionPackage.SCORE: return createScore();
-			case CompetitionPackage.GOAL: return createGoal();
-			case CompetitionPackage.BOOKING: return createBooking();
-			case CompetitionPackage.SUBSTITUTION: return createSubstitution();
+			case CompetitionPackage.STANDING: return createStanding();
+			case CompetitionPackage.POSITON: return createPositon();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -80,14 +77,10 @@ public class CompetitionFactoryImpl extends EFactoryImpl implements CompetitionF
 	@Override
 	public Object createFromString(EDataType eDataType, String initialValue) {
 		switch (eDataType.getClassifierID()) {
-			case CompetitionPackage.ROLE:
-				return createRoleFromString(eDataType, initialValue);
 			case CompetitionPackage.STATUS:
 				return createStatusFromString(eDataType, initialValue);
 			case CompetitionPackage.WINNER:
 				return createWinnerFromString(eDataType, initialValue);
-			case CompetitionPackage.CARD:
-				return createCardFromString(eDataType, initialValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -101,14 +94,10 @@ public class CompetitionFactoryImpl extends EFactoryImpl implements CompetitionF
 	@Override
 	public String convertToString(EDataType eDataType, Object instanceValue) {
 		switch (eDataType.getClassifierID()) {
-			case CompetitionPackage.ROLE:
-				return convertRoleToString(eDataType, instanceValue);
 			case CompetitionPackage.STATUS:
 				return convertStatusToString(eDataType, instanceValue);
 			case CompetitionPackage.WINNER:
 				return convertWinnerToString(eDataType, instanceValue);
-			case CompetitionPackage.CARD:
-				return convertCardToString(eDataType, instanceValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -153,31 +142,9 @@ public class CompetitionFactoryImpl extends EFactoryImpl implements CompetitionF
 	 * @generated
 	 */
 	@Override
-	public Person createPerson() {
-		PersonImpl person = new PersonImpl();
-		return person;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Match createMatch() {
 		MatchImpl match = new MatchImpl();
 		return match;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public MatchTeam createMatchTeam() {
-		MatchTeamImpl matchTeam = new MatchTeamImpl();
-		return matchTeam;
 	}
 
 	/**
@@ -197,9 +164,9 @@ public class CompetitionFactoryImpl extends EFactoryImpl implements CompetitionF
 	 * @generated
 	 */
 	@Override
-	public Goal createGoal() {
-		GoalImpl goal = new GoalImpl();
-		return goal;
+	public Standing createStanding() {
+		StandingImpl standing = new StandingImpl();
+		return standing;
 	}
 
 	/**
@@ -208,40 +175,9 @@ public class CompetitionFactoryImpl extends EFactoryImpl implements CompetitionF
 	 * @generated
 	 */
 	@Override
-	public Booking createBooking() {
-		BookingImpl booking = new BookingImpl();
-		return booking;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Substitution createSubstitution() {
-		SubstitutionImpl substitution = new SubstitutionImpl();
-		return substitution;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Role createRoleFromString(EDataType eDataType, String initialValue) {
-		Role result = Role.get(initialValue);
-		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
-		return result;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String convertRoleToString(EDataType eDataType, Object instanceValue) {
-		return instanceValue == null ? null : instanceValue.toString();
+	public Positon createPositon() {
+		PositonImpl positon = new PositonImpl();
+		return positon;
 	}
 
 	/**
@@ -281,26 +217,6 @@ public class CompetitionFactoryImpl extends EFactoryImpl implements CompetitionF
 	 * @generated
 	 */
 	public String convertWinnerToString(EDataType eDataType, Object instanceValue) {
-		return instanceValue == null ? null : instanceValue.toString();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Card createCardFromString(EDataType eDataType, String initialValue) {
-		Card result = Card.get(initialValue);
-		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
-		return result;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String convertCardToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 

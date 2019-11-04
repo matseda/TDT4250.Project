@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Resource
+Bundle-SymbolicName: TDT4250.project.resource
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: TDT4250.project.resource
+Bundle-RequiredExecutionEnvironment: JavaSE-12
+Require-Bundle: TDT4250.project.model;bundle-version="0.1.0"

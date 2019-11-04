@@ -2,23 +2,17 @@
  */
 package competition.impl;
 
-import competition.Booking;
 import competition.CompetitionPackage;
-import competition.Goal;
 import competition.Match;
-import competition.MatchTeam;
 import competition.Score;
 import competition.Season;
 import competition.Status;
-import competition.Substitution;
+import competition.Team;
 
-import java.util.Collection;
 import java.util.Date;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
-
-import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
@@ -26,9 +20,7 @@ import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
-import org.eclipse.emf.ecore.util.EObjectContainmentWithInverseEList;
 import org.eclipse.emf.ecore.util.EcoreUtil;
-import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -41,17 +33,12 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link competition.impl.MatchImpl#getId <em>Id</em>}</li>
  *   <li>{@link competition.impl.MatchImpl#getUtcDate <em>Utc Date</em>}</li>
  *   <li>{@link competition.impl.MatchImpl#getStatus <em>Status</em>}</li>
- *   <li>{@link competition.impl.MatchImpl#getMinute <em>Minute</em>}</li>
- *   <li>{@link competition.impl.MatchImpl#getAttendance <em>Attendance</em>}</li>
- *   <li>{@link competition.impl.MatchImpl#getVenue <em>Venue</em>}</li>
+ *   <li>{@link competition.impl.MatchImpl#getMatchDay <em>Match Day</em>}</li>
  *   <li>{@link competition.impl.MatchImpl#getLastUpdated <em>Last Updated</em>}</li>
+ *   <li>{@link competition.impl.MatchImpl#getScore <em>Score</em>}</li>
+ *   <li>{@link competition.impl.MatchImpl#getSeason <em>Season</em>}</li>
  *   <li>{@link competition.impl.MatchImpl#getHomeTeam <em>Home Team</em>}</li>
  *   <li>{@link competition.impl.MatchImpl#getAwayTeam <em>Away Team</em>}</li>
- *   <li>{@link competition.impl.MatchImpl#getScore <em>Score</em>}</li>
- *   <li>{@link competition.impl.MatchImpl#getGoals <em>Goals</em>}</li>
- *   <li>{@link competition.impl.MatchImpl#getBookings <em>Bookings</em>}</li>
- *   <li>{@link competition.impl.MatchImpl#getSubstitutions <em>Substitutions</em>}</li>
- *   <li>{@link competition.impl.MatchImpl#getSeason <em>Season</em>}</li>
  * </ul>
  *
  * @generated
@@ -118,64 +105,24 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 	protected Status status = STATUS_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getMinute() <em>Minute</em>}' attribute.
+	 * The default value of the '{@link #getMatchDay() <em>Match Day</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getMinute()
+	 * @see #getMatchDay()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final int MINUTE_EDEFAULT = 0;
+	protected static final Date MATCH_DAY_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getMinute() <em>Minute</em>}' attribute.
+	 * The cached value of the '{@link #getMatchDay() <em>Match Day</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getMinute()
+	 * @see #getMatchDay()
 	 * @generated
 	 * @ordered
 	 */
-	protected int minute = MINUTE_EDEFAULT;
-
-	/**
-	 * The default value of the '{@link #getAttendance() <em>Attendance</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getAttendance()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final int ATTENDANCE_EDEFAULT = 0;
-
-	/**
-	 * The cached value of the '{@link #getAttendance() <em>Attendance</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getAttendance()
-	 * @generated
-	 * @ordered
-	 */
-	protected int attendance = ATTENDANCE_EDEFAULT;
-
-	/**
-	 * The default value of the '{@link #getVenue() <em>Venue</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getVenue()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VENUE_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getVenue() <em>Venue</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getVenue()
-	 * @generated
-	 * @ordered
-	 */
-	protected String venue = VENUE_EDEFAULT;
+	protected Date matchDay = MATCH_DAY_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getLastUpdated() <em>Last Updated</em>}' attribute.
@@ -198,26 +145,6 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 	protected Date lastUpdated = LAST_UPDATED_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getHomeTeam() <em>Home Team</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getHomeTeam()
-	 * @generated
-	 * @ordered
-	 */
-	protected MatchTeam homeTeam;
-
-	/**
-	 * The cached value of the '{@link #getAwayTeam() <em>Away Team</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getAwayTeam()
-	 * @generated
-	 * @ordered
-	 */
-	protected MatchTeam awayTeam;
-
-	/**
 	 * The cached value of the '{@link #getScore() <em>Score</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -228,34 +155,24 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 	protected Score score;
 
 	/**
-	 * The cached value of the '{@link #getGoals() <em>Goals</em>}' containment reference list.
+	 * The cached value of the '{@link #getHomeTeam() <em>Home Team</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getGoals()
+	 * @see #getHomeTeam()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Goal> goals;
+	protected Team homeTeam;
 
 	/**
-	 * The cached value of the '{@link #getBookings() <em>Bookings</em>}' containment reference list.
+	 * The cached value of the '{@link #getAwayTeam() <em>Away Team</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getBookings()
+	 * @see #getAwayTeam()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Booking> bookings;
-
-	/**
-	 * The cached value of the '{@link #getSubstitutions() <em>Substitutions</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getSubstitutions()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<Substitution> substitutions;
+	protected Team awayTeam;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -351,8 +268,8 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 	 * @generated
 	 */
 	@Override
-	public int getMinute() {
-		return minute;
+	public Date getMatchDay() {
+		return matchDay;
 	}
 
 	/**
@@ -361,57 +278,11 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 	 * @generated
 	 */
 	@Override
-	public void setMinute(int newMinute) {
-		int oldMinute = minute;
-		minute = newMinute;
+	public void setMatchDay(Date newMatchDay) {
+		Date oldMatchDay = matchDay;
+		matchDay = newMatchDay;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CompetitionPackage.MATCH__MINUTE, oldMinute, minute));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public int getAttendance() {
-		return attendance;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setAttendance(int newAttendance) {
-		int oldAttendance = attendance;
-		attendance = newAttendance;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CompetitionPackage.MATCH__ATTENDANCE, oldAttendance, attendance));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String getVenue() {
-		return venue;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setVenue(String newVenue) {
-		String oldVenue = venue;
-		venue = newVenue;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CompetitionPackage.MATCH__VENUE, oldVenue, venue));
+			eNotify(new ENotificationImpl(this, Notification.SET, CompetitionPackage.MATCH__MATCH_DAY, oldMatchDay, matchDay));
 	}
 
 	/**
@@ -435,96 +306,6 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 		lastUpdated = newLastUpdated;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, CompetitionPackage.MATCH__LAST_UPDATED, oldLastUpdated, lastUpdated));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public MatchTeam getHomeTeam() {
-		return homeTeam;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetHomeTeam(MatchTeam newHomeTeam, NotificationChain msgs) {
-		MatchTeam oldHomeTeam = homeTeam;
-		homeTeam = newHomeTeam;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, CompetitionPackage.MATCH__HOME_TEAM, oldHomeTeam, newHomeTeam);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setHomeTeam(MatchTeam newHomeTeam) {
-		if (newHomeTeam != homeTeam) {
-			NotificationChain msgs = null;
-			if (homeTeam != null)
-				msgs = ((InternalEObject)homeTeam).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - CompetitionPackage.MATCH__HOME_TEAM, null, msgs);
-			if (newHomeTeam != null)
-				msgs = ((InternalEObject)newHomeTeam).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - CompetitionPackage.MATCH__HOME_TEAM, null, msgs);
-			msgs = basicSetHomeTeam(newHomeTeam, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CompetitionPackage.MATCH__HOME_TEAM, newHomeTeam, newHomeTeam));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public MatchTeam getAwayTeam() {
-		return awayTeam;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetAwayTeam(MatchTeam newAwayTeam, NotificationChain msgs) {
-		MatchTeam oldAwayTeam = awayTeam;
-		awayTeam = newAwayTeam;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, CompetitionPackage.MATCH__AWAY_TEAM, oldAwayTeam, newAwayTeam);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setAwayTeam(MatchTeam newAwayTeam) {
-		if (newAwayTeam != awayTeam) {
-			NotificationChain msgs = null;
-			if (awayTeam != null)
-				msgs = ((InternalEObject)awayTeam).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - CompetitionPackage.MATCH__AWAY_TEAM, null, msgs);
-			if (newAwayTeam != null)
-				msgs = ((InternalEObject)newAwayTeam).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - CompetitionPackage.MATCH__AWAY_TEAM, null, msgs);
-			msgs = basicSetAwayTeam(newAwayTeam, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CompetitionPackage.MATCH__AWAY_TEAM, newAwayTeam, newAwayTeam));
 	}
 
 	/**
@@ -578,45 +359,6 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 	 * @generated
 	 */
 	@Override
-	public EList<Goal> getGoals() {
-		if (goals == null) {
-			goals = new EObjectContainmentWithInverseEList<Goal>(Goal.class, this, CompetitionPackage.MATCH__GOALS, CompetitionPackage.GOAL__MATCH);
-		}
-		return goals;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<Booking> getBookings() {
-		if (bookings == null) {
-			bookings = new EObjectContainmentWithInverseEList<Booking>(Booking.class, this, CompetitionPackage.MATCH__BOOKINGS, CompetitionPackage.BOOKING__MATCH);
-		}
-		return bookings;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<Substitution> getSubstitutions() {
-		if (substitutions == null) {
-			substitutions = new EObjectContainmentWithInverseEList<Substitution>(Substitution.class, this, CompetitionPackage.MATCH__SUBSTITUTIONS, CompetitionPackage.SUBSTITUTION__MATCH);
-		}
-		return substitutions;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Season getSeason() {
 		if (eContainerFeatureID() != CompetitionPackage.MATCH__SEASON) return null;
 		return (Season)eInternalContainer();
@@ -659,7 +401,86 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@SuppressWarnings("unchecked")
+	@Override
+	public Team getHomeTeam() {
+		if (homeTeam != null && homeTeam.eIsProxy()) {
+			InternalEObject oldHomeTeam = (InternalEObject)homeTeam;
+			homeTeam = (Team)eResolveProxy(oldHomeTeam);
+			if (homeTeam != oldHomeTeam) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, CompetitionPackage.MATCH__HOME_TEAM, oldHomeTeam, homeTeam));
+			}
+		}
+		return homeTeam;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Team basicGetHomeTeam() {
+		return homeTeam;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setHomeTeam(Team newHomeTeam) {
+		Team oldHomeTeam = homeTeam;
+		homeTeam = newHomeTeam;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CompetitionPackage.MATCH__HOME_TEAM, oldHomeTeam, homeTeam));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Team getAwayTeam() {
+		if (awayTeam != null && awayTeam.eIsProxy()) {
+			InternalEObject oldAwayTeam = (InternalEObject)awayTeam;
+			awayTeam = (Team)eResolveProxy(oldAwayTeam);
+			if (awayTeam != oldAwayTeam) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, CompetitionPackage.MATCH__AWAY_TEAM, oldAwayTeam, awayTeam));
+			}
+		}
+		return awayTeam;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Team basicGetAwayTeam() {
+		return awayTeam;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setAwayTeam(Team newAwayTeam) {
+		Team oldAwayTeam = awayTeam;
+		awayTeam = newAwayTeam;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CompetitionPackage.MATCH__AWAY_TEAM, oldAwayTeam, awayTeam));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -667,12 +488,6 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 				if (score != null)
 					msgs = ((InternalEObject)score).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - CompetitionPackage.MATCH__SCORE, null, msgs);
 				return basicSetScore((Score)otherEnd, msgs);
-			case CompetitionPackage.MATCH__GOALS:
-				return ((InternalEList<InternalEObject>)(InternalEList<?>)getGoals()).basicAdd(otherEnd, msgs);
-			case CompetitionPackage.MATCH__BOOKINGS:
-				return ((InternalEList<InternalEObject>)(InternalEList<?>)getBookings()).basicAdd(otherEnd, msgs);
-			case CompetitionPackage.MATCH__SUBSTITUTIONS:
-				return ((InternalEList<InternalEObject>)(InternalEList<?>)getSubstitutions()).basicAdd(otherEnd, msgs);
 			case CompetitionPackage.MATCH__SEASON:
 				if (eInternalContainer() != null)
 					msgs = eBasicRemoveFromContainer(msgs);
@@ -689,18 +504,8 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case CompetitionPackage.MATCH__HOME_TEAM:
-				return basicSetHomeTeam(null, msgs);
-			case CompetitionPackage.MATCH__AWAY_TEAM:
-				return basicSetAwayTeam(null, msgs);
 			case CompetitionPackage.MATCH__SCORE:
 				return basicSetScore(null, msgs);
-			case CompetitionPackage.MATCH__GOALS:
-				return ((InternalEList<?>)getGoals()).basicRemove(otherEnd, msgs);
-			case CompetitionPackage.MATCH__BOOKINGS:
-				return ((InternalEList<?>)getBookings()).basicRemove(otherEnd, msgs);
-			case CompetitionPackage.MATCH__SUBSTITUTIONS:
-				return ((InternalEList<?>)getSubstitutions()).basicRemove(otherEnd, msgs);
 			case CompetitionPackage.MATCH__SEASON:
 				return basicSetSeason(null, msgs);
 		}
@@ -735,28 +540,20 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 				return getUtcDate();
 			case CompetitionPackage.MATCH__STATUS:
 				return getStatus();
-			case CompetitionPackage.MATCH__MINUTE:
-				return getMinute();
-			case CompetitionPackage.MATCH__ATTENDANCE:
-				return getAttendance();
-			case CompetitionPackage.MATCH__VENUE:
-				return getVenue();
+			case CompetitionPackage.MATCH__MATCH_DAY:
+				return getMatchDay();
 			case CompetitionPackage.MATCH__LAST_UPDATED:
 				return getLastUpdated();
-			case CompetitionPackage.MATCH__HOME_TEAM:
-				return getHomeTeam();
-			case CompetitionPackage.MATCH__AWAY_TEAM:
-				return getAwayTeam();
 			case CompetitionPackage.MATCH__SCORE:
 				return getScore();
-			case CompetitionPackage.MATCH__GOALS:
-				return getGoals();
-			case CompetitionPackage.MATCH__BOOKINGS:
-				return getBookings();
-			case CompetitionPackage.MATCH__SUBSTITUTIONS:
-				return getSubstitutions();
 			case CompetitionPackage.MATCH__SEASON:
 				return getSeason();
+			case CompetitionPackage.MATCH__HOME_TEAM:
+				if (resolve) return getHomeTeam();
+				return basicGetHomeTeam();
+			case CompetitionPackage.MATCH__AWAY_TEAM:
+				if (resolve) return getAwayTeam();
+				return basicGetAwayTeam();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -766,7 +563,6 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
@@ -779,41 +575,23 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 			case CompetitionPackage.MATCH__STATUS:
 				setStatus((Status)newValue);
 				return;
-			case CompetitionPackage.MATCH__MINUTE:
-				setMinute((Integer)newValue);
-				return;
-			case CompetitionPackage.MATCH__ATTENDANCE:
-				setAttendance((Integer)newValue);
-				return;
-			case CompetitionPackage.MATCH__VENUE:
-				setVenue((String)newValue);
+			case CompetitionPackage.MATCH__MATCH_DAY:
+				setMatchDay((Date)newValue);
 				return;
 			case CompetitionPackage.MATCH__LAST_UPDATED:
 				setLastUpdated((Date)newValue);
 				return;
-			case CompetitionPackage.MATCH__HOME_TEAM:
-				setHomeTeam((MatchTeam)newValue);
-				return;
-			case CompetitionPackage.MATCH__AWAY_TEAM:
-				setAwayTeam((MatchTeam)newValue);
-				return;
 			case CompetitionPackage.MATCH__SCORE:
 				setScore((Score)newValue);
 				return;
-			case CompetitionPackage.MATCH__GOALS:
-				getGoals().clear();
-				getGoals().addAll((Collection<? extends Goal>)newValue);
-				return;
-			case CompetitionPackage.MATCH__BOOKINGS:
-				getBookings().clear();
-				getBookings().addAll((Collection<? extends Booking>)newValue);
-				return;
-			case CompetitionPackage.MATCH__SUBSTITUTIONS:
-				getSubstitutions().clear();
-				getSubstitutions().addAll((Collection<? extends Substitution>)newValue);
-				return;
 			case CompetitionPackage.MATCH__SEASON:
 				setSeason((Season)newValue);
+				return;
+			case CompetitionPackage.MATCH__HOME_TEAM:
+				setHomeTeam((Team)newValue);
+				return;
+			case CompetitionPackage.MATCH__AWAY_TEAM:
+				setAwayTeam((Team)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -836,38 +614,23 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 			case CompetitionPackage.MATCH__STATUS:
 				setStatus(STATUS_EDEFAULT);
 				return;
-			case CompetitionPackage.MATCH__MINUTE:
-				setMinute(MINUTE_EDEFAULT);
-				return;
-			case CompetitionPackage.MATCH__ATTENDANCE:
-				setAttendance(ATTENDANCE_EDEFAULT);
-				return;
-			case CompetitionPackage.MATCH__VENUE:
-				setVenue(VENUE_EDEFAULT);
+			case CompetitionPackage.MATCH__MATCH_DAY:
+				setMatchDay(MATCH_DAY_EDEFAULT);
 				return;
 			case CompetitionPackage.MATCH__LAST_UPDATED:
 				setLastUpdated(LAST_UPDATED_EDEFAULT);
 				return;
-			case CompetitionPackage.MATCH__HOME_TEAM:
-				setHomeTeam((MatchTeam)null);
-				return;
-			case CompetitionPackage.MATCH__AWAY_TEAM:
-				setAwayTeam((MatchTeam)null);
-				return;
 			case CompetitionPackage.MATCH__SCORE:
 				setScore((Score)null);
 				return;
-			case CompetitionPackage.MATCH__GOALS:
-				getGoals().clear();
-				return;
-			case CompetitionPackage.MATCH__BOOKINGS:
-				getBookings().clear();
-				return;
-			case CompetitionPackage.MATCH__SUBSTITUTIONS:
-				getSubstitutions().clear();
-				return;
 			case CompetitionPackage.MATCH__SEASON:
 				setSeason((Season)null);
+				return;
+			case CompetitionPackage.MATCH__HOME_TEAM:
+				setHomeTeam((Team)null);
+				return;
+			case CompetitionPackage.MATCH__AWAY_TEAM:
+				setAwayTeam((Team)null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -887,28 +650,18 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 				return UTC_DATE_EDEFAULT == null ? utcDate != null : !UTC_DATE_EDEFAULT.equals(utcDate);
 			case CompetitionPackage.MATCH__STATUS:
 				return status != STATUS_EDEFAULT;
-			case CompetitionPackage.MATCH__MINUTE:
-				return minute != MINUTE_EDEFAULT;
-			case CompetitionPackage.MATCH__ATTENDANCE:
-				return attendance != ATTENDANCE_EDEFAULT;
-			case CompetitionPackage.MATCH__VENUE:
-				return VENUE_EDEFAULT == null ? venue != null : !VENUE_EDEFAULT.equals(venue);
+			case CompetitionPackage.MATCH__MATCH_DAY:
+				return MATCH_DAY_EDEFAULT == null ? matchDay != null : !MATCH_DAY_EDEFAULT.equals(matchDay);
 			case CompetitionPackage.MATCH__LAST_UPDATED:
 				return LAST_UPDATED_EDEFAULT == null ? lastUpdated != null : !LAST_UPDATED_EDEFAULT.equals(lastUpdated);
+			case CompetitionPackage.MATCH__SCORE:
+				return score != null;
+			case CompetitionPackage.MATCH__SEASON:
+				return getSeason() != null;
 			case CompetitionPackage.MATCH__HOME_TEAM:
 				return homeTeam != null;
 			case CompetitionPackage.MATCH__AWAY_TEAM:
 				return awayTeam != null;
-			case CompetitionPackage.MATCH__SCORE:
-				return score != null;
-			case CompetitionPackage.MATCH__GOALS:
-				return goals != null && !goals.isEmpty();
-			case CompetitionPackage.MATCH__BOOKINGS:
-				return bookings != null && !bookings.isEmpty();
-			case CompetitionPackage.MATCH__SUBSTITUTIONS:
-				return substitutions != null && !substitutions.isEmpty();
-			case CompetitionPackage.MATCH__SEASON:
-				return getSeason() != null;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -929,12 +682,8 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 		result.append(utcDate);
 		result.append(", status: ");
 		result.append(status);
-		result.append(", minute: ");
-		result.append(minute);
-		result.append(", attendance: ");
-		result.append(attendance);
-		result.append(", venue: ");
-		result.append(venue);
+		result.append(", matchDay: ");
+		result.append(matchDay);
 		result.append(", lastUpdated: ");
 		result.append(lastUpdated);
 		result.append(')');

@@ -80,32 +80,20 @@ public class CompetitionAdapterFactory extends AdapterFactoryImpl {
 				return createTeamAdapter();
 			}
 			@Override
-			public Adapter casePerson(Person object) {
-				return createPersonAdapter();
-			}
-			@Override
 			public Adapter caseMatch(Match object) {
 				return createMatchAdapter();
-			}
-			@Override
-			public Adapter caseMatchTeam(MatchTeam object) {
-				return createMatchTeamAdapter();
 			}
 			@Override
 			public Adapter caseScore(Score object) {
 				return createScoreAdapter();
 			}
 			@Override
-			public Adapter caseGoal(Goal object) {
-				return createGoalAdapter();
+			public Adapter caseStanding(Standing object) {
+				return createStandingAdapter();
 			}
 			@Override
-			public Adapter caseBooking(Booking object) {
-				return createBookingAdapter();
-			}
-			@Override
-			public Adapter caseSubstitution(Substitution object) {
-				return createSubstitutionAdapter();
+			public Adapter casePositon(Positon object) {
+				return createPositonAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -170,20 +158,6 @@ public class CompetitionAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link competition.Person <em>Person</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see competition.Person
-	 * @generated
-	 */
-	public Adapter createPersonAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link competition.Match <em>Match</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -194,20 +168,6 @@ public class CompetitionAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createMatchAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link competition.MatchTeam <em>Match Team</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see competition.MatchTeam
-	 * @generated
-	 */
-	public Adapter createMatchTeamAdapter() {
 		return null;
 	}
 
@@ -226,44 +186,30 @@ public class CompetitionAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link competition.Goal <em>Goal</em>}'.
+	 * Creates a new adapter for an object of class '{@link competition.Standing <em>Standing</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see competition.Goal
+	 * @see competition.Standing
 	 * @generated
 	 */
-	public Adapter createGoalAdapter() {
+	public Adapter createStandingAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link competition.Booking <em>Booking</em>}'.
+	 * Creates a new adapter for an object of class '{@link competition.Positon <em>Positon</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see competition.Booking
+	 * @see competition.Positon
 	 * @generated
 	 */
-	public Adapter createBookingAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link competition.Substitution <em>Substitution</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see competition.Substitution
-	 * @generated
-	 */
-	public Adapter createSubstitutionAdapter() {
+	public Adapter createPositonAdapter() {
 		return null;
 	}
 

@@ -173,7 +173,7 @@ public interface Competition extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Teams</em>' containment reference list.
 	 * @see competition.CompetitionPackage#getCompetition_Teams()
-	 * @model containment="true"
+	 * @model containment="true" required="true"
 	 * @generated
 	 */
 	EList<Team> getTeams();
