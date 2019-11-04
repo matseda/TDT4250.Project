@@ -1,0 +1,1187 @@
+<?xml version="1.0" encoding="ASCII"?>
+<competition:Competition xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:competition="platform:/plugin/TDT4250.project.mpdel/model/Competition.ecore" id="2021" name="Premier League" code="PL" plan="TIER_ONE" lastUpdated="2019-11-04T13:03:59.850+0100" area="England">
+  <currentSeason id="468" startDate="2019-11-04T13:03:59.853+0100" endDate="2019-11-04T13:03:59.853+0100" currentMatchday="11">
+    <matches id="264341" utcDate="2019-11-04T13:03:59.859+0100" matchDay="2019-11-04T13:03:59.859+0100" lastUpdated="2019-11-04T13:03:59.859+0100" homeTeam="//@teams.4" awayTeam="//@teams.8">
+      <score homeTeam="4" awayTeam="1"/>
+    </matches>
+    <matches id="264342" utcDate="2019-11-04T13:03:59.860+0100" matchDay="2019-11-04T13:03:59.860+0100" lastUpdated="2019-11-04T13:03:59.860+0100" homeTeam="//@teams.18" awayTeam="//@teams.5">
+      <score winner="AWAY_TEAM" awayTeam="5"/>
+    </matches>
+    <matches id="264344" utcDate="2019-11-04T13:03:59.860+0100" matchDay="2019-11-04T13:03:59.860+0100" lastUpdated="2019-11-04T13:03:59.860+0100" homeTeam="//@teams.11" awayTeam="//@teams.13">
+      <score homeTeam="3"/>
+    </matches>
+    <matches id="264345" utcDate="2019-11-04T13:03:59.860+0100" matchDay="2019-11-04T13:03:59.860+0100" lastUpdated="2019-11-04T13:03:59.860+0100" homeTeam="//@teams.15" awayTeam="//@teams.3">
+      <score winner="DRAW"/>
+    </matches>
+    <matches id="264346" utcDate="2019-11-04T13:03:59.860+0100" matchDay="2019-11-04T13:03:59.860+0100" lastUpdated="2019-11-04T13:03:59.860+0100" homeTeam="//@teams.14" awayTeam="//@teams.17">
+      <score winner="AWAY_TEAM" awayTeam="3"/>
+    </matches>
+    <matches id="264347" utcDate="2019-11-04T13:03:59.860+0100" matchDay="2019-11-04T13:03:59.860+0100" lastUpdated="2019-11-04T13:03:59.860+0100" homeTeam="//@teams.19" awayTeam="//@teams.16">
+      <score winner="DRAW" homeTeam="1" awayTeam="1"/>
+    </matches>
+    <matches id="264348" utcDate="2019-11-04T13:03:59.860+0100" matchDay="2019-11-04T13:03:59.860+0100" lastUpdated="2019-11-04T13:03:59.860+0100" homeTeam="//@teams.9" awayTeam="//@teams.1">
+      <score homeTeam="3" awayTeam="1"/>
+    </matches>
+    <matches id="264343" utcDate="2019-11-04T13:03:59.860+0100" matchDay="2019-11-04T13:03:59.860+0100" lastUpdated="2019-11-04T13:03:59.860+0100" homeTeam="//@teams.12" awayTeam="//@teams.10">
+      <score winner="DRAW"/>
+    </matches>
+    <matches id="264349" utcDate="2019-11-04T13:03:59.860+0100" matchDay="2019-11-04T13:03:59.860+0100" lastUpdated="2019-11-04T13:03:59.860+0100" homeTeam="//@teams.7" awayTeam="//@teams.0">
+      <score winner="AWAY_TEAM" awayTeam="1"/>
+    </matches>
+    <matches id="264350" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.6" awayTeam="//@teams.2">
+      <score homeTeam="4"/>
+    </matches>
+    <matches id="264354" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.0" awayTeam="//@teams.11">
+      <score homeTeam="2" awayTeam="1"/>
+    </matches>
+    <matches id="264352" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.1" awayTeam="//@teams.19">
+      <score winner="AWAY_TEAM" homeTeam="1" awayTeam="2"/>
+    </matches>
+    <matches id="264356" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.3" awayTeam="//@teams.14">
+      <score homeTeam="1"/>
+    </matches>
+    <matches id="264357" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.8" awayTeam="//@teams.7">
+      <score homeTeam="3" awayTeam="1"/>
+    </matches>
+    <matches id="264359" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.13" awayTeam="//@teams.4">
+      <score winner="AWAY_TEAM" homeTeam="1" awayTeam="2"/>
+    </matches>
+    <matches id="264360" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.17" awayTeam="//@teams.18">
+      <score winner="DRAW" homeTeam="1" awayTeam="1"/>
+    </matches>
+    <matches id="264353" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.5" awayTeam="//@teams.9">
+      <score winner="DRAW" homeTeam="2" awayTeam="2"/>
+    </matches>
+    <matches id="264358" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.16" awayTeam="//@teams.15">
+      <score homeTeam="1"/>
+    </matches>
+    <matches id="264355" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.2" awayTeam="//@teams.12">
+      <score winner="DRAW" homeTeam="1" awayTeam="1"/>
+    </matches>
+    <matches id="264351" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.10" awayTeam="//@teams.6">
+      <score winner="DRAW" homeTeam="1" awayTeam="1"/>
+    </matches>
+    <matches id="264362" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.1" awayTeam="//@teams.3">
+      <score homeTeam="2"/>
+    </matches>
+    <matches id="264366" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.8" awayTeam="//@teams.2">
+      <score winner="AWAY_TEAM" homeTeam="2" awayTeam="3"/>
+    </matches>
+    <matches id="264365" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.6" awayTeam="//@teams.15">
+      <score winner="AWAY_TEAM" homeTeam="1" awayTeam="2"/>
+    </matches>
+    <matches id="264367" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.16" awayTeam="//@teams.12">
+      <score winner="AWAY_TEAM" homeTeam="1" awayTeam="2"/>
+    </matches>
+    <matches id="264368" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.17" awayTeam="//@teams.13">
+      <score winner="AWAY_TEAM" awayTeam="2"/>
+    </matches>
+    <matches id="264369" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.14" awayTeam="//@teams.18">
+      <score winner="AWAY_TEAM" homeTeam="1" awayTeam="3"/>
+    </matches>
+    <matches id="264363" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.4" awayTeam="//@teams.0">
+      <score homeTeam="3" awayTeam="1"/>
+    </matches>
+    <matches id="264370" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.19" awayTeam="//@teams.5">
+      <score winner="AWAY_TEAM" homeTeam="1" awayTeam="3"/>
+    </matches>
+    <matches id="264361" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.10" awayTeam="//@teams.11">
+      <score winner="DRAW" homeTeam="1" awayTeam="1"/>
+    </matches>
+    <matches id="264364" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.9" awayTeam="//@teams.7">
+      <score winner="AWAY_TEAM" awayTeam="1"/>
+    </matches>
+    <matches id="264379" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.13" awayTeam="//@teams.6">
+      <score winner="DRAW" homeTeam="1" awayTeam="1"/>
+    </matches>
+    <matches id="264371" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.5" awayTeam="//@teams.17">
+      <score homeTeam="4"/>
+    </matches>
+    <matches id="264372" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.7" awayTeam="//@teams.14">
+      <score winner="DRAW" homeTeam="1" awayTeam="1"/>
+    </matches>
+    <matches id="264374" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.2" awayTeam="//@teams.16">
+      <score winner="DRAW" homeTeam="2" awayTeam="2"/>
+    </matches>
+    <matches id="264376" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.12" awayTeam="//@teams.19">
+      <score homeTeam="3" awayTeam="1"/>
+    </matches>
+    <matches id="264378" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.18" awayTeam="//@teams.8">
+      <score homeTeam="2"/>
+    </matches>
+    <matches id="264380" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.15" awayTeam="//@teams.1">
+      <score homeTeam="1"/>
+    </matches>
+    <matches id="264377" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.11" awayTeam="//@teams.4">
+      <score winner="AWAY_TEAM" awayTeam="3"/>
+    </matches>
+    <matches id="264375" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.3" awayTeam="//@teams.10">
+      <score homeTeam="3" awayTeam="2"/>
+    </matches>
+    <matches id="264373" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.0" awayTeam="//@teams.9">
+      <score winner="DRAW" homeTeam="2" awayTeam="2"/>
+    </matches>
+    <matches id="264383" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.4" awayTeam="//@teams.7">
+      <score homeTeam="3" awayTeam="1"/>
+    </matches>
+    <matches id="264381" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.10" awayTeam="//@teams.2">
+      <score winner="AWAY_TEAM" homeTeam="2" awayTeam="5"/>
+    </matches>
+    <matches id="264384" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.9" awayTeam="//@teams.15">
+      <score homeTeam="4"/>
+    </matches>
+    <matches id="264385" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.6" awayTeam="//@teams.12">
+      <score homeTeam="1"/>
+    </matches>
+    <matches id="264387" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.16" awayTeam="//@teams.13">
+      <score winner="AWAY_TEAM" awayTeam="1"/>
+    </matches>
+    <matches id="264388" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.17" awayTeam="//@teams.11">
+      <score winner="DRAW" homeTeam="1" awayTeam="1"/>
+    </matches>
+    <matches id="264386" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.8" awayTeam="//@teams.5">
+      <score homeTeam="3" awayTeam="2"/>
+    </matches>
+    <matches id="264390" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.19" awayTeam="//@teams.3">
+      <score homeTeam="3" awayTeam="1"/>
+    </matches>
+    <matches id="264389" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.14" awayTeam="//@teams.0">
+      <score winner="DRAW" homeTeam="2" awayTeam="2"/>
+    </matches>
+    <matches id="264382" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.1" awayTeam="//@teams.18">
+      <score winner="DRAW"/>
+    </matches>
+    <matches id="264399" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.13" awayTeam="//@teams.19">
+      <score winner="AWAY_TEAM" homeTeam="1" awayTeam="3"/>
+    </matches>
+    <matches id="264396" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.12" awayTeam="//@teams.9">
+      <score homeTeam="2" awayTeam="1"/>
+    </matches>
+    <matches id="264391" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.5" awayTeam="//@teams.14">
+      <score homeTeam="8"/>
+    </matches>
+    <matches id="264395" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.3" awayTeam="//@teams.16">
+      <score winner="AWAY_TEAM" awayTeam="2"/>
+    </matches>
+    <matches id="264397" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.11" awayTeam="//@teams.8">
+      <score homeTeam="2"/>
+    </matches>
+    <matches id="264392" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.7" awayTeam="//@teams.17">
+      <score winner="DRAW"/>
+    </matches>
+    <matches id="264398" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.18" awayTeam="//@teams.6">
+      <score homeTeam="2"/>
+    </matches>
+    <matches id="264400" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.15" awayTeam="//@teams.10">
+      <score winner="DRAW" homeTeam="1" awayTeam="1"/>
+    </matches>
+    <matches id="264393" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.0" awayTeam="//@teams.1">
+      <score homeTeam="3" awayTeam="2"/>
+    </matches>
+    <matches id="264394" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.2" awayTeam="//@teams.4">
+      <score winner="AWAY_TEAM" homeTeam="1" awayTeam="2"/>
+    </matches>
+    <matches id="264407" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.16" awayTeam="//@teams.4">
+      <score winner="AWAY_TEAM" awayTeam="1"/>
+    </matches>
+    <matches id="264401" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.10" awayTeam="//@teams.14">
+      <score homeTeam="2"/>
+    </matches>
+    <matches id="264402" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.1" awayTeam="//@teams.11">
+      <score winner="DRAW" homeTeam="2" awayTeam="2"/>
+    </matches>
+    <matches id="264403" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.2" awayTeam="//@teams.17">
+      <score homeTeam="2"/>
+    </matches>
+    <matches id="264404" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.9" awayTeam="//@teams.13">
+      <score homeTeam="2" awayTeam="1"/>
+    </matches>
+    <matches id="264409" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.15" awayTeam="//@teams.8">
+      <score homeTeam="2"/>
+    </matches>
+    <matches id="264410" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.19" awayTeam="//@teams.18">
+      <score winner="DRAW" homeTeam="2" awayTeam="2"/>
+    </matches>
+    <matches id="264405" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.3" awayTeam="//@teams.5">
+      <score winner="AWAY_TEAM" homeTeam="1" awayTeam="3"/>
+    </matches>
+    <matches id="264408" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.12" awayTeam="//@teams.7">
+      <score homeTeam="5"/>
+    </matches>
+    <matches id="264406" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.6" awayTeam="//@teams.0">
+      <score winner="DRAW" homeTeam="1" awayTeam="1"/>
+    </matches>
+    <matches id="264419" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.17" awayTeam="//@teams.9">
+      <score homeTeam="3"/>
+    </matches>
+    <matches id="264411" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.4" awayTeam="//@teams.12">
+      <score homeTeam="2" awayTeam="1"/>
+    </matches>
+    <matches id="264415" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.8" awayTeam="//@teams.1">
+      <score winner="AWAY_TEAM" homeTeam="1" awayTeam="5"/>
+    </matches>
+    <matches id="264416" utcDate="2019-11-04T13:03:59.861+0100" matchDay="2019-11-04T13:03:59.861+0100" lastUpdated="2019-11-04T13:03:59.861+0100" homeTeam="//@teams.11" awayTeam="//@teams.3">
+      <score homeTeam="1"/>
+    </matches>
+    <matches id="264420" utcDate="2019-11-04T13:03:59.862+0100" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.14" awayTeam="//@teams.16">
+      <score winner="DRAW"/>
+    </matches>
+    <matches id="264417" utcDate="2019-11-04T13:03:59.862+0100" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.18" awayTeam="//@teams.15">
+      <score winner="AWAY_TEAM" homeTeam="1" awayTeam="2"/>
+    </matches>
+    <matches id="264412" utcDate="2019-11-04T13:03:59.862+0100" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.5" awayTeam="//@teams.10">
+      <score winner="AWAY_TEAM" awayTeam="2"/>
+    </matches>
+    <matches id="264414" utcDate="2019-11-04T13:03:59.862+0100" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.0" awayTeam="//@teams.19">
+      <score homeTeam="1"/>
+    </matches>
+    <matches id="264418" utcDate="2019-11-04T13:03:59.862+0100" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.13" awayTeam="//@teams.2">
+      <score winner="AWAY_TEAM" homeTeam="1" awayTeam="4"/>
+    </matches>
+    <matches id="264413" utcDate="2019-11-04T13:03:59.862+0100" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.7" awayTeam="//@teams.6">
+      <score homeTeam="1"/>
+    </matches>
+    <matches id="264425" utcDate="2019-11-04T13:03:59.862+0100" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.3" awayTeam="//@teams.18">
+      <score homeTeam="2"/>
+    </matches>
+    <matches id="264421" utcDate="2019-11-04T13:03:59.862+0100" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.10" awayTeam="//@teams.13">
+      <score winner="DRAW" homeTeam="1" awayTeam="1"/>
+    </matches>
+    <matches id="264422" utcDate="2019-11-04T13:03:59.862+0100" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.1" awayTeam="//@teams.17">
+      <score homeTeam="2" awayTeam="1"/>
+    </matches>
+    <matches id="264423" utcDate="2019-11-04T13:03:59.862+0100" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.2" awayTeam="//@teams.7">
+      <score homeTeam="1"/>
+    </matches>
+    <matches id="264424" utcDate="2019-11-04T13:03:59.862+0100" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.9" awayTeam="//@teams.14">
+      <score winner="DRAW" homeTeam="1" awayTeam="1"/>
+    </matches>
+    <matches id="264428" utcDate="2019-11-04T13:03:59.862+0100" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.12" awayTeam="//@teams.11">
+      <score homeTeam="2" awayTeam="1"/>
+    </matches>
+    <matches id="264430" utcDate="2019-11-04T13:03:59.862+0100" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.19" awayTeam="//@teams.8">
+      <score winner="DRAW"/>
+    </matches>
+    <matches id="264429" utcDate="2019-11-04T13:03:59.862+0100" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.15" awayTeam="//@teams.5">
+      <score winner="AWAY_TEAM" awayTeam="2"/>
+    </matches>
+    <matches id="264426" utcDate="2019-11-04T13:03:59.862+0100" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.6" awayTeam="//@teams.4">
+      <score winner="DRAW" homeTeam="1" awayTeam="1"/>
+    </matches>
+    <matches id="264427" utcDate="2019-11-04T13:03:59.862+0100" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.16" awayTeam="//@teams.0">
+      <score homeTeam="1"/>
+    </matches>
+    <matches id="264438" utcDate="2019-11-04T13:03:59.862+0100" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.13" awayTeam="//@teams.12">
+      <score winner="AWAY_TEAM" awayTeam="9"/>
+    </matches>
+    <matches id="264432" utcDate="2019-11-04T13:03:59.862+0100" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.5" awayTeam="//@teams.1">
+      <score homeTeam="3"/>
+    </matches>
+    <matches id="264437" utcDate="2019-11-04T13:03:59.862+0100" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.18" awayTeam="//@teams.16">
+      <score winner="DRAW" homeTeam="1" awayTeam="1"/>
+    </matches>
+    <matches id="264439" utcDate="2019-11-04T13:03:59.862+0100" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.17" awayTeam="//@teams.3">
+      <score homeTeam="3" awayTeam="2"/>
+    </matches>
+    <matches id="264440" utcDate="2019-11-04T13:03:59.862+0100" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.14" awayTeam="//@teams.19">
+      <score winner="DRAW"/>
+    </matches>
+    <matches id="264436" utcDate="2019-11-04T13:03:59.862+0100" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.11" awayTeam="//@teams.2">
+      <score winner="AWAY_TEAM" homeTeam="2" awayTeam="4"/>
+    </matches>
+    <matches id="264433" utcDate="2019-11-04T13:03:59.862+0100" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.7" awayTeam="//@teams.10">
+      <score winner="DRAW" homeTeam="1" awayTeam="1"/>
+    </matches>
+    <matches id="264431" utcDate="2019-11-04T13:03:59.862+0100" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.4" awayTeam="//@teams.9">
+      <score homeTeam="2" awayTeam="1"/>
+    </matches>
+    <matches id="264434" utcDate="2019-11-04T13:03:59.862+0100" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.0" awayTeam="//@teams.15">
+      <score winner="DRAW" homeTeam="2" awayTeam="2"/>
+    </matches>
+    <matches id="264435" utcDate="2019-11-04T13:03:59.862+0100" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.8" awayTeam="//@teams.6">
+      <score winner="AWAY_TEAM" homeTeam="1" awayTeam="3"/>
+    </matches>
+    <matches id="264450" utcDate="2019-11-04T13:03:59.862+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.19" awayTeam="//@teams.6">
+      <score/>
+    </matches>
+    <matches id="264448" utcDate="2019-11-04T13:03:59.862+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.17" awayTeam="//@teams.8">
+      <score/>
+    </matches>
+    <matches id="264441" utcDate="2019-11-04T13:03:59.862+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.1" awayTeam="//@teams.4">
+      <score/>
+    </matches>
+    <matches id="264442" utcDate="2019-11-04T13:03:59.862+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.5" awayTeam="//@teams.13">
+      <score/>
+    </matches>
+    <matches id="264443" utcDate="2019-11-04T13:03:59.862+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.0" awayTeam="//@teams.10">
+      <score/>
+    </matches>
+    <matches id="264445" utcDate="2019-11-04T13:03:59.862+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.16" awayTeam="//@teams.11">
+      <score/>
+    </matches>
+    <matches id="264446" utcDate="2019-11-04T13:03:59.862+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.18" awayTeam="//@teams.7">
+      <score/>
+    </matches>
+    <matches id="264449" utcDate="2019-11-04T13:03:59.862+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.14" awayTeam="//@teams.2">
+      <score/>
+    </matches>
+    <matches id="264447" utcDate="2019-11-04T13:03:59.862+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.15" awayTeam="//@teams.12">
+      <score/>
+    </matches>
+    <matches id="264444" utcDate="2019-11-04T13:03:59.862+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.3" awayTeam="//@teams.9">
+      <score/>
+    </matches>
+    <matches id="264457" utcDate="2019-11-04T13:03:59.862+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.8" awayTeam="//@teams.14">
+      <score/>
+    </matches>
+    <matches id="264454" utcDate="2019-11-04T13:03:59.862+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.2" awayTeam="//@teams.15">
+      <score/>
+    </matches>
+    <matches id="264453" utcDate="2019-11-04T13:03:59.862+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.7" awayTeam="//@teams.19">
+      <score/>
+    </matches>
+    <matches id="264455" utcDate="2019-11-04T13:03:59.862+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.9" awayTeam="//@teams.16">
+      <score/>
+    </matches>
+    <matches id="264459" utcDate="2019-11-04T13:03:59.862+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.11" awayTeam="//@teams.18">
+      <score/>
+    </matches>
+    <matches id="264460" utcDate="2019-11-04T13:03:59.862+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.13" awayTeam="//@teams.3">
+      <score/>
+    </matches>
+    <matches id="264458" utcDate="2019-11-04T13:03:59.862+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.12" awayTeam="//@teams.0">
+      <score/>
+    </matches>
+    <matches id="264451" utcDate="2019-11-04T13:03:59.862+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.10" awayTeam="//@teams.1">
+      <score/>
+    </matches>
+    <matches id="264456" utcDate="2019-11-04T13:03:59.862+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.6" awayTeam="//@teams.17">
+      <score/>
+    </matches>
+    <matches id="264452" utcDate="2019-11-04T13:03:59.862+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.862+0100" homeTeam="//@teams.4" awayTeam="//@teams.5">
+      <score/>
+    </matches>
+    <matches id="264466" utcDate="2019-11-04T13:03:59.863+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.862+0100" lastUpdated="2019-11-04T13:03:59.863+0100" homeTeam="//@teams.18" awayTeam="//@teams.9">
+      <score/>
+    </matches>
+    <matches id="264463" utcDate="2019-11-04T13:03:59.863+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.863+0100" lastUpdated="2019-11-04T13:03:59.863+0100" homeTeam="//@teams.0" awayTeam="//@teams.13">
+      <score/>
+    </matches>
+    <matches id="264464" utcDate="2019-11-04T13:03:59.863+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.863+0100" lastUpdated="2019-11-04T13:03:59.863+0100" homeTeam="//@teams.3" awayTeam="//@teams.8">
+      <score/>
+    </matches>
+    <matches id="264467" utcDate="2019-11-04T13:03:59.863+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.863+0100" lastUpdated="2019-11-04T13:03:59.863+0100" homeTeam="//@teams.15" awayTeam="//@teams.4">
+      <score/>
+    </matches>
+    <matches id="264468" utcDate="2019-11-04T13:03:59.863+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.863+0100" lastUpdated="2019-11-04T13:03:59.863+0100" homeTeam="//@teams.17" awayTeam="//@teams.12">
+      <score/>
+    </matches>
+    <matches id="264469" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.14" awayTeam="//@teams.11">
+      <score/>
+    </matches>
+    <matches id="264470" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.19" awayTeam="//@teams.10">
+      <score/>
+    </matches>
+    <matches id="264462" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.5" awayTeam="//@teams.2">
+      <score/>
+    </matches>
+    <matches id="264465" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.16" awayTeam="//@teams.6">
+      <score/>
+    </matches>
+    <matches id="264461" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.1" awayTeam="//@teams.7">
+      <score/>
+    </matches>
+    <matches id="264473" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.7" awayTeam="//@teams.5">
+      <score/>
+    </matches>
+    <matches id="264472" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.4" awayTeam="//@teams.17">
+      <score/>
+    </matches>
+    <matches id="264474" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.2" awayTeam="//@teams.18">
+      <score/>
+    </matches>
+    <matches id="264475" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.9" awayTeam="//@teams.19">
+      <score/>
+    </matches>
+    <matches id="264479" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.11" awayTeam="//@teams.15">
+      <score/>
+    </matches>
+    <matches id="264480" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.13" awayTeam="//@teams.14">
+      <score/>
+    </matches>
+    <matches id="264471" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.10" awayTeam="//@teams.16">
+      <score/>
+    </matches>
+    <matches id="264477" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.8" awayTeam="//@teams.0">
+      <score/>
+    </matches>
+    <matches id="264476" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.6" awayTeam="//@teams.1">
+      <score/>
+    </matches>
+    <matches id="264478" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.12" awayTeam="//@teams.3">
+      <score/>
+    </matches>
+    <matches id="264490" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.15" awayTeam="//@teams.19">
+      <score/>
+    </matches>
+    <matches id="264486" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.11" awayTeam="//@teams.5">
+      <score/>
+    </matches>
+    <matches id="264481" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.10" awayTeam="//@teams.18">
+      <score/>
+    </matches>
+    <matches id="264483" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.6" awayTeam="//@teams.9">
+      <score/>
+    </matches>
+    <matches id="264485" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.12" awayTeam="//@teams.14">
+      <score/>
+    </matches>
+    <matches id="264488" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.2" awayTeam="//@teams.1">
+      <score/>
+    </matches>
+    <matches id="264489" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.13" awayTeam="//@teams.8">
+      <score/>
+    </matches>
+    <matches id="264487" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.4" awayTeam="//@teams.3">
+      <score/>
+    </matches>
+    <matches id="264484" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.16" awayTeam="//@teams.7">
+      <score/>
+    </matches>
+    <matches id="264482" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.0" awayTeam="//@teams.17">
+      <score/>
+    </matches>
+    <matches id="264495" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.3" awayTeam="//@teams.2">
+      <score/>
+    </matches>
+    <matches id="264494" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.9" awayTeam="//@teams.11">
+      <score/>
+    </matches>
+    <matches id="264499" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.14" awayTeam="//@teams.15">
+      <score/>
+    </matches>
+    <matches id="264500" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.19" awayTeam="//@teams.4">
+      <score/>
+    </matches>
+    <matches id="264492" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.5" awayTeam="//@teams.6">
+      <score/>
+    </matches>
+    <matches id="264491" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.1" awayTeam="//@teams.12">
+      <score/>
+    </matches>
+    <matches id="264493" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.7" awayTeam="//@teams.13">
+      <score/>
+    </matches>
+    <matches id="264496" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.8" awayTeam="//@teams.16">
+      <score/>
+    </matches>
+    <matches id="264498" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.17" awayTeam="//@teams.10">
+      <score/>
+    </matches>
+    <matches id="264497" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.18" awayTeam="//@teams.0">
+      <score/>
+    </matches>
+    <matches id="264502" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.4" awayTeam="//@teams.14">
+      <score/>
+    </matches>
+    <matches id="264504" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.2" awayTeam="//@teams.19">
+      <score/>
+    </matches>
+    <matches id="264506" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.16" awayTeam="//@teams.1">
+      <score/>
+    </matches>
+    <matches id="264507" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.12" awayTeam="//@teams.8">
+      <score/>
+    </matches>
+    <matches id="264508" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.11" awayTeam="//@teams.7">
+      <score/>
+    </matches>
+    <matches id="264509" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.13" awayTeam="//@teams.18">
+      <score/>
+    </matches>
+    <matches id="264501" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.10" awayTeam="//@teams.9">
+      <score/>
+    </matches>
+    <matches id="264505" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.6" awayTeam="//@teams.3">
+      <score/>
+    </matches>
+    <matches id="264503" utcDate="2019-11-04T13:03:59.864+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.864+0100" lastUpdated="2019-11-04T13:03:59.864+0100" homeTeam="//@teams.0" awayTeam="//@teams.5">
+      <score/>
+    </matches>
+    <matches id="264510" utcDate="2019-11-04T13:03:59.865+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.865+0100" lastUpdated="2019-11-04T13:03:59.865+0100" homeTeam="//@teams.15" awayTeam="//@teams.17">
+      <score/>
+    </matches>
+    <matches id="264517" utcDate="2019-11-04T13:03:59.865+0100" status="POSTPONED" matchDay="2019-11-04T13:03:59.865+0100" lastUpdated="2019-11-04T13:03:59.865+0100" homeTeam="//@teams.18" awayTeam="//@teams.4">
+      <score/>
+    </matches>
+    <matches id="264515" utcDate="2019-11-04T13:03:59.865+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.865+0100" lastUpdated="2019-11-04T13:03:59.865+0100" homeTeam="//@teams.3" awayTeam="//@teams.0">
+      <score/>
+    </matches>
+    <matches id="264511" utcDate="2019-11-04T13:03:59.865+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.865+0100" lastUpdated="2019-11-04T13:03:59.865+0100" homeTeam="//@teams.1" awayTeam="//@teams.13">
+      <score/>
+    </matches>
+    <matches id="264513" utcDate="2019-11-04T13:03:59.865+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.865+0100" lastUpdated="2019-11-04T13:03:59.865+0100" homeTeam="//@teams.7" awayTeam="//@teams.15">
+      <score/>
+    </matches>
+    <matches id="264516" utcDate="2019-11-04T13:03:59.865+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.865+0100" lastUpdated="2019-11-04T13:03:59.865+0100" homeTeam="//@teams.8" awayTeam="//@teams.10">
+      <score/>
+    </matches>
+    <matches id="264518" utcDate="2019-11-04T13:03:59.865+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.865+0100" lastUpdated="2019-11-04T13:03:59.865+0100" homeTeam="//@teams.17" awayTeam="//@teams.16">
+      <score/>
+    </matches>
+    <matches id="264520" utcDate="2019-11-04T13:03:59.865+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.865+0100" lastUpdated="2019-11-04T13:03:59.865+0100" homeTeam="//@teams.19" awayTeam="//@teams.11">
+      <score/>
+    </matches>
+    <matches id="264512" utcDate="2019-11-04T13:03:59.865+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.865+0100" lastUpdated="2019-11-04T13:03:59.865+0100" homeTeam="//@teams.5" awayTeam="//@teams.12">
+      <score/>
+    </matches>
+    <matches id="264519" utcDate="2019-11-04T13:03:59.865+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.865+0100" lastUpdated="2019-11-04T13:03:59.865+0100" homeTeam="//@teams.14" awayTeam="//@teams.6">
+      <score/>
+    </matches>
+    <matches id="264514" utcDate="2019-11-04T13:03:59.865+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.865+0100" lastUpdated="2019-11-04T13:03:59.865+0100" homeTeam="//@teams.9" awayTeam="//@teams.2">
+      <score/>
+    </matches>
+    <matches id="264524" utcDate="2019-11-04T13:03:59.865+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.865+0100" lastUpdated="2019-11-04T13:03:59.865+0100" homeTeam="//@teams.9" awayTeam="//@teams.17">
+      <score/>
+    </matches>
+    <matches id="264522" utcDate="2019-11-04T13:03:59.865+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.865+0100" lastUpdated="2019-11-04T13:03:59.865+0100" homeTeam="//@teams.1" awayTeam="//@teams.8">
+      <score/>
+    </matches>
+    <matches id="264523" utcDate="2019-11-04T13:03:59.865+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.865+0100" lastUpdated="2019-11-04T13:03:59.865+0100" homeTeam="//@teams.2" awayTeam="//@teams.13">
+      <score/>
+    </matches>
+    <matches id="264525" utcDate="2019-11-04T13:03:59.865+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.865+0100" lastUpdated="2019-11-04T13:03:59.865+0100" homeTeam="//@teams.3" awayTeam="//@teams.11">
+      <score/>
+    </matches>
+    <matches id="264527" utcDate="2019-11-04T13:03:59.865+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.865+0100" lastUpdated="2019-11-04T13:03:59.865+0100" homeTeam="//@teams.16" awayTeam="//@teams.14">
+      <score/>
+    </matches>
+    <matches id="264529" utcDate="2019-11-04T13:03:59.865+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.865+0100" lastUpdated="2019-11-04T13:03:59.865+0100" homeTeam="//@teams.15" awayTeam="//@teams.18">
+      <score/>
+    </matches>
+    <matches id="264530" utcDate="2019-11-04T13:03:59.865+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.865+0100" lastUpdated="2019-11-04T13:03:59.865+0100" homeTeam="//@teams.19" awayTeam="//@teams.0">
+      <score/>
+    </matches>
+    <matches id="264526" utcDate="2019-11-04T13:03:59.865+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.865+0100" lastUpdated="2019-11-04T13:03:59.865+0100" homeTeam="//@teams.6" awayTeam="//@teams.7">
+      <score/>
+    </matches>
+    <matches id="264528" utcDate="2019-11-04T13:03:59.865+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.865+0100" lastUpdated="2019-11-04T13:03:59.865+0100" homeTeam="//@teams.12" awayTeam="//@teams.4">
+      <score/>
+    </matches>
+    <matches id="264521" utcDate="2019-11-04T13:03:59.865+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.865+0100" lastUpdated="2019-11-04T13:03:59.865+0100" homeTeam="//@teams.10" awayTeam="//@teams.5">
+      <score/>
+    </matches>
+    <matches id="264539" utcDate="2019-11-04T13:03:59.865+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.865+0100" lastUpdated="2019-11-04T13:03:59.865+0100" homeTeam="//@teams.17" awayTeam="//@teams.19">
+      <score/>
+    </matches>
+    <matches id="264533" utcDate="2019-11-04T13:03:59.865+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.865+0100" lastUpdated="2019-11-04T13:03:59.865+0100" homeTeam="//@teams.7" awayTeam="//@teams.3">
+      <score/>
+    </matches>
+    <matches id="264538" utcDate="2019-11-04T13:03:59.865+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.865+0100" lastUpdated="2019-11-04T13:03:59.865+0100" homeTeam="//@teams.13" awayTeam="//@teams.15">
+      <score/>
+    </matches>
+    <matches id="264540" utcDate="2019-11-04T13:03:59.865+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.865+0100" lastUpdated="2019-11-04T13:03:59.865+0100" homeTeam="//@teams.14" awayTeam="//@teams.1">
+      <score/>
+    </matches>
+    <matches id="264535" utcDate="2019-11-04T13:03:59.865+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.865+0100" lastUpdated="2019-11-04T13:03:59.865+0100" homeTeam="//@teams.8" awayTeam="//@teams.9">
+      <score/>
+    </matches>
+    <matches id="264537" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.18" awayTeam="//@teams.12">
+      <score/>
+    </matches>
+    <matches id="264536" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.11" awayTeam="//@teams.6">
+      <score/>
+    </matches>
+    <matches id="264534" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.0" awayTeam="//@teams.2">
+      <score/>
+    </matches>
+    <matches id="264531" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.4" awayTeam="//@teams.10">
+      <score/>
+    </matches>
+    <matches id="264532" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.5" awayTeam="//@teams.16">
+      <score/>
+    </matches>
+    <matches id="264546" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.11" awayTeam="//@teams.1">
+      <score/>
+    </matches>
+    <matches id="264549" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.17" awayTeam="//@teams.2">
+      <score/>
+    </matches>
+    <matches id="264543" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.7" awayTeam="//@teams.12">
+      <score/>
+    </matches>
+    <matches id="264548" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.13" awayTeam="//@teams.9">
+      <score/>
+    </matches>
+    <matches id="264550" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.14" awayTeam="//@teams.10">
+      <score/>
+    </matches>
+    <matches id="264542" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.5" awayTeam="//@teams.3">
+      <score/>
+    </matches>
+    <matches id="264545" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.8" awayTeam="//@teams.15">
+      <score/>
+    </matches>
+    <matches id="264547" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.18" awayTeam="//@teams.19">
+      <score/>
+    </matches>
+    <matches id="264544" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.0" awayTeam="//@teams.6">
+      <score/>
+    </matches>
+    <matches id="264541" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.4" awayTeam="//@teams.16">
+      <score/>
+    </matches>
+    <matches id="264557" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.16" awayTeam="//@teams.18">
+      <score/>
+    </matches>
+    <matches id="264559" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.15" awayTeam="//@teams.0">
+      <score/>
+    </matches>
+    <matches id="264551" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.10" awayTeam="//@teams.7">
+      <score/>
+    </matches>
+    <matches id="264553" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.2" awayTeam="//@teams.11">
+      <score/>
+    </matches>
+    <matches id="264555" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.3" awayTeam="//@teams.17">
+      <score/>
+    </matches>
+    <matches id="264556" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.6" awayTeam="//@teams.8">
+      <score/>
+    </matches>
+    <matches id="264558" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.12" awayTeam="//@teams.13">
+      <score/>
+    </matches>
+    <matches id="264554" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.9" awayTeam="//@teams.4">
+      <score/>
+    </matches>
+    <matches id="264560" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.19" awayTeam="//@teams.14">
+      <score/>
+    </matches>
+    <matches id="264552" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.1" awayTeam="//@teams.5">
+      <score/>
+    </matches>
+    <matches id="264570" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.14" awayTeam="//@teams.9">
+      <score/>
+    </matches>
+    <matches id="264562" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.5" awayTeam="//@teams.15">
+      <score/>
+    </matches>
+    <matches id="264564" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.0" awayTeam="//@teams.16">
+      <score/>
+    </matches>
+    <matches id="264565" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.8" awayTeam="//@teams.19">
+      <score/>
+    </matches>
+    <matches id="264567" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.18" awayTeam="//@teams.3">
+      <score/>
+    </matches>
+    <matches id="264568" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.13" awayTeam="//@teams.10">
+      <score/>
+    </matches>
+    <matches id="264569" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.17" awayTeam="//@teams.1">
+      <score/>
+    </matches>
+    <matches id="264563" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.7" awayTeam="//@teams.2">
+      <score/>
+    </matches>
+    <matches id="264566" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.11" awayTeam="//@teams.12">
+      <score/>
+    </matches>
+    <matches id="264561" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.4" awayTeam="//@teams.6">
+      <score/>
+    </matches>
+    <matches id="264572" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.1" awayTeam="//@teams.14">
+      <score/>
+    </matches>
+    <matches id="264573" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.3" awayTeam="//@teams.7">
+      <score/>
+    </matches>
+    <matches id="264575" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.16" awayTeam="//@teams.5">
+      <score/>
+    </matches>
+    <matches id="264577" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.19" awayTeam="//@teams.17">
+      <score/>
+    </matches>
+    <matches id="264580" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.15" awayTeam="//@teams.13">
+      <score/>
+    </matches>
+    <matches id="264578" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.2" awayTeam="//@teams.0">
+      <score/>
+    </matches>
+    <matches id="264576" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.12" awayTeam="//@teams.18">
+      <score/>
+    </matches>
+    <matches id="264579" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.9" awayTeam="//@teams.8">
+      <score/>
+    </matches>
+    <matches id="264574" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.6" awayTeam="//@teams.11">
+      <score/>
+    </matches>
+    <matches id="264571" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.10" awayTeam="//@teams.4">
+      <score/>
+    </matches>
+    <matches id="264581" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.4" awayTeam="//@teams.13">
+      <score/>
+    </matches>
+    <matches id="264582" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.7" awayTeam="//@teams.8">
+      <score/>
+    </matches>
+    <matches id="264583" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.9" awayTeam="//@teams.5">
+      <score/>
+    </matches>
+    <matches id="264584" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.6" awayTeam="//@teams.10">
+      <score/>
+    </matches>
+    <matches id="264585" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.12" awayTeam="//@teams.2">
+      <score/>
+    </matches>
+    <matches id="264586" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.11" awayTeam="//@teams.0">
+      <score/>
+    </matches>
+    <matches id="264587" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.18" awayTeam="//@teams.17">
+      <score/>
+    </matches>
+    <matches id="264588" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.15" awayTeam="//@teams.16">
+      <score/>
+    </matches>
+    <matches id="264589" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.14" awayTeam="//@teams.3">
+      <score/>
+    </matches>
+    <matches id="264590" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.19" awayTeam="//@teams.1">
+      <score/>
+    </matches>
+    <matches id="264591" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.10" awayTeam="//@teams.12">
+      <score/>
+    </matches>
+    <matches id="264592" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.1" awayTeam="//@teams.9">
+      <score/>
+    </matches>
+    <matches id="264593" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.5" awayTeam="//@teams.18">
+      <score/>
+    </matches>
+    <matches id="264594" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.0" awayTeam="//@teams.7">
+      <score/>
+    </matches>
+    <matches id="264595" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.2" awayTeam="//@teams.6">
+      <score/>
+    </matches>
+    <matches id="264596" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.3" awayTeam="//@teams.15">
+      <score/>
+    </matches>
+    <matches id="264597" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.8" awayTeam="//@teams.4">
+      <score/>
+    </matches>
+    <matches id="264598" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.16" awayTeam="//@teams.19">
+      <score/>
+    </matches>
+    <matches id="264599" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.13" awayTeam="//@teams.11">
+      <score/>
+    </matches>
+    <matches id="264600" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.17" awayTeam="//@teams.14">
+      <score/>
+    </matches>
+    <matches id="264601" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.10" awayTeam="//@teams.8">
+      <score/>
+    </matches>
+    <matches id="264602" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.4" awayTeam="//@teams.18">
+      <score/>
+    </matches>
+    <matches id="264603" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.0" awayTeam="//@teams.3">
+      <score/>
+    </matches>
+    <matches id="264604" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.2" awayTeam="//@teams.9">
+      <score/>
+    </matches>
+    <matches id="264605" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.6" awayTeam="//@teams.14">
+      <score/>
+    </matches>
+    <matches id="264606" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.16" awayTeam="//@teams.17">
+      <score/>
+    </matches>
+    <matches id="264607" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.12" awayTeam="//@teams.5">
+      <score/>
+    </matches>
+    <matches id="264608" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.11" awayTeam="//@teams.19">
+      <score/>
+    </matches>
+    <matches id="264609" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.13" awayTeam="//@teams.1">
+      <score/>
+    </matches>
+    <matches id="264610" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.15" awayTeam="//@teams.7">
+      <score/>
+    </matches>
+    <matches id="264611" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.1" awayTeam="//@teams.16">
+      <score/>
+    </matches>
+    <matches id="264612" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.5" awayTeam="//@teams.0">
+      <score/>
+    </matches>
+    <matches id="264613" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.7" awayTeam="//@teams.11">
+      <score/>
+    </matches>
+    <matches id="264614" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.9" awayTeam="//@teams.10">
+      <score/>
+    </matches>
+    <matches id="264615" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.3" awayTeam="//@teams.6">
+      <score/>
+    </matches>
+    <matches id="264616" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.8" awayTeam="//@teams.12">
+      <score/>
+    </matches>
+    <matches id="264617" utcDate="2019-11-04T13:03:59.866+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.866+0100" lastUpdated="2019-11-04T13:03:59.866+0100" homeTeam="//@teams.18" awayTeam="//@teams.13">
+      <score/>
+    </matches>
+    <matches id="264618" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.17" awayTeam="//@teams.15">
+      <score/>
+    </matches>
+    <matches id="264619" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.14" awayTeam="//@teams.4">
+      <score/>
+    </matches>
+    <matches id="264620" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.19" awayTeam="//@teams.2">
+      <score/>
+    </matches>
+    <matches id="264621" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.10" awayTeam="//@teams.17">
+      <score/>
+    </matches>
+    <matches id="264622" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.4" awayTeam="//@teams.19">
+      <score/>
+    </matches>
+    <matches id="264623" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.0" awayTeam="//@teams.18">
+      <score/>
+    </matches>
+    <matches id="264624" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.2" awayTeam="//@teams.3">
+      <score/>
+    </matches>
+    <matches id="264625" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.6" awayTeam="//@teams.5">
+      <score/>
+    </matches>
+    <matches id="264626" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.16" awayTeam="//@teams.8">
+      <score/>
+    </matches>
+    <matches id="264627" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.12" awayTeam="//@teams.1">
+      <score/>
+    </matches>
+    <matches id="264628" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.11" awayTeam="//@teams.9">
+      <score/>
+    </matches>
+    <matches id="264629" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.13" awayTeam="//@teams.7">
+      <score/>
+    </matches>
+    <matches id="264630" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.15" awayTeam="//@teams.14">
+      <score/>
+    </matches>
+    <matches id="264631" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.1" awayTeam="//@teams.2">
+      <score/>
+    </matches>
+    <matches id="264632" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.5" awayTeam="//@teams.11">
+      <score/>
+    </matches>
+    <matches id="264633" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.7" awayTeam="//@teams.16">
+      <score/>
+    </matches>
+    <matches id="264634" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.9" awayTeam="//@teams.6">
+      <score/>
+    </matches>
+    <matches id="264635" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.3" awayTeam="//@teams.4">
+      <score/>
+    </matches>
+    <matches id="264636" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.8" awayTeam="//@teams.13">
+      <score/>
+    </matches>
+    <matches id="264637" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.18" awayTeam="//@teams.10">
+      <score/>
+    </matches>
+    <matches id="264638" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.17" awayTeam="//@teams.0">
+      <score/>
+    </matches>
+    <matches id="264639" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.14" awayTeam="//@teams.12">
+      <score/>
+    </matches>
+    <matches id="264640" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.19" awayTeam="//@teams.15">
+      <score/>
+    </matches>
+    <matches id="264641" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.10" awayTeam="//@teams.19">
+      <score/>
+    </matches>
+    <matches id="264642" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.4" awayTeam="//@teams.15">
+      <score/>
+    </matches>
+    <matches id="264643" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.7" awayTeam="//@teams.1">
+      <score/>
+    </matches>
+    <matches id="264644" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.2" awayTeam="//@teams.5">
+      <score/>
+    </matches>
+    <matches id="264645" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.9" awayTeam="//@teams.18">
+      <score/>
+    </matches>
+    <matches id="264646" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.6" awayTeam="//@teams.16">
+      <score/>
+    </matches>
+    <matches id="264647" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.8" awayTeam="//@teams.3">
+      <score/>
+    </matches>
+    <matches id="264648" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.12" awayTeam="//@teams.17">
+      <score/>
+    </matches>
+    <matches id="264649" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.11" awayTeam="//@teams.14">
+      <score/>
+    </matches>
+    <matches id="264650" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.13" awayTeam="//@teams.0">
+      <score/>
+    </matches>
+    <matches id="264651" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.1" awayTeam="//@teams.10">
+      <score/>
+    </matches>
+    <matches id="264652" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.5" awayTeam="//@teams.4">
+      <score/>
+    </matches>
+    <matches id="264653" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.0" awayTeam="//@teams.8">
+      <score/>
+    </matches>
+    <matches id="264654" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.3" awayTeam="//@teams.12">
+      <score/>
+    </matches>
+    <matches id="264655" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.16" awayTeam="//@teams.9">
+      <score/>
+    </matches>
+    <matches id="264656" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.18" awayTeam="//@teams.2">
+      <score/>
+    </matches>
+    <matches id="264657" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.15" awayTeam="//@teams.11">
+      <score/>
+    </matches>
+    <matches id="264658" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.17" awayTeam="//@teams.6">
+      <score/>
+    </matches>
+    <matches id="264659" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.14" awayTeam="//@teams.13">
+      <score/>
+    </matches>
+    <matches id="264660" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.19" awayTeam="//@teams.7">
+      <score/>
+    </matches>
+    <matches id="264661" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.10" awayTeam="//@teams.0">
+      <score/>
+    </matches>
+    <matches id="264662" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.4" awayTeam="//@teams.1">
+      <score/>
+    </matches>
+    <matches id="264663" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.7" awayTeam="//@teams.18">
+      <score/>
+    </matches>
+    <matches id="264664" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.2" awayTeam="//@teams.14">
+      <score/>
+    </matches>
+    <matches id="264665" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.9" awayTeam="//@teams.3">
+      <score/>
+    </matches>
+    <matches id="264666" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.6" awayTeam="//@teams.19">
+      <score/>
+    </matches>
+    <matches id="264667" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.8" awayTeam="//@teams.17">
+      <score/>
+    </matches>
+    <matches id="264668" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.12" awayTeam="//@teams.15">
+      <score/>
+    </matches>
+    <matches id="264669" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.11" awayTeam="//@teams.16">
+      <score/>
+    </matches>
+    <matches id="264670" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.13" awayTeam="//@teams.5">
+      <score/>
+    </matches>
+    <matches id="264671" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.1" awayTeam="//@teams.6">
+      <score/>
+    </matches>
+    <matches id="264672" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.5" awayTeam="//@teams.7">
+      <score/>
+    </matches>
+    <matches id="264673" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.0" awayTeam="//@teams.12">
+      <score/>
+    </matches>
+    <matches id="264674" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.3" awayTeam="//@teams.13">
+      <score/>
+    </matches>
+    <matches id="264675" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.16" awayTeam="//@teams.10">
+      <score/>
+    </matches>
+    <matches id="264676" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.18" awayTeam="//@teams.11">
+      <score/>
+    </matches>
+    <matches id="264677" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.15" awayTeam="//@teams.2">
+      <score/>
+    </matches>
+    <matches id="264678" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.17" awayTeam="//@teams.4">
+      <score/>
+    </matches>
+    <matches id="264679" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.14" awayTeam="//@teams.8">
+      <score/>
+    </matches>
+    <matches id="264680" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.19" awayTeam="//@teams.9">
+      <score/>
+    </matches>
+    <matches id="264681" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.10" awayTeam="//@teams.3">
+      <score/>
+    </matches>
+    <matches id="264682" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.1" awayTeam="//@teams.15">
+      <score/>
+    </matches>
+    <matches id="264683" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.4" awayTeam="//@teams.11">
+      <score/>
+    </matches>
+    <matches id="264684" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.9" awayTeam="//@teams.0">
+      <score/>
+    </matches>
+    <matches id="264685" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.6" awayTeam="//@teams.13">
+      <score/>
+    </matches>
+    <matches id="264686" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.8" awayTeam="//@teams.18">
+      <score/>
+    </matches>
+    <matches id="264687" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.16" awayTeam="//@teams.2">
+      <score/>
+    </matches>
+    <matches id="264688" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.17" awayTeam="//@teams.5">
+      <score/>
+    </matches>
+    <matches id="264689" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.14" awayTeam="//@teams.7">
+      <score/>
+    </matches>
+    <matches id="264690" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.19" awayTeam="//@teams.12">
+      <score/>
+    </matches>
+    <matches id="264691" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.5" awayTeam="//@teams.19">
+      <score/>
+    </matches>
+    <matches id="264692" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.7" awayTeam="//@teams.9">
+      <score/>
+    </matches>
+    <matches id="264693" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.0" awayTeam="//@teams.4">
+      <score/>
+    </matches>
+    <matches id="264694" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.2" awayTeam="//@teams.8">
+      <score/>
+    </matches>
+    <matches id="264695" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.3" awayTeam="//@teams.1">
+      <score/>
+    </matches>
+    <matches id="264696" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.12" awayTeam="//@teams.16">
+      <score/>
+    </matches>
+    <matches id="264697" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.11" awayTeam="//@teams.10">
+      <score/>
+    </matches>
+    <matches id="264698" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.18" awayTeam="//@teams.14">
+      <score/>
+    </matches>
+    <matches id="264699" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.13" awayTeam="//@teams.17">
+      <score/>
+    </matches>
+    <matches id="264700" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.15" awayTeam="//@teams.6">
+      <score/>
+    </matches>
+    <matches id="264704" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.9" awayTeam="//@teams.12">
+      <score/>
+    </matches>
+    <matches id="264705" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.6" awayTeam="//@teams.18">
+      <score/>
+    </matches>
+    <matches id="264706" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.8" awayTeam="//@teams.11">
+      <score/>
+    </matches>
+    <matches id="264707" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.16" awayTeam="//@teams.3">
+      <score/>
+    </matches>
+    <matches id="264708" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.17" awayTeam="//@teams.7">
+      <score/>
+    </matches>
+    <matches id="264709" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.14" awayTeam="//@teams.5">
+      <score/>
+    </matches>
+    <matches id="264710" utcDate="2019-11-04T13:03:59.867+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.19" awayTeam="//@teams.13">
+      <score/>
+    </matches>
+    <matches id="264701" utcDate="2019-11-04T13:03:59.868+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.867+0100" lastUpdated="2019-11-04T13:03:59.867+0100" homeTeam="//@teams.10" awayTeam="//@teams.15">
+      <score/>
+    </matches>
+    <matches id="264702" utcDate="2019-11-04T13:03:59.868+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.868+0100" lastUpdated="2019-11-04T13:03:59.868+0100" homeTeam="//@teams.1" awayTeam="//@teams.0">
+      <score/>
+    </matches>
+    <matches id="264703" utcDate="2019-11-04T13:03:59.868+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.868+0100" lastUpdated="2019-11-04T13:03:59.868+0100" homeTeam="//@teams.4" awayTeam="//@teams.2">
+      <score/>
+    </matches>
+    <matches id="264711" utcDate="2019-11-04T13:03:59.868+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.868+0100" lastUpdated="2019-11-04T13:03:59.868+0100" homeTeam="//@teams.5" awayTeam="//@teams.8">
+      <score/>
+    </matches>
+    <matches id="264712" utcDate="2019-11-04T13:03:59.868+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.868+0100" lastUpdated="2019-11-04T13:03:59.868+0100" homeTeam="//@teams.7" awayTeam="//@teams.4">
+      <score/>
+    </matches>
+    <matches id="264713" utcDate="2019-11-04T13:03:59.868+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.868+0100" lastUpdated="2019-11-04T13:03:59.868+0100" homeTeam="//@teams.0" awayTeam="//@teams.14">
+      <score/>
+    </matches>
+    <matches id="264714" utcDate="2019-11-04T13:03:59.868+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.868+0100" lastUpdated="2019-11-04T13:03:59.868+0100" homeTeam="//@teams.2" awayTeam="//@teams.10">
+      <score/>
+    </matches>
+    <matches id="264715" utcDate="2019-11-04T13:03:59.868+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.868+0100" lastUpdated="2019-11-04T13:03:59.868+0100" homeTeam="//@teams.3" awayTeam="//@teams.19">
+      <score/>
+    </matches>
+    <matches id="264716" utcDate="2019-11-04T13:03:59.868+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.868+0100" lastUpdated="2019-11-04T13:03:59.868+0100" homeTeam="//@teams.12" awayTeam="//@teams.6">
+      <score/>
+    </matches>
+    <matches id="264717" utcDate="2019-11-04T13:03:59.868+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.868+0100" lastUpdated="2019-11-04T13:03:59.868+0100" homeTeam="//@teams.11" awayTeam="//@teams.17">
+      <score/>
+    </matches>
+    <matches id="264718" utcDate="2019-11-04T13:03:59.868+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.868+0100" lastUpdated="2019-11-04T13:03:59.868+0100" homeTeam="//@teams.18" awayTeam="//@teams.1">
+      <score/>
+    </matches>
+    <matches id="264719" utcDate="2019-11-04T13:03:59.868+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.868+0100" lastUpdated="2019-11-04T13:03:59.868+0100" homeTeam="//@teams.13" awayTeam="//@teams.16">
+      <score/>
+    </matches>
+    <matches id="264720" utcDate="2019-11-04T13:03:59.868+0100" status="SCHEDULED" matchDay="2019-11-04T13:03:59.868+0100" lastUpdated="2019-11-04T13:03:59.868+0100" homeTeam="//@teams.15" awayTeam="//@teams.9">
+      <score/>
+    </matches>
+    <standing>
+      <positions position="1" team="//@teams.4" playedGames="5" won="5" points="15" goalsFor="14" goalsAgaints="5" goalDifference="9"/>
+      <positions position="2" team="//@teams.5" playedGames="6" won="4" draw="1" lost="1" points="13" goalsFor="19" goalsAgaints="5" goalDifference="14"/>
+      <positions position="3" team="//@teams.12" playedGames="5" won="4" draw="1" points="13" goalsFor="12" goalsAgaints="3" goalDifference="9"/>
+      <positions position="4" team="//@teams.0" playedGames="6" won="3" draw="3" points="12" goalsFor="11" goalsAgaints="8" goalDifference="3"/>
+      <positions position="5" team="//@teams.17" playedGames="6" won="3" draw="2" lost="1" points="11" goalsFor="10" goalsAgaints="6" goalDifference="4"/>
+      <positions position="6" team="//@teams.9" playedGames="5" won="3" draw="1" lost="1" points="10" goalsFor="10" goalsAgaints="4" goalDifference="6"/>
+      <positions position="7" team="//@teams.16" playedGames="6" won="3" lost="3" points="9" goalsFor="6" goalsAgaints="4" goalDifference="2"/>
+      <positions position="8" team="//@teams.11" playedGames="5" won="3" lost="2" points="9" goalsFor="8" goalsAgaints="7" goalDifference="1"/>
+      <positions position="9" team="//@teams.19" playedGames="6" won="2" draw="3" lost="1" points="9" goalsFor="8" goalsAgaints="7" goalDifference="1"/>
+      <positions position="10" team="//@teams.3" playedGames="5" won="3" lost="2" points="9" goalsFor="7" goalsAgaints="7"/>
+      <positions position="11" team="//@teams.6" playedGames="5" won="2" draw="2" lost="1" points="8" goalsFor="8" goalsAgaints="4" goalDifference="4"/>
+      <positions position="12" team="//@teams.2" playedGames="5" won="2" draw="2" lost="1" points="8" goalsFor="7" goalsAgaints="5" goalDifference="2"/>
+      <positions position="13" team="//@teams.1" playedGames="6" won="2" draw="2" lost="2" points="8" goalsFor="8" goalsAgaints="7" goalDifference="1"/>
+      <positions position="14" team="//@teams.15" playedGames="6" won="2" draw="2" lost="1" points="8" goalsFor="4" goalsAgaints="3" goalDifference="1"/>
+      <positions position="15" team="//@teams.18" playedGames="6" won="2" draw="1" lost="3" points="7" goalsFor="8" goalsAgaints="11" goalDifference="-3"/>
+      <positions position="16" team="//@teams.7" playedGames="5" won="1" draw="3" lost="1" points="6" goalsFor="3" goalsAgaints="3"/>
+      <positions position="17" team="//@teams.10" playedGames="5" won="1" draw="3" lost="1" points="6" goalsFor="7" goalsAgaints="8" goalDifference="-1"/>
+      <positions position="18" team="//@teams.8" playedGames="5" won="2" lost="3" points="6" goalsFor="10" goalsAgaints="14" goalDifference="-4"/>
+      <positions position="19" team="//@teams.14" playedGames="6" draw="3" lost="3" points="3" goalsFor="4" goalsAgaints="10" goalDifference="-6"/>
+      <positions position="20" team="//@teams.13" playedGames="5" draw="1" lost="4" points="1" goalsFor="4" goalsAgaints="19" goalDifference="-15"/>
+    </standing>
+  </currentSeason>
+  <teams id="57" name="Arsenal FC" shortName="Arsenal" tla="ARS" founded="1886" clubColors="Red / White"/>
+  <teams id="58" name="Aston Villa FC" shortName="Aston Villa" tla="AST" founded="1872" clubColors="Claret / Sky Blue"/>
+  <teams id="61" name="Chelsea FC" shortName="Chelsea" tla="CHE" founded="1905" clubColors="Royal Blue / White"/>
+  <teams id="62" name="Everton FC" shortName="Everton" tla="EVE" founded="1878" clubColors="Blue / White"/>
+  <teams id="64" name="Liverpool FC" shortName="Liverpool" tla="LIV" founded="1892" clubColors="Red / White"/>
+  <teams id="65" name="Manchester City FC" shortName="Man City" tla="MCI" founded="1880" clubColors="Sky Blue / White"/>
+  <teams id="66" name="Manchester United FC" shortName="Man United" tla="MUN" founded="1878" clubColors="Red / White"/>
+  <teams id="67" name="Newcastle United FC" shortName="Newcastle" tla="NEW" founded="1881" clubColors="Black / White"/>
+  <teams id="68" name="Norwich City FC" shortName="Norwich" tla="NOR" founded="1902" clubColors="Yellow / Green"/>
+  <teams id="73" name="Tottenham Hotspur FC" shortName="Tottenham" tla="TOT" founded="1882" clubColors="Navy Blue / White"/>
+  <teams id="76" name="Wolverhampton Wanderers FC" shortName="Wolverhampton" tla="WOL" founded="1877" clubColors="Black / Gold"/>
+  <teams id="328" name="Burnley FC" shortName="Burnley" tla="BUR" founded="1881" clubColors="Claret / Sky Blue"/>
+  <teams id="338" name="Leicester City FC" shortName="Leicester City" tla="LEI" founded="1884" clubColors="Royal Blue / White"/>
+  <teams id="340" name="Southampton FC" shortName="Southampton" tla="SOU" founded="1885" clubColors="Red / White / Black"/>
+  <teams id="346" name="Watford FC" shortName="Watford" tla="WAT" founded="1881" clubColors="Yellow / Black"/>
+  <teams id="354" name="Crystal Palace FC" shortName="Crystal Palace" tla="CRY" founded="1905" clubColors="Red / Blue"/>
+  <teams id="356" name="Sheffield United FC" shortName="Sheffield Utd" tla="SHE" clubColors="Red / White / Black"/>
+  <teams id="397" name="Brighton &amp; Hove Albion FC" shortName="Brighton Hove" tla="BHA" founded="1898" clubColors="Blue / White"/>
+  <teams id="563" name="West Ham United FC" shortName="West Ham" tla="WHU" founded="1895" clubColors="Claret / Sky Blue"/>
+  <teams id="1044" name="AFC Bournemouth" shortName="Bournemouth" tla="BOU" founded="1890" clubColors="Red / Black"/>
+</competition:Competition>

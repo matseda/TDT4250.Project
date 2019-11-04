@@ -2,8 +2,6 @@
  */
 package competition;
 
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -21,7 +19,6 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link competition.Team#getTla <em>Tla</em>}</li>
  *   <li>{@link competition.Team#getFounded <em>Founded</em>}</li>
  *   <li>{@link competition.Team#getClubColors <em>Club Colors</em>}</li>
- *   <li>{@link competition.Team#getSquad <em>Squad</em>}</li>
  * </ul>
  *
  * @see competition.CompetitionPackage#getTeam()
@@ -160,17 +157,5 @@ public interface Team extends EObject {
 	 * @generated
 	 */
 	void setClubColors(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Squad</b></em>' containment reference list.
-	 * The list contents are of type {@link competition.Person}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Squad</em>' containment reference list.
-	 * @see competition.CompetitionPackage#getTeam_Squad()
-	 * @model containment="true"
-	 * @generated
-	 */
-	EList<Person> getSquad();
 
 } // Team

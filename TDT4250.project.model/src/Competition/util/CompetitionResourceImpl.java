@@ -3,16 +3,17 @@
 package competition.util;
 
 import org.eclipse.emf.common.util.URI;
-import org.emfjson.jackson.resource.JsonResource;
+
+import org.eclipse.emf.ecore.resource.impl.ResourceImpl;
 
 /**
  * <!-- begin-user-doc -->
  * The <b>Resource </b> associated with the package.
  * <!-- end-user-doc -->
  * @see competition.util.CompetitionResourceFactoryImpl
- * @generated NOT
+ * @generated
  */
-public class CompetitionResourceImpl extends JsonResource {
+public class CompetitionResourceImpl extends ResourceImpl {
 	/**
 	 * Creates an instance of the resource.
 	 * <!-- begin-user-doc -->

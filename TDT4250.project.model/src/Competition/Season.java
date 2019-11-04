@@ -23,6 +23,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link competition.Season#getCurrentMatchday <em>Current Matchday</em>}</li>
  *   <li>{@link competition.Season#getMatches <em>Matches</em>}</li>
  *   <li>{@link competition.Season#getCompetition <em>Competition</em>}</li>
+ *   <li>{@link competition.Season#getStanding <em>Standing</em>}</li>
  * </ul>
  *
  * @see competition.CompetitionPackage#getSeason()
@@ -155,5 +156,27 @@ public interface Season extends EObject {
 	 * @generated
 	 */
 	void setCompetition(Competition value);
+
+	/**
+	 * Returns the value of the '<em><b>Standing</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Standing</em>' containment reference.
+	 * @see #setStanding(Standing)
+	 * @see competition.CompetitionPackage#getSeason_Standing()
+	 * @model containment="true"
+	 * @generated
+	 */
+	Standing getStanding();
+
+	/**
+	 * Sets the value of the '{@link competition.Season#getStanding <em>Standing</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Standing</em>' containment reference.
+	 * @see #getStanding()
+	 * @generated
+	 */
+	void setStanding(Standing value);
 
 } // Season

@@ -6,6 +6,7 @@ import competition.Competition;
 import competition.CompetitionPackage;
 import competition.Match;
 import competition.Season;
+import competition.Standing;
 
 import java.util.Collection;
 import java.util.Date;
@@ -39,6 +40,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link competition.impl.SeasonImpl#getCurrentMatchday <em>Current Matchday</em>}</li>
  *   <li>{@link competition.impl.SeasonImpl#getMatches <em>Matches</em>}</li>
  *   <li>{@link competition.impl.SeasonImpl#getCompetition <em>Competition</em>}</li>
+ *   <li>{@link competition.impl.SeasonImpl#getStanding <em>Standing</em>}</li>
  * </ul>
  *
  * @generated
@@ -133,6 +135,16 @@ public class SeasonImpl extends MinimalEObjectImpl.Container implements Season {
 	 * @ordered
 	 */
 	protected EList<Match> matches;
+
+	/**
+	 * The cached value of the '{@link #getStanding() <em>Standing</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getStanding()
+	 * @generated
+	 * @ordered
+	 */
+	protected Standing standing;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -306,6 +318,51 @@ public class SeasonImpl extends MinimalEObjectImpl.Container implements Season {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
+	public Standing getStanding() {
+		return standing;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetStanding(Standing newStanding, NotificationChain msgs) {
+		Standing oldStanding = standing;
+		standing = newStanding;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, CompetitionPackage.SEASON__STANDING, oldStanding, newStanding);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setStanding(Standing newStanding) {
+		if (newStanding != standing) {
+			NotificationChain msgs = null;
+			if (standing != null)
+				msgs = ((InternalEObject)standing).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - CompetitionPackage.SEASON__STANDING, null, msgs);
+			if (newStanding != null)
+				msgs = ((InternalEObject)newStanding).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - CompetitionPackage.SEASON__STANDING, null, msgs);
+			msgs = basicSetStanding(newStanding, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CompetitionPackage.SEASON__STANDING, newStanding, newStanding));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
@@ -332,6 +389,8 @@ public class SeasonImpl extends MinimalEObjectImpl.Container implements Season {
 				return ((InternalEList<?>)getMatches()).basicRemove(otherEnd, msgs);
 			case CompetitionPackage.SEASON__COMPETITION:
 				return basicSetCompetition(null, msgs);
+			case CompetitionPackage.SEASON__STANDING:
+				return basicSetStanding(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -370,6 +429,8 @@ public class SeasonImpl extends MinimalEObjectImpl.Container implements Season {
 				return getMatches();
 			case CompetitionPackage.SEASON__COMPETITION:
 				return getCompetition();
+			case CompetitionPackage.SEASON__STANDING:
+				return getStanding();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -402,6 +463,9 @@ public class SeasonImpl extends MinimalEObjectImpl.Container implements Season {
 			case CompetitionPackage.SEASON__COMPETITION:
 				setCompetition((Competition)newValue);
 				return;
+			case CompetitionPackage.SEASON__STANDING:
+				setStanding((Standing)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -432,6 +496,9 @@ public class SeasonImpl extends MinimalEObjectImpl.Container implements Season {
 			case CompetitionPackage.SEASON__COMPETITION:
 				setCompetition((Competition)null);
 				return;
+			case CompetitionPackage.SEASON__STANDING:
+				setStanding((Standing)null);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -456,6 +523,8 @@ public class SeasonImpl extends MinimalEObjectImpl.Container implements Season {
 				return matches != null && !matches.isEmpty();
 			case CompetitionPackage.SEASON__COMPETITION:
 				return getCompetition() != null;
+			case CompetitionPackage.SEASON__STANDING:
+				return standing != null;
 		}
 		return super.eIsSet(featureID);
 	}
