@@ -13,7 +13,7 @@ public class Main {
 	public static void main(String[] args) {
 		Mapper mapper = new Mapper();
 		
-		// Build and 
+		// Map from JSON to Ecore
 		mapper.buildModel(COMPETITION_URL, TEAMS_URL, MATCHES_URL, STANDINGS_URL);
 
 	}
