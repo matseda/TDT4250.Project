@@ -1,7 +1,1286 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description" uid="_eKFTIPu9EemomK9Saf2bhA" selectedViews="_fKQWsPu9EemomK9Saf2bhA" version="14.1.0.201810161215">
-  <semanticResources>sample.xmi</semanticResources>
-  <ownedViews xmi:type="viewpoint:DView" uid="_fKQWsPu9EemomK9Saf2bhA">
-    <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']"/>
-  </ownedViews>
-</viewpoint:DAnalysis>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:competition="platform:/plugin/TDT4250.project.mpdel/model/Competition.ecore" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:description_2="http://www.eclipse.org/sirius/tree/description/1.0.0" xmlns:description_3="http://www.eclipse.org/sirius/table/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:table="http://www.eclipse.org/sirius/table/1.1.0" xmlns:tree="http://www.eclipse.org/sirius/tree/1.0.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/tree/description/1.0.0 http://www.eclipse.org/sirius/tree/1.0.0#//description http://www.eclipse.org/sirius/table/description/1.1.0 http://www.eclipse.org/sirius/table/1.1.0#//description">
+  <viewpoint:DAnalysis uid="_eKFTIPu9EemomK9Saf2bhA" selectedViews="_fKQWsPu9EemomK9Saf2bhA" version="14.1.0.201810161215">
+    <semanticResources>sample.xmi</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_fKQWsPu9EemomK9Saf2bhA">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_1yYNgf8HEem1P43S2USwXw" name="new Test Diagram" repPath="#_1yVxQP8HEem1P43S2USwXw">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Diagram']"/>
+        <target xmi:type="competition:Competition" href="sample.xmi#/"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_8uAoQP8aEem1P43S2USwXw" name="new Test Tree" repPath="#_8sjPsP8aEem1P43S2USwXw">
+        <description xmi:type="description_2:TreeDescription" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']"/>
+        <target xmi:type="competition:Competition" href="sample.xmi#/"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_Upei4P8bEem1P43S2USwXw" name="new Test Table" repPath="#_UpLn8P8bEem1P43S2USwXw">
+        <description xmi:type="description_3:EditionTableDescription" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Table']"/>
+        <target xmi:type="competition:Competition" href="sample.xmi#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_1yVxQP8HEem1P43S2USwXw" name="new Test Diagram">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_1yXmcf8HEem1P43S2USwXw" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_1yXmcv8HEem1P43S2USwXw"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_1yY0kP8HEem1P43S2USwXw" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_1yY0kf8HEem1P43S2USwXw" type="Sirius" element="_1yVxQP8HEem1P43S2USwXw" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_xRETkP8JEem1P43S2USwXw" type="2002" element="_3L_moP8ZEem1P43S2USwXw">
+          <children xmi:type="notation:Node" xmi:id="_xRE6oP8JEem1P43S2USwXw" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_xRFhsP8JEem1P43S2USwXw" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_3Pj4AP8ZEem1P43S2USwXw" type="3008" element="_3MG7YP8ZEem1P43S2USwXw">
+              <children xmi:type="notation:Node" xmi:id="_3PlGIP8ZEem1P43S2USwXw" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_3PmUQP8ZEem1P43S2USwXw" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_3PmUQf8ZEem1P43S2USwXw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_3PmUQv8ZEem1P43S2USwXw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_3PkfEP8ZEem1P43S2USwXw" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3PkfEf8ZEem1P43S2USwXw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_3Pm7UP8ZEem1P43S2USwXw" type="3008" element="_3MHicP8ZEem1P43S2USwXw">
+              <children xmi:type="notation:Node" xmi:id="_3PniYP8ZEem1P43S2USwXw" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_3PniYf8ZEem1P43S2USwXw" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_3PniYv8ZEem1P43S2USwXw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_3PniY_8ZEem1P43S2USwXw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_3Pm7Uf8ZEem1P43S2USwXw" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3Pm7Uv8ZEem1P43S2USwXw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_3PniZP8ZEem1P43S2USwXw" type="3008" element="_3MIJgP8ZEem1P43S2USwXw">
+              <children xmi:type="notation:Node" xmi:id="_3PoJcP8ZEem1P43S2USwXw" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_3PoJcf8ZEem1P43S2USwXw" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_3PoJcv8ZEem1P43S2USwXw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_3PoJc_8ZEem1P43S2USwXw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_3PniZf8ZEem1P43S2USwXw" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3PniZv8ZEem1P43S2USwXw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_3PoJdP8ZEem1P43S2USwXw" type="3008" element="_3MIJgf8ZEem1P43S2USwXw">
+              <children xmi:type="notation:Node" xmi:id="_3PoJd_8ZEem1P43S2USwXw" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_3PowgP8ZEem1P43S2USwXw" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_3Powgf8ZEem1P43S2USwXw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_3Powgv8ZEem1P43S2USwXw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_3PoJdf8ZEem1P43S2USwXw" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3PoJdv8ZEem1P43S2USwXw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_3Powg_8ZEem1P43S2USwXw" type="3008" element="_3MJXoP8ZEem1P43S2USwXw">
+              <children xmi:type="notation:Node" xmi:id="_3Powhv8ZEem1P43S2USwXw" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_3Powh_8ZEem1P43S2USwXw" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_3PowiP8ZEem1P43S2USwXw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_3Powif8ZEem1P43S2USwXw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_3PowhP8ZEem1P43S2USwXw" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3Powhf8ZEem1P43S2USwXw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_3Powiv8ZEem1P43S2USwXw" type="3008" element="_3MJXof8ZEem1P43S2USwXw">
+              <children xmi:type="notation:Node" xmi:id="_3PpXkP8ZEem1P43S2USwXw" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_3PpXkf8ZEem1P43S2USwXw" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_3PpXkv8ZEem1P43S2USwXw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_3PpXk_8ZEem1P43S2USwXw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_3Powi_8ZEem1P43S2USwXw" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3PowjP8ZEem1P43S2USwXw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_3PpXlP8ZEem1P43S2USwXw" type="3008" element="_3MJXov8ZEem1P43S2USwXw">
+              <children xmi:type="notation:Node" xmi:id="_3PpXl_8ZEem1P43S2USwXw" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_3PpXmP8ZEem1P43S2USwXw" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_3PpXmf8ZEem1P43S2USwXw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_3PpXmv8ZEem1P43S2USwXw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_3PpXlf8ZEem1P43S2USwXw" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3PpXlv8ZEem1P43S2USwXw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_3Pp-oP8ZEem1P43S2USwXw" type="3008" element="_3MJ-sP8ZEem1P43S2USwXw">
+              <children xmi:type="notation:Node" xmi:id="_3Pp-o_8ZEem1P43S2USwXw" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_3Pp-pP8ZEem1P43S2USwXw" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_3Pp-pf8ZEem1P43S2USwXw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_3Pp-pv8ZEem1P43S2USwXw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_3Pp-of8ZEem1P43S2USwXw" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3Pp-ov8ZEem1P43S2USwXw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_3Pp-p_8ZEem1P43S2USwXw" type="3008" element="_3MJ-sf8ZEem1P43S2USwXw">
+              <children xmi:type="notation:Node" xmi:id="_3PqlsP8ZEem1P43S2USwXw" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_3PrMwP8ZEem1P43S2USwXw" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_3PrMwf8ZEem1P43S2USwXw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_3PrMwv8ZEem1P43S2USwXw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_3Pp-qP8ZEem1P43S2USwXw" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3Pp-qf8ZEem1P43S2USwXw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_3PrMw_8ZEem1P43S2USwXw" type="3008" element="_3MJ-sv8ZEem1P43S2USwXw">
+              <children xmi:type="notation:Node" xmi:id="_3PrMxv8ZEem1P43S2USwXw" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_3PrMx_8ZEem1P43S2USwXw" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_3PrMyP8ZEem1P43S2USwXw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_3PrMyf8ZEem1P43S2USwXw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_3PrMxP8ZEem1P43S2USwXw" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3PrMxf8ZEem1P43S2USwXw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_3PrMyv8ZEem1P43S2USwXw" type="3008" element="_3MKlwP8ZEem1P43S2USwXw">
+              <children xmi:type="notation:Node" xmi:id="_3Prz0P8ZEem1P43S2USwXw" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_3Prz0f8ZEem1P43S2USwXw" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_3Prz0v8ZEem1P43S2USwXw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_3Prz0_8ZEem1P43S2USwXw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_3PrMy_8ZEem1P43S2USwXw" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3PrMzP8ZEem1P43S2USwXw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_3Prz1P8ZEem1P43S2USwXw" type="3008" element="_3MKlwf8ZEem1P43S2USwXw">
+              <children xmi:type="notation:Node" xmi:id="_3Prz1_8ZEem1P43S2USwXw" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_3Prz2P8ZEem1P43S2USwXw" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_3Prz2f8ZEem1P43S2USwXw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_3Prz2v8ZEem1P43S2USwXw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_3Prz1f8ZEem1P43S2USwXw" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3Prz1v8ZEem1P43S2USwXw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_3Prz2_8ZEem1P43S2USwXw" type="3008" element="_3MKlwv8ZEem1P43S2USwXw">
+              <children xmi:type="notation:Node" xmi:id="_3Prz3v8ZEem1P43S2USwXw" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_3Prz3_8ZEem1P43S2USwXw" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_3Prz4P8ZEem1P43S2USwXw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_3Prz4f8ZEem1P43S2USwXw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_3Prz3P8ZEem1P43S2USwXw" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3Prz3f8ZEem1P43S2USwXw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_3Psa4P8ZEem1P43S2USwXw" type="3008" element="_3MLM0P8ZEem1P43S2USwXw">
+              <children xmi:type="notation:Node" xmi:id="_3Psa4_8ZEem1P43S2USwXw" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_3Psa5P8ZEem1P43S2USwXw" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_3Psa5f8ZEem1P43S2USwXw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_3Psa5v8ZEem1P43S2USwXw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_3Psa4f8ZEem1P43S2USwXw" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3Psa4v8ZEem1P43S2USwXw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_3Psa5_8ZEem1P43S2USwXw" type="3008" element="_3MLM0f8ZEem1P43S2USwXw">
+              <children xmi:type="notation:Node" xmi:id="_3Psa6v8ZEem1P43S2USwXw" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_3Psa6_8ZEem1P43S2USwXw" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_3Psa7P8ZEem1P43S2USwXw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_3Psa7f8ZEem1P43S2USwXw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_3Psa6P8ZEem1P43S2USwXw" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3Psa6f8ZEem1P43S2USwXw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_3PtB8P8ZEem1P43S2USwXw" type="3008" element="_3MLM0v8ZEem1P43S2USwXw">
+              <children xmi:type="notation:Node" xmi:id="_3PtB8_8ZEem1P43S2USwXw" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_3PtpAP8ZEem1P43S2USwXw" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_3PtpAf8ZEem1P43S2USwXw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_3PtpAv8ZEem1P43S2USwXw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_3PtB8f8ZEem1P43S2USwXw" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3PtB8v8ZEem1P43S2USwXw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_3PtpA_8ZEem1P43S2USwXw" type="3008" element="_3MLz4P8ZEem1P43S2USwXw">
+              <children xmi:type="notation:Node" xmi:id="_3PtpBv8ZEem1P43S2USwXw" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_3PtpB_8ZEem1P43S2USwXw" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_3PtpCP8ZEem1P43S2USwXw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_3PtpCf8ZEem1P43S2USwXw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_3PtpBP8ZEem1P43S2USwXw" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3PtpBf8ZEem1P43S2USwXw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_3PuQEP8ZEem1P43S2USwXw" type="3008" element="_3MMa8P8ZEem1P43S2USwXw">
+              <children xmi:type="notation:Node" xmi:id="_3PuQE_8ZEem1P43S2USwXw" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_3PuQFP8ZEem1P43S2USwXw" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_3PuQFf8ZEem1P43S2USwXw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_3PuQFv8ZEem1P43S2USwXw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_3PuQEf8ZEem1P43S2USwXw" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3PuQEv8ZEem1P43S2USwXw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_3PuQF_8ZEem1P43S2USwXw" type="3008" element="_3MMa8f8ZEem1P43S2USwXw">
+              <children xmi:type="notation:Node" xmi:id="_3PuQGv8ZEem1P43S2USwXw" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_3Pu3IP8ZEem1P43S2USwXw" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_3Pu3If8ZEem1P43S2USwXw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_3Pu3Iv8ZEem1P43S2USwXw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_3PuQGP8ZEem1P43S2USwXw" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3PuQGf8ZEem1P43S2USwXw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_3Pu3I_8ZEem1P43S2USwXw" type="3008" element="_3MNCAP8ZEem1P43S2USwXw">
+              <children xmi:type="notation:Node" xmi:id="_3PveMP8ZEem1P43S2USwXw" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_3PveMf8ZEem1P43S2USwXw" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_3PveMv8ZEem1P43S2USwXw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_3PveM_8ZEem1P43S2USwXw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_3Pu3JP8ZEem1P43S2USwXw" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3Pu3Jf8ZEem1P43S2USwXw" x="65" y="37"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_xRFhsf8JEem1P43S2USwXw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_xRFhsv8JEem1P43S2USwXw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_xRETkf8JEem1P43S2USwXw" fontName="Ubuntu"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xRETkv8JEem1P43S2USwXw" width="213" height="248"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_1yY0kv8HEem1P43S2USwXw"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_3L_moP8ZEem1P43S2USwXw" childrenPresentation="HorizontalStack">
+      <target xmi:type="competition:Standing" href="sample.xmi#//@currentSeason/@standing"/>
+      <semanticElements xmi:type="competition:Standing" href="sample.xmi#//@currentSeason/@standing"/>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Diagram']/@defaultLayer/@containerMappings[name='Standing%20Container']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_3MG7YP8ZEem1P43S2USwXw" childrenPresentation="HorizontalStack">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.0"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.0"/>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Diagram']/@defaultLayer/@containerMappings[name='Standing%20Container']/@subContainerMappings[name='Position%20Container']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_3MHicP8ZEem1P43S2USwXw" childrenPresentation="HorizontalStack">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.1"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.1"/>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Diagram']/@defaultLayer/@containerMappings[name='Standing%20Container']/@subContainerMappings[name='Position%20Container']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_3MIJgP8ZEem1P43S2USwXw" childrenPresentation="HorizontalStack">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.2"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.2"/>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Diagram']/@defaultLayer/@containerMappings[name='Standing%20Container']/@subContainerMappings[name='Position%20Container']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_3MIJgf8ZEem1P43S2USwXw" childrenPresentation="HorizontalStack">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.3"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.3"/>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Diagram']/@defaultLayer/@containerMappings[name='Standing%20Container']/@subContainerMappings[name='Position%20Container']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_3MJXoP8ZEem1P43S2USwXw" childrenPresentation="HorizontalStack">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.4"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.4"/>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Diagram']/@defaultLayer/@containerMappings[name='Standing%20Container']/@subContainerMappings[name='Position%20Container']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_3MJXof8ZEem1P43S2USwXw" childrenPresentation="HorizontalStack">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.5"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.5"/>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Diagram']/@defaultLayer/@containerMappings[name='Standing%20Container']/@subContainerMappings[name='Position%20Container']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_3MJXov8ZEem1P43S2USwXw" childrenPresentation="HorizontalStack">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.6"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.6"/>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Diagram']/@defaultLayer/@containerMappings[name='Standing%20Container']/@subContainerMappings[name='Position%20Container']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_3MJ-sP8ZEem1P43S2USwXw" childrenPresentation="HorizontalStack">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.7"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.7"/>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Diagram']/@defaultLayer/@containerMappings[name='Standing%20Container']/@subContainerMappings[name='Position%20Container']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_3MJ-sf8ZEem1P43S2USwXw" childrenPresentation="HorizontalStack">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.8"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.8"/>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Diagram']/@defaultLayer/@containerMappings[name='Standing%20Container']/@subContainerMappings[name='Position%20Container']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_3MJ-sv8ZEem1P43S2USwXw" childrenPresentation="HorizontalStack">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.9"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.9"/>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Diagram']/@defaultLayer/@containerMappings[name='Standing%20Container']/@subContainerMappings[name='Position%20Container']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_3MKlwP8ZEem1P43S2USwXw" childrenPresentation="HorizontalStack">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.10"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.10"/>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Diagram']/@defaultLayer/@containerMappings[name='Standing%20Container']/@subContainerMappings[name='Position%20Container']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_3MKlwf8ZEem1P43S2USwXw" childrenPresentation="HorizontalStack">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.11"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.11"/>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Diagram']/@defaultLayer/@containerMappings[name='Standing%20Container']/@subContainerMappings[name='Position%20Container']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_3MKlwv8ZEem1P43S2USwXw" childrenPresentation="HorizontalStack">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.12"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.12"/>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Diagram']/@defaultLayer/@containerMappings[name='Standing%20Container']/@subContainerMappings[name='Position%20Container']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_3MLM0P8ZEem1P43S2USwXw" childrenPresentation="HorizontalStack">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.13"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.13"/>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Diagram']/@defaultLayer/@containerMappings[name='Standing%20Container']/@subContainerMappings[name='Position%20Container']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_3MLM0f8ZEem1P43S2USwXw" childrenPresentation="HorizontalStack">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.14"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.14"/>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Diagram']/@defaultLayer/@containerMappings[name='Standing%20Container']/@subContainerMappings[name='Position%20Container']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_3MLM0v8ZEem1P43S2USwXw" childrenPresentation="HorizontalStack">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.15"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.15"/>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Diagram']/@defaultLayer/@containerMappings[name='Standing%20Container']/@subContainerMappings[name='Position%20Container']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_3MLz4P8ZEem1P43S2USwXw" childrenPresentation="HorizontalStack">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.16"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.16"/>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Diagram']/@defaultLayer/@containerMappings[name='Standing%20Container']/@subContainerMappings[name='Position%20Container']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_3MMa8P8ZEem1P43S2USwXw" childrenPresentation="HorizontalStack">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.17"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.17"/>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Diagram']/@defaultLayer/@containerMappings[name='Standing%20Container']/@subContainerMappings[name='Position%20Container']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_3MMa8f8ZEem1P43S2USwXw" childrenPresentation="HorizontalStack">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.18"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.18"/>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Diagram']/@defaultLayer/@containerMappings[name='Standing%20Container']/@subContainerMappings[name='Position%20Container']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_3MNCAP8ZEem1P43S2USwXw" childrenPresentation="HorizontalStack">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.19"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.19"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Diagram']/@defaultLayer/@containerMappings[name='Standing%20Container']/@subContainerMappings[name='Position%20Container']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_1yWYUP8HEem1P43S2USwXw"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Diagram']/@defaultLayer"/>
+    <target xmi:type="competition:Competition" href="sample.xmi#/"/>
+  </diagram:DSemanticDiagram>
+  <tree:DTree uid="_8sjPsP8aEem1P43S2USwXw" name="new Test Tree">
+    <target xmi:type="competition:Competition" href="sample.xmi#/"/>
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="_8tPzQP8aEem1P43S2USwXw">
+      <target xmi:type="competition:Season" href="sample.xmi#//@currentSeason"/>
+      <semanticElements xmi:type="competition:Season" href="sample.xmi#//@currentSeason"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="_8td1sP8aEem1P43S2USwXw"/>
+      <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='']"/>
+    </ownedTreeItems>
+    <description xmi:type="description_2:TreeDescription" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']"/>
+  </tree:DTree>
+  <table:DTable uid="_UpLn8P8bEem1P43S2USwXw" name="new Test Table" headerColumnWidth="1">
+    <target xmi:type="competition:Competition" href="sample.xmi#/"/>
+    <lines xmi:type="table:DLine" uid="_b_NLkP8hEem1P43S2USwXw" label="Liverpool FC">
+      <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.0"/>
+      <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.0"/>
+      <originMapping xmi:type="description_3:LineMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Table']/@ownedLineMappings[name='Position%20Line']"/>
+      <cells xmi:type="table:DCell" uid="_b_OZtP8hEem1P43S2USwXw" label="Liverpool FC" column="_zX6UPf8dEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.0"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.0"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_b_OZtv8hEem1P43S2USwXw" label="15" column="_DStctf8hEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.0"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.0"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_b_PAwf8hEem1P43S2USwXw" label="5" column="_Lqnfkf8dEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.0"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.0"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_6ID1gP8hEem1P43S2USwXw" label="5" column="_6IDOh_8hEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.0"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.0"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_C4ko4P8iEem1P43S2USwXw" label="0" column="_C4kB1f8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.0"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.0"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_GPEDkP8iEem1P43S2USwXw" label="14" column="_GPDchv8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.0"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.0"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_NHmBoP8iEem1P43S2USwXw" label="5" column="_NHlalf8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.0"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.0"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_Q2vM4P8iEem1P43S2USwXw" label="9" column="_Q2ul7P8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.0"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.0"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_n2ma4P8iEem1P43S2USwXw" label="0" column="_n2lz0f8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.0"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.0"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_y-1TkP8iEem1P43S2USwXw" label="1" column="_y-zec_8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.0"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.0"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_b_NLkv8hEem1P43S2USwXw" label="Manchester City FC">
+      <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.1"/>
+      <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.1"/>
+      <originMapping xmi:type="description_3:LineMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Table']/@ownedLineMappings[name='Position%20Line']"/>
+      <cells xmi:type="table:DCell" uid="_b_PAw_8hEem1P43S2USwXw" label="Manchester City FC" column="_zX6UPf8dEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.1"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.1"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_b_PAxf8hEem1P43S2USwXw" label="13" column="_DStctf8hEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.1"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.1"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_b_PAx_8hEem1P43S2USwXw" label="6" column="_Lqnfkf8dEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.1"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.1"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_6ID1hf8hEem1P43S2USwXw" label="4" column="_6IDOh_8hEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.1"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.1"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_C4meFf8iEem1P43S2USwXw" label="1" column="_C4kB1f8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.1"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.1"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_GPEDmP8iEem1P43S2USwXw" label="19" column="_GPDchv8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.1"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.1"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_NHnPxv8iEem1P43S2USwXw" label="5" column="_NHlalf8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.1"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.1"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_Q2vM6v8iEem1P43S2USwXw" label="14" column="_Q2ul7P8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.1"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.1"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_n2nB9_8iEem1P43S2USwXw" label="1" column="_n2lz0f8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.1"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.1"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_y-1Tm_8iEem1P43S2USwXw" label="2" column="_y-zec_8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.1"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.1"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_b_NLlP8hEem1P43S2USwXw" label="Leicester City FC">
+      <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.2"/>
+      <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.2"/>
+      <originMapping xmi:type="description_3:LineMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Table']/@ownedLineMappings[name='Position%20Line']"/>
+      <cells xmi:type="table:DCell" uid="_b_PAyf8hEem1P43S2USwXw" label="Leicester City FC" column="_zX6UPf8dEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.2"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.2"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_b_Pn0f8hEem1P43S2USwXw" label="13" column="_DStctf8hEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.2"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.2"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_b_Pn0_8hEem1P43S2USwXw" label="5" column="_Lqnfkf8dEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.2"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.2"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_6ID1iv8hEem1P43S2USwXw" label="4" column="_6IDOh_8hEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.2"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.2"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_C4nsMP8iEem1P43S2USwXw" label="0" column="_C4kB1f8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.2"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.2"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_GPEDoP8iEem1P43S2USwXw" label="12" column="_GPDchv8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.2"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.2"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_NHn21v8iEem1P43S2USwXw" label="3" column="_NHlalf8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.2"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.2"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_Q2vz-f8iEem1P43S2USwXw" label="9" column="_Q2ul7P8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.2"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.2"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_n2npA_8iEem1P43S2USwXw" label="1" column="_n2lz0f8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.2"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.2"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_y-1Tpv8iEem1P43S2USwXw" label="3" column="_y-zec_8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.2"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.2"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_b_NLlv8hEem1P43S2USwXw" label="Arsenal FC">
+      <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.3"/>
+      <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.3"/>
+      <originMapping xmi:type="description_3:LineMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Table']/@ownedLineMappings[name='Position%20Line']"/>
+      <cells xmi:type="table:DCell" uid="_b_Pn1f8hEem1P43S2USwXw" label="Arsenal FC" column="_zX6UPf8dEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.3"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.3"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_b_Pn1_8hEem1P43S2USwXw" label="12" column="_DStctf8hEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.3"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.3"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_b_Pn2f8hEem1P43S2USwXw" label="6" column="_Lqnfkf8dEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.3"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.3"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_6ID1j_8hEem1P43S2USwXw" label="3" column="_6IDOh_8hEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.3"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.3"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_C4nsN_8iEem1P43S2USwXw" label="0" column="_C4kB1f8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.3"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.3"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_GPEDqP8iEem1P43S2USwXw" label="11" column="_GPDchv8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.3"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.3"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_NHod5v8iEem1P43S2USwXw" label="8" column="_NHlalf8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.3"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.3"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_Q2wbCf8iEem1P43S2USwXw" label="3" column="_Q2ul7P8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.3"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.3"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_n2oQEP8iEem1P43S2USwXw" label="3" column="_n2lz0f8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.3"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.3"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_y-16qf8iEem1P43S2USwXw" label="4" column="_y-zec_8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.3"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.3"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_b_NLmP8hEem1P43S2USwXw" label="Brighton &amp; Hove Albion FC">
+      <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.4"/>
+      <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.4"/>
+      <originMapping xmi:type="description_3:LineMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Table']/@ownedLineMappings[name='Position%20Line']"/>
+      <cells xmi:type="table:DCell" uid="_b_Pn2_8hEem1P43S2USwXw" label="Brighton &amp; Hove Albion FC" column="_zX6UPf8dEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.4"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.4"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_b_Pn3f8hEem1P43S2USwXw" label="11" column="_DStctf8hEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.4"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.4"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_b_Pn3_8hEem1P43S2USwXw" label="6" column="_Lqnfkf8dEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.4"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.4"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_6ID1lP8hEem1P43S2USwXw" label="3" column="_6IDOh_8hEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.4"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.4"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_C4oTRv8iEem1P43S2USwXw" label="1" column="_C4kB1f8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.4"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.4"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_GPEqp_8iEem1P43S2USwXw" label="10" column="_GPDchv8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.4"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.4"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_NHpE8P8iEem1P43S2USwXw" label="6" column="_NHlalf8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.4"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.4"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_Q2xCGf8iEem1P43S2USwXw" label="4" column="_Q2ul7P8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.4"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.4"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_n2oQGv8iEem1P43S2USwXw" label="2" column="_n2lz0f8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.4"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.4"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_y-2huv8iEem1P43S2USwXw" label="5" column="_y-zec_8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.4"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.4"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_b_NLmv8hEem1P43S2USwXw" label="Tottenham Hotspur FC">
+      <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.5"/>
+      <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.5"/>
+      <originMapping xmi:type="description_3:LineMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Table']/@ownedLineMappings[name='Position%20Line']"/>
+      <cells xmi:type="table:DCell" uid="_b_Pn4f8hEem1P43S2USwXw" label="Tottenham Hotspur FC" column="_zX6UPf8dEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.5"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.5"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_b_Pn4_8hEem1P43S2USwXw" label="10" column="_DStctf8hEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.5"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.5"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_b_QO4f8hEem1P43S2USwXw" label="5" column="_Lqnfkf8dEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.5"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.5"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_6IEclP8hEem1P43S2USwXw" label="3" column="_6IDOh_8hEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.5"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.5"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_C4o6Vv8iEem1P43S2USwXw" label="1" column="_C4kB1f8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.5"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.5"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_GPEqr_8iEem1P43S2USwXw" label="10" column="_GPDchv8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.5"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.5"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_NHpE-f8iEem1P43S2USwXw" label="4" column="_NHlalf8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.5"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.5"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_Q2xpKf8iEem1P43S2USwXw" label="6" column="_Q2ul7P8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.5"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.5"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_n2o3Kf8iEem1P43S2USwXw" label="1" column="_n2lz0f8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.5"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.5"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_y-2hxf8iEem1P43S2USwXw" label="6" column="_y-zec_8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.5"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.5"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_b_Nyof8hEem1P43S2USwXw" label="Sheffield United FC">
+      <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.6"/>
+      <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.6"/>
+      <originMapping xmi:type="description_3:LineMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Table']/@ownedLineMappings[name='Position%20Line']"/>
+      <cells xmi:type="table:DCell" uid="_b_QO4_8hEem1P43S2USwXw" label="Sheffield United FC" column="_zX6UPf8dEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.6"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.6"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_b_QO5f8hEem1P43S2USwXw" label="9" column="_DStctf8hEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.6"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.6"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_b_Q18f8hEem1P43S2USwXw" label="6" column="_Lqnfkf8dEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.6"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.6"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_6IEcmf8hEem1P43S2USwXw" label="3" column="_6IDOh_8hEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.6"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.6"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_C4phZf8iEem1P43S2USwXw" label="3" column="_C4kB1f8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.6"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.6"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_GPEqt_8iEem1P43S2USwXw" label="6" column="_GPDchv8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.6"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.6"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_NHpsB_8iEem1P43S2USwXw" label="4" column="_NHlalf8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.6"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.6"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_Q2yQOf8iEem1P43S2USwXw" label="2" column="_Q2ul7P8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.6"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.6"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_n2peOf8iEem1P43S2USwXw" label="0" column="_n2lz0f8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.6"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.6"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_y-2h0P8iEem1P43S2USwXw" label="7" column="_y-zec_8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.6"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.6"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_b_Nyo_8hEem1P43S2USwXw" label="Burnley FC">
+      <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.7"/>
+      <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.7"/>
+      <originMapping xmi:type="description_3:LineMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Table']/@ownedLineMappings[name='Position%20Line']"/>
+      <cells xmi:type="table:DCell" uid="_b_Q18_8hEem1P43S2USwXw" label="Burnley FC" column="_zX6UPf8dEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.7"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.7"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_b_RdAP8hEem1P43S2USwXw" label="9" column="_DStctf8hEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.7"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.7"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_b_RdAv8hEem1P43S2USwXw" label="5" column="_Lqnfkf8dEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.7"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.7"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_6IEcnv8hEem1P43S2USwXw" label="3" column="_6IDOh_8hEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.7"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.7"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_C4qIdf8iEem1P43S2USwXw" label="2" column="_C4kB1f8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.7"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.7"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_GPHt8P8iEem1P43S2USwXw" label="8" column="_GPDchv8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.7"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.7"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_NHpsEP8iEem1P43S2USwXw" label="7" column="_NHlalf8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.7"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.7"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_Q2y3SP8iEem1P43S2USwXw" label="1" column="_Q2ul7P8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.7"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.7"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_n2peQ_8iEem1P43S2USwXw" label="0" column="_n2lz0f8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.7"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.7"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_y-3Iyv8iEem1P43S2USwXw" label="8" column="_y-zec_8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.7"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.7"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_b_Nypf8hEem1P43S2USwXw" label="AFC Bournemouth">
+      <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.8"/>
+      <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.8"/>
+      <originMapping xmi:type="description_3:LineMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Table']/@ownedLineMappings[name='Position%20Line']"/>
+      <cells xmi:type="table:DCell" uid="_b_SEEf8hEem1P43S2USwXw" label="AFC Bournemouth" column="_zX6UPf8dEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.8"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.8"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_b_SrIf8hEem1P43S2USwXw" label="9" column="_DStctf8hEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.8"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.8"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_b_TSMP8hEem1P43S2USwXw" label="6" column="_Lqnfkf8dEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.8"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.8"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_6IEco_8hEem1P43S2USwXw" label="2" column="_6IDOh_8hEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.8"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.8"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_C4qvhf8iEem1P43S2USwXw" label="1" column="_C4kB1f8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.8"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.8"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_GPHt-P8iEem1P43S2USwXw" label="8" column="_GPDchv8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.8"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.8"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_NHpsGf8iEem1P43S2USwXw" label="7" column="_NHlalf8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.8"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.8"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_Q2zeWP8iEem1P43S2USwXw" label="1" column="_Q2ul7P8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.8"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.8"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_n2peTf8iEem1P43S2USwXw" label="3" column="_n2lz0f8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.8"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.8"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_y-3I1f8iEem1P43S2USwXw" label="9" column="_y-zec_8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.8"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.8"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_b_Nyp_8hEem1P43S2USwXw" label="Everton FC">
+      <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.9"/>
+      <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.9"/>
+      <originMapping xmi:type="description_3:LineMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Table']/@ownedLineMappings[name='Position%20Line']"/>
+      <cells xmi:type="table:DCell" uid="_b_T5Qf8hEem1P43S2USwXw" label="Everton FC" column="_zX6UPf8dEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.9"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.9"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_b_UgUf8hEem1P43S2USwXw" label="9" column="_DStctf8hEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.9"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.9"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_b_UgU_8hEem1P43S2USwXw" label="5" column="_Lqnfkf8dEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.9"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.9"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_6IEcqP8hEem1P43S2USwXw" label="3" column="_6IDOh_8hEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.9"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.9"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_C4rWlf8iEem1P43S2USwXw" label="2" column="_C4kB1f8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.9"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.9"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_GPHuAP8iEem1P43S2USwXw" label="7" column="_GPDchv8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.9"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.9"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_NHqTGP8iEem1P43S2USwXw" label="7" column="_NHlalf8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.9"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.9"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_Q20FaP8iEem1P43S2USwXw" label="0" column="_Q2ul7P8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.9"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.9"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_n2qFRP8iEem1P43S2USwXw" label="0" column="_n2lz0f8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.9"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.9"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_y-3I4P8iEem1P43S2USwXw" label="10" column="_y-zec_8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.9"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.9"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_b_Nyqf8hEem1P43S2USwXw" label="Manchester United FC">
+      <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.10"/>
+      <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.10"/>
+      <originMapping xmi:type="description_3:LineMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Table']/@ownedLineMappings[name='Position%20Line']"/>
+      <cells xmi:type="table:DCell" uid="_b_VHYP8hEem1P43S2USwXw" label="Manchester United FC" column="_zX6UPf8dEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.10"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.10"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_b_VHYv8hEem1P43S2USwXw" label="8" column="_DStctf8hEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.10"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.10"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_b_VHZP8hEem1P43S2USwXw" label="5" column="_Lqnfkf8dEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.10"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.10"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_6IEcrf8hEem1P43S2USwXw" label="2" column="_6IDOh_8hEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.10"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.10"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_C4rWnP8iEem1P43S2USwXw" label="1" column="_C4kB1f8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.10"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.10"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_GPIVB_8iEem1P43S2USwXw" label="8" column="_GPDchv8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.10"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.10"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_NHqTIf8iEem1P43S2USwXw" label="4" column="_NHlalf8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.10"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.10"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_Q20sd_8iEem1P43S2USwXw" label="4" column="_Q2ul7P8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.10"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.10"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_n2qFTv8iEem1P43S2USwXw" label="2" column="_n2lz0f8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.10"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.10"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_y-3I6_8iEem1P43S2USwXw" label="11" column="_y-zec_8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.10"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.10"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_b_Nyq_8hEem1P43S2USwXw" label="Chelsea FC">
+      <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.11"/>
+      <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.11"/>
+      <originMapping xmi:type="description_3:LineMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Table']/@ownedLineMappings[name='Position%20Line']"/>
+      <cells xmi:type="table:DCell" uid="_b_VHZv8hEem1P43S2USwXw" label="Chelsea FC" column="_zX6UPf8dEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.11"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.11"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_b_Vucf8hEem1P43S2USwXw" label="8" column="_DStctf8hEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.11"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.11"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_b_Vuc_8hEem1P43S2USwXw" label="5" column="_Lqnfkf8dEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.11"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.11"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_6IFDpP8hEem1P43S2USwXw" label="2" column="_6IDOh_8hEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.11"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.11"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_C4rWo_8iEem1P43S2USwXw" label="1" column="_C4kB1f8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.11"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.11"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_GPIVD_8iEem1P43S2USwXw" label="7" column="_GPDchv8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.11"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.11"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_NHq6IP8iEem1P43S2USwXw" label="5" column="_NHlalf8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.11"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.11"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_Q21Th_8iEem1P43S2USwXw" label="2" column="_Q2ul7P8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.11"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.11"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_n2qFWP8iEem1P43S2USwXw" label="2" column="_n2lz0f8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.11"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.11"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_y-3v2f8iEem1P43S2USwXw" label="12" column="_y-zec_8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.11"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.11"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_b_Nyrf8hEem1P43S2USwXw" label="Aston Villa FC">
+      <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.12"/>
+      <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.12"/>
+      <originMapping xmi:type="description_3:LineMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Table']/@ownedLineMappings[name='Position%20Line']"/>
+      <cells xmi:type="table:DCell" uid="_b_Vudf8hEem1P43S2USwXw" label="Aston Villa FC" column="_zX6UPf8dEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.12"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.12"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_b_Vud_8hEem1P43S2USwXw" label="8" column="_DStctf8hEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.12"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.12"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_b_Vuef8hEem1P43S2USwXw" label="6" column="_Lqnfkf8dEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.12"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.12"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_6IFDqf8hEem1P43S2USwXw" label="2" column="_6IDOh_8hEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.12"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.12"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_C4r9pv8iEem1P43S2USwXw" label="2" column="_C4kB1f8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.12"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.12"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_GPI8EP8iEem1P43S2USwXw" label="8" column="_GPDchv8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.12"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.12"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_NHq6Kf8iEem1P43S2USwXw" label="7" column="_NHlalf8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.12"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.12"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_Q216mf8iEem1P43S2USwXw" label="1" column="_Q2ul7P8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.12"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.12"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_n2qFYv8iEem1P43S2USwXw" label="2" column="_n2lz0f8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.12"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.12"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_y-3v5P8iEem1P43S2USwXw" label="13" column="_y-zec_8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.12"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.12"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_b_Nyr_8hEem1P43S2USwXw" label="Crystal Palace FC">
+      <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.13"/>
+      <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.13"/>
+      <originMapping xmi:type="description_3:LineMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Table']/@ownedLineMappings[name='Position%20Line']"/>
+      <cells xmi:type="table:DCell" uid="_b_WVgf8hEem1P43S2USwXw" label="Crystal Palace FC" column="_zX6UPf8dEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.13"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.13"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_b_WVg_8hEem1P43S2USwXw" label="8" column="_DStctf8hEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.13"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.13"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_b_WVhf8hEem1P43S2USwXw" label="6" column="_Lqnfkf8dEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.13"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.13"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_6IFDrv8hEem1P43S2USwXw" label="2" column="_6IDOh_8hEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.13"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.13"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_C4r9rf8iEem1P43S2USwXw" label="1" column="_C4kB1f8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.13"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.13"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_GPI8GP8iEem1P43S2USwXw" label="4" column="_GPDchv8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.13"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.13"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_NHq6Mv8iEem1P43S2USwXw" label="3" column="_NHlalf8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.13"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.13"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_Q22hqf8iEem1P43S2USwXw" label="1" column="_Q2ul7P8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.13"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.13"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_n2qsUP8iEem1P43S2USwXw" label="2" column="_n2lz0f8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.13"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.13"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_y-3v7_8iEem1P43S2USwXw" label="14" column="_y-zec_8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.13"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.13"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_b_Nysf8hEem1P43S2USwXw" label="West Ham United FC">
+      <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.14"/>
+      <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.14"/>
+      <originMapping xmi:type="description_3:LineMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Table']/@ownedLineMappings[name='Position%20Line']"/>
+      <cells xmi:type="table:DCell" uid="_b_WVh_8hEem1P43S2USwXw" label="West Ham United FC" column="_zX6UPf8dEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.14"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.14"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_b_W8kP8hEem1P43S2USwXw" label="7" column="_DStctf8hEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.14"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.14"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_b_W8kv8hEem1P43S2USwXw" label="6" column="_Lqnfkf8dEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.14"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.14"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_6IFDs_8hEem1P43S2USwXw" label="2" column="_6IDOh_8hEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.14"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.14"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_C4r9tP8iEem1P43S2USwXw" label="3" column="_C4kB1f8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.14"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.14"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_GPI8IP8iEem1P43S2USwXw" label="8" column="_GPDchv8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.14"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.14"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_NHq6O_8iEem1P43S2USwXw" label="11" column="_NHlalf8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.14"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.14"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_Q23Iuf8iEem1P43S2USwXw" label="-3" column="_Q2ul7P8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.14"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.14"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_n2qsWv8iEem1P43S2USwXw" label="1" column="_n2lz0f8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.14"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.14"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_y-3v-v8iEem1P43S2USwXw" label="15" column="_y-zec_8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.14"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.14"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_b_Nys_8hEem1P43S2USwXw" label="Newcastle United FC">
+      <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.15"/>
+      <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.15"/>
+      <originMapping xmi:type="description_3:LineMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Table']/@ownedLineMappings[name='Position%20Line']"/>
+      <cells xmi:type="table:DCell" uid="_b_W8lP8hEem1P43S2USwXw" label="Newcastle United FC" column="_zX6UPf8dEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.15"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.15"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_b_W8lv8hEem1P43S2USwXw" label="6" column="_DStctf8hEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.15"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.15"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_b_W8mP8hEem1P43S2USwXw" label="5" column="_Lqnfkf8dEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.15"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.15"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_6IFDuP8hEem1P43S2USwXw" label="1" column="_6IDOh_8hEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.15"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.15"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_C4sksP8iEem1P43S2USwXw" label="1" column="_C4kB1f8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.15"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.15"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_GPI8KP8iEem1P43S2USwXw" label="3" column="_GPDchv8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.15"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.15"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_NHrhMP8iEem1P43S2USwXw" label="3" column="_NHlalf8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.15"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.15"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_Q23vwP8iEem1P43S2USwXw" label="0" column="_Q2ul7P8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.15"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.15"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_n2qsZP8iEem1P43S2USwXw" label="3" column="_n2lz0f8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.15"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.15"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_y-4W5v8iEem1P43S2USwXw" label="16" column="_y-zec_8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.15"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.15"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_b_Nytf8hEem1P43S2USwXw" label="Wolverhampton Wanderers FC">
+      <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.16"/>
+      <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.16"/>
+      <originMapping xmi:type="description_3:LineMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Table']/@ownedLineMappings[name='Position%20Line']"/>
+      <cells xmi:type="table:DCell" uid="_b_Xjof8hEem1P43S2USwXw" label="Wolverhampton Wanderers FC" column="_zX6UPf8dEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.16"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.16"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_b_Xjo_8hEem1P43S2USwXw" label="6" column="_DStctf8hEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.16"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.16"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_b_Xjpf8hEem1P43S2USwXw" label="5" column="_Lqnfkf8dEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.16"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.16"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_6IFDvf8hEem1P43S2USwXw" label="1" column="_6IDOh_8hEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.16"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.16"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_C4skt_8iEem1P43S2USwXw" label="1" column="_C4kB1f8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.16"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.16"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_GPJjIP8iEem1P43S2USwXw" label="7" column="_GPDchv8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.16"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.16"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_NHrhOf8iEem1P43S2USwXw" label="8" column="_NHlalf8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.16"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.16"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_Q23vyv8iEem1P43S2USwXw" label="-1" column="_Q2ul7P8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.16"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.16"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_n2qsbv8iEem1P43S2USwXw" label="3" column="_n2lz0f8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.16"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.16"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_y-4W8f8iEem1P43S2USwXw" label="17" column="_y-zec_8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.16"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.16"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_b_Nyt_8hEem1P43S2USwXw" label="Norwich City FC">
+      <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.17"/>
+      <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.17"/>
+      <originMapping xmi:type="description_3:LineMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Table']/@ownedLineMappings[name='Position%20Line']"/>
+      <cells xmi:type="table:DCell" uid="_b_Xjp_8hEem1P43S2USwXw" label="Norwich City FC" column="_zX6UPf8dEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.17"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.17"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_b_Xjqf8hEem1P43S2USwXw" label="6" column="_DStctf8hEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.17"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.17"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_b_YKsf8hEem1P43S2USwXw" label="5" column="_Lqnfkf8dEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.17"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.17"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_6IFqtP8hEem1P43S2USwXw" label="2" column="_6IDOh_8hEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.17"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.17"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_C4skvv8iEem1P43S2USwXw" label="3" column="_C4kB1f8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.17"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.17"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_GPJjKP8iEem1P43S2USwXw" label="10" column="_GPDchv8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.17"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.17"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_NHrhQv8iEem1P43S2USwXw" label="14" column="_NHlalf8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.17"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.17"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_Q23v1P8iEem1P43S2USwXw" label="-4" column="_Q2ul7P8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.17"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.17"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_n2qseP8iEem1P43S2USwXw" label="0" column="_n2lz0f8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.17"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.17"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_y-4W_P8iEem1P43S2USwXw" label="18" column="_y-zec_8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.17"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.17"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_b_Nyuf8hEem1P43S2USwXw" label="Watford FC">
+      <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.18"/>
+      <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.18"/>
+      <originMapping xmi:type="description_3:LineMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Table']/@ownedLineMappings[name='Position%20Line']"/>
+      <cells xmi:type="table:DCell" uid="_b_YKs_8hEem1P43S2USwXw" label="Watford FC" column="_zX6UPf8dEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.18"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.18"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_b_YKtf8hEem1P43S2USwXw" label="3" column="_DStctf8hEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.18"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.18"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_b_YKt_8hEem1P43S2USwXw" label="6" column="_Lqnfkf8dEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.18"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.18"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_6IGRwv8hEem1P43S2USwXw" label="0" column="_6IDOh_8hEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.18"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.18"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_C4skxf8iEem1P43S2USwXw" label="3" column="_C4kB1f8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.18"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.18"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_GPJjMP8iEem1P43S2USwXw" label="4" column="_GPDchv8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.18"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.18"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_NHrhS_8iEem1P43S2USwXw" label="10" column="_NHlalf8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.18"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.18"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_Q24W2f8iEem1P43S2USwXw" label="-6" column="_Q2ul7P8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.18"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.18"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_n2rTaf8iEem1P43S2USwXw" label="3" column="_n2lz0f8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.18"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.18"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_y-4XB_8iEem1P43S2USwXw" label="19" column="_y-zec_8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.18"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.18"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_b_Nyu_8hEem1P43S2USwXw" label="Southampton FC">
+      <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.19"/>
+      <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.19"/>
+      <originMapping xmi:type="description_3:LineMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Table']/@ownedLineMappings[name='Position%20Line']"/>
+      <cells xmi:type="table:DCell" uid="_b_YKuf8hEem1P43S2USwXw" label="Southampton FC" column="_zX6UPf8dEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.19"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.19"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_b_YKu_8hEem1P43S2USwXw" label="1" column="_DStctf8hEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.19"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.19"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_b_YKvf8hEem1P43S2USwXw" label="5" column="_Lqnfkf8dEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.19"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.19"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_6IG40v8hEem1P43S2USwXw" label="0" column="_6IDOh_8hEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.19"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.19"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_C4tLxv8iEem1P43S2USwXw" label="4" column="_C4kB1f8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.19"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.19"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_GPJjOP8iEem1P43S2USwXw" label="4" column="_GPDchv8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.19"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.19"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_NHsIRf8iEem1P43S2USwXw" label="19" column="_NHlalf8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.19"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.19"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_Q24W4_8iEem1P43S2USwXw" label="-15" column="_Q2ul7P8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.19"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.19"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_n2rTc_8iEem1P43S2USwXw" label="1" column="_n2lz0f8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.19"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.19"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_y-4XEv8iEem1P43S2USwXw" label="20" column="_y-zec_8iEem1P43S2USwXw">
+        <target xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.19"/>
+        <semanticElements xmi:type="competition:Positon" href="sample.xmi#//@currentSeason/@standing/@positions.19"/>
+      </cells>
+    </lines>
+    <columns xmi:type="table:DFeatureColumn" uid="_y-zec_8iEem1P43S2USwXw" label="Pos" cells="_y-1TkP8iEem1P43S2USwXw _y-1Tm_8iEem1P43S2USwXw _y-1Tpv8iEem1P43S2USwXw _y-16qf8iEem1P43S2USwXw _y-2huv8iEem1P43S2USwXw _y-2hxf8iEem1P43S2USwXw _y-2h0P8iEem1P43S2USwXw _y-3Iyv8iEem1P43S2USwXw _y-3I1f8iEem1P43S2USwXw _y-3I4P8iEem1P43S2USwXw _y-3I6_8iEem1P43S2USwXw _y-3v2f8iEem1P43S2USwXw _y-3v5P8iEem1P43S2USwXw _y-3v7_8iEem1P43S2USwXw _y-3v-v8iEem1P43S2USwXw _y-4W5v8iEem1P43S2USwXw _y-4W8f8iEem1P43S2USwXw _y-4W_P8iEem1P43S2USwXw _y-4XB_8iEem1P43S2USwXw _y-4XEv8iEem1P43S2USwXw" width="35" featureName="position">
+      <originMapping xmi:type="description_3:FeatureColumnMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Table']/@ownedColumnMappings[name='Position']"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_6pYkcP8iEem1P43S2USwXw" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="136,136,136"/>
+    </columns>
+    <columns xmi:type="table:DFeatureColumn" uid="_zX6UPf8dEem1P43S2USwXw" label="Team" cells="_b_OZtP8hEem1P43S2USwXw _b_PAw_8hEem1P43S2USwXw _b_PAyf8hEem1P43S2USwXw _b_Pn1f8hEem1P43S2USwXw _b_Pn2_8hEem1P43S2USwXw _b_Pn4f8hEem1P43S2USwXw _b_QO4_8hEem1P43S2USwXw _b_Q18_8hEem1P43S2USwXw _b_SEEf8hEem1P43S2USwXw _b_T5Qf8hEem1P43S2USwXw _b_VHYP8hEem1P43S2USwXw _b_VHZv8hEem1P43S2USwXw _b_Vudf8hEem1P43S2USwXw _b_WVgf8hEem1P43S2USwXw _b_WVh_8hEem1P43S2USwXw _b_W8lP8hEem1P43S2USwXw _b_Xjof8hEem1P43S2USwXw _b_Xjp_8hEem1P43S2USwXw _b_YKs_8hEem1P43S2USwXw _b_YKuf8hEem1P43S2USwXw" width="231" featureName="team">
+      <originMapping xmi:type="description_3:FeatureColumnMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Table']/@ownedColumnMappings[name='Team']"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_Fc3VIP8jEem1P43S2USwXw" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="209,209,209"/>
+    </columns>
+    <columns xmi:type="table:DFeatureColumn" uid="_Lqnfkf8dEem1P43S2USwXw" label="GP" cells="_b_PAwf8hEem1P43S2USwXw _b_PAx_8hEem1P43S2USwXw _b_Pn0_8hEem1P43S2USwXw _b_Pn2f8hEem1P43S2USwXw _b_Pn3_8hEem1P43S2USwXw _b_QO4f8hEem1P43S2USwXw _b_Q18f8hEem1P43S2USwXw _b_RdAv8hEem1P43S2USwXw _b_TSMP8hEem1P43S2USwXw _b_UgU_8hEem1P43S2USwXw _b_VHZP8hEem1P43S2USwXw _b_Vuc_8hEem1P43S2USwXw _b_Vuef8hEem1P43S2USwXw _b_WVhf8hEem1P43S2USwXw _b_W8kv8hEem1P43S2USwXw _b_W8mP8hEem1P43S2USwXw _b_Xjpf8hEem1P43S2USwXw _b_YKsf8hEem1P43S2USwXw _b_YKt_8hEem1P43S2USwXw _b_YKvf8hEem1P43S2USwXw" width="32" featureName="playedGames">
+      <originMapping xmi:type="description_3:FeatureColumnMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Table']/@ownedColumnMappings[name='Played%20Games']"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_he6DkP8jEem1P43S2USwXw" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="209,209,209"/>
+    </columns>
+    <columns xmi:type="table:DFeatureColumn" uid="_DStctf8hEem1P43S2USwXw" label="P" cells="_b_OZtv8hEem1P43S2USwXw _b_PAxf8hEem1P43S2USwXw _b_Pn0f8hEem1P43S2USwXw _b_Pn1_8hEem1P43S2USwXw _b_Pn3f8hEem1P43S2USwXw _b_Pn4_8hEem1P43S2USwXw _b_QO5f8hEem1P43S2USwXw _b_RdAP8hEem1P43S2USwXw _b_SrIf8hEem1P43S2USwXw _b_UgUf8hEem1P43S2USwXw _b_VHYv8hEem1P43S2USwXw _b_Vucf8hEem1P43S2USwXw _b_Vud_8hEem1P43S2USwXw _b_WVg_8hEem1P43S2USwXw _b_W8kP8hEem1P43S2USwXw _b_W8lv8hEem1P43S2USwXw _b_Xjo_8hEem1P43S2USwXw _b_Xjqf8hEem1P43S2USwXw _b_YKtf8hEem1P43S2USwXw _b_YKu_8hEem1P43S2USwXw" width="30" featureName="points">
+      <originMapping xmi:type="description_3:FeatureColumnMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Table']/@ownedColumnMappings[name='Points']"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_he6Dkf8jEem1P43S2USwXw" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="209,209,209"/>
+    </columns>
+    <columns xmi:type="table:DFeatureColumn" uid="_6IDOh_8hEem1P43S2USwXw" label="W" cells="_6ID1gP8hEem1P43S2USwXw _6ID1hf8hEem1P43S2USwXw _6ID1iv8hEem1P43S2USwXw _6ID1j_8hEem1P43S2USwXw _6ID1lP8hEem1P43S2USwXw _6IEclP8hEem1P43S2USwXw _6IEcmf8hEem1P43S2USwXw _6IEcnv8hEem1P43S2USwXw _6IEco_8hEem1P43S2USwXw _6IEcqP8hEem1P43S2USwXw _6IEcrf8hEem1P43S2USwXw _6IFDpP8hEem1P43S2USwXw _6IFDqf8hEem1P43S2USwXw _6IFDrv8hEem1P43S2USwXw _6IFDs_8hEem1P43S2USwXw _6IFDuP8hEem1P43S2USwXw _6IFDvf8hEem1P43S2USwXw _6IFqtP8hEem1P43S2USwXw _6IGRwv8hEem1P43S2USwXw _6IG40v8hEem1P43S2USwXw" width="32" featureName="won">
+      <originMapping xmi:type="description_3:FeatureColumnMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Table']/@ownedColumnMappings[name='Games%20Won']"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_he6Dkv8jEem1P43S2USwXw" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" foregroundColor="77,137,20" backgroundColor="209,209,209"/>
+    </columns>
+    <columns xmi:type="table:DFeatureColumn" uid="_n2lz0f8iEem1P43S2USwXw" label="D" cells="_n2ma4P8iEem1P43S2USwXw _n2nB9_8iEem1P43S2USwXw _n2npA_8iEem1P43S2USwXw _n2oQEP8iEem1P43S2USwXw _n2oQGv8iEem1P43S2USwXw _n2o3Kf8iEem1P43S2USwXw _n2peOf8iEem1P43S2USwXw _n2peQ_8iEem1P43S2USwXw _n2peTf8iEem1P43S2USwXw _n2qFRP8iEem1P43S2USwXw _n2qFTv8iEem1P43S2USwXw _n2qFWP8iEem1P43S2USwXw _n2qFYv8iEem1P43S2USwXw _n2qsUP8iEem1P43S2USwXw _n2qsWv8iEem1P43S2USwXw _n2qsZP8iEem1P43S2USwXw _n2qsbv8iEem1P43S2USwXw _n2qseP8iEem1P43S2USwXw _n2rTaf8iEem1P43S2USwXw _n2rTc_8iEem1P43S2USwXw" width="30" featureName="draw">
+      <originMapping xmi:type="description_3:FeatureColumnMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Table']/@ownedColumnMappings[name='Games%20Drawn']"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_he6Dk_8jEem1P43S2USwXw" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" foregroundColor="39,76,114" backgroundColor="209,209,209"/>
+    </columns>
+    <columns xmi:type="table:DFeatureColumn" uid="_C4kB1f8iEem1P43S2USwXw" label="L" cells="_C4ko4P8iEem1P43S2USwXw _C4meFf8iEem1P43S2USwXw _C4nsMP8iEem1P43S2USwXw _C4nsN_8iEem1P43S2USwXw _C4oTRv8iEem1P43S2USwXw _C4o6Vv8iEem1P43S2USwXw _C4phZf8iEem1P43S2USwXw _C4qIdf8iEem1P43S2USwXw _C4qvhf8iEem1P43S2USwXw _C4rWlf8iEem1P43S2USwXw _C4rWnP8iEem1P43S2USwXw _C4rWo_8iEem1P43S2USwXw _C4r9pv8iEem1P43S2USwXw _C4r9rf8iEem1P43S2USwXw _C4r9tP8iEem1P43S2USwXw _C4sksP8iEem1P43S2USwXw _C4skt_8iEem1P43S2USwXw _C4skvv8iEem1P43S2USwXw _C4skxf8iEem1P43S2USwXw _C4tLxv8iEem1P43S2USwXw" width="38" featureName="lost">
+      <originMapping xmi:type="description_3:FeatureColumnMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Table']/@ownedColumnMappings[name='Games%20Lost']"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_he6DlP8jEem1P43S2USwXw" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" foregroundColor="156,12,12" backgroundColor="209,209,209"/>
+    </columns>
+    <columns xmi:type="table:DFeatureColumn" uid="_Q2ul7P8iEem1P43S2USwXw" label="GD" cells="_Q2vM4P8iEem1P43S2USwXw _Q2vM6v8iEem1P43S2USwXw _Q2vz-f8iEem1P43S2USwXw _Q2wbCf8iEem1P43S2USwXw _Q2xCGf8iEem1P43S2USwXw _Q2xpKf8iEem1P43S2USwXw _Q2yQOf8iEem1P43S2USwXw _Q2y3SP8iEem1P43S2USwXw _Q2zeWP8iEem1P43S2USwXw _Q20FaP8iEem1P43S2USwXw _Q20sd_8iEem1P43S2USwXw _Q21Th_8iEem1P43S2USwXw _Q216mf8iEem1P43S2USwXw _Q22hqf8iEem1P43S2USwXw _Q23Iuf8iEem1P43S2USwXw _Q23vwP8iEem1P43S2USwXw _Q23vyv8iEem1P43S2USwXw _Q23v1P8iEem1P43S2USwXw _Q24W2f8iEem1P43S2USwXw _Q24W4_8iEem1P43S2USwXw" width="31" featureName="goalDifference">
+      <originMapping xmi:type="description_3:FeatureColumnMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Table']/@ownedColumnMappings[name='Goal%20Difference']"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_he6Dl_8jEem1P43S2USwXw" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="209,209,209"/>
+    </columns>
+    <columns xmi:type="table:DFeatureColumn" uid="_GPDchv8iEem1P43S2USwXw" label="GS" cells="_GPEDkP8iEem1P43S2USwXw _GPEDmP8iEem1P43S2USwXw _GPEDoP8iEem1P43S2USwXw _GPEDqP8iEem1P43S2USwXw _GPEqp_8iEem1P43S2USwXw _GPEqr_8iEem1P43S2USwXw _GPEqt_8iEem1P43S2USwXw _GPHt8P8iEem1P43S2USwXw _GPHt-P8iEem1P43S2USwXw _GPHuAP8iEem1P43S2USwXw _GPIVB_8iEem1P43S2USwXw _GPIVD_8iEem1P43S2USwXw _GPI8EP8iEem1P43S2USwXw _GPI8GP8iEem1P43S2USwXw _GPI8IP8iEem1P43S2USwXw _GPI8KP8iEem1P43S2USwXw _GPJjIP8iEem1P43S2USwXw _GPJjKP8iEem1P43S2USwXw _GPJjMP8iEem1P43S2USwXw _GPJjOP8iEem1P43S2USwXw" width="42" featureName="goalsFor">
+      <originMapping xmi:type="description_3:FeatureColumnMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Table']/@ownedColumnMappings[name='Goals%20Scored']"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_he6Dlf8jEem1P43S2USwXw" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" foregroundColor="77,137,20" backgroundColor="209,209,209"/>
+    </columns>
+    <columns xmi:type="table:DFeatureColumn" uid="_NHlalf8iEem1P43S2USwXw" label="GC" cells="_NHmBoP8iEem1P43S2USwXw _NHnPxv8iEem1P43S2USwXw _NHn21v8iEem1P43S2USwXw _NHod5v8iEem1P43S2USwXw _NHpE8P8iEem1P43S2USwXw _NHpE-f8iEem1P43S2USwXw _NHpsB_8iEem1P43S2USwXw _NHpsEP8iEem1P43S2USwXw _NHpsGf8iEem1P43S2USwXw _NHqTGP8iEem1P43S2USwXw _NHqTIf8iEem1P43S2USwXw _NHq6IP8iEem1P43S2USwXw _NHq6Kf8iEem1P43S2USwXw _NHq6Mv8iEem1P43S2USwXw _NHq6O_8iEem1P43S2USwXw _NHrhMP8iEem1P43S2USwXw _NHrhOf8iEem1P43S2USwXw _NHrhQv8iEem1P43S2USwXw _NHrhS_8iEem1P43S2USwXw _NHsIRf8iEem1P43S2USwXw" width="43" featureName="goalsAgaints">
+      <originMapping xmi:type="description_3:FeatureColumnMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Table']/@ownedColumnMappings[name='Goals%20Conceded']"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_he6Dlv8jEem1P43S2USwXw" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" foregroundColor="156,12,12" backgroundColor="209,209,209"/>
+    </columns>
+    <description xmi:type="description_3:EditionTableDescription" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Table']"/>
+  </table:DTable>
+</xmi:XMI>
