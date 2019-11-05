@@ -11,7 +11,7 @@ public class Match {
 	public int minute;
 	public int attendance;
 	public String venue;
-	public String matchday;
+	public int matchday;
 	public String stage;
 	public String group;
 	public String lastUpdated;

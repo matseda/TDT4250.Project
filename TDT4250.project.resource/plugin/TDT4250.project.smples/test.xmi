@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <competition:Competition xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:competition="platform:/plugin/TDT4250.project.mpdel/model/Competition.ecore" id="2021" name="Premier League" code="PL" plan="TIER_ONE" lastUpdated="2019-10-28T19:45:03.000+0100" area="England">
-  <currentSeason id="468" startDate="2019-11-04T22:56:11.321+0100" endDate="2019-11-04T22:56:11.321+0100" currentMatchday="11">
+  <currentSeason id="468" startDate="2019-11-04T23:02:23.364+0100" endDate="2019-11-04T23:02:23.364+0100" currentMatchday="11">
     <matches id="264341" utcDate="2019-08-09T19:00:00.000+0200" matchDay="1" lastUpdated="2019-09-26T15:34:45.000+0200" homeTeam="//@teams.4" awayTeam="//@teams.8">
       <score homeTeam="4" awayTeam="1"/>
     </matches>
