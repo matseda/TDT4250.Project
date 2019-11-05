@@ -27,7 +27,7 @@
     </ownedRepresentations>
     <ownedRepresentations xsi:type="description_3:EditionTableDescription" name="Test Table" initialisation="true" domainClass="competition::Standing">
       <metamodel href="../../TDT4250.project.model/model/competition.ecore#/"/>
-      <ownedLineMappings name="Position Line" domainClass="competition::Positon" headerLabelExpression="aql:self.team.name"/>
+      <ownedLineMappings name="Position Line" domainClass="competition::Positon" headerLabelExpression="aql:self.team.id"/>
       <ownedColumnMappings name="Position" headerLabelExpression="Pos" canEdit="aql:false" featureName="position">
         <defaultForeground>
           <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
