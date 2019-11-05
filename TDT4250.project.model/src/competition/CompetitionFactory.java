@@ -85,6 +85,15 @@ public interface CompetitionFactory extends EFactory {
 	Positon createPositon();
 
 	/**
+	 * Returns a new object of class '<em>Matchday</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Matchday</em>'.
+	 * @generated
+	 */
+	Matchday createMatchday();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

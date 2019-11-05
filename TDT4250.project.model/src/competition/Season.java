@@ -21,9 +21,9 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link competition.Season#getStartDate <em>Start Date</em>}</li>
  *   <li>{@link competition.Season#getEndDate <em>End Date</em>}</li>
  *   <li>{@link competition.Season#getCurrentMatchday <em>Current Matchday</em>}</li>
- *   <li>{@link competition.Season#getMatches <em>Matches</em>}</li>
  *   <li>{@link competition.Season#getCompetition <em>Competition</em>}</li>
  *   <li>{@link competition.Season#getStanding <em>Standing</em>}</li>
+ *   <li>{@link competition.Season#getMatchdays <em>Matchdays</em>}</li>
  * </ul>
  *
  * @see competition.CompetitionPackage#getSeason()
@@ -120,20 +120,6 @@ public interface Season extends EObject {
 	void setCurrentMatchday(int value);
 
 	/**
-	 * Returns the value of the '<em><b>Matches</b></em>' containment reference list.
-	 * The list contents are of type {@link competition.Match}.
-	 * It is bidirectional and its opposite is '{@link competition.Match#getSeason <em>Season</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Matches</em>' containment reference list.
-	 * @see competition.CompetitionPackage#getSeason_Matches()
-	 * @see competition.Match#getSeason
-	 * @model opposite="season" containment="true"
-	 * @generated
-	 */
-	EList<Match> getMatches();
-
-	/**
 	 * Returns the value of the '<em><b>Competition</b></em>' container reference.
 	 * It is bidirectional and its opposite is '{@link competition.Competition#getCurrentSeason <em>Current Season</em>}'.
 	 * <!-- begin-user-doc -->
@@ -178,5 +164,17 @@ public interface Season extends EObject {
 	 * @generated
 	 */
 	void setStanding(Standing value);
+
+	/**
+	 * Returns the value of the '<em><b>Matchdays</b></em>' containment reference list.
+	 * The list contents are of type {@link competition.Matchday}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Matchdays</em>' containment reference list.
+	 * @see competition.CompetitionPackage#getSeason_Matchdays()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Matchday> getMatchdays();
 
 } // Season
