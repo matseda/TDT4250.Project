@@ -47,7 +47,7 @@ public class ApiFetch {
 			matchesFile.write(matchesResponse);
 			standingFile.write(teamsResponse);
 			teamsFile.write(standingResponse);
-	    }catch (Exception E) {
+	    } catch (Exception E) {
 	        E.printStackTrace();
 	    } finally {
 	    	competitionFile.flush();
