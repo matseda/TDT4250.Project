@@ -21,12 +21,12 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="endDate" lowerBound="1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="currentMatchday" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="matches" upperBound="-1"
-        eType="#//Match" containment="true" eOpposite="#//Match/season"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="competition" eType="#//Competition"
         eOpposite="#//Competition/currentSeason"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="standing" eType="#//Standing"
         containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="matchdays" upperBound="-1"
+        eType="#//Matchday" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Team">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
@@ -43,12 +43,9 @@
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="status" lowerBound="1"
         eType="#//Status"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="matchDay" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="lastUpdated" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="score" eType="#//Score"
         containment="true" eOpposite="#//Score/match"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="season" eType="#//Season"
-        eOpposite="#//Season/matches"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="homeTeam" lowerBound="1"
         eType="#//Team"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="awayTeam" lowerBound="1"
@@ -92,5 +89,10 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="goalsFor" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="goalsAgaints" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="goalDifference" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Matchday">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="matchday" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="matches" upperBound="-1"
+        eType="#//Match" containment="true"/>
   </eClassifiers>
 </ecore:EPackage>

@@ -5,7 +5,7 @@ import java.util.List;
 public class Match {
 	public int id;
 	public Competition competition;
-	public MatchSeason season;
+	public Season season;
 	public String utcDate;
 	public String status;
 	public int minute;
@@ -18,8 +18,5 @@ public class Match {
 	public MatchTeam homeTeam;
 	public MatchTeam awayTeam;
 	public Score score;
-	public List<Goal> goals;
-	public List<Booking> bookings;
-	public List<Substitution> substitutions;
 	public List<Referee> referees;
 }

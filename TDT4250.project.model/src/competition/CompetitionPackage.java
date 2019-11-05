@@ -204,22 +204,13 @@ public interface CompetitionPackage extends EPackage {
 	int SEASON__CURRENT_MATCHDAY = 3;
 
 	/**
-	 * The feature id for the '<em><b>Matches</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEASON__MATCHES = 4;
-
-	/**
 	 * The feature id for the '<em><b>Competition</b></em>' container reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SEASON__COMPETITION = 5;
+	int SEASON__COMPETITION = 4;
 
 	/**
 	 * The feature id for the '<em><b>Standing</b></em>' containment reference.
@@ -228,7 +219,16 @@ public interface CompetitionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEASON__STANDING = 6;
+	int SEASON__STANDING = 5;
+
+	/**
+	 * The feature id for the '<em><b>Matchdays</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEASON__MATCHDAYS = 6;
 
 	/**
 	 * The number of structural features of the '<em>Season</em>' class.
@@ -368,22 +368,13 @@ public interface CompetitionPackage extends EPackage {
 	int MATCH__STATUS = 2;
 
 	/**
-	 * The feature id for the '<em><b>Match Day</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MATCH__MATCH_DAY = 3;
-
-	/**
 	 * The feature id for the '<em><b>Last Updated</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MATCH__LAST_UPDATED = 4;
+	int MATCH__LAST_UPDATED = 3;
 
 	/**
 	 * The feature id for the '<em><b>Score</b></em>' containment reference.
@@ -392,16 +383,7 @@ public interface CompetitionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATCH__SCORE = 5;
-
-	/**
-	 * The feature id for the '<em><b>Season</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MATCH__SEASON = 6;
+	int MATCH__SCORE = 4;
 
 	/**
 	 * The feature id for the '<em><b>Home Team</b></em>' reference.
@@ -410,7 +392,7 @@ public interface CompetitionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATCH__HOME_TEAM = 7;
+	int MATCH__HOME_TEAM = 5;
 
 	/**
 	 * The feature id for the '<em><b>Away Team</b></em>' reference.
@@ -419,7 +401,7 @@ public interface CompetitionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATCH__AWAY_TEAM = 8;
+	int MATCH__AWAY_TEAM = 6;
 
 	/**
 	 * The number of structural features of the '<em>Match</em>' class.
@@ -428,7 +410,7 @@ public interface CompetitionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATCH_FEATURE_COUNT = 9;
+	int MATCH_FEATURE_COUNT = 7;
 
 	/**
 	 * The number of operations of the '<em>Match</em>' class.
@@ -659,6 +641,52 @@ public interface CompetitionPackage extends EPackage {
 	int POSITON_OPERATION_COUNT = 0;
 
 	/**
+	 * The meta object id for the '{@link competition.impl.MatchdayImpl <em>Matchday</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see competition.impl.MatchdayImpl
+	 * @see competition.impl.CompetitionPackageImpl#getMatchday()
+	 * @generated
+	 */
+	int MATCHDAY = 7;
+
+	/**
+	 * The feature id for the '<em><b>Matchday</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MATCHDAY__MATCHDAY = 0;
+
+	/**
+	 * The feature id for the '<em><b>Matches</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MATCHDAY__MATCHES = 1;
+
+	/**
+	 * The number of structural features of the '<em>Matchday</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MATCHDAY_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Matchday</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MATCHDAY_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link competition.Status <em>Status</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -666,7 +694,7 @@ public interface CompetitionPackage extends EPackage {
 	 * @see competition.impl.CompetitionPackageImpl#getStatus()
 	 * @generated
 	 */
-	int STATUS = 7;
+	int STATUS = 8;
 
 	/**
 	 * The meta object id for the '{@link competition.Winner <em>Winner</em>}' enum.
@@ -676,7 +704,7 @@ public interface CompetitionPackage extends EPackage {
 	 * @see competition.impl.CompetitionPackageImpl#getWinner()
 	 * @generated
 	 */
-	int WINNER = 8;
+	int WINNER = 9;
 
 
 	/**
@@ -832,17 +860,6 @@ public interface CompetitionPackage extends EPackage {
 	EAttribute getSeason_CurrentMatchday();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link competition.Season#getMatches <em>Matches</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Matches</em>'.
-	 * @see competition.Season#getMatches()
-	 * @see #getSeason()
-	 * @generated
-	 */
-	EReference getSeason_Matches();
-
-	/**
 	 * Returns the meta object for the container reference '{@link competition.Season#getCompetition <em>Competition</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -863,6 +880,17 @@ public interface CompetitionPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getSeason_Standing();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link competition.Season#getMatchdays <em>Matchdays</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Matchdays</em>'.
+	 * @see competition.Season#getMatchdays()
+	 * @see #getSeason()
+	 * @generated
+	 */
+	EReference getSeason_Matchdays();
 
 	/**
 	 * Returns the meta object for class '{@link competition.Team <em>Team</em>}'.
@@ -984,17 +1012,6 @@ public interface CompetitionPackage extends EPackage {
 	EAttribute getMatch_Status();
 
 	/**
-	 * Returns the meta object for the attribute '{@link competition.Match#getMatchDay <em>Match Day</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Match Day</em>'.
-	 * @see competition.Match#getMatchDay()
-	 * @see #getMatch()
-	 * @generated
-	 */
-	EAttribute getMatch_MatchDay();
-
-	/**
 	 * Returns the meta object for the attribute '{@link competition.Match#getLastUpdated <em>Last Updated</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1015,17 +1032,6 @@ public interface CompetitionPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getMatch_Score();
-
-	/**
-	 * Returns the meta object for the container reference '{@link competition.Match#getSeason <em>Season</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the container reference '<em>Season</em>'.
-	 * @see competition.Match#getSeason()
-	 * @see #getMatch()
-	 * @generated
-	 */
-	EReference getMatch_Season();
 
 	/**
 	 * Returns the meta object for the reference '{@link competition.Match#getHomeTeam <em>Home Team</em>}'.
@@ -1245,6 +1251,38 @@ public interface CompetitionPackage extends EPackage {
 	EAttribute getPositon_GoalDifference();
 
 	/**
+	 * Returns the meta object for class '{@link competition.Matchday <em>Matchday</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Matchday</em>'.
+	 * @see competition.Matchday
+	 * @generated
+	 */
+	EClass getMatchday();
+
+	/**
+	 * Returns the meta object for the attribute '{@link competition.Matchday#getMatchday <em>Matchday</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Matchday</em>'.
+	 * @see competition.Matchday#getMatchday()
+	 * @see #getMatchday()
+	 * @generated
+	 */
+	EAttribute getMatchday_Matchday();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link competition.Matchday#getMatches <em>Matches</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Matches</em>'.
+	 * @see competition.Matchday#getMatches()
+	 * @see #getMatchday()
+	 * @generated
+	 */
+	EReference getMatchday_Matches();
+
+	/**
 	 * Returns the meta object for enum '{@link competition.Status <em>Status</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1404,14 +1442,6 @@ public interface CompetitionPackage extends EPackage {
 		EAttribute SEASON__CURRENT_MATCHDAY = eINSTANCE.getSeason_CurrentMatchday();
 
 		/**
-		 * The meta object literal for the '<em><b>Matches</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference SEASON__MATCHES = eINSTANCE.getSeason_Matches();
-
-		/**
 		 * The meta object literal for the '<em><b>Competition</b></em>' container reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1426,6 +1456,14 @@ public interface CompetitionPackage extends EPackage {
 		 * @generated
 		 */
 		EReference SEASON__STANDING = eINSTANCE.getSeason_Standing();
+
+		/**
+		 * The meta object literal for the '<em><b>Matchdays</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SEASON__MATCHDAYS = eINSTANCE.getSeason_Matchdays();
 
 		/**
 		 * The meta object literal for the '{@link competition.impl.TeamImpl <em>Team</em>}' class.
@@ -1520,14 +1558,6 @@ public interface CompetitionPackage extends EPackage {
 		EAttribute MATCH__STATUS = eINSTANCE.getMatch_Status();
 
 		/**
-		 * The meta object literal for the '<em><b>Match Day</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute MATCH__MATCH_DAY = eINSTANCE.getMatch_MatchDay();
-
-		/**
 		 * The meta object literal for the '<em><b>Last Updated</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1542,14 +1572,6 @@ public interface CompetitionPackage extends EPackage {
 		 * @generated
 		 */
 		EReference MATCH__SCORE = eINSTANCE.getMatch_Score();
-
-		/**
-		 * The meta object literal for the '<em><b>Season</b></em>' container reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference MATCH__SEASON = eINSTANCE.getMatch_Season();
 
 		/**
 		 * The meta object literal for the '<em><b>Home Team</b></em>' reference feature.
@@ -1716,6 +1738,32 @@ public interface CompetitionPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute POSITON__GOAL_DIFFERENCE = eINSTANCE.getPositon_GoalDifference();
+
+		/**
+		 * The meta object literal for the '{@link competition.impl.MatchdayImpl <em>Matchday</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see competition.impl.MatchdayImpl
+		 * @see competition.impl.CompetitionPackageImpl#getMatchday()
+		 * @generated
+		 */
+		EClass MATCHDAY = eINSTANCE.getMatchday();
+
+		/**
+		 * The meta object literal for the '<em><b>Matchday</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MATCHDAY__MATCHDAY = eINSTANCE.getMatchday_Matchday();
+
+		/**
+		 * The meta object literal for the '<em><b>Matches</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MATCHDAY__MATCHES = eINSTANCE.getMatchday_Matches();
 
 		/**
 		 * The meta object literal for the '{@link competition.Status <em>Status</em>}' enum.
