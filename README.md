@@ -8,7 +8,8 @@ TODO: Write a step-by-step guide on how to get the project up and running on you
 
 ## Description
 
-This projects aim to visualize information from different football competions
+This projects aim to visualize information from different football competions. The project uses the api provided by [football-data.org/](https://www.football-data.org/) to gather data on different football competitions. The data is transformed and mapped to a Ecore model and 
+visualized using Sirius.
 
 ## Tools
 
@@ -17,7 +18,7 @@ This projects aim to visualize information from different football competions
 
 ## Model
 
-TODO: Short description
+TODO: Describe the model 
 
 ### Constraints
 
