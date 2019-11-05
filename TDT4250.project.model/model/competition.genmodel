@@ -37,9 +37,9 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Season/startDate"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Season/endDate"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Season/currentMatchday"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference competition.ecore#//Season/matches"/>
       <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference competition.ecore#//Season/competition"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference competition.ecore#//Season/standing"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference competition.ecore#//Season/matchdays"/>
     </genClasses>
     <genClasses ecoreClass="competition.ecore#//Team">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Team/id"/>
@@ -53,10 +53,8 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Match/id"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Match/utcDate"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Match/status"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Match/matchDay"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Match/lastUpdated"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference competition.ecore#//Match/score"/>
-      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference competition.ecore#//Match/season"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference competition.ecore#//Match/homeTeam"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference competition.ecore#//Match/awayTeam"/>
     </genClasses>
@@ -80,6 +78,10 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Positon/goalsFor"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Positon/goalsAgaints"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Positon/goalDifference"/>
+    </genClasses>
+    <genClasses ecoreClass="competition.ecore#//Matchday">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute competition.ecore#//Matchday/matchday"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference competition.ecore#//Matchday/matches"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

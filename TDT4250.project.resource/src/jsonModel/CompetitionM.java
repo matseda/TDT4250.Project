@@ -8,7 +8,7 @@ public class CompetitionM {
     public String code;
     public String emblemUrl;
     public String plan;
-    public CurrentSeason currentSeason;
+    public Season currentSeason;
     public List<Season> seasons;
     public String lastUpdated;
 }

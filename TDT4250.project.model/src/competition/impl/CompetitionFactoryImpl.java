@@ -64,6 +64,7 @@ public class CompetitionFactoryImpl extends EFactoryImpl implements CompetitionF
 			case CompetitionPackage.SCORE: return createScore();
 			case CompetitionPackage.STANDING: return createStanding();
 			case CompetitionPackage.POSITON: return createPositon();
+			case CompetitionPackage.MATCHDAY: return createMatchday();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -178,6 +179,17 @@ public class CompetitionFactoryImpl extends EFactoryImpl implements CompetitionF
 	public Positon createPositon() {
 		PositonImpl positon = new PositonImpl();
 		return positon;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Matchday createMatchday() {
+		MatchdayImpl matchday = new MatchdayImpl();
+		return matchday;
 	}
 
 	/**

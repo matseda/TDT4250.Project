@@ -18,10 +18,8 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link competition.Match#getId <em>Id</em>}</li>
  *   <li>{@link competition.Match#getUtcDate <em>Utc Date</em>}</li>
  *   <li>{@link competition.Match#getStatus <em>Status</em>}</li>
- *   <li>{@link competition.Match#getMatchDay <em>Match Day</em>}</li>
  *   <li>{@link competition.Match#getLastUpdated <em>Last Updated</em>}</li>
  *   <li>{@link competition.Match#getScore <em>Score</em>}</li>
- *   <li>{@link competition.Match#getSeason <em>Season</em>}</li>
  *   <li>{@link competition.Match#getHomeTeam <em>Home Team</em>}</li>
  *   <li>{@link competition.Match#getAwayTeam <em>Away Team</em>}</li>
  * </ul>
@@ -101,28 +99,6 @@ public interface Match extends EObject {
 	void setStatus(Status value);
 
 	/**
-	 * Returns the value of the '<em><b>Match Day</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Match Day</em>' attribute.
-	 * @see #setMatchDay(int)
-	 * @see competition.CompetitionPackage#getMatch_MatchDay()
-	 * @model
-	 * @generated
-	 */
-	int getMatchDay();
-
-	/**
-	 * Sets the value of the '{@link competition.Match#getMatchDay <em>Match Day</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Match Day</em>' attribute.
-	 * @see #getMatchDay()
-	 * @generated
-	 */
-	void setMatchDay(int value);
-
-	/**
 	 * Returns the value of the '<em><b>Last Updated</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -167,30 +143,6 @@ public interface Match extends EObject {
 	 * @generated
 	 */
 	void setScore(Score value);
-
-	/**
-	 * Returns the value of the '<em><b>Season</b></em>' container reference.
-	 * It is bidirectional and its opposite is '{@link competition.Season#getMatches <em>Matches</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Season</em>' container reference.
-	 * @see #setSeason(Season)
-	 * @see competition.CompetitionPackage#getMatch_Season()
-	 * @see competition.Season#getMatches
-	 * @model opposite="matches" transient="false"
-	 * @generated
-	 */
-	Season getSeason();
-
-	/**
-	 * Sets the value of the '{@link competition.Match#getSeason <em>Season</em>}' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Season</em>' container reference.
-	 * @see #getSeason()
-	 * @generated
-	 */
-	void setSeason(Season value);
 
 	/**
 	 * Returns the value of the '<em><b>Home Team</b></em>' reference.

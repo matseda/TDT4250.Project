@@ -5,7 +5,6 @@ package competition.impl;
 import competition.CompetitionPackage;
 import competition.Match;
 import competition.Score;
-import competition.Season;
 import competition.Status;
 import competition.Team;
 
@@ -20,8 +19,6 @@ import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
-import org.eclipse.emf.ecore.util.EcoreUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Match</b></em>'.
@@ -33,10 +30,8 @@ import org.eclipse.emf.ecore.util.EcoreUtil;
  *   <li>{@link competition.impl.MatchImpl#getId <em>Id</em>}</li>
  *   <li>{@link competition.impl.MatchImpl#getUtcDate <em>Utc Date</em>}</li>
  *   <li>{@link competition.impl.MatchImpl#getStatus <em>Status</em>}</li>
- *   <li>{@link competition.impl.MatchImpl#getMatchDay <em>Match Day</em>}</li>
  *   <li>{@link competition.impl.MatchImpl#getLastUpdated <em>Last Updated</em>}</li>
  *   <li>{@link competition.impl.MatchImpl#getScore <em>Score</em>}</li>
- *   <li>{@link competition.impl.MatchImpl#getSeason <em>Season</em>}</li>
  *   <li>{@link competition.impl.MatchImpl#getHomeTeam <em>Home Team</em>}</li>
  *   <li>{@link competition.impl.MatchImpl#getAwayTeam <em>Away Team</em>}</li>
  * </ul>
@@ -103,26 +98,6 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 	 * @ordered
 	 */
 	protected Status status = STATUS_EDEFAULT;
-
-	/**
-	 * The default value of the '{@link #getMatchDay() <em>Match Day</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getMatchDay()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final int MATCH_DAY_EDEFAULT = 0;
-
-	/**
-	 * The cached value of the '{@link #getMatchDay() <em>Match Day</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getMatchDay()
-	 * @generated
-	 * @ordered
-	 */
-	protected int matchDay = MATCH_DAY_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getLastUpdated() <em>Last Updated</em>}' attribute.
@@ -268,29 +243,6 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 	 * @generated
 	 */
 	@Override
-	public int getMatchDay() {
-		return matchDay;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setMatchDay(int newMatchDay) {
-		int oldMatchDay = matchDay;
-		matchDay = newMatchDay;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CompetitionPackage.MATCH__MATCH_DAY, oldMatchDay, matchDay));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Date getLastUpdated() {
 		return lastUpdated;
 	}
@@ -351,49 +303,6 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 		}
 		else if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, CompetitionPackage.MATCH__SCORE, newScore, newScore));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Season getSeason() {
-		if (eContainerFeatureID() != CompetitionPackage.MATCH__SEASON) return null;
-		return (Season)eInternalContainer();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetSeason(Season newSeason, NotificationChain msgs) {
-		msgs = eBasicSetContainer((InternalEObject)newSeason, CompetitionPackage.MATCH__SEASON, msgs);
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setSeason(Season newSeason) {
-		if (newSeason != eInternalContainer() || (eContainerFeatureID() != CompetitionPackage.MATCH__SEASON && newSeason != null)) {
-			if (EcoreUtil.isAncestor(this, newSeason))
-				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
-			NotificationChain msgs = null;
-			if (eInternalContainer() != null)
-				msgs = eBasicRemoveFromContainer(msgs);
-			if (newSeason != null)
-				msgs = ((InternalEObject)newSeason).eInverseAdd(this, CompetitionPackage.SEASON__MATCHES, Season.class, msgs);
-			msgs = basicSetSeason(newSeason, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CompetitionPackage.MATCH__SEASON, newSeason, newSeason));
 	}
 
 	/**
@@ -488,10 +397,6 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 				if (score != null)
 					msgs = ((InternalEObject)score).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - CompetitionPackage.MATCH__SCORE, null, msgs);
 				return basicSetScore((Score)otherEnd, msgs);
-			case CompetitionPackage.MATCH__SEASON:
-				if (eInternalContainer() != null)
-					msgs = eBasicRemoveFromContainer(msgs);
-				return basicSetSeason((Season)otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
@@ -506,24 +411,8 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 		switch (featureID) {
 			case CompetitionPackage.MATCH__SCORE:
 				return basicSetScore(null, msgs);
-			case CompetitionPackage.MATCH__SEASON:
-				return basicSetSeason(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public NotificationChain eBasicRemoveFromContainerFeature(NotificationChain msgs) {
-		switch (eContainerFeatureID()) {
-			case CompetitionPackage.MATCH__SEASON:
-				return eInternalContainer().eInverseRemove(this, CompetitionPackage.SEASON__MATCHES, Season.class, msgs);
-		}
-		return super.eBasicRemoveFromContainerFeature(msgs);
 	}
 
 	/**
@@ -540,14 +429,10 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 				return getUtcDate();
 			case CompetitionPackage.MATCH__STATUS:
 				return getStatus();
-			case CompetitionPackage.MATCH__MATCH_DAY:
-				return getMatchDay();
 			case CompetitionPackage.MATCH__LAST_UPDATED:
 				return getLastUpdated();
 			case CompetitionPackage.MATCH__SCORE:
 				return getScore();
-			case CompetitionPackage.MATCH__SEASON:
-				return getSeason();
 			case CompetitionPackage.MATCH__HOME_TEAM:
 				if (resolve) return getHomeTeam();
 				return basicGetHomeTeam();
@@ -575,17 +460,11 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 			case CompetitionPackage.MATCH__STATUS:
 				setStatus((Status)newValue);
 				return;
-			case CompetitionPackage.MATCH__MATCH_DAY:
-				setMatchDay((Integer)newValue);
-				return;
 			case CompetitionPackage.MATCH__LAST_UPDATED:
 				setLastUpdated((Date)newValue);
 				return;
 			case CompetitionPackage.MATCH__SCORE:
 				setScore((Score)newValue);
-				return;
-			case CompetitionPackage.MATCH__SEASON:
-				setSeason((Season)newValue);
 				return;
 			case CompetitionPackage.MATCH__HOME_TEAM:
 				setHomeTeam((Team)newValue);
@@ -614,17 +493,11 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 			case CompetitionPackage.MATCH__STATUS:
 				setStatus(STATUS_EDEFAULT);
 				return;
-			case CompetitionPackage.MATCH__MATCH_DAY:
-				setMatchDay(MATCH_DAY_EDEFAULT);
-				return;
 			case CompetitionPackage.MATCH__LAST_UPDATED:
 				setLastUpdated(LAST_UPDATED_EDEFAULT);
 				return;
 			case CompetitionPackage.MATCH__SCORE:
 				setScore((Score)null);
-				return;
-			case CompetitionPackage.MATCH__SEASON:
-				setSeason((Season)null);
 				return;
 			case CompetitionPackage.MATCH__HOME_TEAM:
 				setHomeTeam((Team)null);
@@ -650,14 +523,10 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 				return UTC_DATE_EDEFAULT == null ? utcDate != null : !UTC_DATE_EDEFAULT.equals(utcDate);
 			case CompetitionPackage.MATCH__STATUS:
 				return status != STATUS_EDEFAULT;
-			case CompetitionPackage.MATCH__MATCH_DAY:
-				return matchDay != MATCH_DAY_EDEFAULT;
 			case CompetitionPackage.MATCH__LAST_UPDATED:
 				return LAST_UPDATED_EDEFAULT == null ? lastUpdated != null : !LAST_UPDATED_EDEFAULT.equals(lastUpdated);
 			case CompetitionPackage.MATCH__SCORE:
 				return score != null;
-			case CompetitionPackage.MATCH__SEASON:
-				return getSeason() != null;
 			case CompetitionPackage.MATCH__HOME_TEAM:
 				return homeTeam != null;
 			case CompetitionPackage.MATCH__AWAY_TEAM:
@@ -682,8 +551,6 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 		result.append(utcDate);
 		result.append(", status: ");
 		result.append(status);
-		result.append(", matchDay: ");
-		result.append(matchDay);
 		result.append(", lastUpdated: ");
 		result.append(lastUpdated);
 		result.append(')');

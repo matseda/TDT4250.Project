@@ -22,6 +22,7 @@ import competition.Competition;
 import competition.CompetitionFactory;
 import competition.CompetitionPackage;
 import competition.Match;
+import competition.Matchday;
 import competition.Positon;
 import competition.Score;
 import competition.Season;
@@ -101,34 +102,49 @@ public class Mapper {
 		competition.setCurrentSeason(season);
 	}
 	
-	private void addMatches(MatchM matchM, CompetitionFactory factory, Competition competition, Season season) {
+	private void addMatchDays(MatchM matchM, CompetitionFactory factory, Competition competition, Season season) {
+		int prevmd = 0;
+		for(int i = 0; i < matchM.matches.size(); i++) {
+			int md = matchM.matches.get(i).matchday;
+			if(md == prevmd + 1) {
+				Matchday matchday = factory.createMatchday();
+				matchday.setMatchday(md);
+				addMatches(matchM, factory, competition, matchday);
+				season.getMatchdays().add(matchday);
+			}
+			prevmd = md;
+		}
+	}
+	
+	private void addMatches(MatchM matchM, CompetitionFactory factory, Competition competition, Matchday matchday){
 		// Add matches
 		for(int i = 0; i < matchM.matches.size(); i++) {
-			Match match = factory.createMatch();
-			match.setId(matchM.matches.get(i).id);
-			match.setStatus(Status.valueOf(matchM.matches.get(i).status));
-			match.setMatchDay(matchM.matches.get(i).matchday);
-			match.setLastUpdated(parseDate(matchM.matches.get(i).lastUpdated));
-			match.setSeason(season);
-			match.setUtcDate(parseDate(matchM.matches.get(i).utcDate));
-			
-			Score score = factory.createScore();
-			score.setMatch(match);
-			score.setWinner(matchM.matches.get(i).score.winner == null ? null : Winner.valueOf(matchM.matches.get(i).score.winner));
-			score.setAwayTeam(matchM.matches.get(i).score.fullTime.awayTeam);
-			score.setHomeTeam(matchM.matches.get(i).score.fullTime.homeTeam);
-			match.setScore(score);
-			
-			for(int j = 0; j < competition.getTeams().size(); j++) {
-				if(competition.getTeams().get(j).getId() == matchM.matches.get(i).homeTeam.id) {
-					match.setHomeTeam(competition.getTeams().get(j));
+			if(matchM.matches.get(i).matchday == matchday.getMatchday()) {
+				Match match = factory.createMatch();
+				match.setId(matchM.matches.get(i).id);
+				match.setStatus(Status.valueOf(matchM.matches.get(i).status));
+				match.setLastUpdated(parseDate(matchM.matches.get(i).lastUpdated));
+				match.setUtcDate(parseDate(matchM.matches.get(i).utcDate));
+				
+				Score score = factory.createScore();
+				score.setMatch(match);
+				score.setWinner(matchM.matches.get(i).score.winner == null ? null : Winner.valueOf(matchM.matches.get(i).score.winner));
+				score.setAwayTeam(matchM.matches.get(i).score.fullTime.awayTeam);
+				score.setHomeTeam(matchM.matches.get(i).score.fullTime.homeTeam);
+				match.setScore(score);
+				
+				for(int j = 0; j < competition.getTeams().size(); j++) {
+					if(competition.getTeams().get(j).getId() == matchM.matches.get(i).homeTeam.id) {
+						match.setHomeTeam(competition.getTeams().get(j));
+					}
+					if(competition.getTeams().get(j).getId() == matchM.matches.get(i).awayTeam.id) {
+						match.setAwayTeam(competition.getTeams().get(j));
+					}
 				}
-				if(competition.getTeams().get(j).getId() == matchM.matches.get(i).awayTeam.id) {
-					match.setAwayTeam(competition.getTeams().get(j));
-				}
+				
+				matchday.getMatches().add(match);
 			}
 			
-			season.getMatches().add(match);
 		}
 	}
 	
@@ -164,7 +180,7 @@ public class Mapper {
 			Competition competition = createCompetition(competitionM, factory);
 			Season season = createSeason(competitionM, factory, competition);
 			addTeams(teamM, factory, competition);
-			addMatches(matchM, factory, competition, season);
+			addMatchDays(matchM, factory, competition, season);
 			addStandings(standingM, factory, competition, season);
 			
 			// As of here we preparing to save the model content
@@ -177,7 +193,7 @@ public class Mapper {
 	        ResourceSet resSet = new ResourceSetImpl();
 
 	        // create a resource
-	        Resource resource = resSet.createResource(URI.createURI("TDT4250.project.samples/test.xmi"));
+	        Resource resource = resSet.createResource(URI.createURI("samples/sample.xmi"));
 	        
 	        // Get the first model element and cast it to the right type, in my
 	        // example everything is hierarchical included in this first node
