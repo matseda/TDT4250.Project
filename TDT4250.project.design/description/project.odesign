@@ -2,7 +2,6 @@
 <description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:description_2="http://www.eclipse.org/sirius/tree/description/1.0.0" xmlns:description_3="http://www.eclipse.org/sirius/table/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" name="project" version="12.0.0.2017041100">
   <ownedViewpoints name="competitions" modelFileExtension="">
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Test Diagram" domainClass="competition::Competition" enablePopupBars="true">
-      <metamodel href="../../TDT4250.project.model/model/competition.ecore#/"/>
       <defaultLayer name="Default">
         <containerMappings name="Standing Container" domainClass="competition::Standing" childrenPresentation="HorizontalStack">
           <subContainerMappings name="Position Container" semanticCandidatesExpression="feature:positions" domainClass="competition::Positon" childrenPresentation="HorizontalStack">
@@ -26,7 +25,6 @@
       </subItemMappings>
     </ownedRepresentations>
     <ownedRepresentations xsi:type="description_3:EditionTableDescription" name="Test Table" initialisation="true" domainClass="competition::Standing">
-      <metamodel href="../../TDT4250.project.model/model/competition.ecore#/"/>
       <ownedLineMappings name="Position Line" domainClass="competition::Positon" headerLabelExpression="aql:self.team.id"/>
       <ownedColumnMappings name="Position" headerLabelExpression="Pos" canEdit="aql:false" featureName="position">
         <defaultForeground>
@@ -108,6 +106,50 @@
           <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
         </defaultBackground>
       </ownedColumnMappings>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Season Diagram" domainClass="competition::Competition" enablePopupBars="true">
+      <defaultLayer name="Default">
+        <containerMappings name="Season Results Container" domainClass="competition::Season" childrenPresentation="List">
+          <subNodeMappings name="Match Node" semanticCandidatesExpression="aql:self.matches -> select(s | s.status.toString()='FINISHED')" domainClass="competition::Match">
+            <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="aql:self.homeTeam.name + '  ' +  self.score.homeTeam + ' - ' +  self.score.awayTeam + '  '  + self.awayTeam.name" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_gray']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" showIcon="false" labelExpression="aql:'Season ' + self.id + ' results'">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+          </style>
+        </containerMappings>
+        <containerMappings name="Season Container" domainClass="competition::Season" childrenPresentation="List">
+          <subNodeMappings name="Match Node" semanticCandidatesExpression="aql:self.matches -> select(s | s.status.toString()='SCHEDULED')" domainClass="competition::Match">
+            <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="aql:self.homeTeam.name + ' - ' + self.awayTeam.name " labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_gray']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" showIcon="false" labelExpression="aql:'Season ' + self.id + ' fixtures'">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
+          </style>
+        </containerMappings>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Match Diagram" domainClass="competition::Competition" enablePopupBars="true">
+      <defaultLayer name="Default">
+        <nodeMappings name="Match Node" domainClass="competition::Match">
+          <style xsi:type="style:GaugeCompositeStyleDescription" labelSize="12" labelExpression="aql:self.score.homeTeam" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+      </defaultLayer>
     </ownedRepresentations>
   </ownedViewpoints>
 </description:Group>
