@@ -2,7 +2,7 @@
 <description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:description_2="http://www.eclipse.org/sirius/tree/description/1.0.0" xmlns:description_3="http://www.eclipse.org/sirius/table/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" name="project" version="12.0.0.2017041100">
   <ownedViewpoints name="competitions" modelFileExtension="">
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Test Diagram" domainClass="competition::Competition" enablePopupBars="true">
-      <metamodel href="file:/home/mats/eclipse-workspace/TDT4250.Project/TDT4250.project.model/model/competition.ecore#/"/>
+      <metamodel href="../../TDT4250.project.model/model/competition.ecore#/"/>
       <defaultLayer name="Default">
         <containerMappings name="Standing Container" domainClass="competition::Standing" childrenPresentation="HorizontalStack">
           <subContainerMappings name="Position Container" semanticCandidatesExpression="feature:positions" domainClass="competition::Positon" childrenPresentation="HorizontalStack">
@@ -26,7 +26,7 @@
       </subItemMappings>
     </ownedRepresentations>
     <ownedRepresentations xsi:type="description_3:EditionTableDescription" name="Test Table" initialisation="true" domainClass="competition::Standing">
-      <metamodel href="file:/home/mats/eclipse-workspace/TDT4250.Project/TDT4250.project.model/model/competition.ecore#/"/>
+      <metamodel href="../../TDT4250.project.model/model/competition.ecore#/"/>
       <ownedLineMappings name="Position Line" domainClass="competition::Positon" headerLabelExpression="aql:self.team.name"/>
       <ownedColumnMappings name="Position" headerLabelExpression="Pos" canEdit="aql:false" featureName="position">
         <defaultForeground>
