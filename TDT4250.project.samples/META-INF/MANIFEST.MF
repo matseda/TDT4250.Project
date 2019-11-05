@@ -6,4 +6,5 @@ Bundle-Version: 1.0.0.qualifier
 Automatic-Module-Name: TDT4250.project.samples
 Bundle-RequiredExecutionEnvironment: JavaSE-11
 Require-Bundle: TDT4250.project.design;bundle-version="1.0.0",
- TDT4250.project.model;bundle-version="0.1.0"
+ TDT4250.project.model;bundle-version="0.1.0",
+ TDT4250.project.resource;bundle-version="1.0.0"

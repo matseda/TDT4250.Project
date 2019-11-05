@@ -7,8 +7,5 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
-	<classpathentry kind="lib" path="/home/mats/eclipse-workspace/TDT4250.Project/TDT4250.project.resource/lib/jackson-databind-2.10.0.pr3.jar"/>
-	<classpathentry kind="lib" path="/home/mats/eclipse-workspace/TDT4250.Project/TDT4250.project.resource/lib/jackson-core-2.10.0.pr3.jar"/>
-	<classpathentry kind="lib" path="/home/mats/eclipse-workspace/TDT4250.Project/TDT4250.project.resource/lib/jackson-annotations-2.10.0.pr3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
