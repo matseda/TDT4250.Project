@@ -4,7 +4,7 @@ package competition.impl;
 
 import competition.Competition;
 import competition.CompetitionPackage;
-import competition.Match;
+import competition.Matchday;
 import competition.Season;
 import competition.Standing;
 
@@ -22,7 +22,7 @@ import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
-import org.eclipse.emf.ecore.util.EObjectContainmentWithInverseEList;
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.util.InternalEList;
 
@@ -38,9 +38,9 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link competition.impl.SeasonImpl#getStartDate <em>Start Date</em>}</li>
  *   <li>{@link competition.impl.SeasonImpl#getEndDate <em>End Date</em>}</li>
  *   <li>{@link competition.impl.SeasonImpl#getCurrentMatchday <em>Current Matchday</em>}</li>
- *   <li>{@link competition.impl.SeasonImpl#getMatches <em>Matches</em>}</li>
  *   <li>{@link competition.impl.SeasonImpl#getCompetition <em>Competition</em>}</li>
  *   <li>{@link competition.impl.SeasonImpl#getStanding <em>Standing</em>}</li>
+ *   <li>{@link competition.impl.SeasonImpl#getMatchdays <em>Matchdays</em>}</li>
  * </ul>
  *
  * @generated
@@ -127,16 +127,6 @@ public class SeasonImpl extends MinimalEObjectImpl.Container implements Season {
 	protected int currentMatchday = CURRENT_MATCHDAY_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getMatches() <em>Matches</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getMatches()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<Match> matches;
-
-	/**
 	 * The cached value of the '{@link #getStanding() <em>Standing</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -145,6 +135,16 @@ public class SeasonImpl extends MinimalEObjectImpl.Container implements Season {
 	 * @ordered
 	 */
 	protected Standing standing;
+
+	/**
+	 * The cached value of the '{@link #getMatchdays() <em>Matchdays</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMatchdays()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Matchday> matchdays;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -263,19 +263,6 @@ public class SeasonImpl extends MinimalEObjectImpl.Container implements Season {
 	 * @generated
 	 */
 	@Override
-	public EList<Match> getMatches() {
-		if (matches == null) {
-			matches = new EObjectContainmentWithInverseEList<Match>(Match.class, this, CompetitionPackage.SEASON__MATCHES, CompetitionPackage.MATCH__SEASON);
-		}
-		return matches;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Competition getCompetition() {
 		if (eContainerFeatureID() != CompetitionPackage.SEASON__COMPETITION) return null;
 		return (Competition)eInternalContainer();
@@ -363,12 +350,22 @@ public class SeasonImpl extends MinimalEObjectImpl.Container implements Season {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@SuppressWarnings("unchecked")
+	@Override
+	public EList<Matchday> getMatchdays() {
+		if (matchdays == null) {
+			matchdays = new EObjectContainmentEList<Matchday>(Matchday.class, this, CompetitionPackage.SEASON__MATCHDAYS);
+		}
+		return matchdays;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case CompetitionPackage.SEASON__MATCHES:
-				return ((InternalEList<InternalEObject>)(InternalEList<?>)getMatches()).basicAdd(otherEnd, msgs);
 			case CompetitionPackage.SEASON__COMPETITION:
 				if (eInternalContainer() != null)
 					msgs = eBasicRemoveFromContainer(msgs);
@@ -385,12 +382,12 @@ public class SeasonImpl extends MinimalEObjectImpl.Container implements Season {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case CompetitionPackage.SEASON__MATCHES:
-				return ((InternalEList<?>)getMatches()).basicRemove(otherEnd, msgs);
 			case CompetitionPackage.SEASON__COMPETITION:
 				return basicSetCompetition(null, msgs);
 			case CompetitionPackage.SEASON__STANDING:
 				return basicSetStanding(null, msgs);
+			case CompetitionPackage.SEASON__MATCHDAYS:
+				return ((InternalEList<?>)getMatchdays()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -425,12 +422,12 @@ public class SeasonImpl extends MinimalEObjectImpl.Container implements Season {
 				return getEndDate();
 			case CompetitionPackage.SEASON__CURRENT_MATCHDAY:
 				return getCurrentMatchday();
-			case CompetitionPackage.SEASON__MATCHES:
-				return getMatches();
 			case CompetitionPackage.SEASON__COMPETITION:
 				return getCompetition();
 			case CompetitionPackage.SEASON__STANDING:
 				return getStanding();
+			case CompetitionPackage.SEASON__MATCHDAYS:
+				return getMatchdays();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -456,15 +453,15 @@ public class SeasonImpl extends MinimalEObjectImpl.Container implements Season {
 			case CompetitionPackage.SEASON__CURRENT_MATCHDAY:
 				setCurrentMatchday((Integer)newValue);
 				return;
-			case CompetitionPackage.SEASON__MATCHES:
-				getMatches().clear();
-				getMatches().addAll((Collection<? extends Match>)newValue);
-				return;
 			case CompetitionPackage.SEASON__COMPETITION:
 				setCompetition((Competition)newValue);
 				return;
 			case CompetitionPackage.SEASON__STANDING:
 				setStanding((Standing)newValue);
+				return;
+			case CompetitionPackage.SEASON__MATCHDAYS:
+				getMatchdays().clear();
+				getMatchdays().addAll((Collection<? extends Matchday>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -490,14 +487,14 @@ public class SeasonImpl extends MinimalEObjectImpl.Container implements Season {
 			case CompetitionPackage.SEASON__CURRENT_MATCHDAY:
 				setCurrentMatchday(CURRENT_MATCHDAY_EDEFAULT);
 				return;
-			case CompetitionPackage.SEASON__MATCHES:
-				getMatches().clear();
-				return;
 			case CompetitionPackage.SEASON__COMPETITION:
 				setCompetition((Competition)null);
 				return;
 			case CompetitionPackage.SEASON__STANDING:
 				setStanding((Standing)null);
+				return;
+			case CompetitionPackage.SEASON__MATCHDAYS:
+				getMatchdays().clear();
 				return;
 		}
 		super.eUnset(featureID);
@@ -519,12 +516,12 @@ public class SeasonImpl extends MinimalEObjectImpl.Container implements Season {
 				return END_DATE_EDEFAULT == null ? endDate != null : !END_DATE_EDEFAULT.equals(endDate);
 			case CompetitionPackage.SEASON__CURRENT_MATCHDAY:
 				return currentMatchday != CURRENT_MATCHDAY_EDEFAULT;
-			case CompetitionPackage.SEASON__MATCHES:
-				return matches != null && !matches.isEmpty();
 			case CompetitionPackage.SEASON__COMPETITION:
 				return getCompetition() != null;
 			case CompetitionPackage.SEASON__STANDING:
 				return standing != null;
+			case CompetitionPackage.SEASON__MATCHDAYS:
+				return matchdays != null && !matchdays.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

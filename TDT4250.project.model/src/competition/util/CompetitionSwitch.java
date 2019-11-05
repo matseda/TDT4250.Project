@@ -108,6 +108,12 @@ public class CompetitionSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case CompetitionPackage.MATCHDAY: {
+				Matchday matchday = (Matchday)theEObject;
+				T result = caseMatchday(matchday);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			default: return defaultCase(theEObject);
 		}
 	}
@@ -214,6 +220,21 @@ public class CompetitionSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T casePositon(Positon object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Matchday</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Matchday</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMatchday(Matchday object) {
 		return null;
 	}
 
