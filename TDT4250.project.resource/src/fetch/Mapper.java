@@ -99,7 +99,7 @@ public class Mapper {
             System.out.println("Error trying to save the content");
             e.printStackTrace();
         }
-        System.out.println("Succesfully updated data!");
+        System.out.println("Successfully updated data!");
 	}
 	
 	private Date parseDate(String date) {

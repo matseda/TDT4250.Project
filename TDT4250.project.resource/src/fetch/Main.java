@@ -10,7 +10,6 @@ public class Main {
 	private static final String TEAMS_FILE = "data/teamsPL.json";
 
 	public static void main(String[] args) {
-		// 
 		ApiFetcher fetcher = new ApiFetcher(COMPETITION_FILE, MATCHES_FILE, STANDINGS_FILE, TEAMS_FILE);
 		fetcher.fetchAllData();
 		
@@ -18,6 +17,6 @@ public class Main {
 		Mapper mapper = new Mapper(COMPETITION_FILE, MATCHES_FILE, STANDINGS_FILE, TEAMS_FILE);
 		mapper.buildModel();
 		
-		// mapper.toString(); // Print data
+		//System.out.println(mapper.toString()); // Print data
 	}
 }
