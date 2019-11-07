@@ -42,6 +42,7 @@ public class ApiFetcher {
 	}
 	
 	public void fetchAllData() {
+		System.out.println("Fetching data from API...");
 		try {
 			// Send request
 			String competitionResponse = fetchData(COMPETITION_URL);
@@ -56,6 +57,7 @@ public class ApiFetcher {
 			FileWriter teamsFile = new FileWriter(teamsFileUrl);
 			
 			try {
+				System.out.println("Saving files to data folder...");
 				competitionFile.write(competitionResponse);
 				matchesFile.write(matchesResponse);
 				standingsFile.write(standingsResponse);

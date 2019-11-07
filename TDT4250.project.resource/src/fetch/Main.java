@@ -18,7 +18,6 @@ public class Main {
 		Mapper mapper = new Mapper(COMPETITION_FILE, MATCHES_FILE, STANDINGS_FILE, TEAMS_FILE);
 		mapper.buildModel();
 		
-		// Print data
-		mapper.toString();
+		// mapper.toString(); // Print data
 	}
 }

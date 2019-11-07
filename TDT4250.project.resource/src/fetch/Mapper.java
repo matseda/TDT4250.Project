@@ -60,7 +60,8 @@ public class Mapper {
 		}
 	}
 	
-	public void buildModel() {		    
+	public void buildModel() {
+		System.out.println("Map from JSON to Ecore model...");
 	    // Initialize the model
 		CompetitionPackage.eINSTANCE.eClass();
 		
@@ -92,11 +93,13 @@ public class Mapper {
 
         // Save the content
         try {
+        	System.out.println("Save data .xmi file of data to TDT4250.project.samples/sample.xmi...");
             resource.save(Collections.EMPTY_MAP);
         } catch (IOException e) {
             System.out.println("Error trying to save the content");
             e.printStackTrace();
         }
+        System.out.println("Succesfully updated data!");
 	}
 	
 	private Date parseDate(String date) {
