@@ -45,7 +45,7 @@ public class Mapper {
     private MatchM matchM;
     private StandingM standingM;
 	
-	public Mapper(String competitionUrl, String teamsUrl, String matchesUrl, String standingUrl) {
+	public Mapper(String competitionUrl, String teamsUrl, String matchesUrl, String standingsUrl) {
 		objectMapper = new ObjectMapper();
 		
 		// Initialize object models
@@ -53,16 +53,14 @@ public class Mapper {
 			competitionM = objectMapper.readValue(new URL(competitionUrl), CompetitionM.class);
 			teamM = objectMapper.readValue(new URL(teamsUrl), TeamM.class);
 		    matchM = objectMapper.readValue(new URL(matchesUrl), MatchM.class);
-		    standingM = objectMapper.readValue(new URL(standingUrl), StandingM.class);
+		    standingM = objectMapper.readValue(new URL(standingsUrl), StandingM.class);
 		} catch (Exception e) {
 			System.out.println("Error trying map JSON to model");
 			e.printStackTrace();
 		}
-		
-		buildModel();
 	}
 	
-	private void buildModel() {		    
+	public void buildModel() {		    
 	    // Initialize the model
 		CompetitionPackage.eINSTANCE.eClass();
 		
@@ -96,7 +94,7 @@ public class Mapper {
         try {
             resource.save(Collections.EMPTY_MAP);
         } catch (IOException e) {
-            System.out.println("Error trying to save the content");
+            System.err.println("Error trying to save the content\n");
             e.printStackTrace();
         }
 	}
@@ -242,26 +240,5 @@ public class Mapper {
 	    
 		return strBuilder;
 	}
-/*
-	public String printTeams(CompetitionM competition, TeamM team, MatchM match, StandingM standing) {
-		String strBuilder = "";
-		strBuilder += competition.name + ":\n";
-	    
-	    // Add teams to print string
-	    for(int i = 0; i < team.teams.size(); i++) strBuilder += team.teams.get(i).name + "\n";
-	    
-	    
-	    // Add matches to print string
-	    strBuilder += "\nMatches:\n";
-	    for(int i = 0; i < match.matches.size(); i++) 
-	    	strBuilder += match.matches.get(i).homeTeam.name + " ----VS---- " + match.matches.get(i).awayTeam.name + "\n";
-	    
-	    // Add standing to print string
-	    strBuilder += "\nStanding:\n";
-	    for(int i = 0; i < standing.standings.get(0).table.size(); i++) 
-	    	strBuilder += standing.standings.get(0).table.get(i).position + ": " + standing.standings.get(0).table.get(i).team.name + "\n";
-	    
-		return strBuilder;
-	}*/
 }
 
