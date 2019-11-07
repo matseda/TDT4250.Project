@@ -11,16 +11,65 @@ import java.util.Scanner;
 public class ApiFetcher {
 	private static final String TOKEN = "a846dade319c414aae66fe002ef089cd";
 	
-	private static String fetchData(String url) throws MalformedURLException, IOException {
-		URLConnection connection = new URL(url).openConnection();
-		connection.setRequestProperty("Accept-Charset", "UTF-8");
-		connection.setRequestProperty("X-Auth-Token", TOKEN);
+	private String competitionUrl;
+	private String matchesUrl;
+	private String standingsUrl;
+	private String teamsUrl;
+	
+	public ApiFetcher(String competitionUrl, String matchesUrl, String standingsUrl, String teamsUrl) {
+		this.competitionUrl = competitionUrl;
+		this.matchesUrl = matchesUrl;
+		this.standingsUrl = standingsUrl;
+		this.teamsUrl = teamsUrl;
+	}
+	
+	private String fetchData(String url) throws MalformedURLException, IOException {
 		
-		InputStream response = connection.getInputStream();
-		Scanner scanner = new Scanner(response);
-		String responseBody = scanner.useDelimiter("\\A").next();
-		
+		URLConnection connection = null;
+		Scanner scanner = null;
+		String responseBody = "";
+			connection = new URL(url).openConnection();
+			connection.setRequestProperty("Accept-Charset", "UTF-8");
+			connection.setRequestProperty("X-Auth-Token", TOKEN);
+			
+			InputStream response = connection.getInputStream();
+			scanner = new Scanner(response);
+			responseBody = scanner.useDelimiter("\\A").next();	
+			scanner.close();
+
 		return responseBody;
+	}
+	
+	private void fetchAllData() {
+		// Send request
+				try {
+					String competitionResponse = fetchData(competitionUrl);
+					String matchesResponse = fetchData(matchesUrl);
+					String teamsResponse = fetchData(teamsUrl);
+					String standingResponse = fetchData(standingsUrl);
+					
+					// Write response to file
+					FileWriter competitionFile = new FileWriter("data/competitionPL.json");
+					FileWriter matchesFile = new FileWriter("data/matchesPL.json");
+					FileWriter standingFile = new FileWriter("data/standingPL.json");
+					FileWriter teamsFile = new FileWriter("data/teamsPL.json");
+					
+					competitionFile.write(competitionResponse);
+					matchesFile.write(matchesResponse);
+					standingFile.write(standingResponse);
+					teamsFile.write(teamsResponse);
+			    } catch (Exception E) {
+			        E.printStackTrace();
+			    } finally {
+			    	competitionFile.flush();
+			    	competitionFile.close();
+			    	matchesFile.flush();
+			    	matchesFile.close();
+			    	standingFile.flush();
+			    	standingFile.close();
+			    	teamsFile.flush();
+			    	teamsFile.close();
+			    }
 	}
 
 	public static void main(String[] args) throws MalformedURLException, IOException {

@@ -86,7 +86,7 @@ public class Mapper {
         ResourceSet resSet = new ResourceSetImpl();
 
         // create a resource
-        Resource resource = resSet.createResource(URI.createURI("../TDT4250.project.samples/test.xmi"));
+        Resource resource = resSet.createResource(URI.createURI("../TDT4250.project.samples/sample.xmi"));
         
         // Get the first model element and cast it to the right type, in my
         // example everything is hierarchical included in this first node
@@ -220,30 +220,29 @@ public class Mapper {
 	}
 	
 	
-	/*
+	
 	@Override
 	public String toString() {
 		String strBuilder = "";
-		strBuilder += competition.name + ":\n";
+		strBuilder += competitionM.name + ":\n";
 	    
 	    // Add teams to print string
-	    for(int i = 0; i < team.teams.size(); i++) strBuilder += team.teams.get(i).name + "\n";
+	    for(int i = 0; i < teamM.teams.size(); i++) strBuilder += teamM.teams.get(i).name + "\n";
 	    
 	    
 	    // Add matches to print string
 	    strBuilder += "\nMatches:\n";
-	    for(int i = 0; i < match.matches.size(); i++) 
-	    	strBuilder += match.matches.get(i).homeTeam.name + " ----VS---- " + match.matches.get(i).awayTeam.name + "\n";
+	    for(int i = 0; i < matchM.matches.size(); i++) 
+	    	strBuilder += matchM.matches.get(i).homeTeam.name + " ----VS---- " + matchM.matches.get(i).awayTeam.name + "\n";
 	    
 	    // Add standing to print string
 	    strBuilder += "\nStanding:\n";
-	    for(int i = 0; i < standing.standings.get(0).table.size(); i++) 
-	    	strBuilder += standing.standings.get(0).table.get(i).position + ": " + standing.standings.get(0).table.get(i).team.name + "\n";
+	    for(int i = 0; i < standingM.standings.get(0).table.size(); i++) 
+	    	strBuilder += standingM.standings.get(0).table.get(i).position + ": " + standingM.standings.get(0).table.get(i).team.name + "\n";
 	    
 		return strBuilder;
-		return "Mapper [objectMapper=" + objectMapper + "]";
 	}
-
+/*
 	public String printTeams(CompetitionM competition, TeamM team, MatchM match, StandingM standing) {
 		String strBuilder = "";
 		strBuilder += competition.name + ":\n";
