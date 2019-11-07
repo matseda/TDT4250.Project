@@ -1,4 +1,4 @@
-package fetch;
+package fetch.and.map;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -32,10 +32,10 @@ import competition.Standing;
 import competition.Status;
 import competition.Team;
 import competition.Winner;
-import jsonModel.CompetitionM;
-import jsonModel.MatchM;
-import jsonModel.StandingM;
-import jsonModel.TeamM;;
+import json.model.CompetitionM;
+import json.model.MatchM;
+import json.model.StandingM;
+import json.model.TeamM;;
 
 
 public class Mapper {
@@ -45,15 +45,15 @@ public class Mapper {
     private MatchM matchM;
     private StandingM standingM;
 	
-	public Mapper(String competitionUrl, String teamsUrl, String matchesUrl, String standingsUrl) {
+	public Mapper(String competitionUrl, String matchesUrl, String standingsUrl, String teamsUrl) {
 		objectMapper = new ObjectMapper();
 		
 		// Initialize object models
 		try {
-			competitionM = objectMapper.readValue(new URL(competitionUrl), CompetitionM.class);
-			teamM = objectMapper.readValue(new URL(teamsUrl), TeamM.class);
-		    matchM = objectMapper.readValue(new URL(matchesUrl), MatchM.class);
-		    standingM = objectMapper.readValue(new URL(standingsUrl), StandingM.class);
+			competitionM = objectMapper.readValue(new URL("file:" + competitionUrl), CompetitionM.class);
+			matchM = objectMapper.readValue(new URL("file:" + matchesUrl), MatchM.class);
+			standingM = objectMapper.readValue(new URL("file:" + standingsUrl), StandingM.class);
+			teamM = objectMapper.readValue(new URL("file:" + teamsUrl), TeamM.class);
 		} catch (Exception e) {
 			System.out.println("Error trying map JSON to model");
 			e.printStackTrace();
@@ -83,7 +83,7 @@ public class Mapper {
         // Obtain a new resource set
         ResourceSet resSet = new ResourceSetImpl();
 
-        // create a resource
+        // create a resource in samples project
         Resource resource = resSet.createResource(URI.createURI("../TDT4250.project.samples/sample.xmi"));
         
         // Get the first model element and cast it to the right type, in my
@@ -94,7 +94,7 @@ public class Mapper {
         try {
             resource.save(Collections.EMPTY_MAP);
         } catch (IOException e) {
-            System.err.println("Error trying to save the content\n");
+            System.out.println("Error trying to save the content");
             e.printStackTrace();
         }
 	}
@@ -105,7 +105,7 @@ public class Mapper {
 		try {
 			parsedDate = format.parse(date);
 		} catch (ParseException e) {
-			System.out.println("Failed parsing date");
+			System.out.println("Error trying to parse date");
 			e.printStackTrace();
 		}
 		return parsedDate;
@@ -123,7 +123,6 @@ public class Mapper {
 	}
 
 	private void addTeams(CompetitionFactory factory, Competition competition) {
-		// Add teams
 		for(int i = 0; i < teamM.teams.size(); i++) {
 			Team team = factory.createTeam();
 			team.setId(teamM.teams.get(i).id);
@@ -138,7 +137,6 @@ public class Mapper {
 
 	private void addStandings(CompetitionFactory factory, Competition competition,
 			Season season) {
-		// Add standings
 		Standing standing = factory.createStanding();
 		for(int i = 0; i < standingM.standings.get(0).table.size(); i++) {
 			Positon pos = factory.createPositon();
@@ -177,7 +175,6 @@ public class Mapper {
 	}
 	
 	private void addMatches(CompetitionFactory factory, Competition competition, Matchday matchday){
-		// Add matches
 		for(int i = 0; i < matchM.matches.size(); i++) {
 			if(matchM.matches.get(i).matchday == matchday.getMatchday()) {
 				Match match = factory.createMatch();
