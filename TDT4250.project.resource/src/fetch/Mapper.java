@@ -1,4 +1,4 @@
-package fetch.and.map;
+package fetch;
 
 import java.io.IOException;
 import java.net.MalformedURLException;

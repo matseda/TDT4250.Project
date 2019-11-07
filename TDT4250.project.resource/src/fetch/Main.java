@@ -1,6 +1,6 @@
-package fetch.and.map;
+package fetch;
 
-import fetch.and.map.Mapper;
+import fetch.Mapper;
 
 public class Main {
 	

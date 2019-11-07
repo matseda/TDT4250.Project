@@ -1,4 +1,4 @@
-package fetch.and.map;
+package fetch;
 
 import java.io.FileWriter;
 import java.io.IOException;
