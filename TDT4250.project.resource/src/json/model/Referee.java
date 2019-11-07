@@ -1,4 +1,4 @@
-package jsonModel;
+package json.model;
 
 public class Referee {
 	public int id;

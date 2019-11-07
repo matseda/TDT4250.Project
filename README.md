@@ -28,10 +28,10 @@ _Note: Sirius and Ecore/EMF need to be installed in advance_
 
 ### Updating data
 
-The repository includes data files (JSON format) used in the representation. New data can be fetched from the API, but this is not necessary.
+The repository includes data files (JSON format) used in the representation. New data can be fetched from the API. The JSON files and Ecore models will then reflect the new updates:
 
-- Updating the data: Run "APIFetch.java" from "TDT4250.project.resource/src/fetch".
-- Map new data from JSON to Ecore instance: Run Main.java.
+- Navigate to "TDT4250.project.resource/src/fetch"
+- Run "Main.java" as "Java Application"
 
 ### Open and edit view
 

@@ -4,18 +4,19 @@ import fetch.Mapper;
 
 public class Main {
 	
-	private static final String COMPETITION_URL = "file:data/competitionPL.json";
-	private static final String TEAMS_URL = "file:data/teamsPL.json";
-	private static final String MATCHES_URL = "file:data/matchesPL.json";
-	private static final String STANDINGS_URL = "file:data/standingPL.json";
-
+	private static final String COMPETITION_FILE = "data/competitionPL.json";
+	private static final String MATCHES_FILE = "data/matchesPL.json";
+	private static final String STANDINGS_FILE = "data/standingsPL.json";
+	private static final String TEAMS_FILE = "data/teamsPL.json";
 
 	public static void main(String[] args) {
-		Mapper mapper = new Mapper();
+		ApiFetcher fetcher = new ApiFetcher(COMPETITION_FILE, MATCHES_FILE, STANDINGS_FILE, TEAMS_FILE);
+		fetcher.fetchAllData();
 		
-		// Map from JSON to Ecore
-		mapper.buildModel(COMPETITION_URL, TEAMS_URL, MATCHES_URL, STANDINGS_URL);
-
+		// Init mapper and build model. Map from JSON to Ecore model
+		Mapper mapper = new Mapper(COMPETITION_FILE, MATCHES_FILE, STANDINGS_FILE, TEAMS_FILE);
+		mapper.buildModel();
+		
+		//System.out.println(mapper.toString()); // Print data
 	}
-
 }

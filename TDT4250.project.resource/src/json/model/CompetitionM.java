@@ -1,4 +1,4 @@
-package jsonModel;
+package json.model;
 import java.util.List;
 
 public class CompetitionM {
