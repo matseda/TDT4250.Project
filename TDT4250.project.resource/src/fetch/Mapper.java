@@ -1,6 +1,7 @@
 package fetch;
 
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -15,7 +16,8 @@ import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 
-
+import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import competition.Competition;
@@ -37,7 +39,67 @@ import jsonModel.TeamM;;
 
 
 public class Mapper {
-	private ObjectMapper objectMapper = new ObjectMapper();
+	private ObjectMapper objectMapper;
+	private CompetitionM competitionM;
+	private TeamM teamM;
+    private MatchM matchM;
+    private StandingM standingM;
+	
+	public Mapper(String competitionUrl, String teamsUrl, String matchesUrl, String standingUrl) {
+		objectMapper = new ObjectMapper();
+		
+		// Initialize object models
+		try {
+			competitionM = objectMapper.readValue(new URL(competitionUrl), CompetitionM.class);
+			teamM = objectMapper.readValue(new URL(teamsUrl), TeamM.class);
+		    matchM = objectMapper.readValue(new URL(matchesUrl), MatchM.class);
+		    standingM = objectMapper.readValue(new URL(standingUrl), StandingM.class);
+		} catch (Exception e) {
+			System.out.println("Error trying map JSON to model");
+			e.printStackTrace();
+		}
+		
+		buildModel();
+	}
+	
+	private void buildModel() {		    
+	    // Initialize the model
+		CompetitionPackage.eINSTANCE.eClass();
+		
+        // Retrieve the default factory singleton
+		CompetitionFactory factory = CompetitionFactory.eINSTANCE;
+
+        // Create the content of the model
+		Competition competition = createCompetition(factory);
+		Season season = createSeason(factory, competition);
+		addTeams(factory, competition);
+		addMatchDays(factory, competition, season);
+		addStandings(factory, competition, season);
+		
+		// As of here we preparing to save the model content
+        // Register the XMI resource factory for the .xmi extension
+        Resource.Factory.Registry reg = Resource.Factory.Registry.INSTANCE;
+        Map<String, Object> m = reg.getExtensionToFactoryMap();
+        m.put("xmi", new XMIResourceFactoryImpl());
+
+        // Obtain a new resource set
+        ResourceSet resSet = new ResourceSetImpl();
+
+        // create a resource
+        Resource resource = resSet.createResource(URI.createURI("../TDT4250.project.samples/test.xmi"));
+        
+        // Get the first model element and cast it to the right type, in my
+        // example everything is hierarchical included in this first node
+        resource.getContents().add(competition);
+
+        // Save the content
+        try {
+            resource.save(Collections.EMPTY_MAP);
+        } catch (IOException e) {
+            System.out.println("Error trying to save the content");
+            e.printStackTrace();
+        }
+	}
 	
 	private Date parseDate(String date) {
 		DateFormat format = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'");
@@ -51,7 +113,7 @@ public class Mapper {
 		return parsedDate;
 	}
 
-	private Competition createCompetition(CompetitionM competitionM, CompetitionFactory factory) {
+	private Competition createCompetition(CompetitionFactory factory) {
 		Competition competition = factory.createCompetition();
 		competition.setId(competitionM.id);
 		competition.setName(competitionM.name);
@@ -62,7 +124,7 @@ public class Mapper {
 		return competition;
 	}
 
-	private void addTeams(TeamM teamM, CompetitionFactory factory, Competition competition) {
+	private void addTeams(CompetitionFactory factory, Competition competition) {
 		// Add teams
 		for(int i = 0; i < teamM.teams.size(); i++) {
 			Team team = factory.createTeam();
@@ -76,7 +138,7 @@ public class Mapper {
 		}
 	}
 
-	private void addStandings(StandingM standingM, CompetitionFactory factory, Competition competition,
+	private void addStandings(CompetitionFactory factory, Competition competition,
 			Season season) {
 		// Add standings
 		Standing standing = factory.createStanding();
@@ -102,21 +164,21 @@ public class Mapper {
 		competition.setCurrentSeason(season);
 	}
 	
-	private void addMatchDays(MatchM matchM, CompetitionFactory factory, Competition competition, Season season) {
+	private void addMatchDays(CompetitionFactory factory, Competition competition, Season season) {
 		int prevmd = 0;
 		for(int i = 0; i < matchM.matches.size(); i++) {
 			int md = matchM.matches.get(i).matchday;
 			if(md == prevmd + 1) {
 				Matchday matchday = factory.createMatchday();
 				matchday.setMatchday(md);
-				addMatches(matchM, factory, competition, matchday);
+				addMatches(factory, competition, matchday);
 				season.getMatchdays().add(matchday);
 			}
 			prevmd = md;
 		}
 	}
 	
-	private void addMatches(MatchM matchM, CompetitionFactory factory, Competition competition, Matchday matchday){
+	private void addMatches(CompetitionFactory factory, Competition competition, Matchday matchday){
 		// Add matches
 		for(int i = 0; i < matchM.matches.size(); i++) {
 			if(matchM.matches.get(i).matchday == matchday.getMatchday()) {
@@ -141,14 +203,13 @@ public class Mapper {
 						match.setAwayTeam(competition.getTeams().get(j));
 					}
 				}
-				
 				matchday.getMatches().add(match);
 			}
 			
 		}
 	}
 	
-	private Season createSeason(CompetitionM competitionM, CompetitionFactory factory, Competition competition) {
+	private Season createSeason(CompetitionFactory factory, Competition competition) {
 		Season season = factory.createSeason();
 		season.setId(competitionM.currentSeason.id);
 		season.setStartDate(new Date());
@@ -158,62 +219,31 @@ public class Mapper {
 		return season;
 	}
 	
-	public void buildModel(String competitionUrl, String teamsUrl, String matchesUrl, String standingUrl) {
-		try {
-			
-			// Initialize object models
-		    CompetitionM competitionM = objectMapper.readValue(new URL(competitionUrl), CompetitionM.class);
-		    TeamM teamM = objectMapper.readValue(new URL(teamsUrl), TeamM.class);
-		    MatchM matchM = objectMapper.readValue(new URL(matchesUrl), MatchM.class);
-		    StandingM standingM = objectMapper.readValue(new URL(standingUrl), StandingM.class);
-		    
-		    // Print teams
-		    System.out.print(printTeams(competitionM, teamM, matchM, standingM));
-		    
-		    // Initialize the model
-			CompetitionPackage.eINSTANCE.eClass();
-			
-	        // Retrieve the default factory singleton
-			CompetitionFactory factory = CompetitionFactory.eINSTANCE;
-
-	        // Create the content of the model
-			Competition competition = createCompetition(competitionM, factory);
-			Season season = createSeason(competitionM, factory, competition);
-			addTeams(teamM, factory, competition);
-			addMatchDays(matchM, factory, competition, season);
-			addStandings(standingM, factory, competition, season);
-			
-			// As of here we preparing to save the model content
-	        // Register the XMI resource factory for the .xmi extension
-	        Resource.Factory.Registry reg = Resource.Factory.Registry.INSTANCE;
-	        Map<String, Object> m = reg.getExtensionToFactoryMap();
-	        m.put("xmi", new XMIResourceFactoryImpl());
-
-	        // Obtain a new resource set
-	        ResourceSet resSet = new ResourceSetImpl();
-
-	        // create a resource
-	        Resource resource = resSet.createResource(URI.createURI("../TDT4250.project.samples/test.xmi"));
-	        
-	        // Get the first model element and cast it to the right type, in my
-	        // example everything is hierarchical included in this first node
-	        resource.getContents().add(competition);
-
-	        // Save the content
-	        try {
-	            resource.save(Collections.EMPTY_MAP);
-	        } catch (IOException e) {
-	            System.out.println("Error trying to save the content");
-	            e.printStackTrace();
-	        }
-	        
-		} catch (IOException e) {
-			System.out.println("Error trying map JSON to model");
-		    e.printStackTrace();
-		}
-		
-	}
 	
+	/*
+	@Override
+	public String toString() {
+		String strBuilder = "";
+		strBuilder += competition.name + ":\n";
+	    
+	    // Add teams to print string
+	    for(int i = 0; i < team.teams.size(); i++) strBuilder += team.teams.get(i).name + "\n";
+	    
+	    
+	    // Add matches to print string
+	    strBuilder += "\nMatches:\n";
+	    for(int i = 0; i < match.matches.size(); i++) 
+	    	strBuilder += match.matches.get(i).homeTeam.name + " ----VS---- " + match.matches.get(i).awayTeam.name + "\n";
+	    
+	    // Add standing to print string
+	    strBuilder += "\nStanding:\n";
+	    for(int i = 0; i < standing.standings.get(0).table.size(); i++) 
+	    	strBuilder += standing.standings.get(0).table.get(i).position + ": " + standing.standings.get(0).table.get(i).team.name + "\n";
+	    
+		return strBuilder;
+		return "Mapper [objectMapper=" + objectMapper + "]";
+	}
+
 	public String printTeams(CompetitionM competition, TeamM team, MatchM match, StandingM standing) {
 		String strBuilder = "";
 		strBuilder += competition.name + ":\n";
@@ -233,6 +263,6 @@ public class Mapper {
 	    	strBuilder += standing.standings.get(0).table.get(i).position + ": " + standing.standings.get(0).table.get(i).team.name + "\n";
 	    
 		return strBuilder;
-	}
+	}*/
 }
 

@@ -8,7 +8,7 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.util.Scanner;
 
-public class ApiFetch {
+public class ApiFetcher {
 	private static final String TOKEN = "a846dade319c414aae66fe002ef089cd";
 	
 	private static String fetchData(String url) throws MalformedURLException, IOException {

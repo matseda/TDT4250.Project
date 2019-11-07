@@ -11,10 +11,13 @@ public class Main {
 
 
 	public static void main(String[] args) {
-		Mapper mapper = new Mapper();
+		// Fetch data from the API
 		
-		// Map from JSON to Ecore
-		mapper.buildModel(COMPETITION_URL, TEAMS_URL, MATCHES_URL, STANDINGS_URL);
+		// Init mapper and build model. Map from JSON to Ecore model
+		Mapper mapper = new Mapper(COMPETITION_URL, TEAMS_URL, MATCHES_URL, STANDINGS_URL);
+		mapper.toString();
+		
+		// mapper.buildModel(COMPETITION_URL, TEAMS_URL, MATCHES_URL, STANDINGS_URL);
 
 	}
 
