@@ -1,4 +1,4 @@
-package jsonModel;
+package json.model;
 
 public class Score {
 	public String winner;

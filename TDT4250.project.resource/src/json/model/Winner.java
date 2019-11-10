@@ -1,4 +1,4 @@
-package jsonModel;
+package json.model;
 
 public class Winner {
 	public int id;
