@@ -351,11 +351,695 @@
   </diagram:DSemanticDiagram>
   <tree:DTree uid="_8sjPsP8aEem1P43S2USwXw" name="new Test Tree">
     <target xmi:type="competition:Competition" href="sample.xmi#/"/>
-    <ownedTreeItems xmi:type="tree:DTreeItem" uid="_8tPzQP8aEem1P43S2USwXw">
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="_0xQ1sAbREeqkO6SD5sTA9Q" name="Premier League" expanded="true">
       <target xmi:type="competition:Season" href="sample.xmi#//@currentSeason"/>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_0xamsAbREeqkO6SD5sTA9Q" name="Matchday 1">
+        <target xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.0"/>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_GbA6oAbSEeqkO6SD5sTA9Q" name="A:    1   Norwich City FC(NOR)&#xA;H:    4   Liverpool FC(LIV)">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.0/@matches.0"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.0/@matches.0"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_GbA6oQbSEeqkO6SD5sTA9Q" labelSize="5"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_EAdKcAbXEeqkO6SD5sTA9Q" name="A:    5   Manchester City FC(MCI)&#xA;H:    0   West Ham United FC(WHU)">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.0/@matches.1"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.0/@matches.1"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_EAdKcQbXEeqkO6SD5sTA9Q" labelSize="5"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_EAdxgQbXEeqkO6SD5sTA9Q" name="A:    0   Southampton FC(SOU)&#xA;H:    3   Burnley FC(BUR)">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.0/@matches.2"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.0/@matches.2"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_EAdxggbXEeqkO6SD5sTA9Q" labelSize="5"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_EAdxhAbXEeqkO6SD5sTA9Q" name="A:    0   Everton FC(EVE)&#xA;H:    0   Crystal Palace FC(CRY)">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.0/@matches.3"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.0/@matches.3"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_EAdxhQbXEeqkO6SD5sTA9Q" labelSize="5"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_EAdxhwbXEeqkO6SD5sTA9Q" name="A:    3   Brighton &amp; Hove Albion FC(BHA)&#xA;H:    0   Watford FC(WAT)">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.0/@matches.4"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.0/@matches.4"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_EAdxiAbXEeqkO6SD5sTA9Q" labelSize="5"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_EAdxigbXEeqkO6SD5sTA9Q" name="A:    1   Sheffield United FC(SHE)&#xA;H:    1   AFC Bournemouth(BOU)">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.0/@matches.5"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.0/@matches.5"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_EAdxiwbXEeqkO6SD5sTA9Q" labelSize="5"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_EAeYkAbXEeqkO6SD5sTA9Q" name="A:    1   Aston Villa FC(AST)&#xA;H:    3   Tottenham Hotspur FC(TOT)">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.0/@matches.6"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.0/@matches.6"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_EAeYkQbXEeqkO6SD5sTA9Q" labelSize="5"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_EAeYkwbXEeqkO6SD5sTA9Q" name="A:    0   Wolverhampton Wanderers FC(WOL)&#xA;H:    0   Leicester City FC(LEI)">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.0/@matches.7"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.0/@matches.7"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_EAeYlAbXEeqkO6SD5sTA9Q" labelSize="5"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_EAeYlgbXEeqkO6SD5sTA9Q" name="A:    1   Arsenal FC(ARS)&#xA;H:    0   Newcastle United FC(NEW)">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.0/@matches.8"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.0/@matches.8"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_EAeYlwbXEeqkO6SD5sTA9Q" labelSize="5"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_EAeYmQbXEeqkO6SD5sTA9Q" name="A:    0   Chelsea FC(CHE)&#xA;H:    4   Manchester United FC(MUN)">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.0/@matches.9"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.0/@matches.9"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_EAeYmgbXEeqkO6SD5sTA9Q" labelSize="5"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <semanticElements xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.0"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_0xamsQbREeqkO6SD5sTA9Q"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2NotEAbREeqkO6SD5sTA9Q" name="Matchday 2">
+        <target xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.1"/>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_GbA6ogbSEeqkO6SD5sTA9Q" name="A:    1   Burnley FC(BUR)&#xA;H:    2   Arsenal FC(ARS)">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.1/@matches.0"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.1/@matches.0"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_GbA6owbSEeqkO6SD5sTA9Q" labelSize="5"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_jTyqgAbXEeqkO6SD5sTA9Q" name="A:    2   AFC Bournemouth(BOU)&#xA;H:    1   Aston Villa FC(AST)">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.1/@matches.1"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.1/@matches.1"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_jTyqgQbXEeqkO6SD5sTA9Q" labelSize="5"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_jTyqgwbXEeqkO6SD5sTA9Q" name="A:    0   Watford FC(WAT)&#xA;H:    1   Everton FC(EVE)">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.1/@matches.2"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.1/@matches.2"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_jTyqhAbXEeqkO6SD5sTA9Q" labelSize="5"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_jTyqhgbXEeqkO6SD5sTA9Q" name="A:    1   Newcastle United FC(NEW)&#xA;H:    3   Norwich City FC(NOR)">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.1/@matches.3"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.1/@matches.3"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_jTyqhwbXEeqkO6SD5sTA9Q" labelSize="5"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_jTzRkAbXEeqkO6SD5sTA9Q" name="A:    2   Liverpool FC(LIV)&#xA;H:    1   Southampton FC(SOU)">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.1/@matches.4"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.1/@matches.4"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_jTzRkQbXEeqkO6SD5sTA9Q" labelSize="5"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_jTzRkwbXEeqkO6SD5sTA9Q" name="A:    1   West Ham United FC(WHU)&#xA;H:    1   Brighton &amp; Hove Albion FC(BHA)">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.1/@matches.5"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.1/@matches.5"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_jTzRlAbXEeqkO6SD5sTA9Q" labelSize="5"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_jTzRlgbXEeqkO6SD5sTA9Q" name="A:    2   Tottenham Hotspur FC(TOT)&#xA;H:    2   Manchester City FC(MCI)">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.1/@matches.6"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.1/@matches.6"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_jTzRlwbXEeqkO6SD5sTA9Q" labelSize="5"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_jTzRmQbXEeqkO6SD5sTA9Q" name="A:    0   Crystal Palace FC(CRY)&#xA;H:    1   Sheffield United FC(SHE)">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.1/@matches.7"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.1/@matches.7"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_jTzRmgbXEeqkO6SD5sTA9Q" labelSize="5"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_jTzRnAbXEeqkO6SD5sTA9Q" name="A:    1   Leicester City FC(LEI)&#xA;H:    1   Chelsea FC(CHE)">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.1/@matches.8"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.1/@matches.8"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_jTzRnQbXEeqkO6SD5sTA9Q" labelSize="5"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_jTzRnwbXEeqkO6SD5sTA9Q" name="A:    1   Manchester United FC(MUN)&#xA;H:    1   Wolverhampton Wanderers FC(WOL)">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.1/@matches.9"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.1/@matches.9"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_jTzRoAbXEeqkO6SD5sTA9Q" labelSize="5"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <semanticElements xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.1"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2NotEQbREeqkO6SD5sTA9Q"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2NotEwbREeqkO6SD5sTA9Q" name="Matchday 3">
+        <target xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.2"/>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_GbA6pAbSEeqkO6SD5sTA9Q">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.2/@matches.0"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.2/@matches.0"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_GbA6pQbSEeqkO6SD5sTA9Q" labelColor="209,209,209" backgroundColor="209,209,209"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <semanticElements xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.2"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2NotFAbREeqkO6SD5sTA9Q"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2NotFgbREeqkO6SD5sTA9Q" name="Matchday 4">
+        <target xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.3"/>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_GbA6pgbSEeqkO6SD5sTA9Q">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.3/@matches.0"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.3/@matches.0"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_GbA6pwbSEeqkO6SD5sTA9Q" labelColor="209,209,209" backgroundColor="209,209,209"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <semanticElements xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.3"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2NotFwbREeqkO6SD5sTA9Q"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2NotGQbREeqkO6SD5sTA9Q" name="Matchday 5">
+        <target xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.4"/>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_GbA6qAbSEeqkO6SD5sTA9Q" name="3   Liverpool FC(LIV)&#xA;1   Newcastle United FC(NEW)">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.4/@matches.0"/>
+          <ownedTreeItems xmi:type="tree:DTreeItem" uid="_5b__IAbUEeqkO6SD5sTA9Q">
+            <target xmi:type="competition:Team" href="sample.xmi#//@teams.4"/>
+            <semanticElements xmi:type="competition:Team" href="sample.xmi#//@teams.4"/>
+            <ownedStyle xmi:type="tree:TreeItemStyle" uid="_5b__IQbUEeqkO6SD5sTA9Q" labelColor="209,209,209" backgroundColor="209,209,209"/>
+            <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']/@subItemMappings[name='']"/>
+          </ownedTreeItems>
+          <ownedTreeItems xmi:type="tree:DTreeItem" uid="_YJdyAAbVEeqkO6SD5sTA9Q">
+            <target xmi:type="competition:Team" href="sample.xmi#//@teams.4"/>
+            <semanticElements xmi:type="competition:Team" href="sample.xmi#//@teams.4"/>
+            <ownedStyle xmi:type="tree:TreeItemStyle" uid="_YJdyAQbVEeqkO6SD5sTA9Q" labelColor="209,209,209" backgroundColor="209,209,209"/>
+            <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']/@subItemMappings[name='HomeTeam']"/>
+          </ownedTreeItems>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.4/@matches.0"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_GbA6qQbSEeqkO6SD5sTA9Q" labelSize="5"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_4BAdQAbTEeqkO6SD5sTA9Q" name="2   Wolverhampton Wanderers FC(WOL)&#xA;5   Chelsea FC(CHE)" expanded="true">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.4/@matches.1"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.4/@matches.1"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_4BAdQQbTEeqkO6SD5sTA9Q" labelSize="5"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_4BBEUAbTEeqkO6SD5sTA9Q" name="4   Tottenham Hotspur FC(TOT)&#xA;0   Crystal Palace FC(CRY)" expanded="true">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.4/@matches.2"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.4/@matches.2"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_4BBrYAbTEeqkO6SD5sTA9Q" labelSize="5"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_4BBrYgbTEeqkO6SD5sTA9Q" name="1   Manchester United FC(MUN)&#xA;0   Leicester City FC(LEI)" expanded="true">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.4/@matches.3"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.4/@matches.3"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_4BBrYwbTEeqkO6SD5sTA9Q" labelSize="5"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_4BBrZQbTEeqkO6SD5sTA9Q" name="0   Sheffield United FC(SHE)&#xA;1   Southampton FC(SOU)" expanded="true">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.4/@matches.4"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.4/@matches.4"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_4BBrZgbTEeqkO6SD5sTA9Q" labelSize="5"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_4BCScQbTEeqkO6SD5sTA9Q" name="1   Brighton &amp; Hove Albion FC(BHA)&#xA;1   Burnley FC(BUR)" expanded="true">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.4/@matches.5"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.4/@matches.5"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_4BCScgbTEeqkO6SD5sTA9Q" labelSize="5"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_4BDgkAbTEeqkO6SD5sTA9Q" name="3   Norwich City FC(NOR)&#xA;2   Manchester City FC(MCI)" expanded="true">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.4/@matches.6"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.4/@matches.6"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_4BDgkQbTEeqkO6SD5sTA9Q" labelSize="5"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_4BDgkwbTEeqkO6SD5sTA9Q" name="3   AFC Bournemouth(BOU)&#xA;1   Everton FC(EVE)" expanded="true">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.4/@matches.7"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.4/@matches.7"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_4BDglAbTEeqkO6SD5sTA9Q" labelSize="5"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_4BDglgbTEeqkO6SD5sTA9Q" name="2   Watford FC(WAT)&#xA;2   Arsenal FC(ARS)" expanded="true">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.4/@matches.8"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.4/@matches.8"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_4BDglwbTEeqkO6SD5sTA9Q" labelSize="5"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_4BDgmQbTEeqkO6SD5sTA9Q" name="0   Aston Villa FC(AST)&#xA;0   West Ham United FC(WHU)" expanded="true">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.4/@matches.9"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.4/@matches.9"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_4BDgmgbTEeqkO6SD5sTA9Q" labelSize="5"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <semanticElements xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.4"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2NotGgbREeqkO6SD5sTA9Q"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2NotHAbREeqkO6SD5sTA9Q" name="Matchday 6">
+        <target xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.5"/>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_GbA6qgbSEeqkO6SD5sTA9Q" name="Southampton FC(SOU)&#xA;AFC Bournemouth(BOU)">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.5/@matches.0"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.5/@matches.0"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_GbA6qwbSEeqkO6SD5sTA9Q"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_S3yAgAbWEeqkO6SD5sTA9Q" name="Leicester City FC(LEI)&#xA;Tottenham Hotspur FC(TOT)">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.5/@matches.1"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.5/@matches.1"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_S3yAgQbWEeqkO6SD5sTA9Q"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_S3ynkAbWEeqkO6SD5sTA9Q" name="Manchester City FC(MCI)&#xA;Watford FC(WAT)">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.5/@matches.2"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.5/@matches.2"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_S3ynkQbWEeqkO6SD5sTA9Q"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_S3ynkwbWEeqkO6SD5sTA9Q" name="Everton FC(EVE)&#xA;Sheffield United FC(SHE)">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.5/@matches.3"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.5/@matches.3"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_S3ynlAbWEeqkO6SD5sTA9Q"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_S3ynlgbWEeqkO6SD5sTA9Q" name="Burnley FC(BUR)&#xA;Norwich City FC(NOR)">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.5/@matches.4"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.5/@matches.4"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_S3ynlwbWEeqkO6SD5sTA9Q"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_S3ynmQbWEeqkO6SD5sTA9Q" name="Newcastle United FC(NEW)&#xA;Brighton &amp; Hove Albion FC(BHA)">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.5/@matches.5"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.5/@matches.5"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_S3ynmgbWEeqkO6SD5sTA9Q"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_S3ynnAbWEeqkO6SD5sTA9Q" name="West Ham United FC(WHU)&#xA;Manchester United FC(MUN)">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.5/@matches.6"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.5/@matches.6"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_S3ynnQbWEeqkO6SD5sTA9Q"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_S3ynnwbWEeqkO6SD5sTA9Q" name="Crystal Palace FC(CRY)&#xA;Wolverhampton Wanderers FC(WOL)">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.5/@matches.7"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.5/@matches.7"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_S3ynoAbWEeqkO6SD5sTA9Q"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_S3ynogbWEeqkO6SD5sTA9Q" name="Arsenal FC(ARS)&#xA;Aston Villa FC(AST)">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.5/@matches.8"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.5/@matches.8"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_S3ynowbWEeqkO6SD5sTA9Q"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_S3ynpQbWEeqkO6SD5sTA9Q" name="Chelsea FC(CHE)&#xA;Liverpool FC(LIV)">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.5/@matches.9"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.5/@matches.9"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_S3ynpgbWEeqkO6SD5sTA9Q"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <semanticElements xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.5"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2NotHQbREeqkO6SD5sTA9Q"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2NotHwbREeqkO6SD5sTA9Q" name="Matchday 7">
+        <target xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.6"/>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_GbA6rAbSEeqkO6SD5sTA9Q">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.6/@matches.0"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.6/@matches.0"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_GbA6rQbSEeqkO6SD5sTA9Q" labelColor="209,209,209" backgroundColor="209,209,209"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <semanticElements xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.6"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2NotIAbREeqkO6SD5sTA9Q"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2NotIgbREeqkO6SD5sTA9Q" name="Matchday 8">
+        <target xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.7"/>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_GbA6rgbSEeqkO6SD5sTA9Q">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.7/@matches.0"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.7/@matches.0"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_GbA6rwbSEeqkO6SD5sTA9Q" labelColor="209,209,209" backgroundColor="209,209,209"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <semanticElements xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.7"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2NotIwbREeqkO6SD5sTA9Q"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2NotJQbREeqkO6SD5sTA9Q" name="Matchday 9">
+        <target xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.8"/>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_GbA6sAbSEeqkO6SD5sTA9Q">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.8/@matches.0"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.8/@matches.0"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_GbA6sQbSEeqkO6SD5sTA9Q" labelColor="209,209,209" backgroundColor="209,209,209"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <semanticElements xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.8"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2NotJgbREeqkO6SD5sTA9Q"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2NotKAbREeqkO6SD5sTA9Q" name="Matchday 10">
+        <target xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.9"/>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_GbA6sgbSEeqkO6SD5sTA9Q">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.9/@matches.0"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.9/@matches.0"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_GbA6swbSEeqkO6SD5sTA9Q" labelColor="209,209,209" backgroundColor="209,209,209"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <semanticElements xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.9"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2NotKQbREeqkO6SD5sTA9Q"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2NotKwbREeqkO6SD5sTA9Q" name="Matchday 11">
+        <target xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.10"/>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_GbA6tAbSEeqkO6SD5sTA9Q">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.10/@matches.0"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.10/@matches.0"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_GbA6tQbSEeqkO6SD5sTA9Q" labelColor="209,209,209" backgroundColor="209,209,209"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <semanticElements xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.10"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2NotLAbREeqkO6SD5sTA9Q"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2NotLgbREeqkO6SD5sTA9Q" name="Matchday 12">
+        <target xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.11"/>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_GbA6tgbSEeqkO6SD5sTA9Q">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.11/@matches.0"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.11/@matches.0"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_GbA6twbSEeqkO6SD5sTA9Q" labelColor="209,209,209" backgroundColor="209,209,209"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <semanticElements xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.11"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2NotLwbREeqkO6SD5sTA9Q"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2NotMQbREeqkO6SD5sTA9Q" name="Matchday 13">
+        <target xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.12"/>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_GbA6uAbSEeqkO6SD5sTA9Q">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.12/@matches.0"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.12/@matches.0"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_GbA6uQbSEeqkO6SD5sTA9Q" labelColor="209,209,209" backgroundColor="209,209,209"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <semanticElements xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.12"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2NotMgbREeqkO6SD5sTA9Q"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2NotNAbREeqkO6SD5sTA9Q" name="Matchday 14">
+        <target xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.13"/>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_GbA6ugbSEeqkO6SD5sTA9Q">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.13/@matches.0"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.13/@matches.0"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_GbA6uwbSEeqkO6SD5sTA9Q" labelColor="209,209,209" backgroundColor="209,209,209"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <semanticElements xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.13"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2NotNQbREeqkO6SD5sTA9Q"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2NotNwbREeqkO6SD5sTA9Q" name="Matchday 15">
+        <target xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.14"/>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_GbA6vAbSEeqkO6SD5sTA9Q">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.14/@matches.0"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.14/@matches.0"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_GbA6vQbSEeqkO6SD5sTA9Q" labelColor="209,209,209" backgroundColor="209,209,209"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <semanticElements xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.14"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2NotOAbREeqkO6SD5sTA9Q"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2NotOgbREeqkO6SD5sTA9Q" name="Matchday 16">
+        <target xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.15"/>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_GbA6vgbSEeqkO6SD5sTA9Q">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.15/@matches.0"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.15/@matches.0"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_GbA6vwbSEeqkO6SD5sTA9Q" labelColor="209,209,209" backgroundColor="209,209,209"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <semanticElements xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.15"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2NotOwbREeqkO6SD5sTA9Q"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2NotPQbREeqkO6SD5sTA9Q" name="Matchday 17">
+        <target xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.16"/>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_GbKroAbSEeqkO6SD5sTA9Q">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.16/@matches.0"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.16/@matches.0"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_GbKroQbSEeqkO6SD5sTA9Q" labelColor="209,209,209" backgroundColor="209,209,209"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <semanticElements xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.16"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2NotPgbREeqkO6SD5sTA9Q"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2Nx3AAbREeqkO6SD5sTA9Q" name="Matchday 18">
+        <target xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.17"/>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_GbKrogbSEeqkO6SD5sTA9Q">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.17/@matches.0"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.17/@matches.0"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_GbKrowbSEeqkO6SD5sTA9Q" labelColor="209,209,209" backgroundColor="209,209,209"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <semanticElements xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.17"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2Nx3AQbREeqkO6SD5sTA9Q"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2Nx3AwbREeqkO6SD5sTA9Q" name="Matchday 19">
+        <target xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.18"/>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_GbKrpAbSEeqkO6SD5sTA9Q">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.18/@matches.0"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.18/@matches.0"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_GbKrpQbSEeqkO6SD5sTA9Q" labelColor="209,209,209" backgroundColor="209,209,209"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <semanticElements xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.18"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2Nx3BAbREeqkO6SD5sTA9Q"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2Nx3BgbREeqkO6SD5sTA9Q" name="Matchday 20">
+        <target xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.19"/>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_GbKrpgbSEeqkO6SD5sTA9Q">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.19/@matches.0"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.19/@matches.0"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_GbKrpwbSEeqkO6SD5sTA9Q" labelColor="209,209,209" backgroundColor="209,209,209"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <semanticElements xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.19"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2Nx3BwbREeqkO6SD5sTA9Q"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2Nx3CQbREeqkO6SD5sTA9Q" name="Matchday 21">
+        <target xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.20"/>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_GbKrqAbSEeqkO6SD5sTA9Q">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.20/@matches.0"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.20/@matches.0"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_GbKrqQbSEeqkO6SD5sTA9Q" labelColor="209,209,209" backgroundColor="209,209,209"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <semanticElements xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.20"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2Nx3CgbREeqkO6SD5sTA9Q"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2Nx3DAbREeqkO6SD5sTA9Q" name="Matchday 22">
+        <target xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.21"/>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_GbKrqgbSEeqkO6SD5sTA9Q">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.21/@matches.0"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.21/@matches.0"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_GbKrqwbSEeqkO6SD5sTA9Q" labelColor="209,209,209" backgroundColor="209,209,209"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <semanticElements xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.21"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2Nx3DQbREeqkO6SD5sTA9Q"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2Nx3DwbREeqkO6SD5sTA9Q" name="Matchday 23">
+        <target xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.22"/>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_GbKrrAbSEeqkO6SD5sTA9Q">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.22/@matches.0"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.22/@matches.0"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_GbKrrQbSEeqkO6SD5sTA9Q" labelColor="209,209,209" backgroundColor="209,209,209"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <semanticElements xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.22"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2Nx3EAbREeqkO6SD5sTA9Q"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2Nx3EgbREeqkO6SD5sTA9Q" name="Matchday 24">
+        <target xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.23"/>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_GbKrrgbSEeqkO6SD5sTA9Q">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.23/@matches.0"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.23/@matches.0"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_GbKrrwbSEeqkO6SD5sTA9Q" labelColor="209,209,209" backgroundColor="209,209,209"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <semanticElements xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.23"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2Nx3EwbREeqkO6SD5sTA9Q"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2Nx3FQbREeqkO6SD5sTA9Q" name="Matchday 25">
+        <target xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.24"/>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_GbKrsAbSEeqkO6SD5sTA9Q">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.24/@matches.0"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.24/@matches.0"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_GbKrsQbSEeqkO6SD5sTA9Q" labelColor="209,209,209" backgroundColor="209,209,209"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <semanticElements xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.24"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2Nx3FgbREeqkO6SD5sTA9Q"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2Nx3GAbREeqkO6SD5sTA9Q" name="Matchday 26">
+        <target xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.25"/>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_GbKrsgbSEeqkO6SD5sTA9Q">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.25/@matches.0"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.25/@matches.0"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_GbKrswbSEeqkO6SD5sTA9Q" labelColor="209,209,209" backgroundColor="209,209,209"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <semanticElements xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.25"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2Nx3GQbREeqkO6SD5sTA9Q"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2Nx3GwbREeqkO6SD5sTA9Q" name="Matchday 27">
+        <target xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.26"/>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_GbKrtAbSEeqkO6SD5sTA9Q">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.26/@matches.0"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.26/@matches.0"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_GbKrtQbSEeqkO6SD5sTA9Q" labelColor="209,209,209" backgroundColor="209,209,209"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <semanticElements xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.26"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2Nx3HAbREeqkO6SD5sTA9Q"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2Nx3HgbREeqkO6SD5sTA9Q" name="Matchday 28">
+        <target xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.27"/>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_GbKrtgbSEeqkO6SD5sTA9Q">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.27/@matches.0"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.27/@matches.0"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_GbKrtwbSEeqkO6SD5sTA9Q" labelColor="209,209,209" backgroundColor="209,209,209"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <semanticElements xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.27"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2Nx3HwbREeqkO6SD5sTA9Q"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2Nx3IQbREeqkO6SD5sTA9Q" name="Matchday 29">
+        <target xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.28"/>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_GbKruAbSEeqkO6SD5sTA9Q">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.28/@matches.0"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.28/@matches.0"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_GbKruQbSEeqkO6SD5sTA9Q" labelColor="209,209,209" backgroundColor="209,209,209"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <semanticElements xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.28"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2Nx3IgbREeqkO6SD5sTA9Q"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2Nx3JAbREeqkO6SD5sTA9Q" name="Matchday 30">
+        <target xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.29"/>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_GbKrugbSEeqkO6SD5sTA9Q">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.29/@matches.0"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.29/@matches.0"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_GbKruwbSEeqkO6SD5sTA9Q" labelColor="209,209,209" backgroundColor="209,209,209"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <semanticElements xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.29"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2Nx3JQbREeqkO6SD5sTA9Q"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2Nx3JwbREeqkO6SD5sTA9Q" name="Matchday 31">
+        <target xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.30"/>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_GbKrvAbSEeqkO6SD5sTA9Q">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.30/@matches.0"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.30/@matches.0"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_GbKrvQbSEeqkO6SD5sTA9Q" labelColor="209,209,209" backgroundColor="209,209,209"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <semanticElements xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.30"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2Nx3KAbREeqkO6SD5sTA9Q"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2Nx3KgbREeqkO6SD5sTA9Q" name="Matchday 32">
+        <target xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.31"/>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_GbKrvgbSEeqkO6SD5sTA9Q">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.31/@matches.0"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.31/@matches.0"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_GbKrvwbSEeqkO6SD5sTA9Q" labelColor="209,209,209" backgroundColor="209,209,209"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <semanticElements xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.31"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2Nx3KwbREeqkO6SD5sTA9Q"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2Nx3LQbREeqkO6SD5sTA9Q" name="Matchday 33">
+        <target xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.32"/>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_GbKrwAbSEeqkO6SD5sTA9Q">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.32/@matches.0"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.32/@matches.0"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_GbKrwQbSEeqkO6SD5sTA9Q" labelColor="209,209,209" backgroundColor="209,209,209"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <semanticElements xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.32"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2Nx3LgbREeqkO6SD5sTA9Q"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2Nx3MAbREeqkO6SD5sTA9Q" name="Matchday 34">
+        <target xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.33"/>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_GbT1kAbSEeqkO6SD5sTA9Q">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.33/@matches.0"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.33/@matches.0"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_GbT1kQbSEeqkO6SD5sTA9Q" labelColor="209,209,209" backgroundColor="209,209,209"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <semanticElements xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.33"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2Nx3MQbREeqkO6SD5sTA9Q"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2Nx3MwbREeqkO6SD5sTA9Q" name="Matchday 35">
+        <target xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.34"/>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_GbT1kgbSEeqkO6SD5sTA9Q">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.34/@matches.0"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.34/@matches.0"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_GbT1kwbSEeqkO6SD5sTA9Q" labelColor="209,209,209" backgroundColor="209,209,209"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <semanticElements xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.34"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2Nx3NAbREeqkO6SD5sTA9Q"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2Nx3NgbREeqkO6SD5sTA9Q" name="Matchday 36">
+        <target xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.35"/>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_GbT1lAbSEeqkO6SD5sTA9Q">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.35/@matches.0"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.35/@matches.0"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_GbT1lQbSEeqkO6SD5sTA9Q" labelColor="209,209,209" backgroundColor="209,209,209"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <semanticElements xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.35"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2Nx3NwbREeqkO6SD5sTA9Q"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2Nx3OQbREeqkO6SD5sTA9Q" name="Matchday 37">
+        <target xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.36"/>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_GbT1lgbSEeqkO6SD5sTA9Q">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.36/@matches.0"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.36/@matches.0"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_GbT1lwbSEeqkO6SD5sTA9Q" labelColor="209,209,209" backgroundColor="209,209,209"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <semanticElements xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.36"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2Nx3OgbREeqkO6SD5sTA9Q"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2Nx3PAbREeqkO6SD5sTA9Q" name="Matchday 38">
+        <target xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.37"/>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_GbT1mAbSEeqkO6SD5sTA9Q">
+          <target xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.37/@matches.0"/>
+          <semanticElements xmi:type="competition:Match" href="sample.xmi#//@currentSeason/@matchdays.37/@matches.0"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_GbT1mQbSEeqkO6SD5sTA9Q" labelColor="209,209,209" backgroundColor="209,209,209"/>
+          <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']/@subItemMappings[name='Matches']"/>
+        </ownedTreeItems>
+        <semanticElements xmi:type="competition:Matchday" href="sample.xmi#//@currentSeason/@matchdays.37"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2Nx3PQbREeqkO6SD5sTA9Q"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']/@subItemMappings[name='Matchday']"/>
+      </ownedTreeItems>
       <semanticElements xmi:type="competition:Season" href="sample.xmi#//@currentSeason"/>
-      <ownedStyle xmi:type="tree:TreeItemStyle" uid="_8td1sP8aEem1P43S2USwXw"/>
-      <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='']"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="_0xQ1sQbREeqkO6SD5sTA9Q"/>
+      <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']/@subItemMappings[name='Season']"/>
     </ownedTreeItems>
     <description xmi:type="description_2:TreeDescription" href="platform:/resource/TDT4250.project.design/description/project.odesign#//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Test%20Tree']"/>
   </tree:DTree>
