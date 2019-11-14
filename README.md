@@ -51,6 +51,8 @@ Opening the view, with the possibilty for editing can be done like this.
 
 TODO: Describe the model
 
+![Image of the Ecore model](https://github.com/matseda/TDT4250.Project/blob/master/images/modelDiagram.png)
+
 ### Constraints
 
 TODO: Write constraints in model here
