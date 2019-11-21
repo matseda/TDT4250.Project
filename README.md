@@ -67,7 +67,7 @@ This project includes different viewpoints to visualize data. Description and im
 One of the main features of the Sirius framework is the ability to create diagrams. Three diagrams: Season, match and team have been developed. Each including different features from the diagram tool.
 
 - Season: This diagram visualizes all the matchdays in a season split into two categories, completed matches(results) and future matches (fixtures). These categories are represented using two layers, making it possible to view only result, fixtures or both depending on what you want. In addition to this, filter functions has also been added. Two filters "Liverpool matches" and "No draws" makes it possible to hide all matches which not correspond to these facts. The filters and pages can be selected using the two button shown below in Eclipse, the left button selects pages and the right one selects filters.
-<img style="display: block; width: 100px;" alt="Pages and filtering" src="./images/Filter_layer_buttons.png">
+<img style="display: block;"  width="100px" alt="Pages and filtering" src="./images/Filter_layer_buttons.png">
 
 The filters can be applied individually or together as illustrated in the figures below.
   - All matches <img style="display: block; width: 300px;" alt="All matches season diagram" src="./images/Season_view.png">
