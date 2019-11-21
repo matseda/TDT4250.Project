@@ -58,7 +58,7 @@ One competition contains multiple teams and the current season.
 The season contains a standing of positions of the teams and multiple matchdays. A match day contains multiple matches which all contains a score and two teams; homeTeam and awayTeam. 
 
 The model also contains two Enums; status of a match and winner of the match.
-<img style="display: block;" width="400" alt="Image of the Ecore model" src="./images/Model_diagram.png">
+<img style="display: block;" width="600" alt="Image of the Ecore model" src="./images/Model_diagram.png">
 
 ## Viewpoints
 This project includes different viewpoints to visualize data. Description and images of these views will be presented below.
