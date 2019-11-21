@@ -1,6 +1,6 @@
 # Football result - Advanced Software Engineering (TDT4250) semester project
 
-_Members: Mats Davidsen, Henrik Finnerud Larsen, Siri Mykland and Mats Tyldum_
+_Members: Mats Tyldum, Henrik Finnerud Larsen, Mats Davidsen and Siri Mykland_
 
 ## Description
 
@@ -58,10 +58,14 @@ This project includes different viewpoints to visualize data. Description and im
 ### Diagrams
 One of the main features of the Sirius framework is the ability to create diagrams. Three diagrams: Season, match and team have been developed. Each including different features from the diagram tool.
 
-- Season: This diagram visualizes all the matchdays in a season split into two categories, completed matches(results) and future matches (fixtures). These catogories are split into two layers in the diagram which makes it possible to view only result, fixtures or both depending on what you want. In addition to this, a filter functions has also been incorporated. Two filters "Liverpool matches" and "No draws" make it possible to hide all matches which not correspond to these facts. The filteres can be applied individually or together.
-  - Features: "Layers" and "Filter"
+- Season: This diagram visualizes all the matchdays in a season split into two categories, completed matches(results) and future matches (fixtures). These categories are represented using two layers, making it possible to view only result, fixtures or both depending on what you want. In addition to this, a filter functions has also been added. Two filters "Liverpool matches" and "No draws" makes it possible to hide all matches which not correspond to these facts. The filters can be applied individually or together as illustrated in the figures below.
+  - All matches ![All matches season diagram](./images/Season_view.png)
+  - Liverpool matches ![Liverpool matches season diagram](./images/Season_liverpool_view.png)
+  - Matches with no draws ![No draws season diagram](./images/Season_no_draws_view.png)
 - Match: The match diagram lists information of each match.
-- Team: The team diagram lists all information about a team.
+  ![Liverpool match diagram](./images/Matches_Liverpool_view.png)
+- Team: The team diagram lists all information about a team together with season stats. The season stats are calculated using OCL expressions.
+  ![No draws season diagram](./images/Liverpool_team_view.png)
 
 ### Navigation between diagrams
 It is possible to navigate between diagrams and create new ones if they don't exist. Navigation is done using the double-clicking and it is possible to navigate between:
