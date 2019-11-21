@@ -68,9 +68,11 @@ One of the main features of the Sirius framework is the ability to create diagra
   ![No draws season diagram](./images/Liverpool_team_view.png)
 
 ### Navigation between diagrams
-It is possible to navigate between diagrams and create new ones if they don't exist. Navigation is done using the double-clicking and it is possible to navigate between:
-- From season to match diagram: Double click on a match to view the corresponding match diagram.
-- From match to team diagram: Double click "view home team" or "view away team" to navigate to the corresponding teams diagram
+It is possible to navigate between diagrams and create new ones if they don't exist by double-clicking on different nodes. Navigation is possible:
+- From season to match diagram. Double click on a match to view the corresponding match diagram.
+- From match to team diagram. Double click "view home team" or "view away team" to navigate to the corresponding teams diagram
+If a diagram already exist you will end up in that view. If not a popup will prompt you to create a new one.
+![Popup new diagram](./images/New_diagram_popup.png)
 
 ### Table
 The Season table is an Edition Table, where each line represent an element, and each column represent some  property of that element. The Season Table visualizes the standing of the competition, using  table features such as: 
