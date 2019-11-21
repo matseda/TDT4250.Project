@@ -75,19 +75,21 @@ If a diagram already exist you will end up in that view. If not a popup will pro
 ![Popup new diagram](./images/New_diagram_popup.png)
 
 ### Table
-The Season table is an Edition Table, where each line represent an element, and each column represent some  property of that element. The Season Table visualizes the standing of the competition, using  table features such as: 
+The Season table is an Edition Table representing the Standings of the current season, where each line represent a position in the standings and each column represents a property of that position. The table uses features such as:
 - Property views for position: Pointing to the Position property view.
-- Conditional styles for Premier League:
-    - visualizes what teams qualifies for promotions 
-    - what teams relegates.
-    - what team qualifies for Europa League
+- Conditional styles for Premier League using OCL:
+    - Visualize teams qualified for Champions League (top 4) with a green background. 
+    - Visualize teams qualified for Europa League (position 5) with a blue background.
+    - Visualize teams that are beein relegated (bottom 3) with a red background.
+    - Different color for positive and negative goal difference: Red for negative and green for positive.
+![Image of Season Table View](./images/Table_view.png)
 
 ### Tree
 The Tree View representation provides a hierarchical viewpoint of the Football Season. Each node in the tree represents an element, with Season being the root node. 
 - Season
   - Matchdays
     - Match details
-![Image of Season Tree View](https://github.com/matseda/TDT4250.Project/blob/master/images/Tree_view.png)
+![Image of Season Tree View](./images/Tree_view.png)
 
 ## Property Views 
 The Property View of for position show a position as three pages.
