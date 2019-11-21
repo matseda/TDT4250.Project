@@ -1,37 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:description_2="http://www.eclipse.org/sirius/tree/description/1.0.0" xmlns:description_3="http://www.eclipse.org/sirius/table/description/1.1.0" xmlns:filter="http://www.eclipse.org/sirius/diagram/description/filter/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" name="project" version="12.0.0.2017041100">
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/table/description/1.1.0" xmlns:description_2="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:description_3="http://www.eclipse.org/sirius/tree/description/1.0.0" xmlns:filter="http://www.eclipse.org/sirius/diagram/description/filter/1.1.0" xmlns:properties="http://www.eclipse.org/sirius/properties/1.0.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="project" version="12.0.0.2017041100">
   <ownedViewpoints name="competitions" modelFileExtension="">
-    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Test Diagram" domainClass="competition::Competition" enablePopupBars="true">
-      <defaultLayer name="Default">
-        <containerMappings name="Standing Container" domainClass="competition::Standing" childrenPresentation="HorizontalStack">
-          <subContainerMappings name="Position Container" semanticCandidatesExpression="feature:positions" domainClass="competition::Positon" childrenPresentation="HorizontalStack">
-            <subNodeMappings name="Team Node" semanticCandidatesExpression="feature:team" domainClass="competition::Team">
-              <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-              </style>
-            </subNodeMappings>
-          </subContainerMappings>
-        </containerMappings>
-      </defaultLayer>
-    </ownedRepresentations>
-    <ownedRepresentations xsi:type="description_2:TreeDescription" name="Test Tree" domainClass="competition::Competition">
-      <subItemMappings domainClass="competition::Season" semanticCandidatesExpression="feature:currentSeason">
-        <defaultStyle>
-          <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-        </defaultStyle>
-      </subItemMappings>
-    </ownedRepresentations>
-    <ownedRepresentations xsi:type="description_3:EditionTableDescription" name="Test Table" initialisation="true" domainClass="competition::Standing">
-      <ownedLineMappings name="Position Line" domainClass="competition::Positon" headerLabelExpression="aql:self.team.id"/>
+    <ownedRepresentations xsi:type="description_1:EditionTableDescription" name="Season Table" initialisation="true" domainClass="competition::Standing">
+      <ownedLineMappings name="Position Line" domainClass="competition::Positon" headerLabelExpression="aql:self.team.id">
+        <backgroundConditionalStyle predicateExpression="aql:self.position&lt;5">
+          <style>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+          </style>
+        </backgroundConditionalStyle>
+        <backgroundConditionalStyle predicateExpression="aql:self.position>17">
+          <style>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_red']"/>
+          </style>
+        </backgroundConditionalStyle>
+        <backgroundConditionalStyle predicateExpression="aql:self.position=5">
+          <style>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+          </style>
+        </backgroundConditionalStyle>
+      </ownedLineMappings>
       <ownedColumnMappings name="Position" headerLabelExpression="Pos" canEdit="aql:false" featureName="position">
         <defaultForeground>
+          <labelFormat>bold</labelFormat>
           <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
         </defaultForeground>
         <defaultBackground>
-          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
         </defaultBackground>
       </ownedColumnMappings>
       <ownedColumnMappings name="Team" headerLabelExpression="Team" canEdit="aql:false" featureName="team" labelExpression="aql:self.team.name">
@@ -60,7 +54,7 @@
       </ownedColumnMappings>
       <ownedColumnMappings name="Games Won" headerLabelExpression="W" featureName="won">
         <defaultForeground>
-          <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_green']"/>
+          <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
         </defaultForeground>
         <defaultBackground>
           <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
@@ -68,7 +62,7 @@
       </ownedColumnMappings>
       <ownedColumnMappings name="Games Drawn" headerLabelExpression="D" featureName="draw">
         <defaultForeground>
-          <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+          <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
         </defaultForeground>
         <defaultBackground>
           <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
@@ -76,7 +70,7 @@
       </ownedColumnMappings>
       <ownedColumnMappings name="Games Lost" headerLabelExpression="L" featureName="lost">
         <defaultForeground>
-          <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_red']"/>
+          <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
         </defaultForeground>
         <defaultBackground>
           <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
@@ -86,13 +80,23 @@
         <defaultForeground>
           <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
         </defaultForeground>
+        <foregroundConditionalStyle predicateExpression="aql:self.goalDifference&lt;0">
+          <style>
+            <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
+          </style>
+        </foregroundConditionalStyle>
+        <foregroundConditionalStyle predicateExpression="aql:self.goalDifference>0">
+          <style>
+            <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_green']"/>
+          </style>
+        </foregroundConditionalStyle>
         <defaultBackground>
           <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
         </defaultBackground>
       </ownedColumnMappings>
       <ownedColumnMappings name="Goals Scored" headerLabelExpression="GS" initialWidth="5" featureName="goalsFor">
         <defaultForeground>
-          <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_green']"/>
+          <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
         </defaultForeground>
         <defaultBackground>
           <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
@@ -100,76 +104,76 @@
       </ownedColumnMappings>
       <ownedColumnMappings name="Goals Conceded" headerLabelExpression="GC" initialWidth="5" featureName="goalsAgaints">
         <defaultForeground>
-          <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_red']"/>
+          <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
         </defaultForeground>
         <defaultBackground>
           <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
         </defaultBackground>
       </ownedColumnMappings>
     </ownedRepresentations>
-    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Match Diagram" domainClass="competition::Match" enablePopupBars="true">
-      <defaultLayer name="Default">
-        <nodeMappings name="Match Node" domainClass="competition::Match">
-          <style xsi:type="style:GaugeCompositeStyleDescription" labelSize="12" labelExpression="aql:self.score.homeTeam" labelPosition="node" resizeKind="NSEW">
-            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-          </style>
-        </nodeMappings>
-      </defaultLayer>
-    </ownedRepresentations>
-    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Seasons Diagram" domainClass="competition::Competition" enablePopupBars="true">
+    <ownedRepresentations xsi:type="description_2:DiagramDescription" name="Seasons Diagram" domainClass="competition::Competition" enablePopupBars="true">
       <filters xsi:type="filter:CompositeFilterDescription" documentation="Show only Liverpool matches" name="Liverpool Matches">
-        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Seasons%20Diagram']/@additionalLayers[name='Fixtures']/@containerMappings[name='Seasons%20Container']/@subContainerMappings[name='Matchday%20Fixtures%20Container']/@subNodeMappings[name='Match%20Node'] //@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Seasons%20Diagram']/@additionalLayers[name='Results']/@containerMappings[name='Seasons%20Container']/@subContainerMappings[name='Matchday%20Results%20Container']/@subNodeMappings[name='Match%20Node']" semanticConditionExpression="aql: self.homeTeam.name='Liverpool FC' or self.awayTeam.name='Liverpool FC' )"/>
-        <filters xsi:type="filter:MappingFilter" filterKind="COLLAPSE" mappings="//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Seasons%20Diagram']/@additionalLayers[name='Results']/@containerMappings[name='Seasons%20Container']/@subContainerMappings[name='Matchday%20Results%20Container'] //@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Seasons%20Diagram']/@additionalLayers[name='Fixtures']/@containerMappings[name='Seasons%20Container']/@subContainerMappings[name='Matchday%20Fixtures%20Container']" semanticConditionExpression="aql: false"/>
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Seasons%20Diagram']/@additionalLayers[name='Fixtures']/@containerMappings[name='Seasons%20Container']/@subContainerMappings[name='Matchday%20Fixtures%20Container']/@subNodeMappings[name='Match%20Node'] //@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Seasons%20Diagram']/@additionalLayers[name='Results']/@containerMappings[name='Seasons%20Container']/@subContainerMappings[name='Matchday%20Results%20Container']/@subNodeMappings[name='Match%20Node']" semanticConditionExpression="aql: self.homeTeam.name='Liverpool FC' or self.awayTeam.name='Liverpool FC' "/>
+        <filters xsi:type="filter:MappingFilter" filterKind="COLLAPSE" semanticConditionExpression="aql: false"/>
       </filters>
       <filters xsi:type="filter:CompositeFilterDescription" documentation="Show matches resulting in a winner" name="No Draws">
-        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Seasons%20Diagram']/@additionalLayers[name='Results']/@containerMappings[name='Seasons%20Container']/@subContainerMappings[name='Matchday%20Results%20Container']/@subNodeMappings[name='Match%20Node']" semanticConditionExpression="aql: self.score.winner.toString()!='DRAW' "/>
-        <filters xsi:type="filter:MappingFilter" filterKind="COLLAPSE" mappings="//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Seasons%20Diagram']/@additionalLayers[name='Results']/@containerMappings[name='Seasons%20Container']/@subContainerMappings[name='Matchday%20Results%20Container'] //@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Seasons%20Diagram']/@additionalLayers[name='Fixtures']/@containerMappings[name='Seasons%20Container']/@subContainerMappings[name='Matchday%20Fixtures%20Container']" semanticConditionExpression="aql: false"/>
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Seasons%20Diagram']/@additionalLayers[name='Fixtures']/@containerMappings[name='Seasons%20Container']/@subContainerMappings[name='Matchday%20Fixtures%20Container']/@subNodeMappings[name='Match%20Node'] //@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Seasons%20Diagram']/@additionalLayers[name='Results']/@containerMappings[name='Seasons%20Container']/@subContainerMappings[name='Matchday%20Results%20Container']/@subNodeMappings[name='Match%20Node']" semanticConditionExpression="aql: self.score.winner.toString()!='DRAW' "/>
+        <filters xsi:type="filter:MappingFilter" filterKind="COLLAPSE" semanticConditionExpression="aql: false"/>
       </filters>
-      <defaultLayer name="Default"/>
-      <additionalLayers name="Fixtures">
-        <containerMappings name="Seasons Container" semanticCandidatesExpression="aql:self.currentSeason" domainClass="competition::Season" childrenPresentation="VerticalStack">
-          <subContainerMappings name="Matchday Fixtures Container" semanticCandidatesExpression="aql: self.matchdays -> select(md | md.matches -> exists(m | m.status.toString()='SCHEDULED'))" domainClass="competition::Matchday" childrenPresentation="List">
-            <subNodeMappings name="Match Node" semanticCandidatesExpression="aql:self.matches -> select(s | s.status.toString()='SCHEDULED')" domainClass="competition::Match">
-              <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="aql:self.homeTeam.name + ' - ' + self.awayTeam.name " labelPosition="node" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_gray']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-              </style>
-            </subNodeMappings>
-            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" showIcon="false" labelExpression="aql:'Matchday ' + self.matchday + ' fixtures'">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
-              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
-            </style>
-          </subContainerMappings>
-          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" showIcon="false" labelExpression="aql:'Season ' + self.id + ' fixtures'">
-            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
-            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
-          </style>
-        </containerMappings>
-      </additionalLayers>
+      <defaultLayer name="Default">
+        <toolSections>
+          <ownedTools xsi:type="tool:DoubleClickDescription" mappings="//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Seasons%20Diagram']/@additionalLayers[name='Fixtures']/@containerMappings[name='Seasons%20Container']/@subContainerMappings[name='Matchday%20Fixtures%20Container']/@subNodeMappings[name='Match%20Node'] //@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Seasons%20Diagram']/@additionalLayers[name='Results']/@containerMappings[name='Seasons%20Container']/@subContainerMappings[name='Matchday%20Results%20Container']/@subNodeMappings[name='Match%20Node']">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:Navigation" createIfNotExistent="true" diagramDescription="//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Match%20Diagram']"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
       <additionalLayers name="Results" activeByDefault="true">
         <containerMappings name="Seasons Container" semanticCandidatesExpression="aql:self.currentSeason" domainClass="competition::Season" childrenPresentation="VerticalStack">
           <subContainerMappings name="Matchday Results Container" semanticCandidatesExpression="aql: self.matchdays -> select(md | md.matches -> exists(m | m.status.toString()='FINISHED'))" domainClass="competition::Matchday" childrenPresentation="List">
-            <subNodeMappings name="Match Node" semanticCandidatesExpression="aql:self.matches -> select(s | s.status.toString()='FINISHED')" domainClass="competition::Match">
+            <subNodeMappings name="Match Node" semanticCandidatesExpression="aql:self.matches -> select(s | s.status.toString()='FINISHED')" doubleClickDescription="//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Seasons%20Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='']" domainClass="competition::Match">
               <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="aql:self.homeTeam.name + '  ' +  self.score.homeTeam + ' - ' +  self.score.awayTeam + '  '  + self.awayTeam.name" labelPosition="node" resizeKind="NSEW">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_gray']"/>
                 <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
               </style>
             </subNodeMappings>
-            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" showIcon="false" labelExpression="aql:'Matchday ' + self.matchday + ' results'">
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="14" showIcon="false" labelExpression="aql:'Matchday ' + self.matchday ">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
               <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
             </style>
           </subContainerMappings>
-          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" showIcon="false" labelExpression="aql:'Season ' + self.id + ' results'">
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="16" showIcon="false" labelExpression="aql:'Season ' + self.id + ' results'">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+          </style>
+        </containerMappings>
+      </additionalLayers>
+      <additionalLayers name="Fixtures" activeByDefault="true">
+        <containerMappings name="Seasons Container" semanticCandidatesExpression="aql:self.currentSeason" domainClass="competition::Season" childrenPresentation="VerticalStack">
+          <subContainerMappings name="Matchday Fixtures Container" semanticCandidatesExpression="aql: self.matchdays -> select(md | md.matches -> exists(m | m.status.toString()='SCHEDULED'))" domainClass="competition::Matchday" childrenPresentation="List">
+            <subNodeMappings name="Match Node" semanticCandidatesExpression="aql:self.matches -> select(s | s.status.toString()='SCHEDULED')" doubleClickDescription="//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Seasons%20Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='']" domainClass="competition::Match">
+              <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="aql:self.homeTeam.name + ' - ' + self.awayTeam.name " labelPosition="node" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_gray']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+              </style>
+            </subNodeMappings>
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="14" showIcon="false" labelExpression="aql:'Matchday ' + self.matchday ">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
+            </style>
+          </subContainerMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="16" showIcon="false" labelExpression="aql:'Season ' + self.id + ' fixtures'">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
             <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
@@ -178,26 +182,227 @@
         </containerMappings>
       </additionalLayers>
     </ownedRepresentations>
-    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Competition Diagram" domainClass="competition::Competition" enablePopupBars="true">
+    <ownedRepresentations xsi:type="description_2:DiagramDescription" name="Match Diagram" domainClass="competition::Match" enablePopupBars="true">
       <defaultLayer name="Default">
-        <containerMappings name="Season" semanticCandidatesExpression="aql:self.currentSeason" domainClass="competition::Season" childrenPresentation="VerticalStack">
-          <subContainerMappings name="Results Container" semanticCandidatesExpression="aql: self.matchdays -> select(md | md.matches -> exists(m | m.status.toString()='FINISHED'))" domainClass="competition::Matchday" childrenPresentation="List">
-            <subNodeMappings name="Match" semanticCandidatesExpression="aql:self.matches -> select(s | s.status.toString()='FINISHED')" domainClass="competition::Match">
-              <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="aql:self.homeTeam.name + '  ' +  self.score.homeTeam + ' - ' +  self.score.awayTeam + '  '  + self.awayTeam.name" labelPosition="node" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-              </style>
-            </subNodeMappings>
-            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="aql:'Matchday  ' + self.matchday + ' results'">
+        <containerMappings name="Match Container" semanticCandidatesExpression="aql:self" domainClass="competition::Match" childrenPresentation="List">
+          <subNodeMappings name="Score" semanticCandidatesExpression="aql:self" domainClass="competition::Match">
+            <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="aql:self.homeTeam.name + '  ' + self.score.homeTeam + ' -  ' + self.score.awayTeam + '  ' + self.awayTeam.name " labelPosition="node" resizeKind="NSEW">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             </style>
-          </subContainerMappings>
+          </subNodeMappings>
+          <subNodeMappings name="Winner" semanticCandidatesExpression="aql:self.score" domainClass="competition::Score">
+            <style xsi:type="style:EllipseNodeDescription" labelSize="12" showIcon="false" labelExpression="aql:'Winner: ' + self.winner" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+          </subNodeMappings>
+          <subNodeMappings name="View Home Team" semanticCandidatesExpression="aql: self.homeTeam" doubleClickDescription="//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Match%20Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='']" domainClass="competition::Team">
+            <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="aql:'View home team'" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+            </style>
+          </subNodeMappings>
+          <subNodeMappings name="View Away Team" semanticCandidatesExpression="aql: self.awayTeam" doubleClickDescription="//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Match%20Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='']" domainClass="competition::Team">
+            <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="aql:'View away team'" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" showIcon="false" labelExpression="aql: 'Match data, match no.'+ self.id">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
+          </style>
+        </containerMappings>
+        <toolSections>
+          <ownedTools xsi:type="tool:DoubleClickDescription" mappings="//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Match%20Diagram']/@defaultLayer/@containerMappings[name='Match%20Container']/@subNodeMappings[name='View%20Away%20Team'] //@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Match%20Diagram']/@defaultLayer/@containerMappings[name='Match%20Container']/@subNodeMappings[name='View%20Home%20Team']">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:Navigation" createIfNotExistent="true" diagramDescription="//@ownedViewpoints[name='competitions']/@ownedRepresentations[name='Team%20Diagram']"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_2:DiagramDescription" name="Team Diagram" domainClass="competition::Team" enablePopupBars="true">
+      <defaultLayer name="Default">
+        <containerMappings name="Team Container" semanticCandidatesExpression="aql:self" domainClass="competition::Team" childrenPresentation="List">
+          <subNodeMappings name="Team Short Name" semanticCandidatesExpression="aql:self" domainClass="competition::Team">
+            <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="aql:'Shortname: ' + self.shortName" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+          </subNodeMappings>
+          <subNodeMappings name="Team Colors" semanticCandidatesExpression="aql:self" domainClass="competition::Team">
+            <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="aql:'Colors: ' + self.clubColors" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+          </subNodeMappings>
+          <subNodeMappings name="Team Founded" semanticCandidatesExpression="aql:self" domainClass="competition::Team">
+            <style xsi:type="style:EllipseNodeDescription" labelSize="12" showIcon="false" labelExpression="aql:'Founded: ' + self.founded" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="14" showIcon="false" labelExpression="aql:self.name">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelFormat>bold</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+          </style>
+        </containerMappings>
+        <containerMappings name="Position Container" semanticCandidatesExpression="aql:self.ancestors().currentSeason.standing.positions -> select(s | s.team.name=self.name)" domainClass="competition::Positon" childrenPresentation="List">
+          <subNodeMappings name="Table Position" semanticCandidatesExpression="aql:self" domainClass="competition::Positon">
+            <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="aql:'Position: ' + self.position" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelFormat>bold</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+          </subNodeMappings>
+          <subNodeMappings name="Games won" semanticCandidatesExpression="aql:self" domainClass="competition::Positon">
+            <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="aql:'Games won: ' + self.won" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+          </subNodeMappings>
+          <subNodeMappings name="Games lost" semanticCandidatesExpression="aql:self" domainClass="competition::Positon">
+            <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="aql:'Games lost: ' + self.lost" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+          </subNodeMappings>
+          <subNodeMappings name="Draws" semanticCandidatesExpression="aql:self" domainClass="competition::Positon">
+            <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="aql:'Draws: ' + self.draw" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+          </subNodeMappings>
+          <subNodeMappings name="Goal difference" semanticCandidatesExpression="aql:self" domainClass="competition::Positon">
+            <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="aql:'Goal difference: ' + self.goalDifference" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="14" showIcon="false" labelExpression="aql: self.team.shortName + ' season stats'">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelFormat>bold</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='orange']"/>
+          </style>
         </containerMappings>
       </defaultLayer>
     </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_3:TreeDescription" name="Season Tree" domainClass="competition::Competition">
+      <metamodel href="../../TDT4250.project.model/model/competition.ecore#/"/>
+      <subItemMappings name="Season" domainClass="competition::Season" semanticCandidatesExpression="feature:currentSeason">
+        <defaultStyle labelExpression="aql:self.competition.name">
+          <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+        </defaultStyle>
+        <subItemMappings name="Matchday" domainClass="competition::Matchday" semanticCandidatesExpression="feature:eAllContents">
+          <defaultStyle labelExpression="aql:'Matchday ' + self.matchday">
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+          </defaultStyle>
+          <subItemMappings name="Matches" domainClass="competition::Match" semanticCandidatesExpression="feature:eAllContents">
+            <defaultStyle labelSize="5" labelExpression="aql:'A:    '+self.score.awayTeam +'   '+self.awayTeam.name+'('+self.awayTeam.tla+')' +'\nH:    '+ self.score.homeTeam +'   '+self.homeTeam.name+'('+self.homeTeam.tla+')'">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            </defaultStyle>
+            <conditionalStyles predicateExpression="aql:self.status.toString()='SCHEDULED'">
+              <style labelSize="5" labelExpression="aql:'A:    '+self.awayTeam.name+'('+self.awayTeam.tla+')' +'\nH:    '+ self.homeTeam.name+'('+self.homeTeam.tla+')'">
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              </style>
+            </conditionalStyles>
+          </subItemMappings>
+        </subItemMappings>
+      </subItemMappings>
+    </ownedRepresentations>
   </ownedViewpoints>
+  <extensions xsi:type="properties:ViewExtensionDescription" name="Properties">
+    <categories name="Default Category">
+      <pages name="Info" labelExpression="Info" domainClass="competition::Positon" semanticCandidateExpression="var:self" groups="//@extensions.0/@categories.0/@groups.0"/>
+      <pages name="Matches" labelExpression="Matches" domainClass="competition::Positon" semanticCandidateExpression="var:self" groups="//@extensions.0/@categories.0/@groups.1"/>
+      <pages name="Goals" labelExpression="Goals" domainClass="competition::Positon" semanticCandidateExpression="var:self" groups="//@extensions.0/@categories.0/@groups.2"/>
+      <groups name="Info" labelExpression="aql:'Info'" domainClass="competition::Positon" semanticCandidateExpression="var:self">
+        <controls xsi:type="properties:TextDescription" name="Team" labelExpression="Team" helpExpression="aql:'The team name'" isEnabledExpression="aql:false" valueExpression="aql:self.team.name">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self"/>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:TextDescription" name="Points" labelExpression="Points" helpExpression="aql:'Team points'" isEnabledExpression="aql:false" valueExpression="feature:points">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self"/>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:TextDescription" name="Position" labelExpression="Position" helpExpression="aql:'Table position'" isEnabledExpression="aql:false" valueExpression="feature:position">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self"/>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:TextDescription" name="Played" labelExpression="Played Games" helpExpression="aql:'Games played'" isEnabledExpression="aql:false" valueExpression="feature:playedGames">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self"/>
+          </initialOperation>
+        </controls>
+        <style>
+          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
+          <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </style>
+      </groups>
+      <groups name="Matches" labelExpression="Matches" domainClass="competition::Positon" semanticCandidateExpression="var:self">
+        <controls xsi:type="properties:TextDescription" name="Won" labelExpression="Won" helpExpression="aql:'Number of games won'" isEnabledExpression="aql:false" valueExpression="feature:won">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self"/>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:TextDescription" name="Lost" labelExpression="Lost" helpExpression="aql:'Games lost'" isEnabledExpression="aql:false" valueExpression="feature:lost">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self"/>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:TextDescription" name="Draw" labelExpression="Draw" helpExpression="aql:'Games drawn'" isEnabledExpression="aql:false" valueExpression="feature:draw">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self"/>
+          </initialOperation>
+        </controls>
+      </groups>
+      <groups name="Goals" labelExpression="Goals" domainClass="competition::Positon" semanticCandidateExpression="var:self">
+        <controls xsi:type="properties:TextDescription" name="For" labelExpression="Goals for:" helpExpression="aql:'Number of goals for'" isEnabledExpression="aql:false" valueExpression="feature:goalsFor">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self"/>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:TextDescription" name="Against" labelExpression="Goals against:" helpExpression="aql:'Number of goals against'" isEnabledExpression="aql:false" valueExpression="feature:goalsAgaints">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self"/>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:TextDescription" name="Difference" labelExpression="Goal difference:" helpExpression="aql:'Goal difference '" isEnabledExpression="aql:false" valueExpression="feature:goalDifference">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self"/>
+          </initialOperation>
+        </controls>
+      </groups>
+    </categories>
+  </extensions>
 </description:Group>
