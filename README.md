@@ -104,9 +104,22 @@ The Tree View representation provides a hierarchical viewpoint of the Football S
 ![Image of Season Tree View](./images/Tree_view.png)
 
 ## Property Views 
-The Property View of for position show a position as three pages.
+The Property View of for position elements show three extra pages. The view is displayed when Position objects are marked.
+i.e. in the Season Table, if the row of Arsenal FC is clicked, one will se the view in the image below.
 - Info
+  - Team
+  - Points
+  - Position
+  - Played
 - Matches
+  - Won
+  - Lost
+  - Draw
 - Goals
+  - For
+  - Against
+  - Difference
+
+![Image of the Property View](./images/Arsenal_property_view.png)
 
 
