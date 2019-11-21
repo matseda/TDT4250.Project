@@ -1,6 +1,6 @@
 # Football result - Advanced Software Engineering (TDT4250) semester project
 
-_Members: Mats Tyldum, Henrik Finnerud Larsen, Mats Davidsen and Siri Mykland_
+_Members: Mats Davidsen, Henrik Finnerud Larsen, Siri Mykland and Mats Tyldum_
 
 ## Description
 
@@ -105,7 +105,7 @@ The Tree View representation provides a hierarchical viewpoint of the Football S
 
 ## Property Views 
 The Property View of for position elements show three extra pages. The view is displayed when Position objects are marked.
-i.e. in the Season Table, if the row of Arsenal FC is clicked, one will se the view in the image below.
+i.e. in the Season Table, if the row of Arsenal FC is clicked, one will see the view in the image below.
 - Info
   - Team
   - Points
