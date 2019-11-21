@@ -58,7 +58,7 @@ One competition contains multiple teams and the current season.
 The season contains a standing of positions of the teams and multiple matchdays. A match day contains multiple matches which all contains a score and two teams; homeTeam and awayTeam. 
 
 The model also contains two Enums; status of a match and winner of the match.
-<img style="display: block; text-align: center;" width="600" alt="Image of the Ecore model" src="./images/Model_diagram.png">
+<img style="display: block;" width="600" alt="Image of the Ecore model" src="./images/Model_diagram.png">
 
 ## Viewpoints
 This project includes different viewpoints to visualize data. Description and images of these views will be presented below.
@@ -96,7 +96,7 @@ The Season table is an Edition Table representing the Standings of the current s
 - Conditional styles for Premier League using OCL:
     - Visualize teams qualified for Champions League (top 4) with a green background. 
     - Visualize teams qualified for Europa League (position 5) with a blue background.
-    - Visualize teams that are beein relegated (bottom 3) with a red background.
+    - Visualize teams that are being relegated (bottom 3) with a red background.
     - Different color for positive and negative goal difference: Red for negative and green for positive.
 
 <img style="display: block;" width="400" alt="Image of Season Table View" src="./images/Table_view.png">
