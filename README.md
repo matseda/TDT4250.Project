@@ -1,6 +1,6 @@
 # Football result - Advanced Software Engineering (TDT4250) semester project
 
-_Members: Mats Tyldum, Henrik Finnerud Larsen, Mats Davidsen and Siri Mykland_
+_Members: Mats Davidsen, Henrik Finnerud Larsen, Siri Mykland and Mats Tyldum_
 
 ## Description
 
