@@ -70,9 +70,12 @@ One of the main features of the Sirius framework is the ability to create diagra
 <img style="display: block;"  width="200" alt="Pages and filtering" src="./images/Filter_layer_buttons.png">
 
 The filters can be applied individually or together as illustrated in the figures below.
-  - All matches <img style="display: block;" width="300" alt="All matches season diagram" src="./images/Season_view.png">
-  - Liverpool matches <img style="display: block;" width="300" alt="Liverpool matches season diagram" src="./images/Season_liverpool_view.png">
-  - Matches with no draws <img style="display: block;" width="300" alt="No draws season diagram" src="./images/Season_no_draws_view.png">
+  - All matches 
+<img style="display: block;" width="300" alt="All matches season diagram" src="./images/Season_view.png">
+  - Liverpool matches 
+<img style="display: block;" width="300" alt="Liverpool matches season diagram" src="./images/Season_liverpool_view.png">
+  - Matches with no draws 
+<img style="display: block;" width="300" alt="No draws season diagram" src="./images/Season_no_draws_view.png">
   
 There are also diagrams for showing a single match and a single team, you can navigate to these diagrams as described in the next subsection. These diagrams are displayed below
 - Match: The match diagram lists information of each match.
