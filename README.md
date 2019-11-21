@@ -86,7 +86,19 @@ The Tree View representation provides a hierarchical viewpoint of the Football S
 ## Property Views 
 The Property View of for position show a position as three pages.
 - Info
+  - Team
+  - Points
+  - Position
+  - Played
 - Matches
+  - Won
+  - Lost
+  - Draw
 - Goals
+  - For
+  - Against
+  - Difference
+
+![Image of the Property View](https://github.com/matseda/TDT4250.Project/blob/master/images/Property_view.png)
 
 
