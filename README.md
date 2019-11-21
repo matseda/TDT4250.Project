@@ -71,11 +71,11 @@ One of the main features of the Sirius framework is the ability to create diagra
 
 The filters can be applied individually or together as illustrated in the figures below.
   - All matches 
-<img style="display: block;" width="300" alt="All matches season diagram" src="./images/Season_view.png">
+<img style="display: block;" width="400" alt="All matches season diagram" src="./images/Season_view.png">
   - Liverpool matches 
-<img style="display: block;" width="300" alt="Liverpool matches season diagram" src="./images/Season_liverpool_view.png">
+<img style="display: block;" width="400" alt="Liverpool matches season diagram" src="./images/Season_liverpool_view.png">
   - Matches with no draws 
-<img style="display: block;" width="300" alt="No draws season diagram" src="./images/Season_no_draws_view.png">
+<img style="display: block;" width="400" alt="No draws season diagram" src="./images/Season_no_draws_view.png">
   
 There are also diagrams for showing a single match and a single team, you can navigate to these diagrams as described in the next subsection. These diagrams are displayed below
 - Match: The match diagram lists information of each match.
@@ -88,7 +88,7 @@ It is possible to navigate between diagrams and create new ones if they don't ex
 - From season to match diagram. Double click on a match to view the corresponding match diagram.
 - From match to team diagram. Double click "view home team" or "view away team" to navigate to the corresponding teams diagram
 If a diagram already exist you will end up in that view. If not a popup will prompt you to create a new one.
-<img style="display: block;" width="300" alt="Popup new diagram" src="./images/New_diagram_popup.png">
+<img style="display: block;" width="400" alt="Popup new diagram" src="./images/New_diagram_popup.png">
 
 ### Table
 The Season table is an Edition Table representing the Standings of the current season, where each line represent a position in the standings and each column represents a property of that position. The table uses features such as:
