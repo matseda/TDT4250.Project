@@ -58,7 +58,7 @@ One competition contains multiple teams and the current season.
 The season contains a standing of positions of the teams and multiple matchdays. A match day contains multiple matches which all contains a score and two teams; homeTeam and awayTeam. 
 
 The model also contains two Enums; status of a match and winner of the match.
-<img style="display: block; width: 400px;" alt="Image of the Ecore model" src="./images/Model_diagram.png">
+<img style="display: block;" width="400" alt="Image of the Ecore model" src="./images/Model_diagram.png">
 
 ## Viewpoints
 This project includes different viewpoints to visualize data. Description and images of these views will be presented below.
@@ -67,7 +67,7 @@ This project includes different viewpoints to visualize data. Description and im
 One of the main features of the Sirius framework is the ability to create diagrams. Three diagrams: Season, match and team have been developed. Each including different features from the diagram tool.
 
 - Season: This diagram visualizes all the matchdays in a season split into two categories, completed matches(results) and future matches (fixtures). These categories are represented using two layers, making it possible to view only result, fixtures or both depending on what you want. In addition to this, filter functions has also been added. Two filters "Liverpool matches" and "No draws" makes it possible to hide all matches which not correspond to these facts. The filters and pages can be selected using the two button shown below in Eclipse, the left button selects pages and the right one selects filters.
-<img style="display: block;"  width="100" alt="Pages and filtering" src="./images/Filter_layer_buttons.png">
+<img style="display: block;"  width="200" alt="Pages and filtering" src="./images/Filter_layer_buttons.png">
 
 The filters can be applied individually or together as illustrated in the figures below.
   - All matches <img style="display: block; width: 300px;" alt="All matches season diagram" src="./images/Season_view.png">
@@ -76,16 +76,16 @@ The filters can be applied individually or together as illustrated in the figure
   
 There are also diagrams for showing a single match and a single team, you can navigate to these diagrams as described in the next subsection. These diagrams are displayed below
 - Match: The match diagram lists information of each match.
-<img style="display: block; width: 300px;" alt="Liverpool match diagram" src="./images/Matches_Liverpool_view.png">
+<img style="display: block;" width="300" alt="Liverpool match diagram" src="./images/Matches_Liverpool_view.png">
 - Team: The team diagram lists all information about a team together with season stats. The season stats are calculated using OCL expressions.
-<img style="display: block; width: 300px;" alt="No draws season diagram" src="./images/Liverpool_team_view.png">
+<img style="display: block;" width="300" alt="No draws season diagram" src="./images/Liverpool_team_view.png">
 
 ### Navigation between diagrams
 It is possible to navigate between diagrams and create new ones if they don't exist by double-clicking on different nodes. Navigation is possible:
 - From season to match diagram. Double click on a match to view the corresponding match diagram.
 - From match to team diagram. Double click "view home team" or "view away team" to navigate to the corresponding teams diagram
 If a diagram already exist you will end up in that view. If not a popup will prompt you to create a new one.
-<img style="display: block; width: 300px;" alt="Popup new diagram" src="./images/New_diagram_popup.png">
+<img style="display: block;" width="300" alt="Popup new diagram" src="./images/New_diagram_popup.png">
 
 ### Table
 The Season table is an Edition Table representing the Standings of the current season, where each line represent a position in the standings and each column represents a property of that position. The table uses features such as:
@@ -96,7 +96,7 @@ The Season table is an Edition Table representing the Standings of the current s
     - Visualize teams that are beein relegated (bottom 3) with a red background.
     - Different color for positive and negative goal difference: Red for negative and green for positive.
 
-<img style="display: block; width: 400px;" alt="Image of Season Table View" src="./images/Table_view.png">
+<img style="display: block;" width="400" alt="Image of Season Table View" src="./images/Table_view.png">
 
 ### Tree
 The Tree View representation provides a hierarchical viewpoint of the Football Season. Each node in the tree represents an element, with Season being the root node. 
@@ -104,7 +104,7 @@ The Tree View representation provides a hierarchical viewpoint of the Football S
   - Matchdays
     - Match details
 
-<img style="display: block; width: 300px;" alt="Image of Season Tree View" src="./images/Tree_view.png">
+<img style="display: block;" width="300" alt="Image of Season Tree View" src="./images/Tree_view.png">
 
 ## Property Views 
 The Property View of for position elements show three extra pages. The view is displayed when Position objects are marked.
@@ -123,4 +123,4 @@ i.e. in the Season Table, if the row of Arsenal FC is clicked, one will see the 
   - Against
   - Difference
 
-<img style="display: block; width: 300px;" alt="Image of the Property View" src="./images/Arsenal_property_view.png">
+<img style="display: block;" width="300" alt="Image of the Property View" src="./images/Arsenal_property_view.png">
