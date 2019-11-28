@@ -1,7 +1,7 @@
 # Football result 
 _TDT4250 - Advanced Software Engineering semester project_
 
-_Members: Mats Davidsen (matseda@stud.ntnu.no), Henrik Finnerud Larsen (henrifla@stud.ntnu.no), Siri Mykland (sirmy@stud.ntnu.no) and Mats Tyldum (matsty@stud.ntnu.no)_
+_Members: Mats Elias Davidsen (matseda@stud.ntnu.no), Henrik Finnerud Larsen (henrifla@stud.ntnu.no), Siri Mykland (sirmy@stud.ntnu.no) and Mats Tyldum (matsty@stud.ntnu.no)_
 
 ## Description
 
