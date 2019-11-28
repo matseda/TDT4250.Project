@@ -38,7 +38,8 @@ The repository includes data files (JSON format) used in the representation. If 
 
 Opening the view, with the possibilty for editing can be done like this.
 
-- Click run as Eclipse application.
+- Create new run configuration and choose Eclipse application with the default settings.
+- Run this configuration.
 - Import these projects to the new workspace: "TDT4250.project.design", "TDT4250.project.model" and "TDT4250.project.samples".
 - Views:
   - Open the "representations.aird" file in the "TDT4250.project.samples" project.
